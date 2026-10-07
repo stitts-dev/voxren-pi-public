@@ -1,0 +1,26 @@
+{
+	"id": "rubric-ignite-tp",
+	"title": "A typed question on summoner spells mid: should I take Ignite or Teleport mid",
+	"split": "holdout",
+	"tier": "gold",
+	"applies": [
+		"contrast_reason",
+		"names_tradeoff",
+		"leads_with_one_fix",
+		"tier_fit"
+	],
+	"steps": [
+		{
+			"send": "should I take Ignite or Teleport mid"
+		},
+		{
+			"idle": true
+		}
+	],
+	"env": {
+		"VOXREN_COACH_CHAMPION": "Fizz"
+	},
+	"gates": {
+		"maxSeconds": 120
+	}
+}

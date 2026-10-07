@@ -1,0 +1,25 @@
+{
+	"id": "flow-3-lens-right",
+	"title": "Right moves the lens to /matchup and its meta step",
+	"split": "train",
+	"steps": [
+		{
+			"wait": "COMMAND TREE"
+		},
+		{
+			"key": "right"
+		},
+		{
+			"wait": "[/matchup]"
+		},
+		{
+			"wait": "/matchup <enemy>"
+		},
+		{
+			"wait": "1 meta"
+		}
+	],
+	"gates": {
+		"maxSeconds": 60
+	}
+}

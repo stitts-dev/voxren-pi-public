@@ -1,0 +1,208 @@
+{
+	"meta": {
+		"version": "16.19.1",
+		"generated": "2026-10-04",
+		"model": "gpt-6-sol",
+		"sources": [
+			{
+				"id": "s1",
+				"title": "🔸 Lee Sin / The Playmaker🔸",
+				"url": "https://www.mobafire.com/league-of-legends/build/lee-sin-the-playmaker-652247"
+			},
+			{
+				"id": "game-1",
+				"title": "Riot Data Dragon 16.19.1",
+				"url": "https://ddragon.leagueoflegends.com/cdn/16.19.1/data/en_US/champion/LeeSin.json"
+			}
+		]
+	},
+	"id": "LeeSin",
+	"name": "Lee Sin",
+	"facts": {
+		"title": "the Blind Monk",
+		"tags": [
+			"Fighter",
+			"Assassin"
+		],
+		"resource": "Energy",
+		"stats": {
+			"hp": 645,
+			"hpperlevel": 108,
+			"mp": 200,
+			"mpperlevel": 0,
+			"movespeed": 345,
+			"armor": 36,
+			"armorperlevel": 4.5,
+			"spellblock": 32,
+			"spellblockperlevel": 2.05,
+			"attackrange": 125,
+			"hpregen": 7.5,
+			"hpregenperlevel": 0.7,
+			"mpregen": 50,
+			"mpregenperlevel": 0,
+			"crit": 0,
+			"critperlevel": 0,
+			"attackdamage": 66,
+			"attackdamageperlevel": 0,
+			"attackspeedperlevel": 3,
+			"attackspeed": 0.651
+		},
+		"passive": {
+			"name": "Flurry",
+			"text": "After Lee Sin uses an ability, his next 2 basic attacks gain Attack Speed and return Energy."
+		},
+		"spells": [
+			{
+				"slot": "Q",
+				"name": "Sonic Wave / Resonating Strike",
+				"cooldown": [
+					10,
+					9,
+					8,
+					7,
+					6
+				],
+				"cost": [
+					50,
+					50,
+					50,
+					50,
+					50
+				],
+				"range": [
+					1100,
+					1100,
+					1100,
+					1100,
+					1100
+				],
+				"text": "Sonic Wave: Lee Sin projects a discordant wave of sound to locate his enemies, dealing physical damage to the first enemy it encounters. If Sonic Wave hits, Lee Sin can cast Resonating Strike for the next 3 seconds.Resonating Strike: Lee Sin dashes to the enemy hit by Sonic Wave, dealing physical damage based on the target's missing Health."
+			},
+			{
+				"slot": "W",
+				"name": "Safeguard / Iron Will",
+				"cooldown": [
+					7,
+					7,
+					7,
+					7,
+					7
+				],
+				"cost": [
+					50,
+					50,
+					50,
+					50,
+					50
+				],
+				"range": [
+					700,
+					700,
+					700,
+					700,
+					700
+				],
+				"text": "Safeguard: Lee Sin rushes to target ally, shielding himself from damage. If the ally is a champion, they are also shielded. After using Safeguard, Lee Sin can cast Iron Will.Iron Will: Lee Sin's intense training allows him to thrive in battle. Lee Sin gains Omnivamp."
+			},
+			{
+				"slot": "E",
+				"name": "Tempest / Cripple",
+				"cooldown": [
+					8,
+					8,
+					8,
+					8,
+					8
+				],
+				"cost": [
+					50,
+					50,
+					50,
+					50,
+					50
+				],
+				"range": [
+					450,
+					450,
+					450,
+					450,
+					450
+				],
+				"text": "Tempest: Lee Sin smashes the ground, sending out a shockwave that deals magic damage and reveals enemy units hit. If Tempest hits an enemy, Lee Sin can cast cripple.Cripple: Lee Sin cripples nearby enemies damaged by Tempest, reducing their Move Speed. Move Speed recovers gradually over the duration."
+			},
+			{
+				"slot": "R",
+				"name": "Dragon's Rage",
+				"cooldown": [
+					110,
+					85,
+					60
+				],
+				"cost": [
+					0,
+					0,
+					0
+				],
+				"range": [
+					375,
+					375,
+					375
+				],
+				"text": "Lee Sin performs a powerful roundhouse kick launching his target back, dealing physical damage to the target and any enemies they collide with. Enemies the target collides with are knocked into the air for a short duration. This technique was taught to him by Jesse Perring, although Lee Sin does not kick players off the map."
+			}
+		]
+	},
+	"coaching": {
+		"damage": {
+			"value": "Lee Sin deals burst physical damage with Q and R and burst magic damage with E.",
+			"sources": [
+				"game-1"
+			]
+		},
+		"archetype": {
+			"value": "Lee Sin is a jungle skirmisher playmaker who thrives on mechanical outplays.",
+			"sources": [
+				"s1"
+			]
+		},
+		"axis": {
+			"value": "Lee Sin can take short trades around his two empowered basic attacks after an ability.",
+			"sources": [
+				"game-1"
+			]
+		},
+		"winCondition": {
+			"value": "Lee Sin controls vision with Safeguard ward-hops and uses Dragon’s Rage to finish skirmishes.",
+			"sources": [
+				"s1"
+			]
+		},
+		"spikes": [
+			{
+				"at": "Q at rank 5",
+				"why": "Lee Sin can use Sonic Wave more often as its cooldown falls to 6 seconds.",
+				"sources": [
+					"game-1"
+				]
+			}
+		],
+		"bait": [],
+		"mistakes": [
+			{
+				"value": "Lee Sin loses Resonating Strike if he does not recast Q within 3 seconds of a Sonic Wave hit.",
+				"sources": [
+					"game-1"
+				]
+			}
+		],
+		"comp": {
+			"tags": [
+				"engage"
+			],
+			"sources": [
+				"s1",
+				"game-1"
+			]
+		}
+	}
+}

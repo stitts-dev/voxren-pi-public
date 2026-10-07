@@ -1,0 +1,244 @@
+{
+	"meta": {
+		"version": "16.19.1",
+		"generated": "2026-10-05",
+		"model": "gpt-6-sol",
+		"sources": [
+			{
+				"id": "s1",
+				"title": "Yunara Build Guide: [S2026.19] | EASY-TO-READ ✔️ SIMPLE 1v9 ✔️ LIVE AMA ✔️ [FULL GUIDE] ✔️ [UPDATED]",
+				"url": "https://www.mobafire.com/league-of-legends/build/s2026-19-easy-to-read-simple-1v9-live-ama-full-guide-updated-650196"
+			},
+			{
+				"id": "s2",
+				"title": "Yunara Build Guide: [🏆] NEW YUNARA ADC GUIDE ⭐Unlock her true potential!",
+				"url": "https://www.mobafire.com/league-of-legends/build/new-yunara-adc-guide-unlock-her-true-potential-648721"
+			},
+			{
+				"id": "game-1",
+				"title": "Riot Data Dragon 16.19.1",
+				"url": "https://ddragon.leagueoflegends.com/cdn/16.19.1/data/en_US/champion/Yunara.json"
+			}
+		]
+	},
+	"id": "Yunara",
+	"name": "Yunara",
+	"facts": {
+		"title": "the Unbroken Faith",
+		"tags": [
+			"Marksman"
+		],
+		"resource": "Mana",
+		"stats": {
+			"hp": 590,
+			"hpperlevel": 110,
+			"mp": 275,
+			"mpperlevel": 45,
+			"movespeed": 325,
+			"armor": 25,
+			"armorperlevel": 4.4,
+			"spellblock": 33,
+			"spellblockperlevel": 1.1,
+			"attackrange": 575,
+			"hpregen": 4,
+			"hpregenperlevel": 0.55,
+			"mpregen": 7.5,
+			"mpregenperlevel": 0.75,
+			"crit": 0,
+			"critperlevel": 0,
+			"attackdamage": 55,
+			"attackdamageperlevel": 0,
+			"attackspeedperlevel": 2,
+			"attackspeed": 0.65
+		},
+		"passive": {
+			"name": "Vow of the First Lands",
+			"text": "Yunara's Critical Strikes deal bonus magic damage."
+		},
+		"spells": [
+			{
+				"slot": "Q",
+				"name": "Cultivation of Spirit",
+				"cooldown": [
+					0,
+					0,
+					0,
+					0,
+					0
+				],
+				"cost": [
+					30,
+					30,
+					30,
+					30,
+					30
+				],
+				"range": [
+					0,
+					0,
+					0,
+					0,
+					0
+				],
+				"text": "Yunara gains Attack Speed, bonus damage On-Hit, and her Attacks spread to nearby enemies."
+			},
+			{
+				"slot": "W",
+				"name": "Arc of Judgment | Arc of Ruin",
+				"cooldown": [
+					10,
+					10,
+					10,
+					10,
+					10
+				],
+				"cost": [
+					60,
+					60,
+					60,
+					60,
+					60
+				],
+				"range": [
+					1150,
+					1150,
+					1150,
+					1150,
+					1150
+				],
+				"text": "Yunara fires a spinning prayer bead that deals damage and slows enemies. While in her Transcendent State she instead fires off a laser that deals damage and slows enemies."
+			},
+			{
+				"slot": "E",
+				"name": "Kanmei's Steps | Untouchable Shadow",
+				"cooldown": [
+					9,
+					9,
+					9,
+					9,
+					9
+				],
+				"cost": [
+					40,
+					40,
+					40,
+					40,
+					40
+				],
+				"range": [
+					0,
+					0,
+					0,
+					0,
+					0
+				],
+				"text": "Yunara gains Move Speed and becomes Ghosted. While in her Transcendent State she instead dashes in a direction."
+			},
+			{
+				"slot": "R",
+				"name": "Transcend One's Self",
+				"cooldown": [
+					100,
+					90,
+					80
+				],
+				"cost": [
+					100,
+					100,
+					100
+				],
+				"range": [
+					0,
+					0,
+					0
+				],
+				"text": "Yunara enters a Transcendent State that upgrades her basic Abilities."
+			}
+		]
+	},
+	"coaching": {
+		"damage": {
+			"value": "Yunara deals sustained auto-attack damage that ramps up over time.",
+			"sources": [
+				"s1"
+			]
+		},
+		"archetype": {
+			"value": "Yunara is a scaling ADC who relies on spacing and teamfight positioning.",
+			"sources": [
+				"s1"
+			]
+		},
+		"axis": {
+			"value": "Yunara favors longer trades that give her damage time to ramp up.",
+			"sources": [
+				"s1"
+			]
+		},
+		"winCondition": {
+			"value": "Yunara wins through scaling DPS and a strong teamfight presence.",
+			"sources": [
+				"s1"
+			]
+		},
+		"spikes": [
+			{
+				"at": "R",
+				"why": "Yunara gets stronger while her ultimate keeps Q active for 15 seconds without stacking it.",
+				"sources": [
+					"s1"
+				]
+			},
+			{
+				"at": "Kraken Slayer",
+				"why": "Yunara gains a strong first-item spike because her rapid attacks trigger its bonus damage quickly.",
+				"sources": [
+					"s2"
+				]
+			},
+			{
+				"at": "R",
+				"why": "Yunara becomes stronger for 15 seconds as her Q, W, and E evolve.",
+				"sources": [
+					"s2"
+				]
+			}
+		],
+		"bait": [
+			{
+				"slot": "W",
+				"why": "After Yunara spends W, its damage and slow are unavailable for 10 seconds.",
+				"sources": [
+					"game-1"
+				]
+			},
+			{
+				"slot": "E",
+				"why": "After Yunara spends E, its movement effect is unavailable for 9 seconds.",
+				"sources": [
+					"game-1"
+				]
+			},
+			{
+				"slot": "R",
+				"why": "After Yunara spends R, Yunara cannot activate its ability upgrades again until its 100/90/80-second cooldown ends.",
+				"sources": [
+					"game-1"
+				]
+			}
+		],
+		"mistakes": [],
+		"comp": {
+			"tags": [
+				"scale",
+				"dive",
+				"poke"
+			],
+			"sources": [
+				"s1",
+				"s2",
+				"game-1"
+			]
+		}
+	}
+}

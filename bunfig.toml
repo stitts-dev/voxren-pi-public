@@ -1,0 +1,5 @@
+[test]
+# A test that never settles fails here instead of stalling the run; the slowest real test is under 2s.
+timeout = 15000
+
+preload = ["./src/test-setup.ts"]

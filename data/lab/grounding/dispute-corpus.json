@@ -1,0 +1,304 @@
+[
+	{
+		"id": "real-42.52",
+		"planted": false,
+		"claim": "Run Electrocute, Sudden Impact, Grisly Mementos, Treasure Hunter; Transcendence and Scorch. OP.GG lists shard IDs 5008, 5008, 5001.",
+		"passages": [
+			{
+				"id": "matchup-1",
+				"text": "{\"sample\": \"Emerald+ ranked (OP.GG default)\", \"champion\": \"Fizz\", \"opponent\": \"Syndra\", \"patch\": \"16.19\", \"patchNotesLabel\": \"26.19\", \"laneAdvantage\": \"Fizz\", \"soloKillAdvantage\": \"Fizz\", \"playStyle\": \"aggressive\", \"tip\": \"Close in on Syndra while using Playful/Trickster [E] to avoid Scatter the Weak (E). Fizz has the upper hand in combat if he get close to Syndra.\", \"starters\": [{\"items\": [\"Doran's Ring\", \"Health Potion\", \"Health Potion\"], \"games\": 1909, \"winRate\": 0.544}, {\"items\": [\"Dark Seal\", \"Refillable Potion\"], \"games\": 37, \"winRate\": 0.459}], \"core\": [{\"items\": [\"Lich Bane\", \"Zhonya's Hourglass\", \"Shadowflame\"], \"games\": 148, \"winRate\": 0.52}, {\"items\": [\"Lich Bane\", \"Shadowflame\", \"Zhonya's Hourglass\"], \"games\": 138, \"winRate\": 0.58}, {\"items\": [\"Lich Bane\", \"Zhonya's Hourglass\", \"Rabadon's Deathcap\"], \"games\": 94, \"winRate\": 0.543}], \"boots\": [{\"items\": [\"Sorcerer's Shoes\"], \"games\": 1318, \"winRate\": 0.533}, {\"items\": [\"Ionian Boots of Lucidity\"], \"games\": 525, \"winRate\": 0.568}], \"summoners\": [{\"items\": [\"Flash\", \"Ignite\"], \"games\": 1943, \"winRate\": 0.541}], \"runes\": [{\"primary\": [\"Electrocute\", \"Sudden Impact\", \"Grisly Mementos\", \"Treasure Hunter\"], \"secondary\": [\"Transcendence\", \"Scorch\"], \"shards\": [5008, 5008, 5001], \"games\": 748, \"winRate\": 0.539}, {\"primary\": [\"Electrocute\", \"Sudden Impact\", \"Grisly Mementos\", \"Treasure Hunter\"], \"secondary\": [\"Coup de Grace\", \"Triumph\"], \"shards\": [5008, 5008, 5001], \"games\": 437, \"winRate\": 0.517}], \"skillMax\": [{\"order\": [\"E\", \"W\", \"Q\"], \"games\": 1260, \"winRate\": 0.591}]}"
+			}
+		],
+		"label": {
+			"route": "grounded",
+			"source": "matchup-1",
+			"contradictedBy": null,
+			"reason": "matchup-1 lists exactly these runes and shards 5008, 5008, 5001."
+		}
+	},
+	{
+		"id": "real-43.61",
+		"planted": false,
+		"claim": "OP.GG's most-played listed core: Lich Bane \u2192 Zhonya's Hourglass \u2192 Shadowflame.",
+		"passages": [
+			{
+				"id": "matchup-1",
+				"text": "{\"sample\": \"Emerald+ ranked (OP.GG default)\", \"champion\": \"Fizz\", \"opponent\": \"Zed\", \"patch\": \"16.19\", \"patchNotesLabel\": \"26.19\", \"laneAdvantage\": \"EVEN\", \"soloKillAdvantage\": \"Fizz\", \"playStyle\": \"aggressive\", \"tip\": \"Try to engage by avoiding most of Zed\\u2019s combo with Playful/Trickster [E]. Purchase Seeker\\u2019s Armguard to lane a bit safer.\", \"starters\": [{\"items\": [\"Doran's Ring\", \"Health Potion\", \"Health Potion\"], \"games\": 1923, \"winRate\": 0.53}, {\"items\": [\"Dark Seal\", \"Health Potion\", \"Health Potion\", \"Health Potion\"], \"games\": 45, \"winRate\": 0.489}], \"core\": [{\"items\": [\"Lich Bane\", \"Zhonya's Hourglass\", \"Shadowflame\"], \"games\": 243, \"winRate\": 0.539}, {\"items\": [\"Lich Bane\", \"Zhonya's Hourglass\", \"Rabadon's Deathcap\"], \"games\": 123, \"winRate\": 0.528}, {\"items\": [\"Lich Bane\", \"Shadowflame\", \"Zhonya's Hourglass\"], \"games\": 108, \"winRate\": 0.574}], \"boots\": [{\"items\": [\"Sorcerer's Shoes\"], \"games\": 1275, \"winRate\": 0.533}, {\"items\": [\"Ionian Boots of Lucidity\"], \"games\": 554, \"winRate\": 0.527}], \"summoners\": [{\"items\": [\"Flash\", \"Ignite\"], \"games\": 1993, \"winRate\": 0.529}], \"runes\": [{\"primary\": [\"Electrocute\", \"Sudden Impact\", \"Grisly Mementos\", \"Treasure Hunter\"], \"secondary\": [\"Transcendence\", \"Scorch\"], \"shards\": [5008, 5008, 5001], \"games\": 805, \"winRate\": 0.501}, {\"primary\": [\"Electrocute\", \"Sudden Impact\", \"Grisly Mementos\", \"Treasure Hunter\"], \"secondary\": [\"Coup de Grace\", \"Triumph\"], \"shards\": [5008, 5008, 5001], \"games\": 414, \"winRate\": 0.522}], \"skillMax\": [{\"order\": [\"E\", \"W\", \"Q\"], \"games\": 1180, \"winRate\": 0.589}]}"
+			}
+		],
+		"label": {
+			"route": "grounded",
+			"source": "matchup-1",
+			"contradictedBy": null,
+			"reason": "matchup-1 core list puts Lich Bane, Zhonya's Hourglass, Shadowflame first with the most games (243)."
+		}
+	},
+	{
+		"id": "real-43.58",
+		"planted": false,
+		"claim": "Buy Void Staff against stacked magic resistance: percentage magic penetration.",
+		"passages": [
+			{
+				"id": "matchup-1",
+				"text": "{\"sample\": \"Emerald+ ranked (OP.GG default)\", \"champion\": \"Fizz\", \"opponent\": \"Zed\", \"patch\": \"16.19\", \"patchNotesLabel\": \"26.19\", \"laneAdvantage\": \"EVEN\", \"soloKillAdvantage\": \"Fizz\", \"playStyle\": \"aggressive\", \"tip\": \"Try to engage by avoiding most of Zed\\u2019s combo with Playful/Trickster [E]. Purchase Seeker\\u2019s Armguard to lane a bit safer.\", \"starters\": [{\"items\": [\"Doran's Ring\", \"Health Potion\", \"Health Potion\"], \"games\": 1923, \"winRate\": 0.53}, {\"items\": [\"Dark Seal\", \"Health Potion\", \"Health Potion\", \"Health Potion\"], \"games\": 45, \"winRate\": 0.489}], \"core\": [{\"items\": [\"Lich Bane\", \"Zhonya's Hourglass\", \"Shadowflame\"], \"games\": 243, \"winRate\": 0.539}, {\"items\": [\"Lich Bane\", \"Zhonya's Hourglass\", \"Rabadon's Deathcap\"], \"games\": 123, \"winRate\": 0.528}, {\"items\": [\"Lich Bane\", \"Shadowflame\", \"Zhonya's Hourglass\"], \"games\": 108, \"winRate\": 0.574}], \"boots\": [{\"items\": [\"Sorcerer's Shoes\"], \"games\": 1275, \"winRate\": 0.533}, {\"items\": [\"Ionian Boots of Lucidity\"], \"games\": 554, \"winRate\": 0.527}], \"summoners\": [{\"items\": [\"Flash\", \"Ignite\"], \"games\": 1993, \"winRate\": 0.529}], \"runes\": [{\"primary\": [\"Electrocute\", \"Sudden Impact\", \"Grisly Mementos\", \"Treasure Hunter\"], \"secondary\": [\"Transcendence\", \"Scorch\"], \"shards\": [5008, 5008, 5001], \"games\": 805, \"winRate\": 0.501}, {\"primary\": [\"Electrocute\", \"Sudden Impact\", \"Grisly Mementos\", \"Treasure Hunter\"], \"secondary\": [\"Coup de Grace\", \"Triumph\"], \"shards\": [5008, 5008, 5001], \"games\": 414, \"winRate\": 0.522}], \"skillMax\": [{\"order\": [\"E\", \"W\", \"Q\"], \"games\": 1180, \"winRate\": 0.589}]}"
+			},
+			{
+				"id": "game-1",
+				"text": "Adaptive Force: not found in Data Dragon; Health Scaling: not found in Data Dragon"
+			}
+		],
+		"label": {
+			"route": "unsupported",
+			"source": null,
+			"contradictedBy": null,
+			"reason": "No passage mentions Void Staff or stacked magic resistance."
+		}
+	},
+	{
+		"id": "real-46.66",
+		"planted": false,
+		"claim": "Take Flash + Ignite on Fizz mid, the default summoner setup in OP.GG's Emerald+ sample.",
+		"passages": [
+			{
+				"id": "game-1",
+				"text": "Ignite: summoner spell present in patch 16.19.1; Flash: summoner spell present in patch 16.19.1; Teleport: summoner spell present in patch 16.19.1"
+			}
+		],
+		"label": {
+			"route": "unsupported",
+			"source": null,
+			"contradictedBy": null,
+			"reason": "game-1 only says the spells exist in the patch; nothing says they are the default setup in OP.GG's sample."
+		}
+	},
+	{
+		"id": "real-38.17",
+		"planted": false,
+		"claim": "MOBA Champion recommends buying boots early against Syndra to avoid her spells.",
+		"passages": [
+			{
+				"id": "matchup-1",
+				"text": "{\"sample\": \"Emerald+ ranked (OP.GG default)\", \"champion\": \"Fizz\", \"opponent\": \"Syndra\", \"patch\": \"16.19\", \"patchNotesLabel\": \"26.19\", \"laneAdvantage\": \"Fizz\", \"soloKillAdvantage\": \"Fizz\", \"playStyle\": \"aggressive\", \"tip\": \"Close in on Syndra while using Playful/Trickster [E] to avoid Scatter the Weak (E). Fizz has the upper hand in combat if he get close to Syndra.\", \"starters\": [{\"items\": [\"Doran's Ring\", \"Health Potion\", \"Health Potion\"], \"games\": 1894, \"winRate\": 0.544}, {\"items\": [\"Dark Seal\", \"Refillable Potion\"], \"games\": 37, \"winRate\": 0.459}], \"core\": [{\"items\": [\"Lich Bane\", \"Zhonya's Hourglass\", \"Shadowflame\"], \"games\": 147, \"winRate\": 0.517}, {\"items\": [\"Lich Bane\", \"Shadowflame\", \"Zhonya's Hourglass\"], \"games\": 137, \"winRate\": 0.584}, {\"items\": [\"Lich Bane\", \"Zhonya's Hourglass\", \"Rabadon's Deathcap\"], \"games\": 93, \"winRate\": 0.548}], \"boots\": [{\"items\": [\"Sorcerer's Shoes\"], \"games\": 1307, \"winRate\": 0.535}, {\"items\": [\"Ionian Boots of Lucidity\"], \"games\": 522, \"winRate\": 0.565}], \"summoners\": [{\"items\": [\"Flash\", \"Ignite\"], \"games\": 1929, \"winRate\": 0.541}], \"runes\": [{\"primary\": [\"Electrocute\", \"Sudden Impact\", \"Grisly Mementos\", \"Treasure Hunter\"], \"secondary\": [\"Transcendence\", \"Scorch\"], \"shards\": [5008, 5008, 5001], \"games\": 731, \"winRate\": 0.542}, {\"primary\": [\"Electrocute\", \"Sudden Impact\", \"Grisly Mementos\", \"Treasure Hunter\"], \"secondary\": [\"Coup de Grace\", \"Triumph\"], \"shards\": [5008, 5008, 5001], \"games\": 426, \"winRate\": 0.521}], \"skillMax\": [{\"order\": [\"E\", \"W\", \"Q\"], \"games\": 1249, \"winRate\": 0.592}]}"
+			},
+			{
+				"id": "web-2",
+				"text": "Fizz vs Syndra Counter Build - MOBA Champion: Get boots early when playing against Syndra, they'll help you avoid many of her spells.\nAttack Syndra after she's used Scatter the Weak, it has a long cooldown so she'll be vulnerable.\n...\nThe top items to have in your Fizz versus Syndra build include Rabadon's Deathcap, Lich Bane, and Stormsurge.\n\u2026"
+			}
+		],
+		"label": {
+			"route": "grounded",
+			"source": "web-2",
+			"contradictedBy": null,
+			"reason": "web-2 says to get boots early against Syndra to avoid her spells."
+		}
+	},
+	{
+		"id": "real-39.26",
+		"planted": false,
+		"claim": "First back recommendation: crash before recalling; buy Dark Seal and Boots, then build toward Lich Bane. Do not stay for the purchase while too low to contest.",
+		"passages": [
+			{
+				"id": "matchup-1",
+				"text": "{\"sample\": \"Emerald+ ranked (OP.GG default)\", \"champion\": \"Fizz\", \"opponent\": \"Syndra\", \"patch\": \"16.19\", \"patchNotesLabel\": \"26.19\", \"laneAdvantage\": \"Fizz\", \"soloKillAdvantage\": \"Fizz\", \"playStyle\": \"aggressive\", \"tip\": \"Close in on Syndra while using Playful/Trickster [E] to avoid Scatter the Weak (E). Fizz has the upper hand in combat if he get close to Syndra.\", \"starters\": [{\"items\": [\"Doran's Ring\", \"Health Potion\", \"Health Potion\"], \"games\": 1894, \"winRate\": 0.544}, {\"items\": [\"Dark Seal\", \"Refillable Potion\"], \"games\": 37, \"winRate\": 0.459}], \"core\": [{\"items\": [\"Lich Bane\", \"Zhonya's Hourglass\", \"Shadowflame\"], \"games\": 147, \"winRate\": 0.517}, {\"items\": [\"Lich Bane\", \"Shadowflame\", \"Zhonya's Hourglass\"], \"games\": 137, \"winRate\": 0.584}, {\"items\": [\"Lich Bane\", \"Zhonya's Hourglass\", \"Rabadon's Deathcap\"], \"games\": 93, \"winRate\": 0.548}], \"boots\": [{\"items\": [\"Sorcerer's Shoes\"], \"games\": 1307, \"winRate\": 0.535}, {\"items\": [\"Ionian Boots of Lucidity\"], \"games\": 522, \"winRate\": 0.565}], \"summoners\": [{\"items\": [\"Flash\", \"Ignite\"], \"games\": 1929, \"winRate\": 0.541}], \"runes\": [{\"primary\": [\"Electrocute\", \"Sudden Impact\", \"Grisly Mementos\", \"Treasure Hunter\"], \"secondary\": [\"Transcendence\", \"Scorch\"], \"shards\": [5008, 5008, 5001], \"games\": 743, \"winRate\": 0.541}, {\"primary\": [\"Electrocute\", \"Sudden Impact\", \"Grisly Mementos\", \"Treasure Hunter\"], \"secondary\": [\"Coup de Grace\", \"Triumph\"], \"shards\": [5008, 5008, 5001], \"games\": 434, \"winRate\": 0.516}], \"skillMax\": [{\"order\": [\"E\", \"W\", \"Q\"], \"games\": 1249, \"winRate\": 0.592}]}"
+			},
+			{
+				"id": "game-1",
+				"text": "Fizz: the Tidal Trickster. Passive Nimble Fighter. Q Urchin Strike: cd 8/7.5/7/6.5/6, cost 50/50/50/50/50, range 550; W Seastone Trident: cd 7/6/5/4/3, cost 30/40/50/60/70, range 600; E Playful / Trickster: cd 16/14/12/10/8, cost 75/80/85/90/95, range 400; R Chum the Waters: cd 120/100/80, cost 100/100/100, range 1300; Syndra: the Dark Sovereign. Passive Transcendent. Q Dark Sphere: cd 7/7/7/7/7, cost 40/45/50/55/60, range 800; W Force of Will: cd 13/12/11/10/9, cost 60/70/80/90/100, range 925; E Scatter the Weak: cd 15/15/15/15/15, cost 50/50/50/50/50, range 650; R Unleashed Power: cd 120/100/80, cost 100/100/100, range 675"
+			},
+			{
+				"id": "web-1",
+				"text": "We Completely Broke This Syndra Player | Fizz Mid vs Syndra 15.15: I'm going to look to E these first three minions.\nI say if she gives us the hit onto her, we would\n...\n{ts:106} We really want to stay as healthy as possible till about level three.\nAnd then once we get level three, we can\n{ts:111} look to be a little bit more aggressive in our trading patterns."
+			},
+			{
+				"id": "web-3",
+				"text": "How to Play Syndra vs. Fizz (Laning Deep Dive): {ts:15} syndra what you really want to take is electrocute and the reason being is that because your versing fizz who's a melee\n{ts:21} champion and you out range you can proc your electrocute a lot throughout this Lane\n...\n{ts:57} and play super aggressive so first thing that the first objective t\u2026"
+			}
+		],
+		"label": {
+			"route": "unsupported",
+			"source": null,
+			"contradictedBy": null,
+			"reason": "No passage tells the player to buy Dark Seal and Boots on first back (matchup-1 lists Dark Seal as a minor 37-game starter only)."
+		}
+	},
+	{
+		"id": "real-44.65",
+		"planted": false,
+		"claim": "Keep E > W > Q skill priority; no verified patch evidence justifies changing the play pattern.",
+		"passages": [
+			{
+				"id": "web-1",
+				"text": "Lich Bane LoL Classic - Builds, Stats & Cost: +80AP+250Mana+5Move%Spellblade of The Arcane: After using an ability, the next Basic Attack deals bonus magic damage On-Hit (2 second cooldown).uniqueSpellblade Damage: 50 (+75% AP)unique3,000gtotal"
+			},
+			{
+				"id": "web-2",
+				"text": "Lich Bane LoL Item - Stats, Cost & Build Path: Lich Bane is winning less this patch: 51.21% in Patch 26.19, down 0.40 points from 51.61% in Patch 26.18.\nThis is observed performance across ranked games, not a changelog entry \u2014 MetaBot does not track Riot\u2019s item notes.\nPatch 26.19 win rate51.21%\n...\nChange (points)-0.40\n...\nIn Patch 26.19, Lich \u2026"
+			},
+			{
+				"id": "game-1",
+				"text": "Lich Bane: 2900 gold. Grants a bonus to next attack after spell cast 100 Ability Power 6% Move Speed 10 Ability Haste Spellblade After using an Ability, your next Attack deals bonus magic damage On-Hit .; Zhonya's Hourglass: 3250 gold. Activate to become invincible but unable to take actions 105 Ability Power 50 Armor Time Stop Enter Stasis for 2.5 seconds.; Shadowflame: 3200 gold.  110 Ability Power 15 Magic Penetration Cinderbloom Magic and true damage Critically Strike enemies below 40% Health, dealing 20% increased damage.; Sorcerer's Shoes: 1100 gold. Enhances Move Speed and magic damage 12 Magic Penetration 45 Move Speed; Rabadon's Deathcap: 3500 gold. Massively increases Ability Power 130 Ability Power Magical Opus Increases your total Ability Power by 30% .; Doran's Ring: 400 gold. Good starting item for casters 18 Ability Power 90 Health Drain Restore 1 Mana every second, increased to 2 Mana per second for 5 seconds after dealing damage to an enemy champion. If you can't gain Mana, heal for 45% of this value instead. Helping Hand Attacks deal 5 bonus physical damage to minions.; Electrocute: rune present in patch 16.19.1; Sudden Impact: rune present in patch 16.19.1; Grisly Mementos: rune present in patch 16.19.1; Treasure Hunter: rune present in patch 16.19.1; Transcendence: rune present in patch 16.19.1; Scorch: rune present in patch 16.19.1"
+			}
+		],
+		"label": {
+			"route": "unsupported",
+			"source": null,
+			"contradictedBy": null,
+			"reason": "The passages cover Lich Bane stats; none gives a skill order."
+		}
+	},
+	{
+		"id": "real-37.5",
+		"planted": false,
+		"claim": "Base cooldowns, before haste: Syndra E 15 seconds, Q 7, rank-one W 13, R 120; Fizz Q 8, W 7, E 16/14/12 across its first three ranks, rank-one R 120.",
+		"passages": [
+			{
+				"id": "matchup-1",
+				"text": "{\"sample\": \"Emerald+ ranked (OP.GG default)\", \"champion\": \"Fizz\", \"opponent\": \"Syndra\", \"patch\": \"16.19\", \"patchNotesLabel\": \"26.19\", \"laneAdvantage\": \"Fizz\", \"soloKillAdvantage\": \"Fizz\", \"playStyle\": \"aggressive\", \"tip\": \"Close in on Syndra while using Playful/Trickster [E] to avoid Scatter the Weak (E). Fizz has the upper hand in combat if he get close to Syndra.\", \"starters\": [{\"items\": [\"Doran's Ring\", \"Health Potion\", \"Health Potion\"], \"games\": 1894, \"winRate\": 0.544}, {\"items\": [\"Dark Seal\", \"Refillable Potion\"], \"games\": 37, \"winRate\": 0.459}], \"core\": [{\"items\": [\"Lich Bane\", \"Zhonya's Hourglass\", \"Shadowflame\"], \"games\": 147, \"winRate\": 0.517}, {\"items\": [\"Lich Bane\", \"Shadowflame\", \"Zhonya's Hourglass\"], \"games\": 137, \"winRate\": 0.584}, {\"items\": [\"Lich Bane\", \"Zhonya's Hourglass\", \"Rabadon's Deathcap\"], \"games\": 93, \"winRate\": 0.548}], \"boots\": [{\"items\": [\"Sorcerer's Shoes\"], \"games\": 1307, \"winRate\": 0.535}, {\"items\": [\"Ionian Boots of Lucidity\"], \"games\": 522, \"winRate\": 0.565}], \"summoners\": [{\"items\": [\"Flash\", \"Ignite\"], \"games\": 1929, \"winRate\": 0.541}], \"runes\": [{\"primary\": [\"Electrocute\", \"Sudden Impact\", \"Grisly Mementos\", \"Treasure Hunter\"], \"secondary\": [\"Transcendence\", \"Scorch\"], \"shards\": [5008, 5008, 5001], \"games\": 731, \"winRate\": 0.542}, {\"primary\": [\"Electrocute\", \"Sudden Impact\", \"Grisly Mementos\", \"Treasure Hunter\"], \"secondary\": [\"Coup de Grace\", \"Triumph\"], \"shards\": [5008, 5008, 5001], \"games\": 426, \"winRate\": 0.521}], \"skillMax\": [{\"order\": [\"E\", \"W\", \"Q\"], \"games\": 1249, \"winRate\": 0.592}]}"
+			},
+			{
+				"id": "game-1",
+				"text": "Fizz: the Tidal Trickster. Passive Nimble Fighter. Q Urchin Strike: cd 8/7.5/7/6.5/6, cost 50/50/50/50/50, range 550; W Seastone Trident: cd 7/6/5/4/3, cost 30/40/50/60/70, range 600; E Playful / Trickster: cd 16/14/12/10/8, cost 75/80/85/90/95, range 400; R Chum the Waters: cd 120/100/80, cost 100/100/100, range 1300; Syndra: the Dark Sovereign. Passive Transcendent. Q Dark Sphere: cd 7/7/7/7/7, cost 40/45/50/55/60, range 800; W Force of Will: cd 13/12/11/10/9, cost 60/70/80/90/100, range 925; E Scatter the Weak: cd 15/15/15/15/15, cost 50/50/50/50/50, range 650; R Unleashed Power: cd 120/100/80, cost 100/100/100, range 675"
+			},
+			{
+				"id": "web-2",
+				"text": "Fizz vs Syndra Counter Build - MOBA Champion: "
+			}
+		],
+		"label": {
+			"route": "grounded",
+			"source": "game-1",
+			"contradictedBy": null,
+			"reason": "game-1 lists every cooldown the claim gives (Syndra Q 7, W 13, E 15, R 120; Fizz Q 8, W 7, E 16/14/12, R 120)."
+		}
+	},
+	{
+		"id": "real-41.43",
+		"planted": false,
+		"claim": "Level 3: take Q to complete your basic kit. Close into melee range; use Playful/Trickster to avoid Scatter the Weak, as OP.GG recommends.",
+		"passages": [
+			{
+				"id": "matchup-1",
+				"text": "{\"sample\": \"Emerald+ ranked (OP.GG default)\", \"champion\": \"Fizz\", \"opponent\": \"Syndra\", \"patch\": \"16.19\", \"patchNotesLabel\": \"26.19\", \"laneAdvantage\": \"Fizz\", \"soloKillAdvantage\": \"Fizz\", \"playStyle\": \"aggressive\", \"tip\": \"Close in on Syndra while using Playful/Trickster [E] to avoid Scatter the Weak (E). Fizz has the upper hand in combat if he get close to Syndra.\", \"starters\": [{\"items\": [\"Doran's Ring\", \"Health Potion\", \"Health Potion\"], \"games\": 1894, \"winRate\": 0.544}, {\"items\": [\"Dark Seal\", \"Refillable Potion\"], \"games\": 37, \"winRate\": 0.459}], \"core\": [{\"items\": [\"Lich Bane\", \"Zhonya's Hourglass\", \"Shadowflame\"], \"games\": 147, \"winRate\": 0.517}, {\"items\": [\"Lich Bane\", \"Shadowflame\", \"Zhonya's Hourglass\"], \"games\": 137, \"winRate\": 0.584}, {\"items\": [\"Lich Bane\", \"Zhonya's Hourglass\", \"Rabadon's Deathcap\"], \"games\": 93, \"winRate\": 0.548}], \"boots\": [{\"items\": [\"Sorcerer's Shoes\"], \"games\": 1307, \"winRate\": 0.535}, {\"items\": [\"Ionian Boots of Lucidity\"], \"games\": 522, \"winRate\": 0.565}], \"summoners\": [{\"items\": [\"Flash\", \"Ignite\"], \"games\": 1929, \"winRate\": 0.541}], \"runes\": [{\"primary\": [\"Electrocute\", \"Sudden Impact\", \"Grisly Mementos\", \"Treasure Hunter\"], \"secondary\": [\"Transcendence\", \"Scorch\"], \"shards\": [5008, 5008, 5001], \"games\": 743, \"winRate\": 0.541}, {\"primary\": [\"Electrocute\", \"Sudden Impact\", \"Grisly Mementos\", \"Treasure Hunter\"], \"secondary\": [\"Coup de Grace\", \"Triumph\"], \"shards\": [5008, 5008, 5001], \"games\": 434, \"winRate\": 0.516}], \"skillMax\": [{\"order\": [\"E\", \"W\", \"Q\"], \"games\": 1249, \"winRate\": 0.592}]}"
+			},
+			{
+				"id": "game-1",
+				"text": "Fizz: the Tidal Trickster. Passive Nimble Fighter. Q Urchin Strike: cd 8/7.5/7/6.5/6, cost 50/50/50/50/50, range 550; W Seastone Trident: cd 7/6/5/4/3, cost 30/40/50/60/70, range 600; E Playful / Trickster: cd 16/14/12/10/8, cost 75/80/85/90/95, range 400; R Chum the Waters: cd 120/100/80, cost 100/100/100, range 1300; Syndra: the Dark Sovereign. Passive Transcendent. Q Dark Sphere: cd 7/7/7/7/7, cost 40/45/50/55/60, range 800; W Force of Will: cd 13/12/11/10/9, cost 60/70/80/90/100, range 925; E Scatter the Weak: cd 15/15/15/15/15, cost 50/50/50/50/50, range 650; R Unleashed Power: cd 120/100/80, cost 100/100/100, range 675"
+			},
+			{
+				"id": "web-6",
+				"text": "We Completely Broke This Syndra Player | Fizz Mid vs Syndra 15.15: I'm going to look to E these first three minions.\nI say if she gives us the hit onto her, we would\n{ts:78} have taken it.\n...\n{ts:106} We really want to stay as healthy as possible till about level three.\nAnd then once we get level three, we can\n{ts:111} look to be a little bit more aggressive in o\u2026"
+			}
+		],
+		"label": {
+			"route": "grounded",
+			"source": "matchup-1",
+			"contradictedBy": null,
+			"reason": "matchup-1 tip: close in on Syndra using Playful/Trickster to avoid Scatter the Weak; nothing opposes it."
+		}
+	},
+	{
+		"id": "real-43.53",
+		"planted": false,
+		"claim": "Start Doran's Ring + 2 Health Potions: mana sustain, health, and lane recovery.",
+		"passages": [
+			{
+				"id": "matchup-1",
+				"text": "{\"sample\": \"Emerald+ ranked (OP.GG default)\", \"champion\": \"Fizz\", \"opponent\": \"Zed\", \"patch\": \"16.19\", \"patchNotesLabel\": \"26.19\", \"laneAdvantage\": \"EVEN\", \"soloKillAdvantage\": \"Fizz\", \"playStyle\": \"aggressive\", \"tip\": \"Try to engage by avoiding most of Zed\\u2019s combo with Playful/Trickster [E]. Purchase Seeker\\u2019s Armguard to lane a bit safer.\", \"starters\": [{\"items\": [\"Doran's Ring\", \"Health Potion\", \"Health Potion\"], \"games\": 1923, \"winRate\": 0.53}, {\"items\": [\"Dark Seal\", \"Health Potion\", \"Health Potion\", \"Health Potion\"], \"games\": 45, \"winRate\": 0.489}], \"core\": [{\"items\": [\"Lich Bane\", \"Zhonya's Hourglass\", \"Shadowflame\"], \"games\": 243, \"winRate\": 0.539}, {\"items\": [\"Lich Bane\", \"Zhonya's Hourglass\", \"Rabadon's Deathcap\"], \"games\": 123, \"winRate\": 0.528}, {\"items\": [\"Lich Bane\", \"Shadowflame\", \"Zhonya's Hourglass\"], \"games\": 108, \"winRate\": 0.574}], \"boots\": [{\"items\": [\"Sorcerer's Shoes\"], \"games\": 1275, \"winRate\": 0.533}, {\"items\": [\"Ionian Boots of Lucidity\"], \"games\": 554, \"winRate\": 0.527}], \"summoners\": [{\"items\": [\"Flash\", \"Ignite\"], \"games\": 1993, \"winRate\": 0.529}], \"runes\": [{\"primary\": [\"Electrocute\", \"Sudden Impact\", \"Grisly Mementos\", \"Treasure Hunter\"], \"secondary\": [\"Transcendence\", \"Scorch\"], \"shards\": [5008, 5008, 5001], \"games\": 805, \"winRate\": 0.501}, {\"primary\": [\"Electrocute\", \"Sudden Impact\", \"Grisly Mementos\", \"Treasure Hunter\"], \"secondary\": [\"Coup de Grace\", \"Triumph\"], \"shards\": [5008, 5008, 5001], \"games\": 414, \"winRate\": 0.522}], \"skillMax\": [{\"order\": [\"E\", \"W\", \"Q\"], \"games\": 1180, \"winRate\": 0.589}]}"
+			},
+			{
+				"id": "game-1",
+				"text": "Adaptive Force: not found in Data Dragon; Health Scaling: not found in Data Dragon"
+			}
+		],
+		"label": {
+			"route": "grounded",
+			"source": "matchup-1",
+			"contradictedBy": null,
+			"reason": "matchup-1 lists Doran's Ring plus two Health Potions as the top starter (1923 games)."
+		}
+	},
+	{
+		"id": "real-38.18",
+		"planted": false,
+		"claim": "OP.GG lists Lich Bane first in its matchup core builds and E > W > Q for skill max.",
+		"passages": [
+			{
+				"id": "matchup-1",
+				"text": "{\"sample\": \"Emerald+ ranked (OP.GG default)\", \"champion\": \"Fizz\", \"opponent\": \"Syndra\", \"patch\": \"16.19\", \"patchNotesLabel\": \"26.19\", \"laneAdvantage\": \"Fizz\", \"soloKillAdvantage\": \"Fizz\", \"playStyle\": \"aggressive\", \"tip\": \"Close in on Syndra while using Playful/Trickster [E] to avoid Scatter the Weak (E). Fizz has the upper hand in combat if he get close to Syndra.\", \"starters\": [{\"items\": [\"Doran's Ring\", \"Health Potion\", \"Health Potion\"], \"games\": 1894, \"winRate\": 0.544}, {\"items\": [\"Dark Seal\", \"Refillable Potion\"], \"games\": 37, \"winRate\": 0.459}], \"core\": [{\"items\": [\"Lich Bane\", \"Zhonya's Hourglass\", \"Shadowflame\"], \"games\": 147, \"winRate\": 0.517}, {\"items\": [\"Lich Bane\", \"Shadowflame\", \"Zhonya's Hourglass\"], \"games\": 137, \"winRate\": 0.584}, {\"items\": [\"Lich Bane\", \"Zhonya's Hourglass\", \"Rabadon's Deathcap\"], \"games\": 93, \"winRate\": 0.548}], \"boots\": [{\"items\": [\"Sorcerer's Shoes\"], \"games\": 1307, \"winRate\": 0.535}, {\"items\": [\"Ionian Boots of Lucidity\"], \"games\": 522, \"winRate\": 0.565}], \"summoners\": [{\"items\": [\"Flash\", \"Ignite\"], \"games\": 1929, \"winRate\": 0.541}], \"runes\": [{\"primary\": [\"Electrocute\", \"Sudden Impact\", \"Grisly Mementos\", \"Treasure Hunter\"], \"secondary\": [\"Transcendence\", \"Scorch\"], \"shards\": [5008, 5008, 5001], \"games\": 731, \"winRate\": 0.542}, {\"primary\": [\"Electrocute\", \"Sudden Impact\", \"Grisly Mementos\", \"Treasure Hunter\"], \"secondary\": [\"Coup de Grace\", \"Triumph\"], \"shards\": [5008, 5008, 5001], \"games\": 426, \"winRate\": 0.521}], \"skillMax\": [{\"order\": [\"E\", \"W\", \"Q\"], \"games\": 1249, \"winRate\": 0.592}]}"
+			},
+			{
+				"id": "web-2",
+				"text": "Fizz vs Syndra Counter Build - MOBA Champion: Get boots early when playing against Syndra, they'll help you avoid many of her spells.\nAttack Syndra after she's used Scatter the Weak, it has a long cooldown so she'll be vulnerable.\n...\nThe top items to have in your Fizz versus Syndra build include Rabadon's Deathcap, Lich Bane, and Stormsurge.\n\u2026"
+			}
+		],
+		"label": {
+			"route": "grounded",
+			"source": "matchup-1",
+			"contradictedBy": null,
+			"reason": "matchup-1 lists Lich Bane first in core builds and E, W, Q for skill max."
+		}
+	},
+	{
+		"id": "d1",
+		"planted": true,
+		"claim": "A guide advises allowing Ahri to push early and last-hitting with Bouncing Blade rather than trying to outpush.",
+		"passages": [
+			{
+				"id": "web-2",
+				"text": "Katarina vs Ahri guide: let Ahri push the first waves and last-hit with Bouncing Blade; do not try to outpush her, you lose the trade and the HP."
+			},
+			{
+				"id": "video-1",
+				"text": "If Ahri shoves the wave you want to go with it: use Bouncing Blade on cannons and match her push with Shunpo so she cannot crash the wave into your tower."
+			}
+		],
+		"label": {
+			"route": "disputed",
+			"source": "web-2",
+			"contradictedBy": "video-1",
+			"reason": "web-2 states the claim; video-1 says to match her push instead of conceding it."
+		}
+	},
+	{
+		"id": "d2",
+		"planted": true,
+		"claim": "Max E first on Fizz.",
+		"passages": [
+			{
+				"id": "web-1",
+				"text": "Fizz ability max order: E, then W, then Q. 63% of 2,066 games."
+			},
+			{
+				"id": "meta-1",
+				"text": "Fizz mid this patch: W max first is the highest win rate order at 54.2% over 1,310 games; E first is behind at 50.8%."
+			}
+		],
+		"label": {
+			"route": "disputed",
+			"source": "web-1",
+			"contradictedBy": "meta-1",
+			"reason": "web-1 states E first; meta-1 says W first wins more."
+		}
+	},
+	{
+		"id": "d4",
+		"planted": true,
+		"claim": "Take Ignite on Katarina mid into Ahri.",
+		"passages": [
+			{
+				"id": "web-1",
+				"text": "Katarina mid summoners: Flash and Ignite is the standard setup into Ahri."
+			},
+			{
+				"id": "web-3",
+				"text": "Into Ahri take Teleport instead of Ignite: her sustain makes Ignite weak in this matchup and Teleport wins the side waves."
+			}
+		],
+		"label": {
+			"route": "disputed",
+			"source": "web-1",
+			"contradictedBy": "web-3",
+			"reason": "web-1 states Ignite; web-3 says to take Teleport instead."
+		}
+	}
+]

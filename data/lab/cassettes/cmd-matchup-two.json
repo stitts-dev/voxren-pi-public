@@ -1,0 +1,981 @@
+{
+	"id": "cmd-matchup-two",
+	"turns": [
+		{
+			"thinking": [
+				"**Gathering web-video ability facts**",
+				"**Checking first-back item**\n\n**Checking Lich Bane components**",
+				"**Choosing the first-back item**",
+				"**Organizing levels 1–6**\n\n**Refining charm dodge**"
+			],
+			"text": "",
+			"calls": [
+				{
+					"name": "voxren_meta_research",
+					"args": {
+						"query_type": "matchup",
+						"champion": "Katarina",
+						"opponent": "Ahri",
+						"position": "middle"
+					}
+				}
+			]
+		},
+		{
+			"thinking": [],
+			"text": "",
+			"calls": [
+				{
+					"name": "web_search",
+					"args": {
+						"query": "Katarina versus Ahri mid matchup guide charm shunpo dagger trades level 1 2 3 first back",
+						"domains": [
+							"mobafire.com"
+						],
+						"max_results": 5
+					}
+				},
+				{
+					"name": "voxren_video_research",
+					"args": {
+						"query": "Katarina vs Ahri matchup guide",
+						"title_terms": [
+							"Katarina",
+							"Ahri"
+						],
+						"focus": "early levels trade Ahri charm after Shunpo, dagger placement, all-in and first back"
+					}
+				},
+				{
+					"name": "voxren_game_facts",
+					"args": {
+						"entities": [
+							{
+								"kind": "champion",
+								"name": "Ahri"
+							},
+							{
+								"kind": "champion",
+								"name": "Katarina"
+							},
+							{
+								"kind": "item",
+								"name": "Lich Bane"
+							},
+							{
+								"kind": "item",
+								"name": "Hextech Alternator"
+							},
+							{
+								"kind": "item",
+								"name": "Dark Seal"
+							},
+							{
+								"kind": "item",
+								"name": "Sorcerer's Shoes"
+							}
+						],
+						"detail": "compact"
+					}
+				}
+			]
+		},
+		{
+			"thinking": [],
+			"text": "",
+			"calls": [
+				{
+					"name": "voxren_game_facts",
+					"args": {
+						"entities": [
+							{
+								"kind": "item",
+								"name": "Aether Wisp"
+							},
+							{
+								"kind": "item",
+								"name": "Sheen"
+							},
+							{
+								"kind": "item",
+								"name": "Amplifying Tome"
+							},
+							{
+								"kind": "item",
+								"name": "Boots"
+							}
+						],
+						"detail": "compact"
+					}
+				}
+			]
+		},
+		{
+			"thinking": [],
+			"text": "",
+			"calls": [
+				{
+					"name": "voxren_strategy_frame",
+					"args": {
+						"question": "Katarina mid into Ahri on patch 26.19: lane plan levels 1-6, key cooldown, runes, summoners, build, first back.",
+						"claims": [
+							"Ahri's Charm has a 12-second cooldown at every rank.",
+							"Ahri's Orb of Deception has a 7-second cooldown at every rank.",
+							"Katarina's Shunpo has a 12-second base cooldown at rank one.",
+							"In this matchup the most-played Electrocute rune page uses Sudden Impact, Grisly Mementos, Relentless Hunter, Coup de Grace and Triumph with double Adaptive Force and Health Scaling.",
+							"Flash and Ignite are the most-played summoner pair in Katarina versus Ahri.",
+							"Dark Seal and Refillable Potion are the most-played starting items in this matchup.",
+							"Aether Wisp costs 900 gold, grants ability power and move speed.",
+							"Lich Bane, Shadowflame and Zhonya's Hourglass are a listed Katarina versus Ahri core, with Sorcerer's Shoes the most-played boots."
+						],
+						"evidence": [
+							{
+								"id": "matchup-1"
+							},
+							{
+								"id": "game-1"
+							},
+							{
+								"id": "game-2"
+							},
+							{
+								"id": "web-1"
+							},
+							{
+								"id": "web-3"
+							},
+							{
+								"id": "video-1"
+							},
+							{
+								"id": "video-2"
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"thinking": [],
+			"text": "**Charm decides the lane.** Ahri can aim it where Shunpo lands, so threaten a dagger pickup without taking it. When Charm misses, **Shunpo in**, trade, then leave before her return damage. Its cooldown is 12 seconds; make that window count.\n\n- Level 1: **Take Q and farm safely.** Do not give up health to contest Ahri's faster push.\n- Levels 2–5: With Q then E, **trade after Charm misses**, especially if Orb of Deception also misses. Use W once available to set up another dagger, but do not Shunpo onto a dagger Ahri is already aiming at. If Charm stays up, hold the wave near your side and collect farm rather than forcing a crash.\n- Level 6: **All-in when Charm is down and Ahri is low enough to finish.** If Spirit Rush is available, expect her to escape the first commitment; take the short trade or force it out first. Do not channel Death Lotus into available Charm.\n\nRunes: Electrocute, Sudden Impact, Grisly Mementos, Relentless Hunter; Coup de Grace, Triumph; Adaptive Force, Adaptive Force, Health Scaling; Flash, Ignite  \nBuild: Dark Seal + Refillable Potion → Aether Wisp → Lich Bane → Sorcerer's Shoes → Shadowflame → Zhonya's Hourglass  \nSkills: Q > E > W, then max Q > E > W\n\nFirst back: **buy Aether Wisp when you can afford its 900 gold** and return to the wave. Don't sacrifice a wave chasing a roam while Ahri can shove it back.",
+			"calls": []
+		}
+	],
+	"tools": [
+		{
+			"name": "voxren_meta_research",
+			"operation": "meta.matchup",
+			"args": {
+				"query_type": "matchup",
+				"champion": "Katarina",
+				"opponent": "Ahri",
+				"position": "middle"
+			},
+			"ms": 3199,
+			"response": {
+				"version": "research-contract-v1",
+				"operation": "meta.matchup",
+				"data": {
+					"provider": "op.gg public MCP",
+					"request": "lol_get_lane_matchup_guide(position=mid, my_champion=KATARINA, opponent_champion=AHRI)",
+					"sample": "Emerald+ ranked (OP.GG default)",
+					"staleness": "retrieved 2026-10-04; third-party aggregate, not reviewed",
+					"retrievedAt": "2026-10-04T09:15:30.548Z",
+					"champion": "Katarina",
+					"opponent": "Ahri",
+					"patch": "16.19",
+					"patchNotesLabel": "26.19",
+					"laneAdvantage": "Katarina",
+					"soloKillAdvantage": "Katarina",
+					"playStyle": "aggressive",
+					"tip": "Avoid engagments early-game, but you can try to deal damage utilizing [Q]-[E] later on when you have purchased items mid-game. Keep in mind that Ahri will always aim her (E) right after Katarina uses her [E], so be sure to move after using [E].",
+					"starters": [
+						{
+							"items": [
+								"Dark Seal",
+								"Refillable Potion"
+							],
+							"games": 2002,
+							"winRate": 0.498
+						},
+						{
+							"items": [
+								"Doran's Blade",
+								"Health Potion"
+							],
+							"games": 1394,
+							"winRate": 0.49
+						}
+					],
+					"core": [
+						{
+							"items": [
+								"Lich Bane",
+								"Shadowflame",
+								"Zhonya's Hourglass"
+							],
+							"games": 518,
+							"winRate": 0.471
+						},
+						{
+							"items": [
+								"Dark Seal",
+								"Lich Bane",
+								"Shadowflame",
+								"Zhonya's Hourglass"
+							],
+							"games": 445,
+							"winRate": 0.591
+						},
+						{
+							"items": [
+								"Kraken Slayer",
+								"Blade of The Ruined King",
+								"Terminus"
+							],
+							"games": 417,
+							"winRate": 0.537
+						}
+					],
+					"boots": [
+						{
+							"items": [
+								"Sorcerer's Shoes"
+							],
+							"games": 3751,
+							"winRate": 0.528
+						},
+						{
+							"items": [
+								"Mercury's Treads"
+							],
+							"games": 777,
+							"winRate": 0.452
+						}
+					],
+					"summoners": [
+						{
+							"items": [
+								"Flash",
+								"Ignite"
+							],
+							"games": 5306,
+							"winRate": 0.508
+						}
+					],
+					"runes": [
+						{
+							"primary": [
+								"Electrocute",
+								"Sudden Impact",
+								"Grisly Mementos",
+								"Relentless Hunter"
+							],
+							"secondary": [
+								"Coup de Grace",
+								"Triumph"
+							],
+							"shards": [
+								"Adaptive Force",
+								"Adaptive Force",
+								"Health Scaling"
+							],
+							"games": 2172,
+							"winRate": 0.5
+						},
+						{
+							"primary": [
+								"Conqueror",
+								"Triumph",
+								"Legend: Alacrity",
+								"Coup de Grace"
+							],
+							"secondary": [
+								"Relentless Hunter",
+								"Sudden Impact"
+							],
+							"shards": [
+								"Adaptive Force",
+								"Adaptive Force",
+								"Health Scaling"
+							],
+							"games": 714,
+							"winRate": 0.458
+						}
+					],
+					"skillMax": [
+						{
+							"order": [
+								"Q",
+								"E",
+								"W"
+							],
+							"games": 3411,
+							"winRate": 0.577
+						}
+					],
+					"notesBuilding": true,
+					"judgment": {
+						"judge": "jev",
+						"status": "judged",
+						"model": "jev-1.13.0",
+						"latencyMs": 253,
+						"inputTokens": 753,
+						"answer": "evidence",
+						"kept": 1,
+						"removed": [],
+						"p": {
+							"relevant": 0.98,
+							"support": 0.96,
+							"injection": 0.02
+						},
+						"note": "Jev screen: relevance and prompt-injection routing, not a truth check; kept passages stay untrusted."
+					}
+				},
+				"evidence": [
+					{
+						"id": "matchup-1",
+						"source": "voxren_meta_research",
+						"title": "OP.GG matchup: Katarina vs Ahri mid",
+						"url": "https://www.op.gg/champions/katarina/counters/mid?target_champion=ahri",
+						"retrievedAt": "2026-10-04T09:15:30.548Z"
+					}
+				]
+			}
+		},
+		{
+			"name": "voxren_game_facts",
+			"operation": "gamedata.lookup",
+			"args": {
+				"entities": [
+					{
+						"kind": "champion",
+						"name": "Ahri"
+					},
+					{
+						"kind": "champion",
+						"name": "Katarina"
+					},
+					{
+						"kind": "item",
+						"name": "Lich Bane"
+					},
+					{
+						"kind": "item",
+						"name": "Hextech Alternator"
+					},
+					{
+						"kind": "item",
+						"name": "Dark Seal"
+					},
+					{
+						"kind": "item",
+						"name": "Sorcerer's Shoes"
+					}
+				],
+				"detail": "compact"
+			},
+			"ms": 115,
+			"response": {
+				"version": "research-contract-v1",
+				"operation": "gamedata.lookup",
+				"data": {
+					"patch": "16.19.1",
+					"patchNotesLabel": "26.19",
+					"provenance": "Riot Data Dragon static data",
+					"retrievedAt": "2026-10-04T09:15:37.832Z",
+					"entities": [
+						{
+							"name": "Ahri",
+							"kind": "champion",
+							"fact": "the Nine-Tailed Fox. Passive Essence Theft. Q Orb of Deception: cd 7/7/7/7/7, cost 55/65/75/85/95, range 970; W Fox-Fire: cd 9/8/7/6/5, cost 30/30/30/30/30, range 700; E Charm: cd 12/12/12/12/12, cost 60/60/60/60/60, range 975; R Spirit Rush: cd 140/120/100, cost 100/100/100, range 450"
+						},
+						{
+							"name": "Katarina",
+							"kind": "champion",
+							"fact": "the Sinister Blade. Passive Voracity. Q Bouncing Blade: cd 11/10/9/8/7, cost 0/0/0/0/0, range 625; W Preparation: cd 15/14/13/12/11, cost 0/0/0/0/0, range 25000; E Shunpo: cd 12/11/10/9/8, cost 0/0/0/0/0, range 725; R Death Lotus: cd 75/60/45, cost 0/0/0, range 550"
+						},
+						{
+							"name": "Lich Bane",
+							"kind": "item",
+							"fact": "2900 gold. Grants a bonus to next attack after spell cast 100 Ability Power 6% Move Speed 10 Ability Haste Spellblade After using an Ability, your next Attack deals bonus magic damage On-Hit ."
+						},
+						{
+							"name": "Hextech Alternator",
+							"kind": "item",
+							"fact": "1100 gold. Increases Ability Power. Deal bonus magic damage on attack periodically. 45 Ability Power Revved Damaging a champion deals bonus magic damage ."
+						},
+						{
+							"name": "Dark Seal",
+							"kind": "item",
+							"fact": "350 gold. Provides Ability Power and Mana.  Increases in power as you kill enemies. 15 Ability Power 50 Health Glory Takedowns grant Glory , up to 10. 5 Glory is lost on death. Gain 4 Ability Power per Glory ."
+						},
+						{
+							"name": "Sorcerer's Shoes",
+							"kind": "item",
+							"fact": "1100 gold. Enhances Move Speed and magic damage 12 Magic Penetration 45 Move Speed"
+						}
+					]
+				},
+				"evidence": [
+					{
+						"id": "game-1",
+						"source": "voxren_game_facts",
+						"title": "Riot Data Dragon 16.19.1",
+						"url": "https://ddragon.leagueoflegends.com/cdn/16.19.1/data/en_US/champion.json",
+						"retrievedAt": "2026-10-04T09:15:37.832Z"
+					}
+				]
+			}
+		},
+		{
+			"name": "voxren_video_research",
+			"operation": "research_video",
+			"args": {
+				"query": "Katarina vs Ahri matchup guide",
+				"title_terms": [
+					"Katarina",
+					"Ahri"
+				],
+				"focus": "early levels trade Ahri charm after Shunpo, dagger placement, all-in and first back"
+			},
+			"ms": 20671,
+			"response": {
+				"version": "research-contract-v1",
+				"operation": "research_video",
+				"data": {
+					"provider": "YouTube transcripts (research service)",
+					"retrievedAt": "2026-10-04T09:15:58.187Z",
+					"videos": [
+						{
+							"title": "ACEE1: How to COUNTER This Matchup | Katarina vs Ahri",
+							"url": "https://youtu.be/8WWEEyWTT34",
+							"published": "5 months ago",
+							"transcript": "gemini",
+							"autoCaptions": false,
+							"passages": [
+								{
+									"at": 314,
+									"text": "I don't think that's uh don't think that's necessary. Perfect, gonna get another pink ward. Just in case they remove that I'll have another one. Going to ping that Ahri's missing. Weird if she does end up roaming which she can cuz she's level six right now. She could roam, oh, no there she is. Dodge her Q, bait out her E, push the wave. You see how I stutter step? I walk up thinking that she's gonna I'm about to go to my dagger, but I end up not going to my dagger. Now she's going to be too afraid to ever wa to uh to follow again after I punished her. Punish her right now. Yeah she's forced to ult, you know?"
+								},
+								{
+									"at": 431,
+									"text": "Don't really care about the extended trade. Very nice. Because we killed the Lee Sin, we have free prio for the grubbies. I, actually, wanted to ward that, but I don't know, I guess I didn't ward it, whatever. Doesn't ma- not not like it matters. It was just in case that the Lee Sin was uh coming back top side. I did not mean to level up my E. It's okay. We're going to buy Lich Bane, and maybe move our way to bot side here. If they're pinging bot lane, like we I'm pretty sure we already saw the Leona was top side. She might have been looking to base. \"Brother do you do coachings for viewers?\" Yeah, I always I all I offer coaching uh The prices and everything is on my Discord server."
+								}
+							],
+							"route": "evidence",
+							"p": {
+								"relevant": 0.93,
+								"support": 0.9,
+								"injection": 0.03
+							}
+						},
+						{
+							"title": "ACEE1: How to ABUSE AD Katarina to First Blood the Ahri Matchup │ Grandmaster MMR │",
+							"url": "https://youtu.be/0KYkV7S1stg",
+							"published": "2 months ago",
+							"transcript": "gemini",
+							"autoCaptions": false,
+							"passages": [
+								{
+									"at": 886,
+									"text": "Ezreal top side, Ahri showed herself. Oh, boy. No way she's seeing things. She's by herself. Okay. We'll take a free kill, base for BorK and then we'll buy boots after. I am skipping boots right now cuz I can instantly buy BorK, which is huge. Very, very strong item. I'll start melting this uh I'll start melting this, what's his name, Skarner. And then we're going to get Mercs so that we can counter the CC they have and the three AP. Oh, no, you can easily dash away, no? We'll push this first. Always, you see, before I make any play, I'm pushing out the wave. I'm not able to keep up. They're too fast."
+								},
+								{
+									"at": 60,
+									"text": "She's been very patient with her abilities. And you have to understand I'm not going electro. I'm not going Electro AP. If I'm going Electro AP, I can easily punish her and go for those for those nice short trades. But I'm not able to go for those amazingly short trades, because I'm going Conqueror, unfortunately. Do I just E engage? Not too sure. Hit her at the edge of my dagger, hit her again, go for an auto, and then E, auto, throw my Q, auto, pick up my dagger, E, auto, Ignite, and then, boom! Tell me I'm not the GOAT. I explained everything for you, with what I'm doing. My thought process fully explained. Get out of here!"
+								}
+							],
+							"route": "evidence",
+							"p": {
+								"relevant": 0.92,
+								"support": 0.93,
+								"injection": 0.04
+							}
+						},
+						{
+							"title": "Peng: HOW TO DO A PERFECT Ahri Game vs RANK 1 Katarina",
+							"url": "https://youtu.be/Y7gsHmD5G4I",
+							"published": "1 month ago",
+							"transcript": "gemini",
+							"autoCaptions": false,
+							"passages": [
+								{
+									"at": 1200,
+									"text": "back and go check on the wiki on the Katarina wiki. But what I want to get by by that is in the early game, there's like around 3-second window where they have the opportunity to punish her after she pickups her dagger with the E CD being on cooldown. And well, that is mainly it, and for laning phase, I took TP this time because I thought it was Orianna mid. If I got to be honest, like holy fuck, look at that comp. What is that? Anyways, you should take Ignite versus Katarina because I want to play for the 1v1 and well, in this case, since I took TP, I will showcase you guys how to utilize the TP properly, right? So, how do we basically use the advantage if you like TP? Which, overall, is better, to be honest, for macro-wise. First of all, we are hitting the minions so they are dying in t…"
+								},
+								{
+									"at": 1164,
+									"text": "Yeah, just after, you need it like during the travel, it's basically during the travel time. All right, so I'll be explaining how you play versus um Katarina, and we're playing against probably the best Katarina, I would say in the server. I mean, at least the highest rank. So, the first thing you have to understand is the cooldown of Katarina, which is 11, 15, and 12, I'm pretty sure, and then ultimate 75. So, to basic um Every time she uses her Q and W, there's a dagger you can pick up, right? Once they pick it up, depending on the level, actually, it scales per level. It's like 1, 6, 11, or something like I'm not really sure, but it goes from like 75% reduced to 90% reduced, almost"
+								}
+							],
+							"route": "evidence",
+							"p": {
+								"relevant": 0.95,
+								"support": 0.95,
+								"injection": 0.03
+							}
+						}
+					],
+					"skipped": 0,
+					"rateLimited": false,
+					"judgment": {
+						"judge": "jev",
+						"status": "judged",
+						"model": "jev-1.13.0",
+						"latencyMs": 305,
+						"inputTokens": 3146,
+						"kept": 3,
+						"removed": [],
+						"note": "Jev screen: relevance and prompt-injection routing, not a truth check; kept passages stay untrusted."
+					}
+				},
+				"evidence": [
+					{
+						"id": "video-1",
+						"source": "voxren_video_research",
+						"title": "ACEE1: How to COUNTER This Matchup | Katarina vs Ahri",
+						"url": "https://youtu.be/8WWEEyWTT34",
+						"retrievedAt": "2026-10-04T09:15:58.187Z"
+					},
+					{
+						"id": "video-2",
+						"source": "voxren_video_research",
+						"title": "ACEE1: How to ABUSE AD Katarina to First Blood the Ahri Matchup │ Grandmaster MMR │",
+						"url": "https://youtu.be/0KYkV7S1stg",
+						"retrievedAt": "2026-10-04T09:15:58.187Z"
+					},
+					{
+						"id": "video-3",
+						"source": "voxren_video_research",
+						"title": "Peng: HOW TO DO A PERFECT Ahri Game vs RANK 1 Katarina",
+						"url": "https://youtu.be/Y7gsHmD5G4I",
+						"retrievedAt": "2026-10-04T09:15:58.187Z"
+					}
+				]
+			}
+		},
+		{
+			"name": "web_search",
+			"operation": "research_web_search",
+			"args": {
+				"query": "Katarina versus Ahri mid matchup guide charm shunpo dagger trades level 1 2 3 first back",
+				"domains": [
+					"mobafire.com"
+				],
+				"max_results": 5
+			},
+			"ms": 21398,
+			"response": {
+				"version": "research-contract-v1",
+				"operation": "research_web_search",
+				"data": {
+					"provider": "hosted web search (model provider)",
+					"retrievedAt": "2026-10-04T09:15:58.821Z",
+					"results": [
+						{
+							"title": "Katarina Build Guide: [ALL MATCHUPS] [26.19] Acee1's Katarina Guide",
+							"url": "https://www.mobafire.com/league-of-legends/build/all-matchups-26-19-acee1s-katarina-guide-649538",
+							"domain": "www.mobafire.com",
+							"snippet": "Your level 2 all-in beats her level 2 if you start E and take Q second – E onto her, auto, Q, pick up dagger, E again. … Before six, you win every trade if you dodge her charm. … You never Shunpo onto her without seeing her ultimate down.",
+							"date": "",
+							"retrievedAt": "2026-10-04T09:15:58.821Z",
+							"route": "evidence",
+							"p": {
+								"relevant": 0.94,
+								"support": 0.97,
+								"injection": 0.02
+							}
+						},
+						{
+							"title": "Ahri Build Guide: Trick of the Tails",
+							"url": "https://www.mobafire.com/league-of-legends/build/trick-of-the-tails-409690",
+							"domain": "www.mobafire.com",
+							"snippet": "The one thing I will say for this matchup is abuse your auto attacks towards her. … Because of the way her daggers enable her to deal extra damage and grant her extra mobility, it's extremely important that you always stay away from any dagger that's down. … When she picks up a dagger, it also refunds almost the entire cooldown on Shunpo.",
+							"date": "",
+							"retrievedAt": "2026-10-04T09:15:58.821Z",
+							"route": "evidence",
+							"p": {
+								"relevant": 0.91,
+								"support": 0.93,
+								"injection": 0.02
+							}
+						},
+						{
+							"title": "Katarina Build Guide: Katarina Assassin Build + 35 TRICKS (VIDEO)",
+							"url": "https://www.mobafire.com/league-of-legends/build/katarina-assassin-build-35-tricks-video-563642",
+							"domain": "www.mobafire.com",
+							"snippet": "Level 1, you will get poked by ranged champs, so you need to stay back if they show they will poke you. … Level 2, you can look for a trade. If they aren't level 2 or if they missed an ability, use Q and instant Shunpo onto the dagger while it is still in the air or behind the opponent. … Level 3-5, you can Q, wait, then see if they stay around the dagger.",
+							"date": "",
+							"retrievedAt": "2026-10-04T09:15:58.821Z",
+							"route": "evidence",
+							"p": {
+								"relevant": 0.71,
+								"support": 0.92,
+								"injection": 0.02
+							}
+						}
+					],
+					"answer": "For Katarina, survive Ahri’s level 1 poke; at level 2, an E-start all-in can win if you dodge Charm, and level 3 gives you fuller dagger trades. Avoid her daggers and don’t Shunpo onto her without accounting for Charm; the pages found don’t specify a first-back item.",
+					"judgment": {
+						"judge": "jev",
+						"status": "judged",
+						"model": "jev-1.13.0",
+						"latencyMs": 396,
+						"inputTokens": 3129,
+						"answer": "evidence",
+						"answerP": {
+							"relevant": 0.96,
+							"support": 0.95,
+							"injection": 0.03
+						},
+						"kept": 3,
+						"removed": [],
+						"note": "Jev screen: relevance and prompt-injection routing, not a truth check; kept passages stay untrusted."
+					}
+				},
+				"evidence": [
+					{
+						"id": "web-1",
+						"source": "web_search",
+						"title": "Katarina Build Guide: [ALL MATCHUPS] [26.19] Acee1's Katarina Guide",
+						"url": "https://www.mobafire.com/league-of-legends/build/all-matchups-26-19-acee1s-katarina-guide-649538",
+						"retrievedAt": "2026-10-04T09:15:58.821Z"
+					},
+					{
+						"id": "web-2",
+						"source": "web_search",
+						"title": "Ahri Build Guide: Trick of the Tails",
+						"url": "https://www.mobafire.com/league-of-legends/build/trick-of-the-tails-409690",
+						"retrievedAt": "2026-10-04T09:15:58.821Z"
+					},
+					{
+						"id": "web-3",
+						"source": "web_search",
+						"title": "Katarina Build Guide: Katarina Assassin Build + 35 TRICKS (VIDEO)",
+						"url": "https://www.mobafire.com/league-of-legends/build/katarina-assassin-build-35-tricks-video-563642",
+						"retrievedAt": "2026-10-04T09:15:58.821Z"
+					}
+				]
+			}
+		},
+		{
+			"name": "voxren_game_facts",
+			"operation": "gamedata.lookup",
+			"args": {
+				"entities": [
+					{
+						"kind": "item",
+						"name": "Aether Wisp"
+					},
+					{
+						"kind": "item",
+						"name": "Sheen"
+					},
+					{
+						"kind": "item",
+						"name": "Amplifying Tome"
+					},
+					{
+						"kind": "item",
+						"name": "Boots"
+					}
+				],
+				"detail": "compact"
+			},
+			"ms": 2,
+			"response": {
+				"version": "research-contract-v1",
+				"operation": "gamedata.lookup",
+				"data": {
+					"patch": "16.19.1",
+					"patchNotesLabel": "26.19",
+					"provenance": "Riot Data Dragon static data",
+					"retrievedAt": "2026-10-04T09:16:08.266Z",
+					"entities": [
+						{
+							"name": "Aether Wisp",
+							"kind": "item",
+							"fact": "900 gold. Increases Ability Power and Move Speed 30 Ability Power 4% Move Speed"
+						},
+						{
+							"name": "Sheen",
+							"kind": "item",
+							"fact": "900 gold. Grants a bonus to next attack after spell cast 10 Ability Haste Spellblade After using an Ability, your next Attack deals bonus physical damage On-Hit ."
+						},
+						{
+							"name": "Amplifying Tome",
+							"kind": "item",
+							"fact": "400 gold. Slightly increases Ability Power 20 Ability Power"
+						},
+						{
+							"name": "Boots",
+							"kind": "item",
+							"fact": "300 gold. Slightly increases Move Speed 25 Move Speed"
+						}
+					]
+				},
+				"evidence": [
+					{
+						"id": "game-2",
+						"source": "voxren_game_facts",
+						"title": "Riot Data Dragon 16.19.1",
+						"url": "https://ddragon.leagueoflegends.com/cdn/16.19.1/data/en_US/champion.json",
+						"retrievedAt": "2026-10-04T09:16:08.266Z"
+					}
+				]
+			}
+		},
+		{
+			"name": "voxren_strategy_frame",
+			"operation": "strategy_frame",
+			"args": {
+				"question": "Katarina mid into Ahri on patch 26.19: lane plan levels 1-6, key cooldown, runes, summoners, build, first back.",
+				"claims": [
+					"Ahri's Charm has a 12-second cooldown at every rank.",
+					"Ahri's Orb of Deception has a 7-second cooldown at every rank.",
+					"Katarina's Shunpo has a 12-second base cooldown at rank one.",
+					"In this matchup the most-played Electrocute rune page uses Sudden Impact, Grisly Mementos, Relentless Hunter, Coup de Grace and Triumph with double Adaptive Force and Health Scaling.",
+					"Flash and Ignite are the most-played summoner pair in Katarina versus Ahri.",
+					"Dark Seal and Refillable Potion are the most-played starting items in this matchup.",
+					"Aether Wisp costs 900 gold, grants ability power and move speed.",
+					"Lich Bane, Shadowflame and Zhonya's Hourglass are a listed Katarina versus Ahri core, with Sorcerer's Shoes the most-played boots."
+				],
+				"evidence": [
+					{
+						"id": "matchup-1"
+					},
+					{
+						"id": "game-1"
+					},
+					{
+						"id": "game-2"
+					},
+					{
+						"id": "web-1"
+					},
+					{
+						"id": "web-3"
+					},
+					{
+						"id": "video-1"
+					},
+					{
+						"id": "video-2"
+					}
+				]
+			},
+			"ms": 384,
+			"response": {
+				"version": "research-contract-v1",
+				"operation": "strategy_frame",
+				"data": {
+					"goal": "Katarina mid into Ahri on patch 26.19: lane plan levels 1-6, key cooldown, runes, summoners, build, first back.",
+					"claims": [
+						{
+							"claim": "Ahri's Charm has a 12-second cooldown at every rank.",
+							"route": "grounded",
+							"p": {
+								"supported": 0.97,
+								"contradicted": 0.09
+							},
+							"source": "game-1",
+							"sourceP": {
+								"web-3": 0,
+								"video-1": 0,
+								"game-2": 0,
+								"video-2": 0,
+								"matchup-1": 0,
+								"none": 0,
+								"game-1": 1,
+								"web-1": 0
+							}
+						},
+						{
+							"claim": "Ahri's Orb of Deception has a 7-second cooldown at every rank.",
+							"route": "grounded",
+							"p": {
+								"supported": 0.97,
+								"contradicted": 0.08
+							},
+							"source": "game-1",
+							"sourceP": {
+								"game-2": 0,
+								"game-1": 1,
+								"video-1": 0,
+								"web-3": 0,
+								"web-1": 0,
+								"matchup-1": 0,
+								"none": 0,
+								"video-2": 0
+							}
+						},
+						{
+							"claim": "Katarina's Shunpo has a 12-second base cooldown at rank one.",
+							"route": "grounded",
+							"p": {
+								"supported": 0.94,
+								"contradicted": 0.15
+							},
+							"source": "game-1",
+							"sourceP": {
+								"game-2": 0,
+								"web-1": 0,
+								"web-3": 0,
+								"video-1": 0,
+								"none": 0.02,
+								"matchup-1": 0,
+								"video-2": 0,
+								"game-1": 0.98
+							}
+						},
+						{
+							"claim": "In this matchup the most-played Electrocute rune page uses Sudden Impact, Grisly Mementos, Relentless Hunter, Coup de Grace and Triumph with double Adaptive Force and Health Scaling.",
+							"route": "grounded",
+							"p": {
+								"supported": 0.95,
+								"contradicted": 0.38
+							},
+							"source": "matchup-1",
+							"sourceP": {
+								"video-2": 0,
+								"game-2": 0,
+								"matchup-1": 1,
+								"web-1": 0,
+								"video-1": 0,
+								"none": 0,
+								"web-3": 0,
+								"game-1": 0
+							}
+						},
+						{
+							"claim": "Flash and Ignite are the most-played summoner pair in Katarina versus Ahri.",
+							"route": "grounded",
+							"p": {
+								"supported": 0.81,
+								"contradicted": 0.15
+							},
+							"source": "matchup-1",
+							"sourceP": {
+								"video-2": 0,
+								"none": 0.14,
+								"video-1": 0,
+								"game-2": 0,
+								"web-3": 0,
+								"game-1": 0,
+								"matchup-1": 0.86,
+								"web-1": 0
+							}
+						},
+						{
+							"claim": "Dark Seal and Refillable Potion are the most-played starting items in this matchup.",
+							"route": "grounded",
+							"p": {
+								"supported": 0.92,
+								"contradicted": 0.32
+							},
+							"source": "matchup-1",
+							"sourceP": {
+								"none": 0.01,
+								"game-1": 0,
+								"web-1": 0,
+								"game-2": 0,
+								"video-1": 0,
+								"video-2": 0,
+								"matchup-1": 0.99,
+								"web-3": 0
+							}
+						},
+						{
+							"claim": "Aether Wisp costs 900 gold, grants ability power and move speed.",
+							"route": "grounded",
+							"p": {
+								"supported": 0.97,
+								"contradicted": 0.12
+							},
+							"source": "game-2",
+							"sourceP": {
+								"game-1": 0,
+								"web-3": 0,
+								"matchup-1": 0,
+								"video-2": 0,
+								"web-1": 0,
+								"none": 0,
+								"game-2": 1,
+								"video-1": 0
+							}
+						},
+						{
+							"claim": "Lich Bane, Shadowflame and Zhonya's Hourglass are a listed Katarina versus Ahri core, with Sorcerer's Shoes the most-played boots.",
+							"route": "grounded",
+							"p": {
+								"supported": 0.97,
+								"contradicted": 0.31
+							},
+							"source": "matchup-1",
+							"sourceP": {
+								"game-1": 0,
+								"web-1": 0,
+								"video-1": 0,
+								"matchup-1": 1,
+								"video-2": 0,
+								"web-3": 0,
+								"game-2": 0,
+								"none": 0
+							}
+						}
+					],
+					"citation_ids": [
+						"matchup-1",
+						"game-1",
+						"game-2",
+						"web-1",
+						"web-3",
+						"video-1",
+						"video-2"
+					],
+					"sources": [
+						{
+							"id": "matchup-1",
+							"title": "OP.GG matchup: Katarina vs Ahri mid"
+						},
+						{
+							"id": "game-1",
+							"title": "Riot Data Dragon 16.19.1"
+						},
+						{
+							"id": "game-2",
+							"title": "Riot Data Dragon 16.19.1"
+						},
+						{
+							"id": "web-1",
+							"title": "Katarina Build Guide: [ALL MATCHUPS] [26.19] Acee1's Katarina Guide"
+						},
+						{
+							"id": "web-3",
+							"title": "Katarina Build Guide: Katarina Assassin Build + 35 TRICKS (VIDEO)"
+						},
+						{
+							"id": "video-1",
+							"title": "ACEE1: How to COUNTER This Matchup | Katarina vs Ahri"
+						},
+						{
+							"id": "video-2",
+							"title": "ACEE1: How to ABUSE AD Katarina to First Blood the Ahri Matchup │ Grandmaster M…"
+						}
+					],
+					"judgment": {
+						"judge": "jev",
+						"status": "judged",
+						"model": "jev-1.13.0",
+						"latencyMs": 382,
+						"inputTokens": 26555,
+						"checked": 8,
+						"note": "Jev grounding: each claim checked against cited passage text; grounded, unsupported, or contradicted. A flag, not a truth check."
+					}
+				},
+				"evidence": []
+			}
+		}
+	]
+}

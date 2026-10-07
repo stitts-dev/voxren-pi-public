@@ -1,0 +1,243 @@
+{
+	"meta": {
+		"version": "16.19.1",
+		"generated": "2026-10-05",
+		"model": "gpt-6-sol",
+		"sources": [
+			{
+				"id": "s1",
+				"title": "[26.19] Actioner's Smolder Bot Guide⚡️",
+				"url": "https://www.mobafire.com/league-of-legends/build/26-19-actioners-smolder-bot-guide-634544"
+			},
+			{
+				"id": "s2",
+				"title": "Smolder Build Guide: SCORCHED EARTH: 225 Stacks to Glory",
+				"url": "https://www.mobafire.com/league-of-legends/build/scorched-earth-225-stacks-to-glory-651104"
+			},
+			{
+				"id": "game-1",
+				"title": "Riot Data Dragon 16.19.1",
+				"url": "https://ddragon.leagueoflegends.com/cdn/16.19.1/data/en_US/champion/Smolder.json"
+			}
+		]
+	},
+	"id": "Smolder",
+	"name": "Smolder",
+	"facts": {
+		"title": "the Fiery Fledgling",
+		"tags": [
+			"Marksman",
+			"Mage"
+		],
+		"resource": "Mana",
+		"stats": {
+			"hp": 575,
+			"hpperlevel": 100,
+			"mp": 300,
+			"mpperlevel": 40,
+			"movespeed": 330,
+			"armor": 24,
+			"armorperlevel": 4,
+			"spellblock": 33,
+			"spellblockperlevel": 1.1,
+			"attackrange": 550,
+			"hpregen": 3.75,
+			"hpregenperlevel": 0.6,
+			"mpregen": 8.5,
+			"mpregenperlevel": 0.7,
+			"crit": 0,
+			"critperlevel": 0,
+			"attackdamage": 58,
+			"attackdamageperlevel": 0,
+			"attackspeedperlevel": 4,
+			"attackspeed": 0.638
+		},
+		"passive": {
+			"name": "Dragon Practice",
+			"text": "Hitting champions with Abilities and killing enemies with Super Scorcher Breath grants a stack of Dragon Practice. Stacks increase the damage of Smolders basic Abilities."
+		},
+		"spells": [
+			{
+				"slot": "Q",
+				"name": "Super Scorcher Breath",
+				"cooldown": [
+					5.5,
+					5,
+					4.5,
+					4,
+					3.5
+				],
+				"cost": [
+					25,
+					25,
+					25,
+					25,
+					25
+				],
+				"range": [
+					550,
+					550,
+					550,
+					550,
+					550
+				],
+				"text": "Smolder breathes fire on an enemy. As he gains more stacks, this ability becomes more powerful."
+			},
+			{
+				"slot": "W",
+				"name": "Achooo!",
+				"cooldown": [
+					14,
+					13,
+					12,
+					11,
+					10
+				],
+				"cost": [
+					50,
+					55,
+					60,
+					65,
+					70
+				],
+				"range": [
+					1500,
+					1500,
+					1500,
+					1500,
+					1500
+				],
+				"text": "Smolder lets out an adorable flaming sneeze that explodes when hitting enemy champions."
+			},
+			{
+				"slot": "E",
+				"name": "Flap, Flap, Flap",
+				"cooldown": [
+					24,
+					22,
+					20,
+					18,
+					16
+				],
+				"cost": [
+					65,
+					65,
+					65,
+					65,
+					65
+				],
+				"range": [
+					700,
+					700,
+					700,
+					700,
+					700
+				],
+				"text": "Smolder takes flight ignoring terrain and bombarding the lowest health enemy."
+			},
+			{
+				"slot": "R",
+				"name": "MMOOOMMMM!",
+				"cooldown": [
+					120,
+					110,
+					100
+				],
+				"cost": [
+					100,
+					100,
+					100
+				],
+				"range": [
+					4200,
+					4200,
+					4200
+				],
+				"text": "Smolder calls his mom to breath fire from above, dealing extra damage and slowing enemies in the center of her fire."
+			}
+		]
+	},
+	"coaching": {
+		"damage": {
+			"value": "Smolder deals sustained burn damage and can deliver critical-strike nukes.",
+			"sources": [
+				"s2"
+			]
+		},
+		"archetype": {
+			"value": "Smolder is a scaling marksman who fights from the back and focuses on the closest target.",
+			"sources": [
+				"s1"
+			]
+		},
+		"axis": {
+			"value": "Smolder should push side-lane waves only with vision and knowledge of where major threats are.",
+			"sources": [
+				"s1"
+			]
+		},
+		"winCondition": {
+			"value": "Smolder wins by surviving, farming, stacking, and reaching his power spikes.",
+			"sources": [
+				"s1"
+			]
+		},
+		"spikes": [
+			{
+				"at": "After gaining stacks",
+				"why": "Smolder’s scaling damage makes patient, front-to-back fighting stronger.",
+				"sources": [
+					"s1"
+				]
+			},
+			{
+				"at": "225 stacks",
+				"why": "Smolder reaches his final evolution at this threshold.",
+				"sources": [
+					"s2"
+				]
+			},
+			{
+				"at": "Dragon Practice stacks",
+				"why": "Smolder's basic abilities deal more damage as he gains stacks.",
+				"sources": [
+					"game-1"
+				]
+			}
+		],
+		"bait": [
+			{
+				"slot": "E",
+				"why": "Smolder lacks mobility when E is down, making him vulnerable to being caught.",
+				"sources": [
+					"s1"
+				]
+			}
+		],
+		"mistakes": [
+			{
+				"value": "Smolder players often force fights before their power spikes instead of farming when behind in stacks.",
+				"sources": [
+					"s1"
+				]
+			},
+			{
+				"value": "Smolder players make a mistake when they treat him as a passive scaler who cannot contribute before the late game.",
+				"sources": [
+					"s2"
+				]
+			}
+		],
+		"comp": {
+			"tags": [
+				"scale",
+				"peel"
+			],
+			"sources": [
+				"s1",
+				"s2",
+				"game-1"
+			]
+		}
+	}
+}

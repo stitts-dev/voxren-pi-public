@@ -1,0 +1,32 @@
+{
+	"id": "comp-s2-teemo-draft",
+	"title": "/comp on #30's S2: the full draft with the player in the jungle",
+	"split": "train",
+	"tier": "bronze",
+	"applies": [
+		"one_sentence_win_condition",
+		"resist_matches_threat",
+		"contrast_reason"
+	],
+	"steps": [
+		{
+			"wait": "picks 10/10",
+			"timeout": 30
+		},
+		{
+			"send": "/comp"
+		},
+		{
+			"idle": true
+		}
+	],
+	"replay": "data/lab/drafts/malz-velkoz-teemo.json",
+	"replayStepMs": 100,
+	"gates": {
+		"maxSeconds": 150,
+		"absentInAnswer": [
+			"http",
+			"⟦"
+		]
+	}
+}

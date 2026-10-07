@@ -1,0 +1,49 @@
+{
+	"id": "multi-jungle-leesin-graves",
+	"title": "Jungle: /matchup Lee Sin vs Graves, ctrl+o on the cards, then which lane to gank first (a Master player)",
+	"split": "holdout",
+	"tier": "master",
+	"applies": [
+		"names_tradeoff",
+		"one_sentence_win_condition",
+		"death_as_trade",
+		"tier_fit"
+	],
+	"steps": [
+		{
+			"send": "/matchup Lee Sin vs Graves"
+		},
+		{
+			"idle": true
+		},
+		{
+			"key": "ctrl+o"
+		},
+		{
+			"wait": "Tool output: expanded"
+		},
+		{
+			"send": "I'm Master. Which lane do I gank first, and what do I give up by going there?"
+		},
+		{
+			"idle": true
+		}
+	],
+	"env": {
+		"VOXREN_COACH_CHAMPION": "Lee Sin",
+		"VOXREN_COACH_LANE": "jungle"
+	},
+	"gates": {
+		"tools": [
+			"voxren_meta_research"
+		],
+		"runs": {
+			"min": 2,
+			"max": 3
+		},
+		"expect": [
+			"third-party"
+		],
+		"maxSeconds": 300
+	}
+}

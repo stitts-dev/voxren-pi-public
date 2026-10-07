@@ -1,0 +1,248 @@
+{
+	"meta": {
+		"version": "16.19.1",
+		"generated": "2026-10-05",
+		"model": "gpt-6-sol",
+		"sources": [
+			{
+				"id": "s1",
+				"title": "Akshan Build Guide: 🔸Akshan / The Reviver🔸",
+				"url": "https://www.mobafire.com/league-of-legends/build/akshan-the-reviver-652212"
+			},
+			{
+				"id": "s2",
+				"title": "Akshan Build Guide: Akshan Mid Guide | Still in Work",
+				"url": "https://www.mobafire.com/league-of-legends/build/patch-26-18-akshan-mid-guide-still-in-work-638237"
+			},
+			{
+				"id": "s3",
+				"title": "Akshan Build Guide: Things To Do. Scores To Settle",
+				"url": "https://www.mobafire.com/league-of-legends/build/quot-things-to-do-scores-to-settle-quot-627526"
+			},
+			{
+				"id": "game-1",
+				"title": "Riot Data Dragon 16.19.1",
+				"url": "https://ddragon.leagueoflegends.com/cdn/16.19.1/data/en_US/champion/Akshan.json"
+			}
+		]
+	},
+	"id": "Akshan",
+	"name": "Akshan",
+	"facts": {
+		"title": "the Rogue Sentinel",
+		"tags": [
+			"Marksman",
+			"Assassin"
+		],
+		"resource": "Mana",
+		"stats": {
+			"hp": 610,
+			"hpperlevel": 107,
+			"mp": 350,
+			"mpperlevel": 40,
+			"movespeed": 330,
+			"armor": 26,
+			"armorperlevel": 4.7,
+			"spellblock": 33,
+			"spellblockperlevel": 1.1,
+			"attackrange": 500,
+			"hpregen": 3.75,
+			"hpregenperlevel": 0.65,
+			"mpregen": 8.2,
+			"mpregenperlevel": 0.7,
+			"crit": 0,
+			"critperlevel": 0,
+			"attackdamage": 52,
+			"attackdamageperlevel": 0,
+			"attackspeedperlevel": 4,
+			"attackspeed": 0.638
+		},
+		"passive": {
+			"name": "Dirty Fighting",
+			"text": "Every three hits from Akshan's Attacks and Abilities deals bonus damage and grants him a Shield if the target was a champion.When Akshan Attacks, he fires an additional Attack for reduced damage. If he cancels the additional Attack, he instead gains Move Speed."
+		},
+		"spells": [
+			{
+				"slot": "Q",
+				"name": "Avengerang",
+				"cooldown": [
+					9,
+					8,
+					7,
+					6,
+					5
+				],
+				"cost": [
+					60,
+					65,
+					70,
+					75,
+					80
+				],
+				"range": [
+					850,
+					850,
+					850,
+					850,
+					850
+				],
+				"text": "Akshan throws a boomerang that deals damage going out and coming back, extending its range each time it hits an enemy."
+			},
+			{
+				"slot": "W",
+				"name": "Going Rogue",
+				"cooldown": [
+					18,
+					14,
+					10,
+					6,
+					2
+				],
+				"cost": [
+					40,
+					30,
+					20,
+					10,
+					0
+				],
+				"range": [
+					5500,
+					5500,
+					5500,
+					5500,
+					5500
+				],
+				"text": "Akshan passively marks enemy champions as Scoundrels when they kill his ally champions. If Akshan kills a Scoundrel, he resurrects the allies they killed, gains bonus gold, and clears all marks.When activated, Akshan enters camouflage and gains Move Speed and Mana Regen while moving towards Scoundrels. Akshan loses the camouflage quickly while he is not in brush or near terrain."
+			},
+			{
+				"slot": "E",
+				"name": "Heroic Swing",
+				"cooldown": [
+					18,
+					16.5,
+					15,
+					13.5,
+					12
+				],
+				"cost": [
+					70,
+					70,
+					70,
+					70,
+					70
+				],
+				"range": [
+					800,
+					800,
+					800,
+					800,
+					800
+				],
+				"text": "Akshan fires a grappling hook into terrain then swings around it, repeatedly firing at the nearest enemy while swinging. He can jump off early or gets knocked off when colliding with champions or terrain."
+			},
+			{
+				"slot": "R",
+				"name": "Comeuppance",
+				"cooldown": [
+					100,
+					85,
+					70
+				],
+				"cost": [
+					100,
+					100,
+					100
+				],
+				"range": [
+					2500,
+					2500,
+					2500
+				],
+				"text": "Akshan locks onto an enemy champion and starts storing bullets. When released, he fires all stored bullets, dealing damage based on missing health to the first champion, minion, or structure hit."
+			}
+		]
+	},
+	"coaching": {
+		"archetype": {
+			"value": "Akshan is a stealthy, mobile assassin who roams and uses Heroic Swing for swing-in assassinations.",
+			"sources": [
+				"s1"
+			]
+		},
+		"axis": {
+			"value": "Akshan plays a high-tempo lane, looking for aggressive skirmishes and swing-in all-ins.",
+			"sources": [
+				"s1"
+			]
+		},
+		"winCondition": {
+			"value": "Akshan turns early skirmish wins into numbers advantages by hunting down Scoundrels to resurrect fallen allies.",
+			"sources": [
+				"s1"
+			]
+		},
+		"spikes": [
+			{
+				"at": "Early to mid game",
+				"why": "Akshan is especially strong during this period.",
+				"sources": [
+					"s2"
+				]
+			},
+			{
+				"at": "W at max rank",
+				"why": "Akshan can activate Going Rogue more often because its cooldown falls to 2 seconds.",
+				"sources": [
+					"game-1"
+				]
+			}
+		],
+		"bait": [
+			{
+				"slot": "Q",
+				"why": "Akshan cannot throw Avengerang again until its cooldown ends, removing his boomerang damage during that window.",
+				"sources": [
+					"game-1"
+				]
+			},
+			{
+				"slot": "E",
+				"why": "Akshan cannot use Heroic Swing to move around terrain again until its cooldown ends.",
+				"sources": [
+					"game-1"
+				]
+			}
+		],
+		"mistakes": [
+			{
+				"value": "Akshan players should avoid an all-physical-damage composition because it is easy to itemize against.",
+				"sources": [
+					"s2"
+				]
+			},
+			{
+				"value": "Akshan can put himself in danger by using his swing poorly.",
+				"sources": [
+					"s3"
+				]
+			},
+			{
+				"value": "Akshan should not rely on his ultimate when it can be interrupted or blocked.",
+				"sources": [
+					"s3"
+				]
+			}
+		],
+		"comp": {
+			"tags": [
+				"pick"
+			],
+			"sources": [
+				"s1",
+				"s2",
+				"s3",
+				"game-1"
+			]
+		}
+	}
+}

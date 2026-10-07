@@ -1,0 +1,32 @@
+{
+	"id": "comp-s5-in-game",
+	"title": "/comp on #30's S5: in game at 0:23, the live client read instead of a draft",
+	"split": "holdout",
+	"tier": "grandmaster",
+	"applies": [
+		"generic_copout",
+		"leads_with_one_fix",
+		"one_sentence_win_condition"
+	],
+	"steps": [
+		{
+			"wait": "in game 0:23",
+			"timeout": 30
+		},
+		{
+			"send": "/comp"
+		},
+		{
+			"idle": true
+		}
+	],
+	"replay": "data/lab/drafts/s5-jayce-zyra-early-game.ndjson",
+	"replayStepMs": 100,
+	"gates": {
+		"maxSeconds": 150,
+		"absentInAnswer": [
+			"http",
+			"⟦"
+		]
+	}
+}

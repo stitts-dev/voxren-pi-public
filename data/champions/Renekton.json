@@ -1,0 +1,214 @@
+{
+	"meta": {
+		"version": "16.19.1",
+		"generated": "2026-10-05",
+		"model": "gpt-6-sol",
+		"sources": [
+			{
+				"id": "game-1",
+				"title": "Riot Data Dragon 16.19.1",
+				"url": "https://ddragon.leagueoflegends.com/cdn/16.19.1/data/en_US/champion/Renekton.json"
+			}
+		]
+	},
+	"id": "Renekton",
+	"name": "Renekton",
+	"facts": {
+		"title": "the Butcher of the Sands",
+		"tags": [
+			"Fighter",
+			"Tank"
+		],
+		"resource": "Fury",
+		"stats": {
+			"hp": 660,
+			"hpperlevel": 111,
+			"mp": 100,
+			"mpperlevel": 0,
+			"movespeed": 345,
+			"armor": 35,
+			"armorperlevel": 5.2,
+			"spellblock": 28,
+			"spellblockperlevel": 2.05,
+			"attackrange": 125,
+			"hpregen": 8,
+			"hpregenperlevel": 0.75,
+			"mpregen": 0,
+			"mpregenperlevel": 0,
+			"crit": 0,
+			"critperlevel": 0,
+			"attackdamage": 69,
+			"attackdamageperlevel": 0,
+			"attackspeedperlevel": 2.75,
+			"attackspeed": 0.665
+		},
+		"passive": {
+			"name": "Reign of Anger",
+			"text": "Renekton's attacks generate Fury, increased when he is low on life. This Fury can empower his abilities with bonus effects."
+		},
+		"spells": [
+			{
+				"slot": "Q",
+				"name": "Cull the Meek",
+				"cooldown": [
+					7,
+					7,
+					7,
+					7,
+					7
+				],
+				"cost": [
+					0,
+					0,
+					0,
+					0,
+					0
+				],
+				"range": [
+					325,
+					325,
+					325,
+					325,
+					325
+				],
+				"text": "Renekton swings his blade, dealing moderate physical damage to all targets around him, and heals for a small portion of the damage dealt. If he has more than 50 Fury, his damage and heal are increased."
+			},
+			{
+				"slot": "W",
+				"name": "Ruthless Predator",
+				"cooldown": [
+					16,
+					14,
+					12,
+					10,
+					8
+				],
+				"cost": [
+					0,
+					0,
+					0,
+					0,
+					0
+				],
+				"range": [
+					300,
+					300,
+					300,
+					300,
+					300
+				],
+				"text": "Renekton slashes his target twice, dealing moderate physical damage and stuns them for 0.75 seconds. If Renekton has more than 50 Fury, he slashes his target three times, destroying damage shields on the target, dealing high physical damage, and stunning them for 1.5 seconds."
+			},
+			{
+				"slot": "E",
+				"name": "Slice and Dice",
+				"cooldown": [
+					16,
+					14.5,
+					13,
+					11.5,
+					10
+				],
+				"cost": [
+					0,
+					0,
+					0,
+					0,
+					0
+				],
+				"range": [
+					450,
+					450,
+					450,
+					450,
+					450
+				],
+				"text": "Renekton dashes, dealing damage to units along the way. Empowered, Renekton deals bonus damage and reduces the Armor of units hit."
+			},
+			{
+				"slot": "R",
+				"name": "Dominus",
+				"cooldown": [
+					120,
+					100,
+					80
+				],
+				"cost": [
+					0,
+					0,
+					0
+				],
+				"range": [
+					20,
+					20,
+					20
+				],
+				"text": "Renekton transforms into the Tyrant form, gaining bonus Health and dealing damage to enemies around him. While in this form, Renekton gains Fury periodically."
+			}
+		]
+	},
+	"coaching": {
+		"damage": {
+			"value": "Renekton deals burst physical damage with his blade swings and slashes.",
+			"sources": [
+				"game-1"
+			]
+		},
+		"archetype": {
+			"value": "Renekton is a bruiser who fights up close with healing, a stun, and bonus Health.",
+			"sources": [
+				"game-1"
+			]
+		},
+		"axis": {
+			"value": "Renekton can take short trades with a dash, stun, and self-heal.",
+			"sources": [
+				"game-1"
+			]
+		},
+		"spikes": [
+			{
+				"at": "Above 50 Fury",
+				"why": "Renekton gains stronger Q damage and healing or a stronger W with a longer stun.",
+				"sources": [
+					"game-1"
+				]
+			},
+			{
+				"at": "R is available",
+				"why": "Renekton can gain bonus Health, damage nearby enemies, and generate Fury periodically.",
+				"sources": [
+					"game-1"
+				]
+			}
+		],
+		"bait": [
+			{
+				"slot": "W",
+				"why": "Renekton cannot use its stun again until its cooldown ends.",
+				"sources": [
+					"game-1"
+				]
+			},
+			{
+				"slot": "E",
+				"why": "Renekton cannot use its damaging dash again until its cooldown ends.",
+				"sources": [
+					"game-1"
+				]
+			}
+		],
+		"mistakes": [
+			{
+				"value": "Renekton loses an empowered ability's bonus effects by using it without more than 50 Fury.",
+				"sources": [
+					"game-1"
+				]
+			}
+		],
+		"comp": {
+			"tags": [],
+			"sources": []
+		}
+	}
+}

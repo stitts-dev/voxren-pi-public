@@ -1,0 +1,242 @@
+{
+	"meta": {
+		"version": "16.19.1",
+		"generated": "2026-10-05",
+		"model": "gpt-6-sol",
+		"sources": [
+			{
+				"id": "s1",
+				"title": "Raen's Malphite Tips & Build (▰˘◡˘▰)",
+				"url": "https://www.mobafire.com/league-of-legends/build/raens-malphite-tips-amp-build-569913"
+			},
+			{
+				"id": "s2",
+				"title": "(26.19) Rock Solid: a Malphite Jungle Guide",
+				"url": "https://www.mobafire.com/league-of-legends/build/26-19-rock-solid-a-malphite-jungle-guide-653274"
+			},
+			{
+				"id": "game-1",
+				"title": "Riot Data Dragon 16.19.1",
+				"url": "https://ddragon.leagueoflegends.com/cdn/16.19.1/data/en_US/champion/Malphite.json"
+			}
+		]
+	},
+	"id": "Malphite",
+	"name": "Malphite",
+	"facts": {
+		"title": "Shard of the Monolith",
+		"tags": [
+			"Tank",
+			"Mage"
+		],
+		"resource": "Mana",
+		"stats": {
+			"hp": 665,
+			"hpperlevel": 104,
+			"mp": 280,
+			"mpperlevel": 60,
+			"movespeed": 335,
+			"armor": 40,
+			"armorperlevel": 4.95,
+			"spellblock": 28,
+			"spellblockperlevel": 2.05,
+			"attackrange": 125,
+			"hpregen": 7,
+			"hpregenperlevel": 0.55,
+			"mpregen": 7.3,
+			"mpregenperlevel": 0.55,
+			"crit": 0,
+			"critperlevel": 0,
+			"attackdamage": 62,
+			"attackdamageperlevel": 0,
+			"attackspeedperlevel": 3.4,
+			"attackspeed": 0.736
+		},
+		"passive": {
+			"name": "Granite Shield",
+			"text": "Malphite is shielded by a layer of rock which absorbs damage up to 10% of his maximum Health. If Malphite has not been hit for a few seconds, this effect recharges."
+		},
+		"spells": [
+			{
+				"slot": "Q",
+				"name": "Seismic Shard",
+				"cooldown": [
+					8,
+					8,
+					8,
+					8,
+					8
+				],
+				"cost": [
+					70,
+					75,
+					80,
+					85,
+					90
+				],
+				"range": [
+					625,
+					625,
+					625,
+					625,
+					625
+				],
+				"text": "Malphite sends a shard of the earth through the ground at his foe, dealing damage upon impact and stealing Move Speed for 3 seconds."
+			},
+			{
+				"slot": "W",
+				"name": "Thunderclap",
+				"cooldown": [
+					10,
+					9.5,
+					9,
+					8.5,
+					8
+				],
+				"cost": [
+					30,
+					35,
+					40,
+					45,
+					50
+				],
+				"range": [
+					400,
+					400,
+					400,
+					400,
+					400
+				],
+				"text": "Malphite attacks with such force that it creates a sonic boom. For the next few seconds, his attacks create aftershocks in front of him."
+			},
+			{
+				"slot": "E",
+				"name": "Ground Slam",
+				"cooldown": [
+					7,
+					7,
+					7,
+					7,
+					7
+				],
+				"cost": [
+					50,
+					55,
+					60,
+					65,
+					70
+				],
+				"range": [
+					400,
+					400,
+					400,
+					400,
+					400
+				],
+				"text": "Malphite slams the ground, sending out a shockwave that deals magic damage based on his Armor and reduces the Attack Speed of enemies for a short duration."
+			},
+			{
+				"slot": "R",
+				"name": "Unstoppable Force",
+				"cooldown": [
+					130,
+					115,
+					100
+				],
+				"cost": [
+					100,
+					100,
+					100
+				],
+				"range": [
+					1000,
+					1000,
+					1000
+				],
+				"text": "Malphite launches himself to a location at high speed, damaging enemies and knocking them into the air."
+			}
+		]
+	},
+	"coaching": {
+		"damage": {
+			"value": "Malphite deals magic damage with Q and E and physical damage with W’s empowered attacks, giving him both short bursts and repeated attack damage.",
+			"sources": [
+				"s1"
+			]
+		},
+		"archetype": {
+			"value": "Malphite is an armor-building tank who uses a shield and defensive items to stay in fights.",
+			"sources": [
+				"s1"
+			]
+		},
+		"axis": {
+			"value": "Malphite can poke with Q’s damage and slow before committing to a closer trade.",
+			"sources": [
+				"s1"
+			]
+		},
+		"winCondition": {
+			"value": "Malphite can solo carry games from the jungle.",
+			"sources": [
+				"s2"
+			]
+		},
+		"spikes": [
+			{
+				"at": "Malphite gets more armor while Granite Shield is active",
+				"why": "Malphite’s W armor bonus is tripled during that time.",
+				"sources": [
+					"s1"
+				]
+			},
+			{
+				"at": "When Unstoppable Force is available",
+				"why": "Malphite can launch to a location, damage enemies, and knock them into the air.",
+				"sources": [
+					"game-1"
+				]
+			}
+		],
+		"bait": [
+			{
+				"slot": "Passive",
+				"why": "Malphite’s shield refreshes only after he avoids damage for a few seconds, so breaking it leaves a window before it returns.",
+				"sources": [
+					"s1"
+				]
+			},
+			{
+				"slot": "R",
+				"why": "Malphite cannot use Unstoppable Force again while its 130/115/100-second cooldown runs.",
+				"sources": [
+					"game-1"
+				]
+			},
+			{
+				"slot": "E",
+				"why": "Malphite cannot apply Ground Slam’s Attack Speed reduction again until its 7-second cooldown ends.",
+				"sources": [
+					"game-1"
+				]
+			}
+		],
+		"mistakes": [
+			{
+				"value": "Malphite loses Granite Shield’s recharge opportunity when he keeps getting hit.",
+				"sources": [
+					"game-1"
+				]
+			}
+		],
+		"comp": {
+			"tags": [
+				"engage"
+			],
+			"sources": [
+				"s1",
+				"game-1"
+			]
+		}
+	}
+}

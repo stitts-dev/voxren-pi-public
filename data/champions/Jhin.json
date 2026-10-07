@@ -1,0 +1,215 @@
+{
+	"meta": {
+		"version": "16.19.1",
+		"generated": "2026-10-05",
+		"model": "gpt-6-sol",
+		"sources": [
+			{
+				"id": "s1",
+				"title": "Jhin Build Guide: [26.19] | Jhin Guide | Real Updates Every Patch | Master Elo | OTP",
+				"url": "https://www.mobafire.com/league-of-legends/build/26-19-jhin-guide-real-updates-every-patch-master-elo-otp-633981"
+			},
+			{
+				"id": "game-1",
+				"title": "Riot Data Dragon 16.19.1",
+				"url": "https://ddragon.leagueoflegends.com/cdn/16.19.1/data/en_US/champion/Jhin.json"
+			}
+		]
+	},
+	"id": "Jhin",
+	"name": "Jhin",
+	"facts": {
+		"title": "the Virtuoso",
+		"tags": [
+			"Marksman",
+			"Mage"
+		],
+		"resource": "Mana",
+		"stats": {
+			"hp": 655,
+			"hpperlevel": 107,
+			"mp": 300,
+			"mpperlevel": 50,
+			"movespeed": 330,
+			"armor": 24,
+			"armorperlevel": 4.7,
+			"spellblock": 33,
+			"spellblockperlevel": 1.1,
+			"attackrange": 550,
+			"hpregen": 3.75,
+			"hpregenperlevel": 0.55,
+			"mpregen": 6,
+			"mpregenperlevel": 0.8,
+			"crit": 0,
+			"critperlevel": 0,
+			"attackdamage": 61,
+			"attackdamageperlevel": 0,
+			"attackspeedperlevel": 0,
+			"attackspeed": 0.625
+		},
+		"passive": {
+			"name": "Whisper",
+			"text": "Jhin's hand cannon, Whisper, is a precise instrument designed to deal superior damage. It fires at a fixed rate and carries only four shots. Jhin imbues the final bullet with dark magics to critically strike and deal bonus execute damage. Whenever Whisper crits, it inspires Jhin with a burst of Move Speed."
+		},
+		"spells": [
+			{
+				"slot": "Q",
+				"name": "Dancing Grenade",
+				"cooldown": [
+					7,
+					6.5,
+					6,
+					5.5,
+					5
+				],
+				"cost": [
+					40,
+					45,
+					50,
+					55,
+					60
+				],
+				"range": [
+					550,
+					550,
+					550,
+					550,
+					550
+				],
+				"text": "Jhin launches a magical cartridge at an enemy. It can hit up to four targets and gains damage each time it kills."
+			},
+			{
+				"slot": "W",
+				"name": "Deadly Flourish",
+				"cooldown": [
+					12,
+					12,
+					12,
+					12,
+					12
+				],
+				"cost": [
+					50,
+					55,
+					60,
+					65,
+					70
+				],
+				"range": [
+					3000,
+					3000,
+					3000,
+					3000,
+					3000
+				],
+				"text": "Jhin brandishes his cane, firing a single shot with incredible range. It pierces through minions and monsters, but stops on the first champion hit. If the target was recently struck by Jhin's allies, lotus traps, or damaged by Jhin, they are rooted."
+			},
+			{
+				"slot": "E",
+				"name": "Captive Audience",
+				"cooldown": [
+					2,
+					2,
+					2,
+					2,
+					2
+				],
+				"cost": [
+					30,
+					30,
+					30,
+					30,
+					30
+				],
+				"range": [
+					750,
+					750,
+					750,
+					750,
+					750
+				],
+				"text": "Jhin places an invisible lotus trap that blooms when walked over. It slows nearby enemies before dealing damage with an explosion of serrated petals. Beauty in Death - When Jhin kills an enemy champion, a lotus trap will bloom near their corpse."
+			},
+			{
+				"slot": "R",
+				"name": "Curtain Call",
+				"cooldown": [
+					120,
+					105,
+					90
+				],
+				"cost": [
+					100,
+					100,
+					100
+				],
+				"range": [
+					25000,
+					25000,
+					25000
+				],
+				"text": "Jhin channels, transforming Whisper into a shoulder-mounted mega-cannon. It is able to fire 4 super shots at extreme range that pierce through minions and monsters, but stop on the first champion impacted. Whisper cripples enemies hit, which slows them and deals execute damage. The 4th shot is perfectly crafted, epically powerful, and guaranteed to critically strike."
+			}
+		]
+	},
+	"coaching": {
+		"damage": {
+			"value": "Jhin deals burst damage with Whisper’s critical fourth shot and its bonus execute damage.",
+			"sources": [
+				"game-1"
+			]
+		},
+		"archetype": {
+			"value": "Jhin is an AD carry who plays as an executioner in team fights.",
+			"sources": [
+				"s1"
+			]
+		},
+		"axis": {
+			"value": "Jhin can zone in lane by holding Q until low-health caster minions make its bounce threatening.",
+			"sources": [
+				"s1"
+			]
+		},
+		"winCondition": {
+			"value": "Jhin wins team fights by executing vulnerable targets rather than playing like a conventional AD carry.",
+			"sources": [
+				"s1"
+			]
+		},
+		"spikes": [
+			{
+				"at": "Fourth shot",
+				"why": "Jhin deals more damage by using Q before his fourth shot than by using them in the reverse order.",
+				"sources": [
+					"s1"
+				]
+			},
+			{
+				"at": "Whisper’s fourth shot",
+				"why": "Jhin’s final bullet critically strikes and deals bonus execute damage.",
+				"sources": [
+					"game-1"
+				]
+			}
+		],
+		"bait": [],
+		"mistakes": [
+			{
+				"value": "Jhin risks unnecessary face checks when he could check with W, E, or a blue ward.",
+				"sources": [
+					"s1"
+				]
+			}
+		],
+		"comp": {
+			"tags": [
+				"pick"
+			],
+			"sources": [
+				"s1",
+				"game-1"
+			]
+		}
+	}
+}

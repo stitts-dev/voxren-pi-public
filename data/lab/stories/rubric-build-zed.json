@@ -1,0 +1,29 @@
+{
+	"id": "rubric-build-zed",
+	"title": "/build Zed",
+	"split": "train",
+	"tier": "emerald",
+	"applies": [
+		"resist_matches_threat",
+		"contrast_reason",
+		"generic_copout",
+		"tier_fit"
+	],
+	"steps": [
+		{
+			"send": "/build Zed"
+		},
+		{
+			"idle": true
+		}
+	],
+	"env": {
+		"VOXREN_COACH_CHAMPION": "Fizz"
+	},
+	"gates": {
+		"maxSeconds": 180,
+		"icons": {
+			"expect": "all"
+		}
+	}
+}

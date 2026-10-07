@@ -1,0 +1,418 @@
+{
+	"title": "Fizz Mid OTP Guide (operator-supplied reference, KR Challenger one-trick, patch 16.18, 394 games)",
+	"url": "https://claude.ai/artifact/Wu1wvrqLE7kzub1QzKGta1",
+	"champion": "Fizz",
+	"position": "MIDDLE",
+	"patch": "16.18",
+	"games": 394,
+	"rules": [
+		"Skill order E, W, Q then max E > W > Q (390 of 394 games).",
+		"Keystone Electrocute with Flash + Ignite in all 394 games.",
+		"Fight at level 3 around 2:30; do not fight at level 2.",
+		"First back median 2.9 min for Dark Seal.",
+		"Blackfire Torch by ~11.5 min; Seeker's Armguard 15.4; Zhonya's 18.9; Lich Bane default 4th at 22.5.",
+		"Die 3 times max: <=3 deaths wins 86%, 4-6 wins 45%, 7+ wins 17%.",
+		"Ahead at 15: stop dying. Ahead-then-lost games average 3.8 deaths after 15; ahead-then-won 1.4."
+	],
+	"perGame": {
+		"kills": 8.39,
+		"deaths": 4.8,
+		"assists": 5.59,
+		"kda": 2.91,
+		"durationMin": 25.9,
+		"csAt10": 76,
+		"csAt15": 122,
+		"goldDiffAt10": 412,
+		"goldDiffAt15": 938,
+		"killsAt15": 6.44,
+		"deathsAt15": 2.22,
+		"level6Min": 6,
+		"firstBackMin": 2.9
+	},
+	"itemTimingMin": {
+		"Dark Seal": 3,
+		"Blackfire Torch": 11.5,
+		"Seeker's Armguard": 15.4,
+		"Mejai's Soulstealer": 18.3,
+		"Zhonya's Hourglass": 18.9,
+		"Lich Bane": 22.5,
+		"Rabadon's Deathcap": 29.9
+	},
+	"deathsAt15WinPct": {
+		"0": 74,
+		"1": 60,
+		"2": 58,
+		"3": 36,
+		"4": 33
+	},
+	"deathBandWinPct": {
+		"0-3": 86,
+		"4-6": 45,
+		"7+": 17
+	},
+	"matchups": [
+		{
+			"opponent": "Ryze",
+			"games": 38,
+			"winRatePct": 47,
+			"goldDiff15": 1262,
+			"diesBefore6Pct": 47,
+			"deathsPerGame": 4.47,
+			"boots": "Crimson Lucidity",
+			"finish": [
+				"Lich Bane",
+				"Cryptbloom"
+			],
+			"tip": "Take the level-3 flip only if Ryze wastes W."
+		},
+		{
+			"opponent": "Galio",
+			"games": 21,
+			"winRatePct": 57,
+			"goldDiff15": 822,
+			"diesBefore6Pct": 52,
+			"deathsPerGame": 4.81,
+			"boots": "Chainlaced Crushers",
+			"finish": [
+				"Riftmaker",
+				"Bloodletter's Curse"
+			],
+			"tip": "Bait W taunt with a Q, then E."
+		},
+		{
+			"opponent": "Akali",
+			"games": 21,
+			"winRatePct": 52,
+			"goldDiff15": 29,
+			"diesBefore6Pct": 43,
+			"deathsPerGame": 5.14,
+			"boots": "Spellslinger's Shoes",
+			"finish": [
+				"Lich Bane",
+				"Cryptbloom"
+			],
+			"tip": "Go when shroud is on cooldown."
+		},
+		{
+			"opponent": "Zoe",
+			"games": 18,
+			"winRatePct": 39,
+			"goldDiff15": 692,
+			"diesBefore6Pct": 50,
+			"deathsPerGame": 5.06,
+			"boots": "Spellslinger's Shoes",
+			"finish": [
+				"Lich Bane",
+				"Riftmaker"
+			],
+			"tip": "E the bubble, not the Q. Do not walk up before level 6."
+		},
+		{
+			"opponent": "Sylas",
+			"games": 18,
+			"winRatePct": 50,
+			"goldDiff15": 1176,
+			"diesBefore6Pct": 61,
+			"deathsPerGame": 5.06,
+			"boots": "Crimson Lucidity",
+			"finish": [
+				"Riftmaker",
+				"Lich Bane"
+			],
+			"tip": "Skip the level-3 flip, play for 6."
+		},
+		{
+			"opponent": "Cassiopeia",
+			"games": 18,
+			"winRatePct": 72,
+			"goldDiff15": 628,
+			"diesBefore6Pct": 39,
+			"deathsPerGame": 4.11,
+			"boots": "Crimson Lucidity",
+			"finish": [
+				"Lich Bane",
+				"Rabadon's Deathcap"
+			],
+			"tip": "Level-3 flip is free."
+		},
+		{
+			"opponent": "Orianna",
+			"games": 17,
+			"winRatePct": 29,
+			"goldDiff15": 1017,
+			"diesBefore6Pct": 47,
+			"deathsPerGame": 6.29,
+			"boots": "Crimson Lucidity",
+			"finish": [
+				"Lich Bane",
+				"Riftmaker"
+			],
+			"tip": "Play for plates and roam bot at 6, never fight her on her ball."
+		},
+		{
+			"opponent": "Aurora",
+			"games": 16,
+			"winRatePct": 62,
+			"goldDiff15": 1346,
+			"diesBefore6Pct": 56,
+			"deathsPerGame": 4.75,
+			"boots": "Crimson Lucidity",
+			"finish": [
+				"Lich Bane",
+				"Rabadon's Deathcap"
+			],
+			"tip": "Go at 3 when her E is down."
+		},
+		{
+			"opponent": "Annie",
+			"games": 16,
+			"winRatePct": 62,
+			"goldDiff15": 1894,
+			"diesBefore6Pct": 44,
+			"deathsPerGame": 4.5,
+			"boots": "Crimson Lucidity",
+			"finish": [
+				"Lich Bane",
+				"Cryptbloom"
+			],
+			"tip": "Fight under 4 stun stacks; E the Tibbers cast at 4."
+		},
+		{
+			"opponent": "Anivia",
+			"games": 13,
+			"winRatePct": 31,
+			"goldDiff15": 942,
+			"diesBefore6Pct": 62,
+			"deathsPerGame": 5.62,
+			"boots": "Crimson Lucidity",
+			"finish": [
+				"Bloodletter's Curse",
+				"Liandry's Torment"
+			],
+			"tip": "Kill only with jungler and only when egg is down."
+		},
+		{
+			"opponent": "Yone",
+			"games": 12,
+			"winRatePct": 50,
+			"goldDiff15": 1068,
+			"diesBefore6Pct": 50,
+			"deathsPerGame": 5.33,
+			"boots": "Crimson Lucidity",
+			"finish": [
+				"Lich Bane",
+				"Void Staff"
+			],
+			"tip": "E his Q3 knockup."
+		},
+		{
+			"opponent": "Yasuo",
+			"games": 11,
+			"winRatePct": 64,
+			"goldDiff15": 1976,
+			"diesBefore6Pct": 64,
+			"deathsPerGame": 5.64,
+			"boots": "Crimson Lucidity",
+			"finish": [
+				"Lich Bane",
+				"Riftmaker"
+			],
+			"tip": "Q through wall, W auto, E slam. Ignite early."
+		},
+		{
+			"opponent": "Viktor",
+			"games": 11,
+			"winRatePct": 55,
+			"goldDiff15": 2017,
+			"diesBefore6Pct": 45,
+			"deathsPerGame": 4.18,
+			"boots": "Crimson Lucidity",
+			"finish": [
+				"Lich Bane",
+				"Cryptbloom"
+			],
+			"tip": "E the laser."
+		},
+		{
+			"opponent": "Qiyana",
+			"games": 10,
+			"winRatePct": 70,
+			"goldDiff15": 1056,
+			"diesBefore6Pct": 80,
+			"deathsPerGame": 4.6,
+			"boots": "Crimson Lucidity",
+			"finish": [
+				"Lich Bane",
+				"Riftmaker"
+			],
+			"tip": "It's a brawl; Doran's Ring on a losing streak."
+		},
+		{
+			"opponent": "Vladimir",
+			"games": 10,
+			"winRatePct": 30,
+			"goldDiff15": 144,
+			"diesBefore6Pct": 70,
+			"deathsPerGame": 5,
+			"boots": "Spellslinger's Shoes",
+			"finish": [
+				"Lich Bane",
+				"Riftmaker"
+			],
+			"tip": "Never R first; force pool, then R."
+		},
+		{
+			"opponent": "Azir",
+			"games": 10,
+			"winRatePct": 90,
+			"goldDiff15": 2502,
+			"diesBefore6Pct": 60,
+			"deathsPerGame": 3.3,
+			"boots": "Crimson Lucidity",
+			"finish": [
+				"Liandry's Torment",
+				"Riftmaker"
+			],
+			"tip": "E behind the soldiers."
+		},
+		{
+			"opponent": "TwistedFate",
+			"games": 10,
+			"winRatePct": 50,
+			"goldDiff15": 784,
+			"diesBefore6Pct": 30,
+			"deathsPerGame": 3.8,
+			"boots": "Crimson Lucidity",
+			"finish": [
+				"Lich Bane",
+				"Liandry's Torment"
+			],
+			"tip": "Go when he shows yellow to a minion."
+		},
+		{
+			"opponent": "Lissandra",
+			"games": 9,
+			"winRatePct": 33,
+			"goldDiff15": 1481,
+			"diesBefore6Pct": 78,
+			"deathsPerGame": 5,
+			"boots": "Chainlaced Crushers",
+			"finish": [
+				"Lich Bane",
+				"Cryptbloom"
+			],
+			"tip": "Do not flip at 3."
+		},
+		{
+			"opponent": "Akshan",
+			"games": 8,
+			"winRatePct": 62,
+			"goldDiff15": 814,
+			"diesBefore6Pct": 62,
+			"deathsPerGame": 4.12,
+			"boots": "Crimson Lucidity",
+			"finish": [
+				"Lich Bane",
+				"Cryptbloom"
+			],
+			"tip": ""
+		},
+		{
+			"opponent": "Pantheon",
+			"games": 8,
+			"winRatePct": 50,
+			"goldDiff15": 145,
+			"diesBefore6Pct": 88,
+			"deathsPerGame": 5.75,
+			"boots": "Crimson Lucidity",
+			"finish": [
+				"Lich Bane",
+				"Cryptbloom"
+			],
+			"tip": "E the stun, not the Q."
+		},
+		{
+			"opponent": "Zed",
+			"games": 6,
+			"winRatePct": 67,
+			"goldDiff15": 970,
+			"diesBefore6Pct": 33,
+			"deathsPerGame": 3.5,
+			"boots": "Crimson Lucidity",
+			"finish": [
+				"Lich Bane",
+				"Void Staff"
+			],
+			"tip": ""
+		},
+		{
+			"opponent": "Syndra",
+			"games": 6,
+			"winRatePct": 50,
+			"goldDiff15": 1846,
+			"diesBefore6Pct": 33,
+			"deathsPerGame": 6.17,
+			"boots": "Spellslinger's Shoes",
+			"finish": [
+				"Lich Bane",
+				"Cryptbloom"
+			],
+			"tip": ""
+		},
+		{
+			"opponent": "Ahri",
+			"games": 5,
+			"winRatePct": 40,
+			"goldDiff15": -305,
+			"diesBefore6Pct": 20,
+			"deathsPerGame": 3.6,
+			"boots": "Crimson Lucidity",
+			"finish": [
+				"Lich Bane"
+			],
+			"tip": ""
+		},
+		{
+			"opponent": "Rumble",
+			"games": 5,
+			"winRatePct": 60,
+			"goldDiff15": 696,
+			"diesBefore6Pct": 20,
+			"deathsPerGame": 4.4,
+			"boots": "Spellslinger's Shoes",
+			"finish": [
+				"Bloodletter's Curse",
+				"Lich Bane"
+			],
+			"tip": ""
+		},
+		{
+			"opponent": "Katarina",
+			"games": 5,
+			"winRatePct": 40,
+			"goldDiff15": 303,
+			"diesBefore6Pct": 40,
+			"deathsPerGame": 5.6,
+			"boots": "Crimson Lucidity",
+			"finish": [
+				"Riftmaker",
+				"Lich Bane"
+			],
+			"tip": ""
+		},
+		{
+			"opponent": "Diana",
+			"games": 5,
+			"winRatePct": 20,
+			"goldDiff15": -1823,
+			"diesBefore6Pct": 40,
+			"deathsPerGame": 5.8,
+			"boots": "Spellslinger's Shoes",
+			"finish": [
+				"Lich Bane",
+				"Cryptbloom"
+			],
+			"tip": ""
+		}
+	]
+}

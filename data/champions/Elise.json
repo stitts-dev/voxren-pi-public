@@ -1,0 +1,251 @@
+{
+	"meta": {
+		"version": "16.19.1",
+		"generated": "2026-10-05",
+		"model": "gpt-6-sol",
+		"sources": [
+			{
+				"id": "s1",
+				"title": "Every Web a Masterpiece",
+				"url": "https://www.mobafire.com/league-of-legends/build/every-web-a-masterpiece-618524"
+			},
+			{
+				"id": "s2",
+				"title": "Challenger Elise Guide [Updated]",
+				"url": "https://www.mobafire.com/league-of-legends/build/challenger-elise-guide-updated-578317"
+			},
+			{
+				"id": "s3",
+				"title": "[Off Meta] Elise mid (work in progress)",
+				"url": "https://www.mobafire.com/league-of-legends/build/off-meta-elise-mid-work-in-progress-636819"
+			},
+			{
+				"id": "game-1",
+				"title": "Riot Data Dragon 16.19.1",
+				"url": "https://ddragon.leagueoflegends.com/cdn/16.19.1/data/en_US/champion/Elise.json"
+			}
+		]
+	},
+	"id": "Elise",
+	"name": "Elise",
+	"facts": {
+		"title": "the Spider Queen",
+		"tags": [
+			"Assassin",
+			"Mage"
+		],
+		"resource": "Mana",
+		"stats": {
+			"hp": 620,
+			"hpperlevel": 109,
+			"mp": 324,
+			"mpperlevel": 50,
+			"movespeed": 330,
+			"armor": 30,
+			"armorperlevel": 4.5,
+			"spellblock": 30,
+			"spellblockperlevel": 1.3,
+			"attackrange": 550,
+			"hpregen": 5.5,
+			"hpregenperlevel": 0.6,
+			"mpregen": 6,
+			"mpregenperlevel": 0.8,
+			"crit": 0,
+			"critperlevel": 0,
+			"attackdamage": 55,
+			"attackdamageperlevel": 0,
+			"attackspeedperlevel": 1.75,
+			"attackspeed": 0.625
+		},
+		"passive": {
+			"name": "Spider Queen",
+			"text": "Human Form: When Elise's abilities hit an enemy, she gains a dormant Spiderling.Spider Form: Basic attacks deal bonus magic damage and restore health to Elise."
+		},
+		"spells": [
+			{
+				"slot": "Q",
+				"name": "Neurotoxin / Venomous Bite",
+				"cooldown": [
+					6,
+					6,
+					6,
+					6,
+					6
+				],
+				"cost": [
+					80,
+					85,
+					90,
+					95,
+					100
+				],
+				"range": [
+					615,
+					615,
+					615,
+					615,
+					615
+				],
+				"text": "Human Form: Deals damage based upon how high the target's Health is.Spider Form: Lunges at an enemy and deals damage based upon how low their Health is."
+			},
+			{
+				"slot": "W",
+				"name": "Volatile Spiderling / Skittering Frenzy",
+				"cooldown": [
+					12,
+					12,
+					12,
+					12,
+					12
+				],
+				"cost": [
+					60,
+					70,
+					80,
+					90,
+					100
+				],
+				"range": [
+					950,
+					950,
+					950,
+					950,
+					950
+				],
+				"text": "Human Form: Releases a venom-gorged Spiderling that explodes when it nears a target.Spider Form: Elise and her Spiderlings gain Attack Speed."
+			},
+			{
+				"slot": "E",
+				"name": "Cocoon / Rappel",
+				"cooldown": [
+					12,
+					11.5,
+					11,
+					10.5,
+					10
+				],
+				"cost": [
+					50,
+					50,
+					50,
+					50,
+					50
+				],
+				"range": [
+					1075,
+					1075,
+					1075,
+					1075,
+					1075
+				],
+				"text": "Human Form: Stuns the first enemy unit hit and reveals them if they are not stealthed.Spider Form: Elise and her Spiderlings ascend into the air and then descend upon target enemy. After descending on an enemy target, Elise's bonus damage and healing from Spider Queen is increased."
+			},
+			{
+				"slot": "R",
+				"name": "Spider Form",
+				"cooldown": [
+					3,
+					3,
+					3,
+					3
+				],
+				"cost": [
+					0,
+					0,
+					0,
+					0
+				],
+				"range": [
+					20,
+					20,
+					20,
+					20
+				],
+				"text": "Transforms into a menacing spider, reducing her attack range in exchange for Move Speed, new abilities, and a Spiderling swarm that will attack her foes."
+			}
+		]
+	},
+	"coaching": {
+		"damage": {
+			"value": "Elise deals high burst damage with an AP-focused build.",
+			"sources": [
+				"s2"
+			]
+		},
+		"archetype": {
+			"value": "Elise is a jungle diver with six abilities across human and spider forms.",
+			"sources": [
+				"s1"
+			]
+		},
+		"axis": {
+			"value": "Elise farms and pokes with Neurotoxin early, then looks for all-ins once she has her full combo.",
+			"sources": [
+				"s3"
+			]
+		},
+		"winCondition": {
+			"value": "Elise wins by using her strong early game and dueling power to build a lead.",
+			"sources": [
+				"s2"
+			]
+		},
+		"spikes": [
+			{
+				"at": "Level 3",
+				"why": "Elise gains her full combo and can look for all-ins.",
+				"sources": [
+					"s3"
+				]
+			},
+			{
+				"at": "When R is available after its 3-second cooldown",
+				"why": "Elise can transform to gain new abilities and a Spiderling swarm.",
+				"sources": [
+					"game-1"
+				]
+			}
+		],
+		"bait": [
+			{
+				"slot": "E",
+				"why": "Elise cannot stun with Cocoon while E is on cooldown, giving enemies a window without that stun.",
+				"sources": [
+					"game-1"
+				]
+			}
+		],
+		"mistakes": [
+			{
+				"value": "Elise players risk getting too little value from Dark Harvest if they cannot secure many early or mid-game kills.",
+				"sources": [
+					"s2"
+				]
+			},
+			{
+				"value": "Elise loses effectiveness in extended team fights, so staying in them too long is a mistake.",
+				"sources": [
+					"s3"
+				]
+			},
+			{
+				"value": "Elise misses Spider Queen’s increased damage and healing if she uses Rappel without descending on an enemy target.",
+				"sources": [
+					"game-1"
+				]
+			}
+		],
+		"comp": {
+			"tags": [
+				"dive",
+				"pick"
+			],
+			"sources": [
+				"s1",
+				"s2",
+				"s3",
+				"game-1"
+			]
+		}
+	}
+}

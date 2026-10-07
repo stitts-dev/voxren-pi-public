@@ -1,0 +1,191 @@
+{
+	"meta": {
+		"version": "16.19.1",
+		"generated": "2026-10-05",
+		"model": "gpt-6-sol",
+		"sources": [
+			{
+				"id": "game-1",
+				"title": "Riot Data Dragon 16.19.1",
+				"url": "https://ddragon.leagueoflegends.com/cdn/16.19.1/data/en_US/champion/Maokai.json"
+			}
+		]
+	},
+	"id": "Maokai",
+	"name": "Maokai",
+	"facts": {
+		"title": "the Twisted Treant",
+		"tags": [
+			"Tank",
+			"Support"
+		],
+		"resource": "Mana",
+		"stats": {
+			"hp": 665,
+			"hpperlevel": 109,
+			"mp": 375,
+			"mpperlevel": 43,
+			"movespeed": 335,
+			"armor": 35,
+			"armorperlevel": 5.2,
+			"spellblock": 32,
+			"spellblockperlevel": 2.05,
+			"attackrange": 125,
+			"hpregen": 5,
+			"hpregenperlevel": 0.75,
+			"mpregen": 6,
+			"mpregenperlevel": 0.6,
+			"crit": 0,
+			"critperlevel": 0,
+			"attackdamage": 64,
+			"attackdamageperlevel": 0,
+			"attackspeedperlevel": 2.125,
+			"attackspeed": 0.8
+		},
+		"passive": {
+			"name": "Sap Magic",
+			"text": "Maokai's basic attack also heals him and deals additional damage on a moderate cooldown. Each time Maokai casts a spell or is struck by an enemy's spell, this cooldown is reduced."
+		},
+		"spells": [
+			{
+				"slot": "Q",
+				"name": "Bramble Smash",
+				"cooldown": [
+					7,
+					6.5,
+					6,
+					5.5,
+					5
+				],
+				"cost": [
+					40,
+					40,
+					40,
+					40,
+					40
+				],
+				"range": [
+					600,
+					600,
+					600,
+					600,
+					600
+				],
+				"text": "Maokai knocks back nearby enemies with a shockwave, dealing magic damage and slowing them."
+			},
+			{
+				"slot": "W",
+				"name": "Twisted Advance",
+				"cooldown": [
+					14,
+					13,
+					12,
+					11,
+					10
+				],
+				"cost": [
+					60,
+					60,
+					60,
+					60,
+					60
+				],
+				"range": [
+					525,
+					525,
+					525,
+					525,
+					525
+				],
+				"text": "Maokai contorts into a mass of moving roots, becoming untargetable and dashing to the target. Upon arrival, he roots the target."
+			},
+			{
+				"slot": "E",
+				"name": "Sapling Toss",
+				"cooldown": [
+					18,
+					17,
+					16,
+					15,
+					14
+				],
+				"cost": [
+					60,
+					65,
+					70,
+					75,
+					80
+				],
+				"range": [
+					1100,
+					1100,
+					1100,
+					1100,
+					1100
+				],
+				"text": "Maokai flings a sapling to the target area to stand guard. More effective in brush."
+			},
+			{
+				"slot": "R",
+				"name": "Nature's Grasp",
+				"cooldown": [
+					130,
+					110,
+					90
+				],
+				"cost": [
+					100,
+					100,
+					100
+				],
+				"range": [
+					3000,
+					3000,
+					3000
+				],
+				"text": "Maokai summons a colossal wall of brambles and thorns that slowly advances forwards, damaging and rooting any enemies in the path."
+			}
+		]
+	},
+	"coaching": {
+		"archetype": {
+			"value": "Maokai is a crowd-control engager who dashes to root a target and knocks back nearby enemies.",
+			"sources": [
+				"game-1"
+			]
+		},
+		"winCondition": {
+			"value": "Maokai wins by controlling enemies with knockbacks, slows, and roots.",
+			"sources": [
+				"game-1"
+			]
+		},
+		"spikes": [
+			{
+				"at": "When Bramble Smash reaches its 5-second cooldown",
+				"why": "Maokai can knock back and slow enemies more often.",
+				"sources": [
+					"game-1"
+				]
+			}
+		],
+		"bait": [
+			{
+				"slot": "W",
+				"why": "Maokai cannot use Twisted Advance’s untargetable dash and root again until its cooldown ends.",
+				"sources": [
+					"game-1"
+				]
+			}
+		],
+		"mistakes": [],
+		"comp": {
+			"tags": [
+				"engage"
+			],
+			"sources": [
+				"game-1"
+			]
+		}
+	}
+}

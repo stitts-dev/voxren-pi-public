@@ -1,0 +1,42 @@
+{
+	"id": "multi-mental-tilt",
+	"title": "Mental: a tilt question, ctrl+o, then whether to play one more game (a Gold player)",
+	"split": "holdout",
+	"tier": "gold",
+	"applies": [
+		"leads_with_one_fix",
+		"generic_copout",
+		"names_tradeoff",
+		"tier_fit"
+	],
+	"steps": [
+		{
+			"send": "I'm Gold and I tilt after the first death, then lose the next game too. What do I do between games?"
+		},
+		{
+			"idle": true
+		},
+		{
+			"key": "ctrl+o"
+		},
+		{
+			"wait": "Tool output: expanded"
+		},
+		{
+			"send": "I only have time for one more game tonight. Do I play it?"
+		},
+		{
+			"idle": true
+		}
+	],
+	"env": {
+		"VOXREN_COACH_CHAMPION": "Fizz"
+	},
+	"gates": {
+		"runs": {
+			"min": 2,
+			"max": 3
+		},
+		"maxSeconds": 300
+	}
+}

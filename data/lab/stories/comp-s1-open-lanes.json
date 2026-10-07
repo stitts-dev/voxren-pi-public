@@ -1,0 +1,32 @@
+{
+	"id": "comp-s1-open-lanes",
+	"title": "/comp on #30's S1: champ select with three allies locked and every enemy still open",
+	"split": "train",
+	"tier": "diamond",
+	"applies": [
+		"generic_copout",
+		"one_sentence_win_condition",
+		"leads_with_one_fix"
+	],
+	"steps": [
+		{
+			"wait": "picks 3/10",
+			"timeout": 30
+		},
+		{
+			"send": "/comp"
+		},
+		{
+			"idle": true
+		}
+	],
+	"replay": "data/lab/drafts/s1-malz-velkoz-open-lanes.ndjson",
+	"replayStepMs": 100,
+	"gates": {
+		"maxSeconds": 150,
+		"absentInAnswer": [
+			"http",
+			"⟦"
+		]
+	}
+}

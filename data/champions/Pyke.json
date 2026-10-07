@@ -1,0 +1,230 @@
+{
+	"meta": {
+		"version": "16.19.1",
+		"generated": "2026-10-05",
+		"model": "gpt-6-sol",
+		"sources": [
+			{
+				"id": "s1",
+				"title": "Pykemaxxing|16.19|Death from Below, Gold from Above",
+				"url": "https://www.mobafire.com/league-of-legends/build/pykemaxxing-16-19-death-from-below-gold-from-above-646893"
+			},
+			{
+				"id": "game-1",
+				"title": "Riot Data Dragon 16.19.1",
+				"url": "https://ddragon.leagueoflegends.com/cdn/16.19.1/data/en_US/champion/Pyke.json"
+			}
+		]
+	},
+	"id": "Pyke",
+	"name": "Pyke",
+	"facts": {
+		"title": "the Bloodharbor Ripper",
+		"tags": [
+			"Support",
+			"Assassin"
+		],
+		"resource": "Mana",
+		"stats": {
+			"hp": 670,
+			"hpperlevel": 110,
+			"mp": 415,
+			"mpperlevel": 50,
+			"movespeed": 330,
+			"armor": 37,
+			"armorperlevel": 4.7,
+			"spellblock": 32,
+			"spellblockperlevel": 2.05,
+			"attackrange": 150,
+			"hpregen": 7,
+			"hpregenperlevel": 0.5,
+			"mpregen": 8,
+			"mpregenperlevel": 1,
+			"crit": 0,
+			"critperlevel": 0,
+			"attackdamage": 62,
+			"attackdamageperlevel": 0,
+			"attackspeedperlevel": 2.5,
+			"attackspeed": 0.667
+		},
+		"passive": {
+			"name": "Gift of the Drowned Ones",
+			"text": "When Pyke is hidden from enemies, he regenerates damage that he has recently taken from champions. Pyke also cannot gain extra Maximum Health from any source, and instead gains Bonus AD."
+		},
+		"spells": [
+			{
+				"slot": "Q",
+				"name": "Bone Skewer",
+				"cooldown": [
+					10,
+					9.5,
+					9,
+					8.5,
+					8
+				],
+				"cost": [
+					70,
+					75,
+					80,
+					85,
+					90
+				],
+				"range": [
+					400,
+					400,
+					400,
+					400,
+					400
+				],
+				"text": "Pyke either stabs an enemy in front of him or pulls an enemy towards him."
+			},
+			{
+				"slot": "W",
+				"name": "Ghostwater Dive",
+				"cooldown": [
+					14,
+					13,
+					12,
+					11,
+					10
+				],
+				"cost": [
+					65,
+					65,
+					65,
+					65,
+					65
+				],
+				"range": [
+					600,
+					600,
+					600,
+					600,
+					600
+				],
+				"text": "Pyke enters Camouflage and gains significant Move Speed that decays over time."
+			},
+			{
+				"slot": "E",
+				"name": "Phantom Undertow",
+				"cooldown": [
+					15,
+					14,
+					13,
+					12,
+					11
+				],
+				"cost": [
+					40,
+					40,
+					40,
+					40,
+					40
+				],
+				"range": [
+					550,
+					550,
+					550,
+					550,
+					550
+				],
+				"text": "Pyke dashes and leaves behind a phantom that will return to him, stunning enemy champions along its path."
+			},
+			{
+				"slot": "R",
+				"name": "Death From Below",
+				"cooldown": [
+					100,
+					85,
+					70
+				],
+				"cost": [
+					100,
+					100,
+					100
+				],
+				"range": [
+					750,
+					750,
+					750
+				],
+				"text": "Pyke blinks to and executes low health enemies, allowing him to cast this spell again and granting additional gold to an ally who assists."
+			}
+		]
+	},
+	"coaching": {
+		"damage": {
+			"value": "Pyke deals AD-based burst damage with Hail of Blades and abilities.",
+			"sources": [
+				"s1"
+			]
+		},
+		"archetype": {
+			"value": "Pyke is an assassin support who uses mobility to roam and kill squishy targets.",
+			"sources": [
+				"s1"
+			]
+		},
+		"axis": {
+			"value": "Pyke can take short trades and regenerate recent champion damage when hidden from enemies.",
+			"sources": [
+				"game-1"
+			]
+		},
+		"winCondition": {
+			"value": "Pyke wins through roaming, kills on squishy targets, and Death from Below executions that generate extra gold.",
+			"sources": [
+				"s1"
+			]
+		},
+		"spikes": [
+			{
+				"at": "Hail of Blades",
+				"why": "Pyke gains strong early pressure from three quick attacks alongside his abilities.",
+				"sources": [
+					"s1"
+				]
+			},
+			{
+				"at": "6:00 with Unsealed Spellbook",
+				"why": "Pyke can begin swapping to other summoner spells.",
+				"sources": [
+					"s1"
+				]
+			},
+			{
+				"at": "R ready",
+				"why": "Pyke can execute a low-health enemy, then cast R again.",
+				"sources": [
+					"game-1"
+				]
+			}
+		],
+		"bait": [
+			{
+				"slot": "Q",
+				"why": "Pyke relies on skillshots, so missing Bone Skewer creates a punishable window.",
+				"sources": [
+					"s1"
+				]
+			},
+			{
+				"slot": "R",
+				"why": "Pyke can lose a teamfight opportunity when Death from Below is avoided or outhealed.",
+				"sources": [
+					"s1"
+				]
+			}
+		],
+		"mistakes": [],
+		"comp": {
+			"tags": [
+				"pick"
+			],
+			"sources": [
+				"s1",
+				"game-1"
+			]
+		}
+	}
+}

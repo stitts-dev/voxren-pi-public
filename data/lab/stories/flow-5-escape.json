@@ -1,0 +1,23 @@
+{
+	"id": "flow-5-escape",
+	"title": "Escape returns to the default editor view",
+	"split": "train",
+	"steps": [
+		{
+			"wait": "COMMAND TREE"
+		},
+		{
+			"key": "esc"
+		},
+		{
+			"wait": "COMMAND TREE",
+			"absent": true
+		}
+	],
+	"gates": {
+		"absent": [
+			"COMMAND TREE"
+		],
+		"maxSeconds": 60
+	}
+}

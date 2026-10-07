@@ -1,0 +1,22 @@
+{
+	"id": "flow-2-startup-tree",
+	"title": "The flow tree is the startup view, /review under the lens",
+	"split": "train",
+	"steps": [
+		{
+			"wait": "COMMAND TREE"
+		},
+		{
+			"wait": "[/review]"
+		},
+		{
+			"wait": "Pulling Riot match history"
+		},
+		{
+			"wait": "not run this session"
+		}
+	],
+	"gates": {
+		"maxSeconds": 60
+	}
+}

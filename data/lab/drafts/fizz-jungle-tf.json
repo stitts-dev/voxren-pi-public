@@ -1,0 +1,8 @@
+{
+	"name": "fizz-jungle-tf",
+	"you": "JUNGLE",
+	"myTeam": { "BOTTOM": "Corki", "UTILITY": "Twisted Fate", "TOP": "Aatrox", "JUNGLE": "Fizz", "MIDDLE": "Kassadin" },
+	"theirTeam": ["Ahri", "Tahm Kench", "Graves", "Ekko", "Pantheon"],
+	"bans": { "yours": ["Shaco", "Thresh", "Irelia", "Shyvana", "Qiyana"], "theirs": ["Samira", "Caitlyn", "Gwen", "Yorick"] },
+	"notes": "Screenshot 2026-09-28: generic pick advice, enemy roles unconfirmed, no lane-by-lane read (Kassadin scaling mid, TF support, Graves jungle) or jungle pathing from lane priority."
+}

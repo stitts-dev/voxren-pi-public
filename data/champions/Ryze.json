@@ -1,0 +1,222 @@
+{
+	"meta": {
+		"version": "16.19.1",
+		"generated": "2026-10-05",
+		"model": "gpt-6-sol",
+		"sources": [
+			{
+				"id": "s1",
+				"title": "RANK 1 RYZE GUIDE",
+				"url": "https://www.mobafire.com/league-of-legends/build/rank-1-ryze-guide-651579"
+			},
+			{
+				"id": "game-1",
+				"title": "Riot Data Dragon 16.19.1",
+				"url": "https://ddragon.leagueoflegends.com/cdn/16.19.1/data/en_US/champion/Ryze.json"
+			}
+		]
+	},
+	"id": "Ryze",
+	"name": "Ryze",
+	"facts": {
+		"title": "the Rune Mage",
+		"tags": [
+			"Mage"
+		],
+		"resource": "Mana",
+		"stats": {
+			"hp": 620,
+			"hpperlevel": 124,
+			"mp": 300,
+			"mpperlevel": 70,
+			"movespeed": 340,
+			"armor": 22,
+			"armorperlevel": 4.7,
+			"spellblock": 32,
+			"spellblockperlevel": 1.3,
+			"attackrange": 550,
+			"hpregen": 8,
+			"hpregenperlevel": 0.8,
+			"mpregen": 8,
+			"mpregenperlevel": 1,
+			"crit": 0,
+			"critperlevel": 0,
+			"attackdamage": 55,
+			"attackdamageperlevel": 0,
+			"attackspeedperlevel": 2.11,
+			"attackspeed": 0.658
+		},
+		"passive": {
+			"name": "Arcane Mastery",
+			"text": "Ryze's spells deal extra damage based on his Bonus Mana, and he gains a percentage increase to his maximum Mana based on his Ability Power."
+		},
+		"spells": [
+			{
+				"slot": "Q",
+				"name": "Overload",
+				"cooldown": [
+					5,
+					5,
+					5,
+					5,
+					5
+				],
+				"cost": [
+					40,
+					38,
+					36,
+					34,
+					32
+				],
+				"range": [
+					1000,
+					1000,
+					1000,
+					1000,
+					1000
+				],
+				"text": "Passively, Ryze's other basic abilities reset the cooldown of Overload and charge a rune. When Ryze casts Overload with 2 runes charged, he gains a brief burst of Move Speed.On cast, Ryze throws a charge of pure energy in a line, dealing damage to the first enemy struck. If the target has Flux on it, Overload deals extra damage and bounces to nearby enemies with Flux."
+			},
+			{
+				"slot": "W",
+				"name": "Rune Prison",
+				"cooldown": [
+					11,
+					10.5,
+					10,
+					9.5,
+					9
+				],
+				"cost": [
+					50,
+					60,
+					70,
+					80,
+					90
+				],
+				"range": [
+					615,
+					615,
+					615,
+					615,
+					615
+				],
+				"text": "Ryze traps a target in a cage of runes, damaging them and slowing their movement. If the target has Flux on it, they are instead rooted."
+			},
+			{
+				"slot": "E",
+				"name": "Spell Flux",
+				"cooldown": [
+					3.5,
+					3.25,
+					3,
+					2.75,
+					2.5
+				],
+				"cost": [
+					40,
+					50,
+					60,
+					70,
+					80
+				],
+				"range": [
+					615,
+					615,
+					615,
+					615,
+					615
+				],
+				"text": "Ryze releases an orb of pure magical power that damages an enemy and debuffs all nearby enemies. Ryze's spells have additional effects against the debuffed enemy."
+			},
+			{
+				"slot": "R",
+				"name": "Realm Warp",
+				"cooldown": [
+					180,
+					160,
+					140
+				],
+				"cost": [
+					100,
+					100,
+					100
+				],
+				"range": [
+					3000,
+					3000,
+					3000
+				],
+				"text": "Passively, Overload deals even more damage against targets with Flux.On cast, Ryze creates a portal to a nearby location. After a few seconds, allies standing near the portal are teleported to the target location."
+			}
+		]
+	},
+	"coaching": {
+		"damage": {
+			"value": "Ryze deals sustained magic damage through short cooldowns and Overload resets.",
+			"sources": [
+				"game-1"
+			]
+		},
+		"archetype": {
+			"value": "Ryze is a mage who chains spells to strengthen Overload and control targets with Rune Prison.",
+			"sources": [
+				"game-1"
+			]
+		},
+		"axis": {
+			"value": "Ryze pushes waves quickly and keeps distance when trading.",
+			"sources": [
+				"s1"
+			]
+		},
+		"winCondition": {
+			"value": "Ryze wins by finding valuable picks and staying alive in the late game.",
+			"sources": [
+				"s1"
+			]
+		},
+		"spikes": [
+			{
+				"at": "Seraph's Embrace and Fimbulwinter",
+				"why": "Ryze becomes tanky while dealing strong damage on low cooldowns.",
+				"sources": [
+					"s1"
+				]
+			},
+			{
+				"at": "Actualizer",
+				"why": "Ryze can take 1v2 fights more easily.",
+				"sources": [
+					"s1"
+				]
+			},
+			{
+				"at": "Realm Warp ranks",
+				"why": "Ryze gains more Overload damage against targets with Flux.",
+				"sources": [
+					"game-1"
+				]
+			}
+		],
+		"bait": [],
+		"mistakes": [
+			{
+				"value": "Ryze misses Overload's extra damage and bounce when he casts it before applying Flux.",
+				"sources": [
+					"game-1"
+				]
+			}
+		],
+		"comp": {
+			"tags": [
+				"pick",
+				"split"
+			],
+			"sources": [
+				"s1",
+				"game-1"
+			]
+		}
+	}
+}

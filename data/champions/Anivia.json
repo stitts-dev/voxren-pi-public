@@ -1,0 +1,249 @@
+{
+	"meta": {
+		"version": "16.19.1",
+		"generated": "2026-10-05",
+		"model": "gpt-6-sol",
+		"sources": [
+			{
+				"id": "s1",
+				"title": "Anivia Build Guide: The Anivia Encyclopedia | An In-Depth Anivia Guide",
+				"url": "https://www.mobafire.com/league-of-legends/build/the-anivia-encyclopedia-an-in-depth-anivia-guide-592758"
+			},
+			{
+				"id": "game-1",
+				"title": "Riot Data Dragon 16.19.1",
+				"url": "https://ddragon.leagueoflegends.com/cdn/16.19.1/data/en_US/champion/Anivia.json"
+			}
+		]
+	},
+	"id": "Anivia",
+	"name": "Anivia",
+	"facts": {
+		"title": "the Cryophoenix",
+		"tags": [
+			"Mage"
+		],
+		"resource": "Mana",
+		"stats": {
+			"hp": 550,
+			"hpperlevel": 92,
+			"mp": 495,
+			"mpperlevel": 45,
+			"movespeed": 325,
+			"armor": 19,
+			"armorperlevel": 4.1,
+			"spellblock": 30,
+			"spellblockperlevel": 1.3,
+			"attackrange": 600,
+			"hpregen": 5.5,
+			"hpregenperlevel": 0.55,
+			"mpregen": 8,
+			"mpregenperlevel": 0.8,
+			"crit": 0,
+			"critperlevel": 0,
+			"attackdamage": 51,
+			"attackdamageperlevel": 0,
+			"attackspeedperlevel": 1.68,
+			"attackspeed": 0.658
+		},
+		"passive": {
+			"name": "Rebirth",
+			"text": "Upon taking fatal damage, Anivia reverts to an egg and is reborn with full health."
+		},
+		"spells": [
+			{
+				"slot": "Q",
+				"name": "Flash Frost",
+				"cooldown": [
+					11,
+					10,
+					9,
+					8,
+					7
+				],
+				"cost": [
+					80,
+					85,
+					90,
+					95,
+					100
+				],
+				"range": [
+					1075,
+					1075,
+					1075,
+					1075,
+					1075
+				],
+				"text": "Anivia brings her wings together and summons a sphere of ice that flies towards her opponents, chilling and damaging anyone in its path. When the sphere explodes it does moderate damage in a radius, stunning anyone in the area."
+			},
+			{
+				"slot": "W",
+				"name": "Crystallize",
+				"cooldown": [
+					17,
+					17,
+					17,
+					17,
+					17
+				],
+				"cost": [
+					70,
+					70,
+					70,
+					70,
+					70
+				],
+				"range": [
+					1000,
+					1000,
+					1000,
+					1000,
+					1000
+				],
+				"text": "Anivia condenses the moisture in the air into an impassable wall of ice to block all movement. The wall only lasts a short duration before it melts."
+			},
+			{
+				"slot": "E",
+				"name": "Frostbite",
+				"cooldown": [
+					4,
+					4,
+					4,
+					4,
+					4
+				],
+				"cost": [
+					50,
+					50,
+					50,
+					50,
+					50
+				],
+				"range": [
+					650,
+					650,
+					650,
+					650,
+					650
+				],
+				"text": "With a flap of her wings, Anivia blasts a freezing gust of wind at her target, dealing damage. If the target was recently hit by Flash Frost or damaged by a fully formed Glacial Storm, the damage they take is doubled."
+			},
+			{
+				"slot": "R",
+				"name": "Glacial Storm",
+				"cooldown": [
+					4,
+					3,
+					2
+				],
+				"cost": [
+					60,
+					60,
+					60
+				],
+				"range": [
+					750,
+					750,
+					750
+				],
+				"text": "Anivia summons a driving rain of ice and hail to damage her enemies and slow their advance."
+			}
+		]
+	},
+	"coaching": {
+		"damage": {
+			"value": "Anivia deals bursts of ice damage with Flash Frost and Frostbite, while Glacial Storm damages enemies with a driving rain of ice and hail.",
+			"sources": [
+				"game-1"
+			]
+		},
+		"archetype": {
+			"value": "Anivia can play as an enchanter in support with Helia and Diadem.",
+			"sources": [
+				"s1"
+			]
+		},
+		"axis": {
+			"value": "Anivia can poke with Flash Frost, then use Frostbite for doubled damage if Flash Frost recently hit.",
+			"sources": [
+				"game-1"
+			]
+		},
+		"winCondition": {
+			"value": "Anivia wins by scaling into the mid and late game.",
+			"sources": [
+				"s1"
+			]
+		},
+		"spikes": [
+			{
+				"at": "Malignance",
+				"why": "Anivia gains damage and mana from one item.",
+				"sources": [
+					"s1"
+				]
+			},
+			{
+				"at": "Rod of Ages and Malignance",
+				"why": "Anivia gets a clearer power spike whether she buys either item first.",
+				"sources": [
+					"s1"
+				]
+			},
+			{
+				"at": "Malignance",
+				"why": "Anivia gains damage and mana from it, creating an earlier power spike than the Seraph’s build described in the guide.",
+				"sources": [
+					"s1"
+				]
+			}
+		],
+		"bait": [
+			{
+				"slot": "Q",
+				"why": "After Anivia spends Flash Frost, its 11-to-7-second cooldown leaves her without its stun and one way to double Frostbite's damage.",
+				"sources": [
+					"game-1"
+				]
+			},
+			{
+				"slot": "W",
+				"why": "After Anivia spends Crystallize, its 17-second cooldown leaves her unable to place another impassable wall.",
+				"sources": [
+					"game-1"
+				]
+			}
+		],
+		"mistakes": [
+			{
+				"value": "Anivia gives up damage until her third item when she builds Seraphs instead of the described Malignance setup.",
+				"sources": [
+					"s1"
+				]
+			},
+			{
+				"value": "Rushing Seraph’s on Anivia sacrifices damage until a third-item Liandry’s Torment.",
+				"sources": [
+					"s1"
+				]
+			},
+			{
+				"value": "Anivia loses Frostbite's doubled damage by using it without a recent Flash Frost hit or damage from a fully formed Glacial Storm.",
+				"sources": [
+					"game-1"
+				]
+			}
+		],
+		"comp": {
+			"tags": [
+				"scale",
+				"peel"
+			],
+			"sources": [
+				"s1",
+				"game-1"
+			]
+		}
+	}
+}

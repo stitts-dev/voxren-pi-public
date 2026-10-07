@@ -1,0 +1,229 @@
+{
+	"meta": {
+		"version": "16.19.1",
+		"generated": "2026-10-05",
+		"model": "gpt-6-sol",
+		"sources": [
+			{
+				"id": "s1",
+				"title": "[26.19] [Mid/Bot] 4.5M Mastery 1K LP Master OTP Aurelion Sol Guide (+ Matchup Details)",
+				"url": "https://www.mobafire.com/league-of-legends/build/26-19-mid-bot-4-5m-mastery-1k-lp-master-otp-aurelion-sol-guide-matchup-details-646996"
+			},
+			{
+				"id": "game-1",
+				"title": "Riot Data Dragon 16.19.1",
+				"url": "https://ddragon.leagueoflegends.com/cdn/16.19.1/data/en_US/champion/AurelionSol.json"
+			}
+		]
+	},
+	"id": "AurelionSol",
+	"name": "Aurelion Sol",
+	"facts": {
+		"title": "The Star Forger",
+		"tags": [
+			"Mage"
+		],
+		"resource": "Mana",
+		"stats": {
+			"hp": 600,
+			"hpperlevel": 90,
+			"mp": 530,
+			"mpperlevel": 40,
+			"movespeed": 340,
+			"armor": 22,
+			"armorperlevel": 4,
+			"spellblock": 30,
+			"spellblockperlevel": 1.3,
+			"attackrange": 550,
+			"hpregen": 5.5,
+			"hpregenperlevel": 0.55,
+			"mpregen": 8,
+			"mpregenperlevel": 0.75,
+			"crit": 0,
+			"critperlevel": 0,
+			"attackdamage": 58,
+			"attackdamageperlevel": 0,
+			"attackspeedperlevel": 1.5,
+			"attackspeed": 0.625
+		},
+		"passive": {
+			"name": "Cosmic Creator",
+			"text": "Aurelion Sol's damaging Abilities break down enemies into stacks of Stardust, which permanently improves each of his abilities."
+		},
+		"spells": [
+			{
+				"slot": "Q",
+				"name": "Breath of Light",
+				"cooldown": [
+					3,
+					3,
+					3,
+					3,
+					3
+				],
+				"cost": [
+					30,
+					35,
+					40,
+					45,
+					50
+				],
+				"range": [
+					750,
+					750,
+					750,
+					750,
+					750
+				],
+				"text": "Aurelion Sol channels his dragon breath for a few seconds, damaging the first enemy hit and splashing reduced damage onto nearby enemies. Each second the breath is channeled directly at an enemy will deal bonus damage, which is improved by the amount of Stardust that's been collected. This ability collects Stardust if the target is a champion."
+			},
+			{
+				"slot": "W",
+				"name": "Astral Flight",
+				"cooldown": [
+					22,
+					20,
+					18,
+					16,
+					14
+				],
+				"cost": [
+					50,
+					55,
+					60,
+					65,
+					70
+				],
+				"range": [
+					1500,
+					1500,
+					1500,
+					1500,
+					1500
+				],
+				"text": "Aurelion Sol flies over terrain in a targeted direction. While in this state, he can cast other abilities. Breath of Light no longer has a cooldown or maximum channel duration and deals increased damage while flying.Astral Flight's remaining cooldown is reduced whenever an enemy champion dies after being recently damaged by Aurelion Sol.Stardust increases Astral Flight's maximum range."
+			},
+			{
+				"slot": "E",
+				"name": "Singularity",
+				"cooldown": [
+					12,
+					12,
+					12,
+					12,
+					12
+				],
+				"cost": [
+					90,
+					90,
+					90,
+					90,
+					90
+				],
+				"range": [
+					750,
+					750,
+					750,
+					750,
+					750
+				],
+				"text": "Aurelion Sol summons a black hole, damaging enemies and slowly pulling them toward its center. This ability grants Stardust each time an enemy dies within the black hole and for each second an enemy champion is caught inside it. The center of the black hole executes enemies who are below a certain percentage of their maximum health. Stardust increases Singularity's area as well as the execution threshold."
+			},
+			{
+				"slot": "R",
+				"name": "Falling Star / The Skies Descend",
+				"cooldown": [
+					120,
+					110,
+					100
+				],
+				"cost": [
+					100,
+					100,
+					100
+				],
+				"range": [
+					1250,
+					1250,
+					1250
+				],
+				"text": "Falling Star: Aurelion Sol crashes a star into the earth. This impact deals magic damage and stuns enemies while also granting Stardust for each enemy champion it hits. Gathering enough Stardust transforms Aurelion Sol's next Falling Star into The Skies Descend.The Skies Descend: Aurelion Sol drags a giant star down from the heavens with an increased impact zone and increased damage, knocking up enemies rather than stunning them. A shockwave then spreads from the edge of the impact zone, which damages and slows the enemies it hits. Stardust increases the impact area of both Falling Star and The Skies Descend."
+			}
+		]
+	},
+	"coaching": {
+		"damage": {
+			"value": "Aurelion Sol deals burst magic damage with Falling Star and sustained damage with channeled Breath of Light.",
+			"sources": [
+				"game-1"
+			]
+		},
+		"archetype": {
+			"value": "Aurelion Sol is an ability-focused mage who collects Stardust to permanently improve his abilities.",
+			"sources": [
+				"game-1"
+			]
+		},
+		"axis": {
+			"value": "Aurelion Sol favors longer trades because Breath of Light deals bonus damage for each second it stays directly on an enemy.",
+			"sources": [
+				"game-1"
+			]
+		},
+		"winCondition": {
+			"value": "Aurelion Sol survives a weak laning phase and scales into a late-game threat.",
+			"sources": [
+				"s1"
+			]
+		},
+		"spikes": [
+			{
+				"at": "Passive stacks",
+				"why": "Aurelion Sol grows stronger as his passive stacks accumulate.",
+				"sources": [
+					"s1"
+				]
+			},
+			{
+				"at": "Late game through passive stacks",
+				"why": "Aurelion Sol grows stronger because his passive stacks indefinitely.",
+				"sources": [
+					"s1"
+				]
+			},
+			{
+				"at": "Enough Stardust to transform Falling Star",
+				"why": "Aurelion Sol gains The Skies Descend, with a larger impact, more damage, a knockup, and a damaging shockwave.",
+				"sources": [
+					"game-1"
+				]
+			}
+		],
+		"bait": [
+			{
+				"slot": "E",
+				"why": "Aurelion Sol has a 12-second window without Singularity’s pull and execution threat after casting it.",
+				"sources": [
+					"game-1"
+				]
+			}
+		],
+		"mistakes": [
+			{
+				"value": "Aurelion Sol misses Breath of Light’s repeating bonus damage by failing to keep the channel directly on an enemy.",
+				"sources": [
+					"game-1"
+				]
+			}
+		],
+		"comp": {
+			"tags": [
+				"scale"
+			],
+			"sources": [
+				"s1",
+				"game-1"
+			]
+		}
+	}
+}

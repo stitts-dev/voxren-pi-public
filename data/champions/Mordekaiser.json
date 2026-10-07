@@ -1,0 +1,189 @@
+{
+	"meta": {
+		"version": "16.19.1",
+		"generated": "2026-10-05",
+		"model": "gpt-6-sol",
+		"sources": [
+			{
+				"id": "game-1",
+				"title": "Riot Data Dragon 16.19.1",
+				"url": "https://ddragon.leagueoflegends.com/cdn/16.19.1/data/en_US/champion/Mordekaiser.json"
+			}
+		]
+	},
+	"id": "Mordekaiser",
+	"name": "Mordekaiser",
+	"facts": {
+		"title": "the Iron Revenant",
+		"tags": [
+			"Fighter",
+			"Mage"
+		],
+		"resource": "Shield",
+		"stats": {
+			"hp": 645,
+			"hpperlevel": 104,
+			"mp": 100,
+			"mpperlevel": 0,
+			"movespeed": 335,
+			"armor": 37,
+			"armorperlevel": 4.2,
+			"spellblock": 32,
+			"spellblockperlevel": 2.05,
+			"attackrange": 175,
+			"hpregen": 5,
+			"hpregenperlevel": 0.75,
+			"mpregen": 0,
+			"mpregenperlevel": 0,
+			"crit": 0,
+			"critperlevel": 0,
+			"attackdamage": 61,
+			"attackdamageperlevel": 0,
+			"attackspeedperlevel": 1,
+			"attackspeed": 0.625
+		},
+		"passive": {
+			"name": "Darkness Rise",
+			"text": "Mordekaiser gains a powerful damage aura and Move Speed after landing 3 attacks or spells against champions or monsters."
+		},
+		"spells": [
+			{
+				"slot": "Q",
+				"name": "Obliterate",
+				"cooldown": [
+					8,
+					7,
+					6,
+					5,
+					4
+				],
+				"cost": [
+					0,
+					0,
+					0,
+					0,
+					0
+				],
+				"range": [
+					675,
+					675,
+					675,
+					675,
+					675
+				],
+				"text": "Mordekaiser smashes the ground with his mace dealing damage to each enemy struck. Damage is increased when hitting a single enemy."
+			},
+			{
+				"slot": "W",
+				"name": "Indestructible",
+				"cooldown": [
+					12,
+					11,
+					10,
+					9,
+					8
+				],
+				"cost": [
+					0,
+					0,
+					0,
+					0,
+					0
+				],
+				"range": [
+					25000,
+					25000,
+					25000,
+					25000,
+					25000
+				],
+				"text": "Mordekaiser stores damage he deals and takes to create a shield. He may consume the shield to heal."
+			},
+			{
+				"slot": "E",
+				"name": "Death's Grasp",
+				"cooldown": [
+					16,
+					14,
+					12,
+					10,
+					8
+				],
+				"cost": [
+					0,
+					0,
+					0,
+					0,
+					0
+				],
+				"range": [
+					700,
+					700,
+					700,
+					700,
+					700
+				],
+				"text": "Mordekaiser pulls all enemies in an area."
+			},
+			{
+				"slot": "R",
+				"name": "Realm of Death",
+				"cooldown": [
+					140,
+					120,
+					100
+				],
+				"cost": [
+					0,
+					0,
+					0
+				],
+				"range": [
+					650,
+					650,
+					650
+				],
+				"text": "Mordekaiser drags his victim to a different dimension with him and steals a portion of their stats. If he kills them, he keeps the stats until the victim respawns."
+			}
+		]
+	},
+	"coaching": {
+		"archetype": {
+			"value": "Mordekaiser plays as a bruiser who deals damage up close, shields himself, and pulls enemies toward him.",
+			"sources": [
+				"game-1"
+			]
+		},
+		"axis": {
+			"value": "Mordekaiser favors long trades because landing three attacks or spells activates his damage aura and Move Speed.",
+			"sources": [
+				"game-1"
+			]
+		},
+		"winCondition": {
+			"value": "Mordekaiser can isolate a victim with Realm of Death and keep stolen stats until that victim respawns if he kills them.",
+			"sources": [
+				"game-1"
+			]
+		},
+		"spikes": [
+			{
+				"at": "After three attacks or spells against champions or monsters",
+				"why": "Mordekaiser gains a damage aura and Move Speed.",
+				"sources": [
+					"game-1"
+				]
+			}
+		],
+		"bait": [],
+		"mistakes": [],
+		"comp": {
+			"tags": [
+				"pick"
+			],
+			"sources": [
+				"game-1"
+			]
+		}
+	}
+}

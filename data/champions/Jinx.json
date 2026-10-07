@@ -1,0 +1,225 @@
+{
+	"meta": {
+		"version": "16.19.1",
+		"generated": "2026-10-04",
+		"model": "gpt-6-sol",
+		"sources": [
+			{
+				"id": "s1",
+				"title": "Jinx Build Guide: [S2026.19] | EASY-TO-READ ✔️ SIMPLE 1v9 ✔️ LIVE AMA ✔️ [FULL GUIDE] ✔️ [UPDATED]",
+				"url": "https://www.mobafire.com/league-of-legends/build/s2026-19-easy-to-read-simple-1v9-live-ama-full-guide-updated-650672"
+			},
+			{
+				"id": "s2",
+				"title": "Jinx Build Guide: The Comprehensive Guide To Jinx",
+				"url": "https://www.mobafire.com/league-of-legends/build/the-comprehensive-guide-to-jinx-492531"
+			},
+			{
+				"id": "game-1",
+				"title": "Riot Data Dragon 16.19.1",
+				"url": "https://ddragon.leagueoflegends.com/cdn/16.19.1/data/en_US/champion/Jinx.json"
+			}
+		]
+	},
+	"id": "Jinx",
+	"name": "Jinx",
+	"facts": {
+		"title": "the Loose Cannon",
+		"tags": [
+			"Marksman"
+		],
+		"resource": "Mana",
+		"stats": {
+			"hp": 630,
+			"hpperlevel": 105,
+			"mp": 260,
+			"mpperlevel": 50,
+			"movespeed": 325,
+			"armor": 26,
+			"armorperlevel": 4.2,
+			"spellblock": 33,
+			"spellblockperlevel": 1.1,
+			"attackrange": 525,
+			"hpregen": 3.75,
+			"hpregenperlevel": 0.5,
+			"mpregen": 6.7,
+			"mpregenperlevel": 1,
+			"crit": 0,
+			"critperlevel": 0,
+			"attackdamage": 59,
+			"attackdamageperlevel": 0,
+			"attackspeedperlevel": 1,
+			"attackspeed": 0.625
+		},
+		"passive": {
+			"name": "Get Excited!",
+			"text": "Jinx receives massively increased Move Speed and Attack Speed whenever she helps kill or destroy an enemy champions epic jungle monster, or structure."
+		},
+		"spells": [
+			{
+				"slot": "Q",
+				"name": "Switcheroo!",
+				"cooldown": [
+					0.9,
+					0.9,
+					0.9,
+					0.9,
+					0.9
+				],
+				"cost": [
+					20,
+					20,
+					20,
+					20,
+					20
+				],
+				"range": [
+					600,
+					600,
+					600,
+					600,
+					600
+				],
+				"text": "Jinx modifies her basic attacks by swapping between Pow-Pow, her minigun and Fishbones, her rocket launcher. Attacks with Pow-Pow grant Attack Speed, while attacks with Fishbones deal area of effect damage, gain increased range, but drain Mana and attack slower."
+			},
+			{
+				"slot": "W",
+				"name": "Zap!",
+				"cooldown": [
+					8,
+					7,
+					6,
+					5,
+					4
+				],
+				"cost": [
+					40,
+					45,
+					50,
+					55,
+					60
+				],
+				"range": [
+					1450,
+					1450,
+					1450,
+					1450,
+					1450
+				],
+				"text": "Jinx uses Zapper, her shock pistol, to fire a blast that deals damage to the first enemy hit, slowing and revealing it."
+			},
+			{
+				"slot": "E",
+				"name": "Flame Chompers!",
+				"cooldown": [
+					24,
+					20.5,
+					17,
+					13.5,
+					10
+				],
+				"cost": [
+					90,
+					90,
+					90,
+					90,
+					90
+				],
+				"range": [
+					925,
+					925,
+					925,
+					925,
+					925
+				],
+				"text": "Jinx throws out a line of snare grenades that explode after 5 seconds, lighting enemies on fire. Flame Chompers will bite enemy champions who walk over them, rooting them in place."
+			},
+			{
+				"slot": "R",
+				"name": "Super Mega Death Rocket!",
+				"cooldown": [
+					85,
+					65,
+					45
+				],
+				"cost": [
+					100,
+					100,
+					100
+				],
+				"range": [
+					25000,
+					25000,
+					25000
+				],
+				"text": "Jinx fires a super rocket across the map that gains damage as it travels. The rocket will explode upon colliding with an enemy champion, dealing damage to it and surrounding enemies based on their missing Health."
+			}
+		]
+	},
+	"coaching": {
+		"damage": {
+			"value": "Jinx deals sustained attack damage by stacking minigun attack speed and unloading rockets.",
+			"sources": [
+				"s1"
+			]
+		},
+		"archetype": {
+			"value": "Jinx is a backline damage dealer who switches between minigun for single-target damage and rockets for waveclear and poke.",
+			"sources": [
+				"s1"
+			]
+		},
+		"axis": {
+			"value": "Jinx pushes waves and pokes with rockets, then uses minigun for single-target damage.",
+			"sources": [
+				"s1"
+			]
+		},
+		"winCondition": {
+			"value": "Jinx positions in the backline, waits for an engage, then unloads rockets with Runaan's.",
+			"sources": [
+				"s1"
+			]
+		},
+		"spikes": [
+			{
+				"at": "Full build and maximum minigun stacks",
+				"why": "Jinx gains the sustained damage to dominate teamfights.",
+				"sources": [
+					"s1"
+				]
+			}
+		],
+		"bait": [],
+		"mistakes": [
+			{
+				"value": "Jinx risks being dived when she pushes mid alone without vision or her team nearby.",
+				"sources": [
+					"s1"
+				]
+			},
+			{
+				"value": "Jinx players can mistake switching from rockets to minigun for an attack reset, but it deals less DPS than continuing to attack with minigun.",
+				"sources": [
+					"s2"
+				]
+			},
+			{
+				"value": "Jinx players holding minigun should use Zap! before switching to rockets, because the lockout between casts makes the reverse order clunky.",
+				"sources": [
+					"s2"
+				]
+			}
+		],
+		"comp": {
+			"tags": [
+				"scale",
+				"poke"
+			],
+			"sources": [
+				"s1",
+				"game-1"
+			]
+		}
+	}
+}

@@ -1,0 +1,36 @@
+{
+	"name": "voxren-pi",
+	"version": "0.1.0",
+	"description": "A League of Legends coach in the terminal: one Pi extension, six tools, seven commands.",
+	"license": "MIT",
+	"repository": "github:stitts-dev/voxren-pi-public",
+	"engines": {
+		"node": ">=22.19.0"
+	},
+	"type": "module",
+	"bin": {
+		"coach": "bin/coach.mjs"
+	},
+	"scripts": {
+		"test": "bun test",
+		"typecheck": "tsc --noEmit",
+		"setup": "node bin/setup.mjs",
+		"setup:worktree": "node bin/setup.mjs --worktree",
+		"coach": "node bin/coach.mjs"
+	},
+	"dependencies": {
+		"@earendil-works/pi-coding-agent": "0.87.1",
+		"@earendil-works/pi-tui": "0.87.1",
+		"typebox": "1.3.27",
+		"yaml": "2.9.0"
+	},
+	"optionalDependencies": {
+		"@resvg/resvg-js": "2.6.2",
+		"sixel": "0.16.0"
+	},
+	"devDependencies": {
+		"@microsoft/tui-test": "0.1.0-beta.5",
+		"@types/bun": "^1.4.2",
+		"typescript": "5.9"
+	}
+}

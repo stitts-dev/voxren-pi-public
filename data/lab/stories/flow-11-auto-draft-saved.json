@@ -1,0 +1,61 @@
+{
+	"id": "flow-11-auto-draft-saved",
+	"title": "Auto /draft toggles on its row and is still on after a restart",
+	"split": "train",
+	"steps": [
+		{
+			"wait": "COMMAND TREE"
+		},
+		{
+			"key": "end"
+		},
+		{
+			"key": "left"
+		},
+		{
+			"wait": "[/draft]"
+		},
+		{
+			"key": "down"
+		},
+		{
+			"wait": "‹ off ›"
+		},
+		{
+			"key": "right"
+		},
+		{
+			"wait": "‹ on ›"
+		},
+		{
+			"key": "esc"
+		},
+		{
+			"key": "esc"
+		},
+		{
+			"restart": true
+		},
+		{
+			"wait": "COMMAND TREE"
+		},
+		{
+			"key": "end"
+		},
+		{
+			"key": "left"
+		},
+		{
+			"wait": "[/draft]"
+		},
+		{
+			"wait": "auto   on"
+		}
+	],
+	"gates": {
+		"expect": [
+			"auto   on"
+		],
+		"maxSeconds": 90
+	}
+}

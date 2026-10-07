@@ -1,0 +1,242 @@
+{
+	"meta": {
+		"version": "16.19.1",
+		"generated": "2026-10-05",
+		"model": "gpt-6-sol",
+		"sources": [
+			{
+				"id": "s1",
+				"title": "Karthus Build Guide: [26.19] Challenger Karthus ADC Guide",
+				"url": "https://www.mobafire.com/league-of-legends/build/26-19-challenger-karthus-adc-guide-619929"
+			},
+			{
+				"id": "s2",
+				"title": "Karthus Build Guide: [16.16 Challenger NA & EUW Rank 1 Karthus world | In-depth guide on how play Karthus jungle",
+				"url": "https://www.mobafire.com/league-of-legends/build/16-16-challenger-na-amp-euw-rank-1-karthus-world-in-depth-guide-on-how-play-karthus-jungle-588437"
+			},
+			{
+				"id": "game-1",
+				"title": "Riot Data Dragon 16.19.1",
+				"url": "https://ddragon.leagueoflegends.com/cdn/16.19.1/data/en_US/champion/Karthus.json"
+			}
+		]
+	},
+	"id": "Karthus",
+	"name": "Karthus",
+	"facts": {
+		"title": "the Deathsinger",
+		"tags": [
+			"Mage"
+		],
+		"resource": "Mana",
+		"stats": {
+			"hp": 620,
+			"hpperlevel": 110,
+			"mp": 467,
+			"mpperlevel": 31,
+			"movespeed": 335,
+			"armor": 21,
+			"armorperlevel": 4.7,
+			"spellblock": 30,
+			"spellblockperlevel": 1.3,
+			"attackrange": 450,
+			"hpregen": 6.5,
+			"hpregenperlevel": 0.55,
+			"mpregen": 8,
+			"mpregenperlevel": 0.8,
+			"crit": 0,
+			"critperlevel": 0,
+			"attackdamage": 46,
+			"attackdamageperlevel": 0,
+			"attackspeedperlevel": 2.11,
+			"attackspeed": 0.625
+		},
+		"passive": {
+			"name": "Death Defied",
+			"text": "Upon dying, Karthus enters a spirit form that allows him to continue casting spells."
+		},
+		"spells": [
+			{
+				"slot": "Q",
+				"name": "Lay Waste",
+				"cooldown": [
+					0,
+					0,
+					0,
+					0,
+					0
+				],
+				"cost": [
+					20,
+					25,
+					30,
+					35,
+					40
+				],
+				"range": [
+					875,
+					875,
+					875,
+					875,
+					875
+				],
+				"text": "Karthus unleashes a delayed blast at a location, dealing damage to nearby enemies. Deals increased damage to isolated enemies."
+			},
+			{
+				"slot": "W",
+				"name": "Wall of Pain",
+				"cooldown": [
+					15,
+					15,
+					15,
+					15,
+					15
+				],
+				"cost": [
+					70,
+					70,
+					70,
+					70,
+					70
+				],
+				"range": [
+					1000,
+					1000,
+					1000,
+					1000,
+					1000
+				],
+				"text": "Karthus creates a passable screen of leeching energy. Any enemy units that walk through the screen have their Move Speed and Magic Resist reduced for a period."
+			},
+			{
+				"slot": "E",
+				"name": "Defile",
+				"cooldown": [
+					0.5,
+					0.5,
+					0.5,
+					0.5,
+					0.5
+				],
+				"cost": [
+					30,
+					42,
+					54,
+					66,
+					78
+				],
+				"range": [
+					550,
+					550,
+					550,
+					550,
+					550
+				],
+				"text": "Karthus passively steals energy from his victims, gaining Mana on each kill. Alternatively, Karthus can surround himself in the souls of his prey, dealing damage to nearby enemies, but quickly draining his own Mana."
+			},
+			{
+				"slot": "R",
+				"name": "Requiem",
+				"cooldown": [
+					200,
+					180,
+					160
+				],
+				"cost": [
+					100,
+					100,
+					100
+				],
+				"range": [
+					10000,
+					10000,
+					10000
+				],
+				"text": "After channeling for 3 seconds, Karthus deals damage to all enemy champions."
+			}
+		]
+	},
+	"coaching": {
+		"damage": {
+			"value": "Karthus deals sustained area-of-effect damage, with high DPS throughout the game.",
+			"sources": [
+				"s2"
+			]
+		},
+		"archetype": {
+			"value": "Karthus is a bot-lane carry with a playstyle very different from a normal ADC’s.",
+			"sources": [
+				"s1"
+			]
+		},
+		"axis": {
+			"value": "Karthus plays aggressively in lane and should aim for kills.",
+			"sources": [
+				"s1"
+			]
+		},
+		"winCondition": {
+			"value": "Karthus wins by using his high DPS to take objectives quickly and fighting in confined spaces where his area-of-effect damage can hit multiple targets.",
+			"sources": [
+				"s2"
+			]
+		},
+		"spikes": [
+			{
+				"at": "Dark Harvest stacks",
+				"why": "Karthus scales better and deals more damage as he gains stacks.",
+				"sources": [
+					"s1"
+				]
+			},
+			{
+				"at": "Ultimate Hunter stacks",
+				"why": "Karthus can use Requiem more often as its cooldown falls.",
+				"sources": [
+					"s1"
+				]
+			},
+			{
+				"at": "Later stages of the game",
+				"why": "Karthus scales well while maintaining high DPS.",
+				"sources": [
+					"s2"
+				]
+			}
+		],
+		"bait": [
+			{
+				"slot": "R",
+				"why": "Karthus’s Requiem is his biggest mid-to-late-game threat, so its cooldown is a window to play around.",
+				"sources": [
+					"s1"
+				]
+			}
+		],
+		"mistakes": [
+			{
+				"value": "Karthus misses his kill-focused game plan when he plays too passively.",
+				"sources": [
+					"s1"
+				]
+			},
+			{
+				"value": "Karthus loses damage when players miss his skill shots or fail to practise and optimize his jungle clear.",
+				"sources": [
+					"s2"
+				]
+			}
+		],
+		"comp": {
+			"tags": [
+				"scale",
+				"poke"
+			],
+			"sources": [
+				"s1",
+				"s2",
+				"game-1"
+			]
+		}
+	}
+}

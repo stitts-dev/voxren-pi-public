@@ -1,0 +1,207 @@
+{
+	"meta": {
+		"version": "16.19.1",
+		"generated": "2026-10-05",
+		"model": "gpt-6-sol",
+		"sources": [
+			{
+				"id": "s1",
+				"title": "[26.1] Shok's Rank 1 Challenger Orianna Guide",
+				"url": "https://www.mobafire.com/league-of-legends/build/26-1-shoks-rank-1-challenger-orianna-guide-636228"
+			},
+			{
+				"id": "game-1",
+				"title": "Riot Data Dragon 16.19.1",
+				"url": "https://ddragon.leagueoflegends.com/cdn/16.19.1/data/en_US/champion/Orianna.json"
+			}
+		]
+	},
+	"id": "Orianna",
+	"name": "Orianna",
+	"facts": {
+		"title": "the Lady of Clockwork",
+		"tags": [
+			"Mage",
+			"Support"
+		],
+		"resource": "Mana",
+		"stats": {
+			"hp": 565,
+			"hpperlevel": 110,
+			"mp": 418,
+			"mpperlevel": 25,
+			"movespeed": 325,
+			"armor": 20,
+			"armorperlevel": 4.2,
+			"spellblock": 26,
+			"spellblockperlevel": 1.3,
+			"attackrange": 525,
+			"hpregen": 7,
+			"hpregenperlevel": 0.55,
+			"mpregen": 8,
+			"mpregenperlevel": 0.8,
+			"crit": 0,
+			"critperlevel": 0,
+			"attackdamage": 44,
+			"attackdamageperlevel": 0,
+			"attackspeedperlevel": 3.5,
+			"attackspeed": 0.658
+		},
+		"passive": {
+			"name": "Clockwork Windup",
+			"text": "Orianna's Attacks deal additional magic damage. This damage increases the more Orianna Attacks the same target."
+		},
+		"spells": [
+			{
+				"slot": "Q",
+				"name": "Command: Attack",
+				"cooldown": [
+					7,
+					6,
+					5,
+					4,
+					3
+				],
+				"cost": [
+					35,
+					35,
+					35,
+					35,
+					35
+				],
+				"range": [
+					815,
+					815,
+					815,
+					815,
+					815
+				],
+				"text": "Orianna commands her Ball to fire toward a target location, dealing magic damage to targets along the way (deals less damage to subsequent targets). Her Ball remains at the target location after."
+			},
+			{
+				"slot": "W",
+				"name": "Command: Dissonance",
+				"cooldown": [
+					7,
+					7,
+					7,
+					7,
+					7
+				],
+				"cost": [
+					60,
+					65,
+					70,
+					75,
+					80
+				],
+				"range": [
+					225,
+					225,
+					225,
+					225,
+					225
+				],
+				"text": "Orianna commands her Ball to release a pulse of energy, dealing magic damage around it. This leaves a field behind that speeds up allies and slows enemies."
+			},
+			{
+				"slot": "E",
+				"name": "Command: Protect",
+				"cooldown": [
+					9,
+					9,
+					9,
+					9,
+					9
+				],
+				"cost": [
+					60,
+					60,
+					60,
+					60,
+					60
+				],
+				"range": [
+					1095,
+					1095,
+					1095,
+					1095,
+					1095
+				],
+				"text": "Orianna commands her Ball to attach to an allied champion, Shielding them and dealing magic damage to any enemies it passes through on the way. Additionally, the Ball grants additional Armor and Magic Resist to the champion it is attached to."
+			},
+			{
+				"slot": "R",
+				"name": "Command: Shockwave",
+				"cooldown": [
+					110,
+					95,
+					80
+				],
+				"cost": [
+					100,
+					100,
+					100
+				],
+				"range": [
+					410,
+					410,
+					410
+				],
+				"text": "Orianna commands her Ball to unleash a shockwave, dealing magic damage and launching nearby enemies towards the Ball after a short delay."
+			}
+		]
+	},
+	"coaching": {
+		"damage": {
+			"value": "Orianna deals magic damage through her abilities and sustained damage through repeated Attacks on the same target.",
+			"sources": [
+				"game-1"
+			]
+		},
+		"archetype": {
+			"value": "Orianna is a mage who positions her Ball to damage enemies and protect allies.",
+			"sources": [
+				"game-1"
+			]
+		},
+		"axis": {
+			"value": "Orianna uses autos to match wave pushes and her cooldowns to punish openings in lane.",
+			"sources": [
+				"s1"
+			]
+		},
+		"winCondition": {
+			"value": "Orianna usually damages the nearest target in fights but prioritizes a mispositioned squishy when possible.",
+			"sources": [
+				"s1"
+			]
+		},
+		"spikes": [],
+		"bait": [
+			{
+				"slot": "R",
+				"why": "Orianna cannot use Shockwave again while its 110/95/80-second cooldown runs.",
+				"sources": [
+					"game-1"
+				]
+			}
+		],
+		"mistakes": [
+			{
+				"value": "Orianna risks committing too early when threatening abilities have not yet been used.",
+				"sources": [
+					"s1"
+				]
+			}
+		],
+		"comp": {
+			"tags": [
+				"peel"
+			],
+			"sources": [
+				"game-1"
+			]
+		}
+	}
+}

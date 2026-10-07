@@ -1,0 +1,32 @@
+{
+	"id": "flow-6-reopen",
+	"title": "/flow reopens the tree",
+	"split": "train",
+	"steps": [
+		{
+			"wait": "COMMAND TREE"
+		},
+		{
+			"key": "esc"
+		},
+		{
+			"wait": "COMMAND TREE",
+			"absent": true
+		},
+		{
+			"send": "/flow"
+		},
+		{
+			"wait": "COMMAND TREE"
+		},
+		{
+			"wait": "[/review]"
+		}
+	],
+	"gates": {
+		"expect": [
+			"[/review]"
+		],
+		"maxSeconds": 60
+	}
+}

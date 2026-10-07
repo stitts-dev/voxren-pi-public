@@ -1,0 +1,224 @@
+{
+	"meta": {
+		"version": "16.19.1",
+		"generated": "2026-10-05",
+		"model": "gpt-6-sol",
+		"sources": [
+			{
+				"id": "s1",
+				"title": "[26.19] Autolykus's Challenger Sett Guide",
+				"url": "https://www.mobafire.com/league-of-legends/build/26-19-autolykuss-challenger-sett-guide-594869"
+			},
+			{
+				"id": "game-1",
+				"title": "Riot Data Dragon 16.19.1",
+				"url": "https://ddragon.leagueoflegends.com/cdn/16.19.1/data/en_US/champion/Sett.json"
+			}
+		]
+	},
+	"id": "Sett",
+	"name": "Sett",
+	"facts": {
+		"title": "the Boss",
+		"tags": [
+			"Fighter",
+			"Tank"
+		],
+		"resource": "Grit",
+		"stats": {
+			"hp": 670,
+			"hpperlevel": 114,
+			"mp": 0,
+			"mpperlevel": 0,
+			"movespeed": 340,
+			"armor": 33,
+			"armorperlevel": 4.7,
+			"spellblock": 28,
+			"spellblockperlevel": 2.05,
+			"attackrange": 125,
+			"hpregen": 7,
+			"hpregenperlevel": 0.5,
+			"mpregen": 0,
+			"mpregenperlevel": 0,
+			"crit": 0,
+			"critperlevel": 0,
+			"attackdamage": 60,
+			"attackdamageperlevel": 0,
+			"attackspeedperlevel": 1.75,
+			"attackspeed": 0.625
+		},
+		"passive": {
+			"name": "Pit Grit",
+			"text": "Sett's basic attacks alternate between left and right punch. Right punch is slightly stronger and faster. Sett also hates losing, gaining additional health regeneration based off of his missing health."
+		},
+		"spells": [
+			{
+				"slot": "Q",
+				"name": "Knuckle Down",
+				"cooldown": [
+					9,
+					8,
+					7,
+					6,
+					5
+				],
+				"cost": [
+					0,
+					0,
+					0,
+					0,
+					0
+				],
+				"range": [
+					0,
+					0,
+					0,
+					0,
+					0
+				],
+				"text": "Sett's next two attacks deal additional damage based off of the target's max health. Sett also gains Move Speed while moving towards enemy champions."
+			},
+			{
+				"slot": "W",
+				"name": "Haymaker",
+				"cooldown": [
+					18,
+					16.5,
+					15,
+					13.5,
+					12
+				],
+				"cost": [
+					0,
+					0,
+					0,
+					0,
+					0
+				],
+				"range": [
+					25000,
+					25000,
+					25000,
+					25000,
+					25000
+				],
+				"text": "Sett passively stores damage he takes as Grit. On cast, Sett expends all stored Grit to gain a shield and punch an area, dealing true damage in the center and physical damage on the sides."
+			},
+			{
+				"slot": "E",
+				"name": "Facebreaker",
+				"cooldown": [
+					16,
+					14.5,
+					13,
+					11.5,
+					10
+				],
+				"cost": [
+					0,
+					0,
+					0,
+					0,
+					0
+				],
+				"range": [
+					490,
+					490,
+					490,
+					490,
+					490
+				],
+				"text": "Sett pulls in all enemies on opposite sides of him, dealing damage and stunning them. If enemies were only on one side, they are slowed instead of stunned."
+			},
+			{
+				"slot": "R",
+				"name": "The Show Stopper",
+				"cooldown": [
+					120,
+					100,
+					80
+				],
+				"cost": [
+					0,
+					0,
+					0
+				],
+				"range": [
+					400,
+					400,
+					400
+				],
+				"text": "Sett carries an enemy champion through the air and slams them into the ground, dealing damage and slowing all enemies near where they land."
+			}
+		]
+	},
+	"coaching": {
+		"damage": {
+			"value": "Sett deals burst true damage at the center of Haymaker and physical damage on its sides.",
+			"sources": [
+				"game-1"
+			]
+		},
+		"archetype": {
+			"value": "Sett is a bruiser who absorbs damage as Grit, shields himself, and fights with punches and close-range control.",
+			"sources": [
+				"game-1"
+			]
+		},
+		"axis": {
+			"value": "Sett can use his right punch for extra range while CSing, then commit to a fight after removing Bone Plating when it is present.",
+			"sources": [
+				"s1"
+			]
+		},
+		"spikes": [
+			{
+				"at": "Abilities ready",
+				"why": "Sett is harder to dive when his CC and shield are available.",
+				"sources": [
+					"s1"
+				]
+			},
+			{
+				"at": "Blade of the Ruined King",
+				"why": "Sett can improve his late-game 1v1 ability, but becomes squishier in teamfights.",
+				"sources": [
+					"s1"
+				]
+			},
+			{
+				"at": "Q cooldown falls from 9 to 5 seconds",
+				"why": "Sett can use Knuckle Down’s empowered attacks more often.",
+				"sources": [
+					"game-1"
+				]
+			}
+		],
+		"bait": [
+			{
+				"slot": "Q",
+				"why": "Sett loses a small movement boost while Q is spent, making his limited mobility easier to exploit.",
+				"sources": [
+					"s1"
+				]
+			}
+		],
+		"mistakes": [
+			{
+				"value": "Sett becomes squishier in teamfights if he prioritizes 1v1 items to offset his late-game decline.",
+				"sources": [
+					"s1"
+				]
+			}
+		],
+		"comp": {
+			"tags": [
+				"engage"
+			],
+			"sources": [
+				"s1",
+				"game-1"
+			]
+		}
+	}
+}

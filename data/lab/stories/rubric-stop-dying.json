@@ -1,0 +1,27 @@
+{
+	"id": "rubric-stop-dying",
+	"title": "A typed question on deaths and macro: how do I stop dying after 15 when ahead",
+	"split": "holdout",
+	"tier": "silver",
+	"applies": [
+		"death_as_trade",
+		"leads_with_one_fix",
+		"generic_copout",
+		"names_tradeoff",
+		"tier_fit"
+	],
+	"steps": [
+		{
+			"send": "how do I stop dying after 15 when ahead"
+		},
+		{
+			"idle": true
+		}
+	],
+	"env": {
+		"VOXREN_COACH_CHAMPION": "Fizz"
+	},
+	"gates": {
+		"maxSeconds": 120
+	}
+}

@@ -1,0 +1,32 @@
+{
+	"id": "comp-s3-pyke-early",
+	"title": "/comp on #30's S3: four allies and three enemies locked, enemy lanes unknown",
+	"split": "train",
+	"tier": "challenger",
+	"applies": [
+		"generic_copout",
+		"names_tradeoff",
+		"one_sentence_win_condition"
+	],
+	"steps": [
+		{
+			"wait": "picks 7/10",
+			"timeout": 30
+		},
+		{
+			"send": "/comp"
+		},
+		{
+			"idle": true
+		}
+	],
+	"replay": "data/lab/drafts/s3-pyke-picks-early.ndjson",
+	"replayStepMs": 100,
+	"gates": {
+		"maxSeconds": 150,
+		"absentInAnswer": [
+			"http",
+			"⟦"
+		]
+	}
+}

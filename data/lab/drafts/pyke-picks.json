@@ -1,0 +1,8 @@
+{
+	"name": "pyke-picks",
+	"you": "MIDDLE",
+	"myTeam": { "UTILITY": "Pyke", "MIDDLE": "Fizz", "TOP": "Pantheon", "JUNGLE": "Graves", "BOTTOM": "Corki" },
+	"theirTeam": ["Yasuo", "Wukong", "Jinx", "Malzahar", "Darius"],
+	"bans": { "yours": ["Soraka", "Draven", "Illaoi", "Udyr", "Caitlyn"], "theirs": ["Nasus", "Janna", "Ezreal", "Shyvana", "Cho'Gath"] },
+	"notes": "Reference answer (2026-09-27, relayed and the team won): identity first, play for picks with Pyke and Pantheon, never front-to-back through Darius and Wukong."
+}

@@ -1,0 +1,8 @@
+{
+	"name": "taric-yi-split",
+	"you": "MIDDLE",
+	"myTeam": { "JUNGLE": "Taric", "MIDDLE": "Fizz", "BOTTOM": "Tristana", "UTILITY": "Master Yi", "TOP": "Gwen" },
+	"theirTeam": ["Nautilus", "Skarner", "Ekko", "Poppy", "Kai'Sa"],
+	"bans": { "yours": ["Graves", "Sylas", "Seraphine", "Nasus", "Shaco"], "theirs": ["Viktor", "Diana", "Kalista", "Thresh", "Sylas"] },
+	"notes": "Screenshot 2026-09-28: answer hedged enemy lanes and wrote a 'no one is ahead' row. Off-meta roles on our side; their side is engage-heavy (Nautilus, Skarner, Poppy)."
+}

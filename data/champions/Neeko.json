@@ -1,0 +1,224 @@
+{
+	"meta": {
+		"version": "16.19.1",
+		"generated": "2026-10-05",
+		"model": "gpt-6-sol",
+		"sources": [
+			{
+				"id": "s1",
+				"title": "How to be IRL Chameleon 🌸🦎 MID + SUPPORT GUIDE [26.13]",
+				"url": "https://www.mobafire.com/league-of-legends/build/how-to-be-irl-chameleon-mid-support-guide-26-13-646494"
+			},
+			{
+				"id": "s2",
+				"title": "[S16.19] Support Neeko, Burst, Poke, Utility, Tomato.",
+				"url": "https://www.mobafire.com/league-of-legends/build/s16-19-support-neeko-burst-poke-utility-tomato-648295"
+			},
+			{
+				"id": "game-1",
+				"title": "Riot Data Dragon 16.19.1",
+				"url": "https://ddragon.leagueoflegends.com/cdn/16.19.1/data/en_US/champion/Neeko.json"
+			}
+		]
+	},
+	"id": "Neeko",
+	"name": "Neeko",
+	"facts": {
+		"title": "the Curious Chameleon",
+		"tags": [
+			"Mage",
+			"Support"
+		],
+		"resource": "Mana",
+		"stats": {
+			"hp": 610,
+			"hpperlevel": 104,
+			"mp": 450,
+			"mpperlevel": 30,
+			"movespeed": 340,
+			"armor": 21,
+			"armorperlevel": 5.2,
+			"spellblock": 30,
+			"spellblockperlevel": 1.3,
+			"attackrange": 550,
+			"hpregen": 7.5,
+			"hpregenperlevel": 0.75,
+			"mpregen": 7,
+			"mpregenperlevel": 0.7,
+			"crit": 0,
+			"critperlevel": 0,
+			"attackdamage": 48,
+			"attackdamageperlevel": 0,
+			"attackspeedperlevel": 3.5,
+			"attackspeed": 0.625
+		},
+		"passive": {
+			"name": "Inherent Glamour",
+			"text": "Neeko can look like an ally champion or as other units on the map. Receiving immobilizing crowd control, casting damaging spells, damaging enemy towers as a non-champion, or your disguise taking damage equal to its healthbar breaks the disguise."
+		},
+		"spells": [
+			{
+				"slot": "Q",
+				"name": "Blooming Burst",
+				"cooldown": [
+					9,
+					8.5,
+					8,
+					7.5,
+					7
+				],
+				"cost": [
+					50,
+					60,
+					70,
+					80,
+					90
+				],
+				"range": [
+					800,
+					800,
+					800,
+					800,
+					800
+				],
+				"text": "Neeko throws a seed dealing magic damage. The seed blooms again on hitting champions or killing units."
+			},
+			{
+				"slot": "W",
+				"name": "Shapesplitter",
+				"cooldown": [
+					16,
+					15,
+					14,
+					13,
+					12
+				],
+				"cost": [
+					0,
+					0,
+					0,
+					0,
+					0
+				],
+				"range": [
+					900,
+					900,
+					900,
+					900,
+					900
+				],
+				"text": "Neeko passively deals bonus magic damage every third attack, briefly increasing her move speed. Neeko can activate to send a clone in a direction and recast to change the direction of the clone."
+			},
+			{
+				"slot": "E",
+				"name": "Tangle-Barbs",
+				"cooldown": [
+					12,
+					11.5,
+					11,
+					10.5,
+					10
+				],
+				"cost": [
+					60,
+					65,
+					70,
+					75,
+					80
+				],
+				"range": [
+					1000,
+					1000,
+					1000,
+					1000,
+					1000
+				],
+				"text": "Neeko slings a tangle that damages and roots everything it passes through. If the tangle kills an enemy or passes through a champion, it becomes larger, faster, and roots for longer."
+			},
+			{
+				"slot": "R",
+				"name": "Pop Blossom",
+				"cooldown": [
+					120,
+					105,
+					90
+				],
+				"cost": [
+					100,
+					100,
+					100
+				],
+				"range": [
+					600,
+					600,
+					600
+				],
+				"text": "After a short preparation, Neeko leaps into the air, knocking up all nearby enemies. Upon landing, nearby enemies are damaged and stunned. The preparation is hidden if Neeko is disguised."
+			}
+		]
+	},
+	"coaching": {
+		"damage": {
+			"value": "Neeko deals burst damage with AP builds.",
+			"sources": [
+				"s1"
+			]
+		},
+		"archetype": {
+			"value": "Neeko is a mage who can play for burst, poke, or crowd control.",
+			"sources": [
+				"s1"
+			]
+		},
+		"axis": {
+			"value": "Neeko can poke in lane, clear waves, and roam.",
+			"sources": [
+				"s1"
+			]
+		},
+		"winCondition": {
+			"value": "Neeko wins through roams, reliable engages, and strong teamfight impact.",
+			"sources": [
+				"s1"
+			]
+		},
+		"spikes": [
+			{
+				"at": "Hextech Alternator",
+				"why": "Neeko gets a small power spike from this item.",
+				"sources": [
+					"s1"
+				]
+			},
+			{
+				"at": "Ultimate availability",
+				"why": "Neeko’s Pop Blossom gives her a powerful AoE engage that can win teamfights.",
+				"sources": [
+					"s2"
+				]
+			}
+		],
+		"bait": [],
+		"mistakes": [
+			{
+				"value": "Neeko loses her disguise by casting a damaging spell, so Neeko should not expect it to remain afterward.",
+				"sources": [
+					"game-1"
+				]
+			}
+		],
+		"comp": {
+			"tags": [
+				"engage",
+				"peel",
+				"poke",
+				"pick"
+			],
+			"sources": [
+				"s1",
+				"s2",
+				"game-1"
+			]
+		}
+	}
+}

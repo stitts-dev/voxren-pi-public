@@ -1,0 +1,249 @@
+{
+	"meta": {
+		"version": "16.19.1",
+		"generated": "2026-10-05",
+		"model": "gpt-6-sol",
+		"sources": [
+			{
+				"id": "s1",
+				"title": "[26.19 / VIDEO GUIDES] [HIDDEN COMBOS+ALL MATCHUPS] Zed All in One Guide",
+				"url": "https://www.mobafire.com/league-of-legends/build/26-19-video-guides-hidden-combos-all-matchups-zed-all-in-one-guide-652800"
+			},
+			{
+				"id": "game-1",
+				"title": "Riot Data Dragon 16.19.1",
+				"url": "https://ddragon.leagueoflegends.com/cdn/16.19.1/data/en_US/champion/Zed.json"
+			}
+		]
+	},
+	"id": "Zed",
+	"name": "Zed",
+	"facts": {
+		"title": "the Master of Shadows",
+		"tags": [
+			"Assassin"
+		],
+		"resource": "Energy",
+		"stats": {
+			"hp": 654,
+			"hpperlevel": 99,
+			"mp": 200,
+			"mpperlevel": 0,
+			"movespeed": 345,
+			"armor": 32,
+			"armorperlevel": 4.7,
+			"spellblock": 29,
+			"spellblockperlevel": 2.05,
+			"attackrange": 125,
+			"hpregen": 7,
+			"hpregenperlevel": 0.65,
+			"mpregen": 50,
+			"mpregenperlevel": 0,
+			"crit": 0,
+			"critperlevel": 0,
+			"attackdamage": 63,
+			"attackdamageperlevel": 0,
+			"attackspeedperlevel": 3.3,
+			"attackspeed": 0.651
+		},
+		"passive": {
+			"name": "Contempt for the Weak",
+			"text": "Zed's basic attacks against low health targets deals bonus Magic Damage. This effect can only occur once every few seconds against the same enemy champion."
+		},
+		"spells": [
+			{
+				"slot": "Q",
+				"name": "Razor Shuriken",
+				"cooldown": [
+					6,
+					6,
+					6,
+					6,
+					6
+				],
+				"cost": [
+					75,
+					70,
+					65,
+					60,
+					55
+				],
+				"range": [
+					900,
+					900,
+					900,
+					900,
+					900
+				],
+				"text": "Zed and his shadows throw their shurikens.Each shuriken deals damage to every enemy hit."
+			},
+			{
+				"slot": "W",
+				"name": "Living Shadow",
+				"cooldown": [
+					20,
+					19,
+					18,
+					17,
+					16
+				],
+				"cost": [
+					40,
+					35,
+					30,
+					25,
+					20
+				],
+				"range": [
+					650,
+					650,
+					650,
+					650,
+					650
+				],
+				"text": "Passive: Zed gains energy whenever he and his shadows strike an enemy with the same ability. Energy can only be gained once per cast ability.Active: Zed's shadow dashes forward, remaining in place for a few seconds. Reactivating Living Shadow will cause Zed to switch positions with this shadow."
+			},
+			{
+				"slot": "E",
+				"name": "Shadow Slash",
+				"cooldown": [
+					5,
+					4.5,
+					4,
+					3.5,
+					3
+				],
+				"cost": [
+					40,
+					40,
+					40,
+					40,
+					40
+				],
+				"range": [
+					290,
+					290,
+					290,
+					290,
+					290
+				],
+				"text": "Zed and his Shadows slash, dealing damage to nearby enemies. Enemies hit by a Shadow's slash are slowed."
+			},
+			{
+				"slot": "R",
+				"name": "Death Mark",
+				"cooldown": [
+					120,
+					110,
+					100
+				],
+				"cost": [
+					0,
+					0,
+					0
+				],
+				"range": [
+					625,
+					625,
+					625
+				],
+				"text": "Zed becomes untargetable and dashes to an enemy champion, marking them. After 3 seconds the mark triggers, repeating a portion of all the damage Zed dealt to the target while they were marked."
+			}
+		]
+	},
+	"coaching": {
+		"damage": {
+			"value": "Zed deals burst damage, and Death Mark detonates as physical damage.",
+			"sources": [
+				"s1"
+			]
+		},
+		"archetype": {
+			"value": "Zed is a mobile assassin with high outplay potential.",
+			"sources": [
+				"s1"
+			]
+		},
+		"axis": {
+			"value": "Zed plays a safe lane with poke and safe farming before looking for an all-in.",
+			"sources": [
+				"s1"
+			]
+		},
+		"winCondition": {
+			"value": "Zed carries through burst damage, mobility, outplays, and strong side-lane play.",
+			"sources": [
+				"s1"
+			]
+		},
+		"spikes": [
+			{
+				"at": "Death Mark",
+				"why": "Zed’s laning phase is weak until his ultimate becomes available.",
+				"sources": [
+					"s1"
+				]
+			},
+			{
+				"at": "Voltaic Cyclosword",
+				"why": "Zed’s laning phase is weak until this item spike.",
+				"sources": [
+					"s1"
+				]
+			},
+			{
+				"at": "R",
+				"why": "Zed becomes stronger when his R is available because he is weak without it.",
+				"sources": [
+					"s1"
+				]
+			}
+		],
+		"bait": [
+			{
+				"slot": "W",
+				"why": "Zed is weak while W is unavailable.",
+				"sources": [
+					"s1"
+				]
+			},
+			{
+				"slot": "R",
+				"why": "Zed is weak while R is unavailable.",
+				"sources": [
+					"s1"
+				]
+			}
+		],
+		"mistakes": [
+			{
+				"value": "Zed struggles with energy management when he fails to land multiple skillshots on the same target.",
+				"sources": [
+					"s1"
+				]
+			},
+			{
+				"value": "Zed struggles with energy management when he fails to hit multiple skillshots on the same target.",
+				"sources": [
+					"s1"
+				]
+			},
+			{
+				"value": "Zed struggles with energy management when his skillshots do not hit the same target.",
+				"sources": [
+					"s1"
+				]
+			}
+		],
+		"comp": {
+			"tags": [
+				"split",
+				"pick"
+			],
+			"sources": [
+				"s1",
+				"game-1"
+			]
+		}
+	}
+}

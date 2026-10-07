@@ -1,0 +1,216 @@
+{
+	"meta": {
+		"version": "16.19.1",
+		"generated": "2026-10-05",
+		"model": "gpt-6-sol",
+		"sources": [
+			{
+				"id": "s1",
+				"title": "KindredBueno|16.19|The Eternal Hunters' Definitive Jungling Guide",
+				"url": "https://www.mobafire.com/league-of-legends/build/kindredbueno-16-19-the-eternal-hunters-definitive-jungling-guide-647286"
+			},
+			{
+				"id": "game-1",
+				"title": "Riot Data Dragon 16.19.1",
+				"url": "https://ddragon.leagueoflegends.com/cdn/16.19.1/data/en_US/champion/Kindred.json"
+			}
+		]
+	},
+	"id": "Kindred",
+	"name": "Kindred",
+	"facts": {
+		"title": "The Eternal Hunters",
+		"tags": [
+			"Marksman"
+		],
+		"resource": "Mana",
+		"stats": {
+			"hp": 595,
+			"hpperlevel": 104,
+			"mp": 300,
+			"mpperlevel": 35,
+			"movespeed": 325,
+			"armor": 29,
+			"armorperlevel": 4.7,
+			"spellblock": 33,
+			"spellblockperlevel": 1.1,
+			"attackrange": 500,
+			"hpregen": 7,
+			"hpregenperlevel": 0.55,
+			"mpregen": 7,
+			"mpregenperlevel": 0.4,
+			"crit": 0,
+			"critperlevel": 0,
+			"attackdamage": 65,
+			"attackdamageperlevel": 0,
+			"attackspeedperlevel": 3.5,
+			"attackspeed": 0.625
+		},
+		"passive": {
+			"name": "Mark of the Kindred",
+			"text": "Kindred can mark targets to Hunt. Successfully completing a Hunt permanently empowers Kindred's basic abilities. Every 4 hunts completed also increases Kindred's basic attack range."
+		},
+		"spells": [
+			{
+				"slot": "Q",
+				"name": "Dance of Arrows",
+				"cooldown": [
+					9,
+					9,
+					9,
+					9,
+					9
+				],
+				"cost": [
+					35,
+					35,
+					35,
+					35,
+					35
+				],
+				"range": [
+					340,
+					340,
+					340,
+					340,
+					340
+				],
+				"text": "Kindred tumbles and shoots up to three arrows at nearby targets."
+			},
+			{
+				"slot": "W",
+				"name": "Wolf's Frenzy",
+				"cooldown": [
+					18,
+					17,
+					16,
+					15,
+					14
+				],
+				"cost": [
+					40,
+					40,
+					40,
+					40,
+					40
+				],
+				"range": [
+					560,
+					560,
+					560,
+					560,
+					560
+				],
+				"text": "Wolf enrages and attacks enemies around him. Lamb passively gains stacks by moving and attacking. When fully charged, Lamb's next attack restores health."
+			},
+			{
+				"slot": "E",
+				"name": "Mounting Dread",
+				"cooldown": [
+					14,
+					12.5,
+					11,
+					9.5,
+					8
+				],
+				"cost": [
+					0,
+					0,
+					0,
+					0,
+					0
+				],
+				"range": [
+					500,
+					500,
+					500,
+					500,
+					500
+				],
+				"text": "Lamb fires a carefully placed shot, slowing the target. If Lamb attacks the target two more times, her third attack instead directs Wolf to pounce on the enemy, savaging them for massive damage."
+			},
+			{
+				"slot": "R",
+				"name": "Lamb's Respite",
+				"cooldown": [
+					160,
+					140,
+					120
+				],
+				"cost": [
+					100,
+					100,
+					100
+				],
+				"range": [
+					500,
+					500,
+					500
+				],
+				"text": "Lamb grants all living things inside a zone a respite from death. Until the effect ends, nothing can die. At the end, units are healed."
+			}
+		]
+	},
+	"coaching": {
+		"archetype": {
+			"value": "Kindred is an ADC jungler with a unique, mark-focused playstyle.",
+			"sources": [
+				"s1"
+			]
+		},
+		"winCondition": {
+			"value": "Kindred can snowball when fed and significantly affect teamfights or objectives with Lamb's Respite.",
+			"sources": [
+				"s1"
+			]
+		},
+		"spikes": [
+			{
+				"at": "Four marks",
+				"why": "Kindred gains 75 attack range and a boost to their abilities.",
+				"sources": [
+					"s1"
+				]
+			},
+			{
+				"at": "Every 4 completed Hunts",
+				"why": "Kindred gains basic attack range in addition to the permanent basic-ability empowerment from completed Hunts.",
+				"sources": [
+					"game-1"
+				]
+			}
+		],
+		"bait": [
+			{
+				"slot": "Q",
+				"why": "Kindred cannot tumble and fire Dance of Arrows again while its 9-second cooldown runs.",
+				"sources": [
+					"game-1"
+				]
+			}
+		],
+		"mistakes": [
+			{
+				"value": "Kindred players can die by chasing marks they should leave alone.",
+				"sources": [
+					"s1"
+				]
+			},
+			{
+				"value": "Kindred misses permanent empowerment when Hunts are left unfinished.",
+				"sources": [
+					"game-1"
+				]
+			}
+		],
+		"comp": {
+			"tags": [
+				"scale"
+			],
+			"sources": [
+				"s1",
+				"game-1"
+			]
+		}
+	}
+}

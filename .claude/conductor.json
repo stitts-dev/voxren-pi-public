@@ -1,0 +1,30 @@
+{
+  "mergeTarget": "dev",
+  "mainBranch": "main",
+  "score": {
+    "quick": [{ "name": "score", "cmd": "just score" }],
+    "full": [{ "name": "score-stories", "cmd": "just score --stories" }],
+    "fullEvery": "6h",
+    "file": ".claude/conductor/scores.json"
+  },
+  "producers": [
+    { "name": "roast", "kind": "skill", "run": "roast", "every": "12h", "requires": ".claude/skills/roast/SKILL.md" },
+    { "name": "ui-catalogue", "kind": "command", "run": "just ui --json .claude/conductor/tiers/ui/tier.json", "every": "30m", "requires": "src/lab/ui-shoot.ts" },
+    { "name": "stories", "kind": "command", "run": "just stories --panes 4 --no-notes --out .claude/conductor/stories", "every": "24h" },
+    { "name": "code-review", "kind": "skill", "run": "code-review", "every": "10m" }
+  ],
+  "backlog": {
+    "labels": { "ready": "ready-for-agent", "finding": "conductor-finding", "regression": "regression", "bug": "bug", "sink": "token-sink" },
+    "maxNewPerTick": 3
+  },
+  "agents": {
+    "model": "sonnet",
+    "maxConcurrent": 6,
+    "worktreeDir": ".claude/worktrees",
+    "brief": ".claude/conductor/brief.md"
+  },
+  "scope": ["code", "tests", "prompts", "jev-thresholds", "ready-for-agent"],
+  "budget": { "pace": "weekly", "reserve": 0.1 },
+  "digest": { "every": "24h" },
+  "promptLogs": ["~/Library/Application Support/voxren-coach/exchanges.ndjson"]
+}

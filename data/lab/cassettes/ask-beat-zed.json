@@ -1,0 +1,770 @@
+{
+	"id": "ask-beat-zed",
+	"turns": [
+		{
+			"thinking": [
+				"**Checking matchup first**",
+				"**Searching for notes**",
+				"**Framing matchup claims**"
+			],
+			"text": "",
+			"calls": [
+				{
+					"name": "voxren_meta_research",
+					"args": {
+						"query_type": "matchup",
+						"champion": "Ahri",
+						"opponent": "Zed",
+						"position": "middle"
+					}
+				},
+				{
+					"name": "voxren_game_facts",
+					"args": {
+						"entities": [
+							{
+								"kind": "champion",
+								"name": "Ahri"
+							},
+							{
+								"kind": "champion",
+								"name": "Zed"
+							}
+						],
+						"detail": "compact"
+					}
+				}
+			]
+		},
+		{
+			"thinking": [],
+			"text": "",
+			"calls": [
+				{
+					"name": "web_search",
+					"args": {
+						"query": "Ahri vs Zed mid matchup guide charm death mark shadow wave trading level 6",
+						"domains": [
+							"mobafire.com"
+						],
+						"max_results": 5
+					}
+				},
+				{
+					"name": "voxren_video_research",
+					"args": {
+						"query": "Ahri vs Zed matchup guide",
+						"focus": "Charm Death Mark reappear, Living Shadow cooldown punish, wave level 6 trade",
+						"title_terms": [
+							"Ahri",
+							"Zed"
+						]
+					}
+				}
+			]
+		},
+		{
+			"thinking": [],
+			"text": "",
+			"calls": [
+				{
+					"name": "voxren_strategy_frame",
+					"args": {
+						"question": "How do I beat Zed as Ahri mid?",
+						"claims": [
+							"Ahri can punish Zed's missed Razor Shuriken while contesting his last hits.",
+							"Zed's Living Shadow has a 20-second base cooldown at rank one.",
+							"When Zed casts Death Mark on Ahri, he reappears behind her; Ahri can aim Charm backward as he reappears.",
+							"Zed's Living Shadow used aggressively leaves him without that escape until it returns.",
+							"The Ahri versus Zed matchup favors Zed in lane and solo kills in the current aggregate."
+						],
+						"evidence": [
+							{
+								"id": "matchup-1"
+							},
+							{
+								"id": "game-1"
+							},
+							{
+								"id": "video-1"
+							},
+							{
+								"id": "video-2"
+							},
+							{
+								"id": "video-3"
+							},
+							{
+								"id": "web-1"
+							},
+							{
+								"id": "web-2"
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"thinking": [],
+			"text": "**Win the wave before you try to win the all-in.** Stand behind your minions, punish Zed when he uses Razor Shuriken to farm, and make him choose between taking CS and taking damage. Don’t rush the wave under his tower; keep him close enough that he has to walk up for last hits.\n\n**Living Shadow used to trade:** sidestep the shurikens, then step forward while his escape is down. Take a short trade and back out. Once he’s low enough, a missed Razor Shuriken or a spent Living Shadow is your opening to commit; *until then, keep farming and make him pay for CS*.\n\n**Death Mark on you:** hold Charm until Zed reappears behind you, then cast it back toward him. Use Spirit Rush to create distance from his follow-up damage. Throwing Charm before he commits gives him the chance to dodge your best answer.",
+			"calls": []
+		}
+	],
+	"tools": [
+		{
+			"name": "voxren_game_facts",
+			"operation": "gamedata.lookup",
+			"args": {
+				"entities": [
+					{
+						"kind": "champion",
+						"name": "Ahri"
+					},
+					{
+						"kind": "champion",
+						"name": "Zed"
+					}
+				],
+				"detail": "compact"
+			},
+			"ms": 121,
+			"response": {
+				"version": "research-contract-v1",
+				"operation": "gamedata.lookup",
+				"data": {
+					"patch": "16.19.1",
+					"patchNotesLabel": "26.19",
+					"provenance": "Riot Data Dragon static data",
+					"retrievedAt": "2026-10-04T09:16:51.899Z",
+					"entities": [
+						{
+							"name": "Ahri",
+							"kind": "champion",
+							"fact": "the Nine-Tailed Fox. Passive Essence Theft. Q Orb of Deception: cd 7/7/7/7/7, cost 55/65/75/85/95, range 970; W Fox-Fire: cd 9/8/7/6/5, cost 30/30/30/30/30, range 700; E Charm: cd 12/12/12/12/12, cost 60/60/60/60/60, range 975; R Spirit Rush: cd 140/120/100, cost 100/100/100, range 450"
+						},
+						{
+							"name": "Zed",
+							"kind": "champion",
+							"fact": "the Master of Shadows. Passive Contempt for the Weak. Q Razor Shuriken: cd 6/6/6/6/6, cost 75/70/65/60/55, range 900; W Living Shadow: cd 20/19/18/17/16, cost 40/35/30/25/20, range 650; E Shadow Slash: cd 5/4.5/4/3.5/3, cost 40/40/40/40/40, range 290; R Death Mark: cd 120/110/100, cost 0/0/0, range 625"
+						}
+					]
+				},
+				"evidence": [
+					{
+						"id": "game-1",
+						"source": "voxren_game_facts",
+						"title": "Riot Data Dragon 16.19.1",
+						"url": "https://ddragon.leagueoflegends.com/cdn/16.19.1/data/en_US/champion.json",
+						"retrievedAt": "2026-10-04T09:16:51.899Z"
+					}
+				]
+			}
+		},
+		{
+			"name": "voxren_meta_research",
+			"operation": "meta.matchup",
+			"args": {
+				"query_type": "matchup",
+				"champion": "Ahri",
+				"opponent": "Zed",
+				"position": "middle"
+			},
+			"ms": 3439,
+			"response": {
+				"version": "research-contract-v1",
+				"operation": "meta.matchup",
+				"data": {
+					"provider": "op.gg public MCP",
+					"request": "lol_get_lane_matchup_guide(position=mid, my_champion=AHRI, opponent_champion=ZED)",
+					"sample": "Emerald+ ranked (OP.GG default)",
+					"staleness": "retrieved 2026-10-04; third-party aggregate, not reviewed",
+					"retrievedAt": "2026-10-04T09:16:55.037Z",
+					"champion": "Ahri",
+					"opponent": "Zed",
+					"patch": "16.19",
+					"patchNotesLabel": "26.19",
+					"laneAdvantage": "Zed",
+					"soloKillAdvantage": "Zed",
+					"playStyle": "even",
+					"tip": "Do not use Charm [E] until Zed closes in using Living Shadow (W). If Zed has Death Mark (R) off cooldown, try to use Charm [E] after he reappears when he uses Death Mark (R).",
+					"starters": [
+						{
+							"items": [
+								"Doran's Ring",
+								"Health Potion",
+								"Health Potion"
+							],
+							"games": 6956,
+							"winRate": 0.493
+						},
+						{
+							"items": [
+								"Dark Seal",
+								"Refillable Potion"
+							],
+							"games": 18,
+							"winRate": 0.444
+						}
+					],
+					"core": [
+						{
+							"items": [
+								"Malignance",
+								"Shadowflame",
+								"Zhonya's Hourglass"
+							],
+							"games": 480,
+							"winRate": 0.542
+						},
+						{
+							"items": [
+								"Malignance",
+								"Zhonya's Hourglass",
+								"Shadowflame"
+							],
+							"games": 315,
+							"winRate": 0.505
+						},
+						{
+							"items": [
+								"Malignance",
+								"Lich Bane",
+								"Zhonya's Hourglass"
+							],
+							"games": 242,
+							"winRate": 0.55
+						}
+					],
+					"boots": [
+						{
+							"items": [
+								"Sorcerer's Shoes"
+							],
+							"games": 3891,
+							"winRate": 0.497
+						},
+						{
+							"items": [
+								"Ionian Boots of Lucidity"
+							],
+							"games": 2053,
+							"winRate": 0.506
+						}
+					],
+					"summoners": [
+						{
+							"items": [
+								"Flash",
+								"Ignite"
+							],
+							"games": 3881,
+							"winRate": 0.505
+						}
+					],
+					"runes": [
+						{
+							"primary": [
+								"Electrocute",
+								"Taste of Blood",
+								"Grisly Mementos",
+								"Ultimate Hunter"
+							],
+							"secondary": [
+								"Transcendence",
+								"Manaflow Band"
+							],
+							"shards": [
+								"Attack Speed",
+								"Adaptive Force",
+								"Health Scaling"
+							],
+							"games": 3244,
+							"winRate": 0.497
+						},
+						{
+							"primary": [
+								"Deathfire Touch",
+								"Manaflow Band",
+								"Transcendence",
+								"Scorch"
+							],
+							"secondary": [
+								"Ultimate Hunter",
+								"Taste of Blood"
+							],
+							"shards": [
+								"Attack Speed",
+								"Adaptive Force",
+								"Health Scaling"
+							],
+							"games": 467,
+							"winRate": 0.478
+						}
+					],
+					"skillMax": [
+						{
+							"order": [
+								"Q",
+								"W",
+								"E"
+							],
+							"games": 4363,
+							"winRate": 0.574
+						}
+					],
+					"notesBuilding": true,
+					"judgment": {
+						"judge": "jev",
+						"status": "judged",
+						"model": "jev-1.13.0",
+						"latencyMs": 279,
+						"inputTokens": 738,
+						"answer": "evidence",
+						"kept": 1,
+						"removed": [],
+						"p": {
+							"relevant": 0.98,
+							"support": 0.97,
+							"injection": 0.02
+						},
+						"note": "Jev screen: relevance and prompt-injection routing, not a truth check; kept passages stay untrusted."
+					}
+				},
+				"evidence": [
+					{
+						"id": "matchup-1",
+						"source": "voxren_meta_research",
+						"title": "OP.GG matchup: Ahri vs Zed mid",
+						"url": "https://www.op.gg/champions/ahri/counters/mid?target_champion=zed",
+						"retrievedAt": "2026-10-04T09:16:55.037Z"
+					}
+				]
+			}
+		},
+		{
+			"name": "voxren_video_research",
+			"operation": "research_video",
+			"args": {
+				"query": "Ahri vs Zed matchup guide",
+				"focus": "Charm Death Mark reappear, Living Shadow cooldown punish, wave level 6 trade",
+				"title_terms": [
+					"Ahri",
+					"Zed"
+				]
+			},
+			"ms": 13269,
+			"response": {
+				"version": "research-contract-v1",
+				"operation": "research_video",
+				"data": {
+					"provider": "YouTube transcripts (research service)",
+					"retrievedAt": "2026-10-04T09:17:12.525Z",
+					"videos": [
+						{
+							"title": "Sjorry: Rank 1 Ahri teaches you how to Beat Zed mid",
+							"url": "https://youtu.be/yjMpxB8_ayU",
+							"published": "9 months ago",
+							"transcript": "gemini",
+							"autoCaptions": false,
+							"passages": [
+								{
+									"at": 40,
+									"text": "join my Discord, um, you can write suggestions for videos you want to see or ask some questions about Ahri or just go ahead and hang around another 300 Ahri players. Bunch of Ahri players in there for some reason. Would you know? Okay. So, the two understand like the two fundamental principles that we're going to be using in this lane is we want to punish the enemy Zed when he's on cooldown. That is number one fundamental principle behind the laning phase. When you are on cooldown, you are weak. When the enemy is on cooldown, you want to punish them. Number two is, we want to try to punish him for going for CS. Those are the two ideas we're going to be using. So, level one, I want to auto attack the wave a lot here. Zed already used his Q, that means I can just trade with him, right? He h…"
+								},
+								{
+									"at": 80,
+									"text": "Now, I could walk up and trade with him again here, but I want to make sure that I get my minions. I want to create push against the Zed, because that's going to create a window where I can harass him, and he cannot harass me. He wasted his Q again, that means he's on cooldown yet again. So, I can try to punish him for being on cooldown again. Playing behind the wave to make sure that the Zed has a tough time trying to hit me, right? This Zed is pushing the wave level one. Bit of a mistake on his part, he should not be doing this, because that's going to force him to walk up in the lane, which melee champions generally speaking don't want to. He wasted his Q again, I'm going to walk up and slap him. And you can see, he's almost dead level one. Just because I'm taking winning trades agains…"
+								}
+							],
+							"route": "evidence",
+							"p": {
+								"relevant": 0.96,
+								"support": 0.92,
+								"injection": 0.03
+							}
+						},
+						{
+							"title": "Ahj: Getting Counterpicked by Zed? Here’s How Ahri Still Wins",
+							"url": "https://youtu.be/ULoJArVy-TM",
+							"published": "2 months ago",
+							"transcript": "gemini",
+							"autoCaptions": false,
+							"passages": [
+								{
+									"at": 157,
+									"text": "I mean, this is reality against Zed. Ah, I fucked up these minions a little bit. Don't greed Electrocute. Just make sure we don't give him too much melee range. Hello, Sorrow. What's up? Okay, wave's in a beautiful spot here. We You don't want to push too fast against Zed cuz you want to keep the wave kind of like not under tower. God! First game of the day, my last hitting is really bad. I missed three minions for free. You don't want the wave to full crash. Oh, he took W? Really? Wow, that's uh definitely a big mistake. I didn't level my Q in case he takes the shadow there. He got really fucked. That was a really be- bad mistake by him."
+								},
+								{
+									"at": 324,
+									"text": "Beautiful. We're up 6 CS. Given his First Strike, we're up about like 5. Keep the wave neutral. I don't have refill, though, so even though I have armor, which is good, no refill makes things a little sus. He has pickaxe. Nice. No spells. Good trade when he has no W. I'm being very patient with my spells, I don't have Manaflow Band, right? So I gotta be very patient here with when I use my abilities. Yep. Just hold. Good quality clicks to dodge his Qs. Okay, as soon as he spends on the wave like that he can't walk up and farm, it's good. Good patience there. I'm level six soon. We can dive. He's also level six. Once we have a larger wave, I think we can dive, though."
+								}
+							],
+							"route": "evidence",
+							"p": {
+								"relevant": 0.95,
+								"support": 0.93,
+								"injection": 0.02
+							}
+						},
+						{
+							"title": "Wallbang: How to Beat ZED as AHRI | Ranked Mid Lane Guide (Full Gameplay)",
+							"url": "https://youtu.be/5x7_Dy6Xg1Q",
+							"published": "8 months ago",
+							"transcript": "gemini",
+							"autoCaptions": false,
+							"passages": [
+								{
+									"at": 0,
+									"text": "I am against Zed. I think against Zed, it's really important that you know how to, you know, how to counter his ultimate. So, if you know how to charm with perfect timing when he appears after his ultimate, that's gg for you mate. So, I'll try to do this. That's great. So, I will not upgrade anything until I see how he reacts, on level two. See, now he thinks I have charm, but I I do not have it, yeah. So, now. That's perfect. Perfect trade. So, now, I wait for him, here, maybe another Q. Ah, I missed. And, my top is inting. He'll die in two, in two minutes. Try and poke him a little. So, now, I'm slow pushing to him. I need to be careful from Ekko. Try to give one charm, it's perfect, and he's dead."
+								},
+								{
+									"at": 135,
+									"text": "That's great, that's great. I'll try to push. Perfect. Oh, my god guys, my top is whatever. Yeah, I'm really sorry. It's always me, guys. Always me. So, I need to be careful. Ah, that's great. I think Ekko is about to gank me. It's about time. See, he's get- he's getting greedy for this minions. Ah shit, he's got into the bush. And another Q, I missed. Ekko should be mid anytime. I think Ekko is round here. I'm afraid I don't know what's. Just try and poke, see he's got ulti now at level six. So, I need to hit the perfect charm when he engages on me. Now. Oh. A bit risky there. Okay, I got him."
+								}
+							],
+							"route": "evidence",
+							"p": {
+								"relevant": 0.94,
+								"support": 0.91,
+								"injection": 0.03
+							}
+						}
+					],
+					"skipped": 0,
+					"rateLimited": false,
+					"judgment": {
+						"judge": "jev",
+						"status": "judged",
+						"model": "jev-1.13.0",
+						"latencyMs": 372,
+						"inputTokens": 3185,
+						"kept": 3,
+						"removed": [],
+						"note": "Jev screen: relevance and prompt-injection routing, not a truth check; kept passages stay untrusted."
+					}
+				},
+				"evidence": [
+					{
+						"id": "video-1",
+						"source": "voxren_video_research",
+						"title": "Sjorry: Rank 1 Ahri teaches you how to Beat Zed mid",
+						"url": "https://youtu.be/yjMpxB8_ayU",
+						"retrievedAt": "2026-10-04T09:17:12.525Z"
+					},
+					{
+						"id": "video-2",
+						"source": "voxren_video_research",
+						"title": "Ahj: Getting Counterpicked by Zed? Here’s How Ahri Still Wins",
+						"url": "https://youtu.be/ULoJArVy-TM",
+						"retrievedAt": "2026-10-04T09:17:12.525Z"
+					},
+					{
+						"id": "video-3",
+						"source": "voxren_video_research",
+						"title": "Wallbang: How to Beat ZED as AHRI | Ranked Mid Lane Guide (Full Gameplay)",
+						"url": "https://youtu.be/5x7_Dy6Xg1Q",
+						"retrievedAt": "2026-10-04T09:17:12.525Z"
+					}
+				]
+			}
+		},
+		{
+			"name": "web_search",
+			"operation": "research_web_search",
+			"args": {
+				"query": "Ahri vs Zed mid matchup guide charm death mark shadow wave trading level 6",
+				"domains": [
+					"mobafire.com"
+				],
+				"max_results": 5
+			},
+			"ms": 28280,
+			"response": {
+				"version": "research-contract-v1",
+				"operation": "research_web_search",
+				"data": {
+					"provider": "hosted web search (model provider)",
+					"retrievedAt": "2026-10-04T09:17:27.594Z",
+					"results": [
+						{
+							"title": "Ahri Build Guide : [Plat] Season 5 Ahri Guide",
+							"url": "https://www.mobafire.com/league-of-legends/build/plat-season-5-ahri-guide-419206",
+							"domain": "www.mobafire.com",
+							"snippet": "Save your charm for after he ults you because if you use it before then, he can use him ultimate to dodge your charm. … Right after he ults, you can time your charm to hit him immediately after he becomes vulnerable, meaning he will not be able to apply any damage. … After that, use your Spirit Rush to keep your distance against auto attacks, and dodge shurikens.",
+							"date": "",
+							"retrievedAt": "2026-10-04T09:17:27.594Z",
+							"route": "evidence",
+							"p": {
+								"relevant": 0.89,
+								"support": 0.94,
+								"injection": 0.02
+							}
+						},
+						{
+							"title": "Ahri Build Guide : Ahri The Famous Nine Tails - Is too late for mercy",
+							"url": "https://www.mobafire.com/league-of-legends/build/ahri-the-famous-nine-tails-is-too-late-for-mercy-489894",
+							"domain": "www.mobafire.com",
+							"snippet": "When Zed ults you he will appear behind Ahri, meaning that you have to throw your Charm backwards in order for it to hit. … Early game you can't really harass him much as he will stay back and throw his Shuriken (Q) at the minions. … Some Zeds will use there W aggressively to try and harass you, which also pushes the lane. This is a great time to get a gank as his only escape will be on cooldown.",
+							"date": "",
+							"retrievedAt": "2026-10-04T09:17:27.594Z",
+							"route": "evidence",
+							"p": {
+								"relevant": 0.89,
+								"support": 0.94,
+								"injection": 0.03
+							}
+						},
+						{
+							"title": "Ahri Build Guide : Soulstealer Ahri; The Demon Fox of Mid Lane",
+							"url": "https://www.mobafire.com/league-of-legends/build/soulstealer-ahri-the-demon-fox-of-mid-lane-395769",
+							"domain": "www.mobafire.com",
+							"snippet": "Most Zeds must rely on Living Shadow to harass or farm from a distance rather than to escape or dodge. … Once you've dodge his shuriken, don't be afraid to retaliate, though be sure to keep your distance until Death Mark had popped. … The trick to dodging zed is to use Zhonya's while Zed is in \"mid air\" during the casting time of Death Mark.",
+							"date": "",
+							"retrievedAt": "2026-10-04T09:17:27.594Z",
+							"route": "evidence",
+							"p": {
+								"relevant": 0.94,
+								"support": 0.95,
+								"injection": 0.02
+							}
+						}
+					],
+					"answer": "Ahri should hold Charm for Zed’s Death Mark: he appears behind her, so aim Charm backward as he becomes vulnerable, then use Spirit Rush to create distance and dodge his shurikens. Before level 6, farm cautiously and punish Zed when his Living Shadow is on cooldown; after level 6, sidestep or dash sideways/diagonally from his follow-up attacks, and consider Zhonya’s Hourglass.",
+					"judgment": {
+						"judge": "jev",
+						"status": "judged",
+						"model": "jev-1.13.0",
+						"latencyMs": 313,
+						"inputTokens": 3150,
+						"answer": "evidence",
+						"answerP": {
+							"relevant": 0.97,
+							"support": 0.97,
+							"injection": 0.02
+						},
+						"kept": 3,
+						"removed": [],
+						"note": "Jev screen: relevance and prompt-injection routing, not a truth check; kept passages stay untrusted."
+					}
+				},
+				"evidence": [
+					{
+						"id": "web-1",
+						"source": "web_search",
+						"title": "Ahri Build Guide : [Plat] Season 5 Ahri Guide",
+						"url": "https://www.mobafire.com/league-of-legends/build/plat-season-5-ahri-guide-419206",
+						"retrievedAt": "2026-10-04T09:17:27.594Z"
+					},
+					{
+						"id": "web-2",
+						"source": "web_search",
+						"title": "Ahri Build Guide : Ahri The Famous Nine Tails - Is too late for mercy",
+						"url": "https://www.mobafire.com/league-of-legends/build/ahri-the-famous-nine-tails-is-too-late-for-mercy-489894",
+						"retrievedAt": "2026-10-04T09:17:27.594Z"
+					},
+					{
+						"id": "web-3",
+						"source": "web_search",
+						"title": "Ahri Build Guide : Soulstealer Ahri; The Demon Fox of Mid Lane",
+						"url": "https://www.mobafire.com/league-of-legends/build/soulstealer-ahri-the-demon-fox-of-mid-lane-395769",
+						"retrievedAt": "2026-10-04T09:17:27.594Z"
+					}
+				]
+			}
+		},
+		{
+			"name": "voxren_strategy_frame",
+			"operation": "strategy_frame",
+			"args": {
+				"question": "How do I beat Zed as Ahri mid?",
+				"claims": [
+					"Ahri can punish Zed's missed Razor Shuriken while contesting his last hits.",
+					"Zed's Living Shadow has a 20-second base cooldown at rank one.",
+					"When Zed casts Death Mark on Ahri, he reappears behind her; Ahri can aim Charm backward as he reappears.",
+					"Zed's Living Shadow used aggressively leaves him without that escape until it returns.",
+					"The Ahri versus Zed matchup favors Zed in lane and solo kills in the current aggregate."
+				],
+				"evidence": [
+					{
+						"id": "matchup-1"
+					},
+					{
+						"id": "game-1"
+					},
+					{
+						"id": "video-1"
+					},
+					{
+						"id": "video-2"
+					},
+					{
+						"id": "video-3"
+					},
+					{
+						"id": "web-1"
+					},
+					{
+						"id": "web-2"
+					}
+				]
+			},
+			"ms": 284,
+			"response": {
+				"version": "research-contract-v1",
+				"operation": "strategy_frame",
+				"data": {
+					"goal": "How do I beat Zed as Ahri mid?",
+					"claims": [
+						{
+							"claim": "Ahri can punish Zed's missed Razor Shuriken while contesting his last hits.",
+							"route": "grounded",
+							"p": {
+								"supported": 0.75,
+								"contradicted": 0.42
+							},
+							"source": "video-1",
+							"sourceP": {
+								"video-1": 0.6,
+								"video-3": 0.05,
+								"web-2": 0.06,
+								"video-2": 0.06,
+								"matchup-1": 0,
+								"web-1": 0.02,
+								"game-1": 0,
+								"none": 0.21
+							},
+							"contradictedBy": "web-2"
+						},
+						{
+							"claim": "Zed's Living Shadow has a 20-second base cooldown at rank one.",
+							"route": "grounded",
+							"p": {
+								"supported": 0.96,
+								"contradicted": 0.1
+							},
+							"source": "game-1",
+							"sourceP": {
+								"web-1": 0,
+								"video-1": 0,
+								"none": 0.01,
+								"video-2": 0,
+								"video-3": 0,
+								"matchup-1": 0,
+								"game-1": 0.99,
+								"web-2": 0
+							}
+						},
+						{
+							"claim": "When Zed casts Death Mark on Ahri, he reappears behind her; Ahri can aim Charm backward as he reappears.",
+							"route": "grounded",
+							"p": {
+								"supported": 0.96,
+								"contradicted": 0.17
+							},
+							"source": "web-2",
+							"sourceP": {
+								"video-1": 0,
+								"none": 0.01,
+								"game-1": 0,
+								"matchup-1": 0,
+								"video-2": 0,
+								"web-1": 0,
+								"web-2": 0.99,
+								"video-3": 0
+							}
+						},
+						{
+							"claim": "Zed's Living Shadow used aggressively leaves him without that escape until it returns.",
+							"route": "grounded",
+							"p": {
+								"supported": 0.9,
+								"contradicted": 0.14
+							},
+							"source": "web-2",
+							"sourceP": {
+								"game-1": 0,
+								"video-1": 0,
+								"video-2": 0,
+								"web-2": 0.99,
+								"web-1": 0,
+								"matchup-1": 0,
+								"none": 0.01,
+								"video-3": 0
+							}
+						},
+						{
+							"claim": "The Ahri versus Zed matchup favors Zed in lane and solo kills in the current aggregate.",
+							"route": "grounded",
+							"p": {
+								"supported": 0.95,
+								"contradicted": 0.53
+							},
+							"source": "matchup-1",
+							"sourceP": {
+								"web-1": 0,
+								"video-1": 0,
+								"none": 0,
+								"video-2": 0,
+								"video-3": 0,
+								"web-2": 0,
+								"game-1": 0,
+								"matchup-1": 1
+							},
+							"contradictedBy": "video-1"
+						}
+					],
+					"citation_ids": [
+						"matchup-1",
+						"game-1",
+						"video-1",
+						"video-2",
+						"video-3",
+						"web-1",
+						"web-2"
+					],
+					"sources": [
+						{
+							"id": "matchup-1",
+							"title": "OP.GG matchup: Ahri vs Zed mid"
+						},
+						{
+							"id": "game-1",
+							"title": "Riot Data Dragon 16.19.1"
+						},
+						{
+							"id": "video-1",
+							"title": "Sjorry: Rank 1 Ahri teaches you how to Beat Zed mid"
+						},
+						{
+							"id": "video-2",
+							"title": "Ahj: Getting Counterpicked by Zed? Here’s How Ahri Still Wins"
+						},
+						{
+							"id": "video-3",
+							"title": "Wallbang: How to Beat ZED as AHRI | Ranked Mid Lane Guide (Full Gameplay)"
+						},
+						{
+							"id": "web-1",
+							"title": "Ahri Build Guide : [Plat] Season 5 Ahri Guide"
+						},
+						{
+							"id": "web-2",
+							"title": "Ahri Build Guide : Ahri The Famous Nine Tails - Is too late for mercy"
+						}
+					],
+					"judgment": {
+						"judge": "jev",
+						"status": "judged",
+						"model": "jev-1.13.0",
+						"latencyMs": 278,
+						"inputTokens": 17616,
+						"checked": 5,
+						"note": "Jev grounding: each claim checked against cited passage text; grounded, unsupported, or contradicted. A flag, not a truth check."
+					}
+				},
+				"evidence": []
+			}
+		}
+	]
+}

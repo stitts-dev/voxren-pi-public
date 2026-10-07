@@ -1,0 +1,216 @@
+{
+	"meta": {
+		"version": "16.19.1",
+		"generated": "2026-10-05",
+		"model": "gpt-6-sol",
+		"sources": [
+			{
+				"id": "s1",
+				"title": "TOO BIG TO FAIL || NA challenger mundo main guide (check notes!!) MATCHUP UPDATE REVAMP",
+				"url": "https://www.mobafire.com/league-of-legends/build/too-big-to-fail-na-challenger-mundo-main-guide-check-notes-matchup-update-revamp-632678"
+			},
+			{
+				"id": "s2",
+				"title": "Dr. Mundo Build Guides, Runes, Items, and Abilities - Patch 26.19",
+				"url": "https://www.mobafire.com/league-of-legends/champion/dr-mundo-26"
+			},
+			{
+				"id": "game-1",
+				"title": "Riot Data Dragon 16.19.1",
+				"url": "https://ddragon.leagueoflegends.com/cdn/16.19.1/data/en_US/champion/DrMundo.json"
+			}
+		]
+	},
+	"id": "DrMundo",
+	"name": "Dr. Mundo",
+	"facts": {
+		"title": "the Madman of Zaun",
+		"tags": [
+			"Tank",
+			"Fighter"
+		],
+		"resource": "None",
+		"stats": {
+			"hp": 640,
+			"hpperlevel": 103,
+			"mp": 0,
+			"mpperlevel": 0,
+			"movespeed": 345,
+			"armor": 32,
+			"armorperlevel": 4.5,
+			"spellblock": 29,
+			"spellblockperlevel": 2.3,
+			"attackrange": 125,
+			"hpregen": 7,
+			"hpregenperlevel": 0.5,
+			"mpregen": 0,
+			"mpregenperlevel": 0,
+			"crit": 0,
+			"critperlevel": 0,
+			"attackdamage": 61,
+			"attackdamageperlevel": 0,
+			"attackspeedperlevel": 3.3,
+			"attackspeed": 0.67
+		},
+		"passive": {
+			"name": "Goes Where He Pleases",
+			"text": "Dr. Mundo resists the first Immobilizing effect that hits him, instead losing Health and dropping a chemical cannister nearby. Dr. Mundo can pick it up by walking over it, restoring Health and reducing this Ability's Cooldown.Dr. Mundo also has significantly increased Health regeneration."
+		},
+		"spells": [
+			{
+				"slot": "Q",
+				"name": "Infected Bonesaw",
+				"cooldown": [
+					4,
+					4,
+					4,
+					4,
+					4
+				],
+				"cost": [
+					0,
+					0,
+					0,
+					0,
+					0
+				],
+				"range": [
+					975,
+					975,
+					975,
+					975,
+					975
+				],
+				"text": "Dr. Mundo throws an infected bonesaw, dealing damage to the first enemy hit based on their current health and slowing them."
+			},
+			{
+				"slot": "W",
+				"name": "Heart Zapper",
+				"cooldown": [
+					17,
+					16.5,
+					16,
+					15.5,
+					15
+				],
+				"cost": [
+					0,
+					0,
+					0,
+					0,
+					0
+				],
+				"range": [
+					325,
+					325,
+					325,
+					325,
+					325
+				],
+				"text": "Dr. Mundo electrocutes himself, dealing persistent damage to nearby enemies and storing a portion of damage he takes. At the end of the duration or on Recast, Dr. Mundo deals a burst of damage to nearby enemies. If the burst hit an enemy, he heals a percentage of the stored damage."
+			},
+			{
+				"slot": "E",
+				"name": "Blunt Force Trauma",
+				"cooldown": [
+					9,
+					8.25,
+					7.5,
+					6.75,
+					6
+				],
+				"cost": [
+					0,
+					0,
+					0,
+					0,
+					0
+				],
+				"range": [
+					0,
+					0,
+					0,
+					0,
+					0
+				],
+				"text": "Passive - Dr. Mundo gains bonus Attack Damage, increasing based on his max Health.Active - Dr. Mundo slams his “medical” bag into an enemy, dealing additional damage based on his missing Health. If the enemy dies they are swatted away, dealing damage to enemies they pass through."
+			},
+			{
+				"slot": "R",
+				"name": "Maximum Dosage",
+				"cooldown": [
+					120,
+					120,
+					120
+				],
+				"cost": [
+					0,
+					0,
+					0
+				],
+				"range": [
+					20,
+					20,
+					20
+				],
+				"text": "Dr. Mundo pumps himself with chemicals, instantly healing a percent of his missing Health. He then gains Move Speed and regenerates a portion of his maximum Health over a long duration."
+			}
+		]
+	},
+	"coaching": {
+		"archetype": {
+			"value": "Dr. Mundo is a scaling tank who can frontline when his ultimate is available.",
+			"sources": [
+				"s1"
+			]
+		},
+		"axis": {
+			"value": "Dr. Mundo can play a push-focused lane.",
+			"sources": [
+				"s2"
+			]
+		},
+		"winCondition": {
+			"value": "Dr. Mundo wins by getting through lane without falling behind, then using his scaling to make powerful plays.",
+			"sources": [
+				"s1"
+			]
+		},
+		"spikes": [
+			{
+				"at": "Late game",
+				"why": "Dr. Mundo becomes difficult for most champions to handle after laning phase.",
+				"sources": [
+					"s1"
+				]
+			}
+		],
+		"bait": [
+			{
+				"slot": "R",
+				"why": "When Dr. Mundo spends his ultimate, its 120-second cooldown leaves him unable to fully frontline.",
+				"sources": [
+					"s1"
+				]
+			}
+		],
+		"mistakes": [
+			{
+				"value": "Dr. Mundo should not spend his ultimate on an unavoidable death when saving it would let him have an impact after respawning.",
+				"sources": [
+					"s1"
+				]
+			}
+		],
+		"comp": {
+			"tags": [
+				"split",
+				"poke"
+			],
+			"sources": [
+				"s1",
+				"game-1"
+			]
+		}
+	}
+}

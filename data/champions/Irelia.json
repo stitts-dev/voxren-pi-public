@@ -1,0 +1,237 @@
+{
+	"meta": {
+		"version": "16.19.1",
+		"generated": "2026-10-05",
+		"model": "gpt-6-sol",
+		"sources": [
+			{
+				"id": "s1",
+				"title": "[ALL MATCHUPS] [26.18] Acee1's Irelia Guide",
+				"url": "https://www.mobafire.com/league-of-legends/build/all-matchups-26-18-acee1s-irelia-guide-650579"
+			},
+			{
+				"id": "game-1",
+				"title": "Riot Data Dragon 16.19.1",
+				"url": "https://ddragon.leagueoflegends.com/cdn/16.19.1/data/en_US/champion/Irelia.json"
+			}
+		]
+	},
+	"id": "Irelia",
+	"name": "Irelia",
+	"facts": {
+		"title": "the Blade Dancer",
+		"tags": [
+			"Fighter",
+			"Assassin"
+		],
+		"resource": "Mana",
+		"stats": {
+			"hp": 630,
+			"hpperlevel": 115,
+			"mp": 350,
+			"mpperlevel": 50,
+			"movespeed": 335,
+			"armor": 36,
+			"armorperlevel": 4.7,
+			"spellblock": 30,
+			"spellblockperlevel": 2.05,
+			"attackrange": 200,
+			"hpregen": 3.5,
+			"hpregenperlevel": 0.85,
+			"mpregen": 8,
+			"mpregenperlevel": 0.8,
+			"crit": 0,
+			"critperlevel": 0,
+			"attackdamage": 65,
+			"attackdamageperlevel": 0,
+			"attackspeedperlevel": 2.5,
+			"attackspeed": 0.656
+		},
+		"passive": {
+			"name": "Ionian Fervor",
+			"text": "When Irelia strikes enemies with spells she gains stacking bonus Attack Speed. At maximum stacks she also gains bonus damage on hit."
+		},
+		"spells": [
+			{
+				"slot": "Q",
+				"name": "Bladesurge",
+				"cooldown": [
+					10,
+					9,
+					8,
+					7,
+					6
+				],
+				"cost": [
+					15,
+					15,
+					15,
+					15,
+					15
+				],
+				"range": [
+					600,
+					600,
+					600,
+					600,
+					600
+				],
+				"text": "Irelia dashes forward to strike her target, healing herself. If the target is Marked or dies to Bladesurge, its cooldown refreshes."
+			},
+			{
+				"slot": "W",
+				"name": "Defiant Dance",
+				"cooldown": [
+					20,
+					18,
+					16,
+					14,
+					12
+				],
+				"cost": [
+					70,
+					75,
+					80,
+					85,
+					90
+				],
+				"range": [
+					825,
+					825,
+					825,
+					825,
+					825
+				],
+				"text": "Irelia charges a strike that deals more damage as she charges. She takes reduced physical damage during the charge."
+			},
+			{
+				"slot": "E",
+				"name": "Flawless Duet",
+				"cooldown": [
+					16,
+					14.5,
+					13,
+					11.5,
+					10
+				],
+				"cost": [
+					50,
+					50,
+					50,
+					50,
+					50
+				],
+				"range": [
+					850,
+					850,
+					850,
+					850,
+					850
+				],
+				"text": "Irelia sends out two blades which converge on each other. Enemies caught in between are damaged, stunned and Marked."
+			},
+			{
+				"slot": "R",
+				"name": "Vanguard's Edge",
+				"cooldown": [
+					125,
+					105,
+					85
+				],
+				"cost": [
+					100,
+					100,
+					100
+				],
+				"range": [
+					950,
+					950,
+					950
+				],
+				"text": "Irelia fires a massive number of blades that explode outward upon hitting an enemy champion. Enemies hit by the blades are damaged and Marked. Afterwards the blades form a wall that will damage and slow enemies that walk through it."
+			}
+		]
+	},
+	"coaching": {
+		"damage": {
+			"value": "Irelia deals sustained AD damage through attacks empowered by her stacked passive.",
+			"sources": [
+				"s1"
+			]
+		},
+		"archetype": {
+			"value": "Irelia is an AD bruiser and split pusher who uses minion waves to set up mechanical outplays.",
+			"sources": [
+				"s1"
+			]
+		},
+		"axis": {
+			"value": "Irelia manipulates the wave, stacks her passive, and looks for an all-in.",
+			"sources": [
+				"s1"
+			]
+		},
+		"winCondition": {
+			"value": "Irelia wins through relentless sidelane pressure and well-executed teamfights.",
+			"sources": [
+				"s1"
+			]
+		},
+		"spikes": [
+			{
+				"at": "Full passive stacks",
+				"why": "Irelia gains the attack speed to make her all-in more dangerous.",
+				"sources": [
+					"s1"
+				]
+			},
+			{
+				"at": "Full passive stacks",
+				"why": "Irelia gains attack speed that makes her more dangerous in a fight.",
+				"sources": [
+					"s1"
+				]
+			},
+			{
+				"at": "Maximum Ionian Fervor stacks",
+				"why": "Irelia gains bonus on-hit damage in addition to her stacking Attack Speed.",
+				"sources": [
+					"game-1"
+				]
+			}
+		],
+		"bait": [
+			{
+				"slot": "Q",
+				"why": "Irelia loses her dash and its healing while Bladesurge is on cooldown, unless it refreshed.",
+				"sources": [
+					"game-1"
+				]
+			}
+		],
+		"mistakes": [
+			{
+				"value": "Irelia players make a mistake when they fight without passive stacks.",
+				"sources": [
+					"s1"
+				]
+			},
+			{
+				"value": "Irelia gives up a Bladesurge cooldown refresh when she uses it on a target that is neither Marked nor killed by the strike.",
+				"sources": [
+					"game-1"
+				]
+			}
+		],
+		"comp": {
+			"tags": [
+				"split",
+				"pick"
+			],
+			"sources": [
+				"s1",
+				"game-1"
+			]
+		}
+	}
+}

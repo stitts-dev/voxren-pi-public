@@ -1,0 +1,22 @@
+{
+	"id": "cmd-build",
+	"title": "/build Ahri",
+	"split": "holdout",
+	"steps": [
+		{
+			"send": "/build Ahri"
+		},
+		{
+			"idle": true
+		}
+	],
+	"env": {
+		"VOXREN_COACH_CHAMPION": "Syndra"
+	},
+	"gates": {
+		"maxSeconds": 120,
+		"icons": {
+			"expect": "all"
+		}
+	}
+}

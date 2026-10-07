@@ -1,0 +1,24 @@
+{
+	"id": "cmd-matchup-notachampion",
+	"title": "/matchup Notachampion: the error path, no rubric",
+	"split": "train",
+	"steps": [
+		{
+			"send": "/matchup Notachampion"
+		},
+		{
+			"wait": "No champion called 'Notachampion'"
+		}
+	],
+	"env": {
+		"VOXREN_COACH_CHAMPION": "Syndra"
+	},
+	"gates": {
+		"rubric": false,
+		"expect": [
+			"No champion called 'Notachampion'"
+		],
+		"allowFailedTools": true,
+		"maxSeconds": 120
+	}
+}

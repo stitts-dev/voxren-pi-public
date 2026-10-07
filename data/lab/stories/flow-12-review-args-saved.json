@@ -1,0 +1,70 @@
+{
+	"id": "flow-12-review-args-saved",
+	"title": "Right steps /review through 3, 5, 10, 15, and 15 is back after a restart",
+	"split": "train",
+	"steps": [
+		{
+			"wait": "COMMAND TREE"
+		},
+		{
+			"key": "home"
+		},
+		{
+			"wait": "[/review]"
+		},
+		{
+			"key": "down"
+		},
+		{
+			"wait": "‹ none ›"
+		},
+		{
+			"key": "right"
+		},
+		{
+			"wait": "‹ 3 ›"
+		},
+		{
+			"key": "right"
+		},
+		{
+			"key": "right"
+		},
+		{
+			"key": "right"
+		},
+		{
+			"wait": "‹ 15 ›"
+		},
+		{
+			"key": "left"
+		},
+		{
+			"key": "right"
+		},
+		{
+			"wait": "‹ 15 ›"
+		},
+		{
+			"key": "esc"
+		},
+		{
+			"key": "esc"
+		},
+		{
+			"restart": true
+		},
+		{
+			"wait": "COMMAND TREE"
+		},
+		{
+			"wait": "args   15"
+		}
+	],
+	"gates": {
+		"expect": [
+			"args   15"
+		],
+		"maxSeconds": 90
+	}
+}

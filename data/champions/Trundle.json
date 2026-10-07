@@ -1,0 +1,231 @@
+{
+	"meta": {
+		"version": "16.19.1",
+		"generated": "2026-10-05",
+		"model": "gpt-6-sol",
+		"sources": [
+			{
+				"id": "s1",
+				"title": "Trundle Build Guide: 🔸Trundle / Get a Closer Look🔸",
+				"url": "https://www.mobafire.com/league-of-legends/build/trundle-get-a-closer-look-651033"
+			},
+			{
+				"id": "game-1",
+				"title": "Riot Data Dragon 16.19.1",
+				"url": "https://ddragon.leagueoflegends.com/cdn/16.19.1/data/en_US/champion/Trundle.json"
+			}
+		]
+	},
+	"id": "Trundle",
+	"name": "Trundle",
+	"facts": {
+		"title": "the Troll King",
+		"tags": [
+			"Fighter",
+			"Tank"
+		],
+		"resource": "Mana",
+		"stats": {
+			"hp": 650,
+			"hpperlevel": 110,
+			"mp": 340,
+			"mpperlevel": 45,
+			"movespeed": 350,
+			"armor": 37,
+			"armorperlevel": 4.5,
+			"spellblock": 32,
+			"spellblockperlevel": 2.05,
+			"attackrange": 175,
+			"hpregen": 6,
+			"hpregenperlevel": 0.75,
+			"mpregen": 7.5,
+			"mpregenperlevel": 0.6,
+			"crit": 0,
+			"critperlevel": 0,
+			"attackdamage": 68,
+			"attackdamageperlevel": 0,
+			"attackspeedperlevel": 2.9,
+			"attackspeed": 0.67
+		},
+		"passive": {
+			"name": "King's Tribute",
+			"text": "When an enemy unit dies near Trundle, he heals for a percent of its maximum Health."
+		},
+		"spells": [
+			{
+				"slot": "Q",
+				"name": "Chomp",
+				"cooldown": [
+					3.5,
+					3.5,
+					3.5,
+					3.5,
+					3.5
+				],
+				"cost": [
+					20,
+					20,
+					20,
+					20,
+					20
+				],
+				"range": [
+					300,
+					300,
+					300,
+					300,
+					300
+				],
+				"text": "Trundle bites his opponent, dealing damage, briefly slowing and sapping some of their Attack Damage."
+			},
+			{
+				"slot": "W",
+				"name": "Frozen Domain",
+				"cooldown": [
+					18,
+					17,
+					16,
+					15,
+					14
+				],
+				"cost": [
+					40,
+					40,
+					40,
+					40,
+					40
+				],
+				"range": [
+					750,
+					750,
+					750,
+					750,
+					750
+				],
+				"text": "Trundle turns target location into his domain, gaining Attack Speed, Move Speed, and increased healing from all sources while on it."
+			},
+			{
+				"slot": "E",
+				"name": "Pillar of Ice",
+				"cooldown": [
+					21,
+					19.5,
+					18,
+					16.5,
+					15
+				],
+				"cost": [
+					75,
+					75,
+					75,
+					75,
+					75
+				],
+				"range": [
+					1000,
+					1000,
+					1000,
+					1000,
+					1000
+				],
+				"text": "Trundle creates an ice pillar at target location, becoming impassable terrain and slowing all nearby enemy units."
+			},
+			{
+				"slot": "R",
+				"name": "Subjugate",
+				"cooldown": [
+					120,
+					100,
+					80
+				],
+				"cost": [
+					100,
+					100,
+					100
+				],
+				"range": [
+					650,
+					650,
+					650
+				],
+				"text": "Trundle immediately steals a percent of his target's Health, Armor and Magic Resistance. Over the next 4 seconds the amount of Health, Armor, and Magic Resistance stolen is doubled."
+			}
+		]
+	},
+	"coaching": {
+		"archetype": {
+			"value": "Trundle is an objective-control jungler who uses dueling power and map pressure to carry.",
+			"sources": [
+				"s1"
+			]
+		},
+		"winCondition": {
+			"value": "Trundle wins by turning small advantages into objectives, towers, and the Nexus.",
+			"sources": [
+				"s1"
+			]
+		},
+		"spikes": [
+			{
+				"at": "Subjugate available",
+				"why": "Trundle can steal Health, Armor, and Magic Resistance immediately, then double the stolen amounts over four seconds.",
+				"sources": [
+					"game-1"
+				]
+			}
+		],
+		"bait": [
+			{
+				"slot": "Q",
+				"why": "After Trundle uses Chomp, enemies have a 3.5-second window before he can bite and sap Attack Damage again.",
+				"sources": [
+					"game-1"
+				]
+			},
+			{
+				"slot": "W",
+				"why": "After Trundle uses Frozen Domain, its 18–14-second cooldown gives enemies a window before he can create another domain.",
+				"sources": [
+					"game-1"
+				]
+			},
+			{
+				"slot": "E",
+				"why": "After Trundle uses Pillar of Ice, its 21–15-second cooldown gives enemies a window without a new pillar or its nearby slow.",
+				"sources": [
+					"game-1"
+				]
+			}
+		],
+		"mistakes": [
+			{
+				"value": "Trundle becomes easier to punish when he pushes forward without respecting his limits.",
+				"sources": [
+					"s1"
+				]
+			},
+			{
+				"value": "Trundle players make mistakes when they force invades or fights without respecting the champion’s limits.",
+				"sources": [
+					"s1"
+				]
+			},
+			{
+				"value": "Trundle loses Frozen Domain’s bonuses when he fights outside it.",
+				"sources": [
+					"game-1"
+				]
+			}
+		],
+		"comp": {
+			"tags": [
+				"split",
+				"peel"
+			],
+			"sources": [
+				"s1",
+				"game-1"
+			]
+		}
+	}
+}

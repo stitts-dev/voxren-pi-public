@@ -1,0 +1,21 @@
+{
+	"id": "cmd-otp-bad-arg",
+	"title": "/otp with a name that is no Riot ID: the tools fail and the coach says so",
+	"split": "train",
+	"steps": [
+		{
+			"send": "/otp nonsense"
+		},
+		{
+			"idle": true
+		}
+	],
+	"env": {
+		"VOXREN_COACH_CHAMPION": "Syndra"
+	},
+	"gates": {
+		"rubric": false,
+		"allowFailedTools": true,
+		"maxSeconds": 120
+	}
+}

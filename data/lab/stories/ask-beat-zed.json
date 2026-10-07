@@ -1,0 +1,22 @@
+{
+	"id": "ask-beat-zed",
+	"title": "A typed question: how do I beat Zed as Ahri",
+	"split": "train",
+	"steps": [
+		{
+			"send": "how do I beat Zed as Ahri"
+		},
+		{
+			"idle": true
+		}
+	],
+	"env": {
+		"VOXREN_COACH_CHAMPION": "Syndra"
+	},
+	"gates": {
+		"maxSeconds": 120,
+		"icons": {
+			"expect": "all"
+		}
+	}
+}

@@ -1,0 +1,49 @@
+{
+	"id": "multi-support-thresh-nautilus",
+	"title": "Support: /matchup Thresh vs Nautilus, ctrl+o on the cards, then low health with the jungler near (a Silver player)",
+	"split": "holdout",
+	"tier": "silver",
+	"applies": [
+		"death_as_trade",
+		"names_tradeoff",
+		"contrast_reason",
+		"tier_fit"
+	],
+	"steps": [
+		{
+			"send": "/matchup Thresh vs Nautilus"
+		},
+		{
+			"idle": true
+		},
+		{
+			"key": "ctrl+o"
+		},
+		{
+			"wait": "Tool output: expanded"
+		},
+		{
+			"send": "I'm Silver. When I'm low and their jungler shows, do I stay in lane or back off? What does that cost my carry?"
+		},
+		{
+			"idle": true
+		}
+	],
+	"env": {
+		"VOXREN_COACH_CHAMPION": "Thresh",
+		"VOXREN_COACH_LANE": "support"
+	},
+	"gates": {
+		"tools": [
+			"voxren_meta_research"
+		],
+		"runs": {
+			"min": 2,
+			"max": 3
+		},
+		"expect": [
+			"third-party"
+		],
+		"maxSeconds": 300
+	}
+}

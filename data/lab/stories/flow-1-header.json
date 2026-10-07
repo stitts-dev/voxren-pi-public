@@ -1,0 +1,16 @@
+{
+	"id": "flow-1-header",
+	"title": "The coach opens and draws its header",
+	"split": "train",
+	"steps": [
+		{
+			"wait": "VOXREN COACH"
+		}
+	],
+	"gates": {
+		"expect": [
+			"VOXREN COACH"
+		],
+		"maxSeconds": 60
+	}
+}

@@ -1,0 +1,8 @@
+{
+	"name": "zed-support-dive",
+	"you": "MIDDLE",
+	"myTeam": { "TOP": "Aatrox", "MIDDLE": "Fizz", "JUNGLE": "Graves", "UTILITY": "Zed", "BOTTOM": "Jinx" },
+	"theirTeam": ["Karma", "Ahri", "Qiyana", "Mordekaiser", "Xayah"],
+	"bans": { "yours": ["Draven", "Yorick", "Udyr", "Syndra", "Leona"], "theirs": ["Seraphine", "Galio", "Rammus", "Nasus", "Nautilus"] },
+	"notes": "Issue #30 S6: troll-ish Zed support, no frontline; the plan has to say how Jinx survives and who starts fights."
+}

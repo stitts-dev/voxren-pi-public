@@ -1,0 +1,22 @@
+{
+	"id": "cmd-comp-pyke",
+	"title": "/comp on the pyke-picks replay (about 72 s)",
+	"split": "train",
+	"steps": [
+		{
+			"wait": "picks 10/10",
+			"timeout": 30
+		},
+		{
+			"send": "/comp"
+		},
+		{
+			"idle": true
+		}
+	],
+	"replay": "data/lab/drafts/pyke-picks.json",
+	"replayStepMs": 100,
+	"gates": {
+		"maxSeconds": 150
+	}
+}

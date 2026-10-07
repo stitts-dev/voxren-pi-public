@@ -1,0 +1,14 @@
+node_modules/
+.env
+data/maps-wip/
+.DS_Store
+.vscode/*
+!.vscode/launch.json
+.idea/
+coverage/
+bun.lock
+!data/map-backgrounds/*.png
+.claude/worktrees/
+.claude/conductor/scores.json
+.claude/conductor/stories/
+.claude/conductor/tiers/

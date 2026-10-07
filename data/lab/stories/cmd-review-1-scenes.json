@@ -1,0 +1,19 @@
+{
+	"id": "cmd-review-1-scenes",
+	"title": "/review 1: one game, card and per-death scenes drawn",
+	"split": "train",
+	"steps": [
+		{
+			"send": "/review 1"
+		},
+		{
+			"idle": true
+		}
+	],
+	"gates": {
+		"tools": [
+			"voxren_player_audit"
+		],
+		"maxSeconds": 180
+	}
+}

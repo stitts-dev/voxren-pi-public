@@ -1,0 +1,33 @@
+{
+	"id": "rubric-matchup-syndra",
+	"title": "/matchup Syndra as Fizz",
+	"split": "train",
+	"tier": "platinum",
+	"applies": [
+		"names_tradeoff",
+		"contrast_reason",
+		"leads_with_one_fix",
+		"generic_copout",
+		"tier_fit"
+	],
+	"steps": [
+		{
+			"send": "/matchup Syndra"
+		},
+		{
+			"idle": true
+		}
+	],
+	"env": {
+		"VOXREN_COACH_CHAMPION": "Fizz"
+	},
+	"gates": {
+		"tools": [
+			"voxren_meta_research"
+		],
+		"maxSeconds": 180,
+		"icons": {
+			"expect": "all"
+		}
+	}
+}

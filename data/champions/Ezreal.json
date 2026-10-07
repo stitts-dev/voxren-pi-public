@@ -1,0 +1,191 @@
+{
+	"meta": {
+		"version": "16.19.1",
+		"generated": "2026-10-05",
+		"model": "gpt-6-sol",
+		"sources": [
+			{
+				"id": "game-1",
+				"title": "Riot Data Dragon 16.19.1",
+				"url": "https://ddragon.leagueoflegends.com/cdn/16.19.1/data/en_US/champion/Ezreal.json"
+			}
+		]
+	},
+	"id": "Ezreal",
+	"name": "Ezreal",
+	"facts": {
+		"title": "the Prodigal Explorer",
+		"tags": [
+			"Marksman",
+			"Mage"
+		],
+		"resource": "Mana",
+		"stats": {
+			"hp": 600,
+			"hpperlevel": 102,
+			"mp": 375,
+			"mpperlevel": 70,
+			"movespeed": 325,
+			"armor": 24,
+			"armorperlevel": 4.2,
+			"spellblock": 33,
+			"spellblockperlevel": 1.1,
+			"attackrange": 550,
+			"hpregen": 4,
+			"hpregenperlevel": 0.65,
+			"mpregen": 8.5,
+			"mpregenperlevel": 1,
+			"crit": 0,
+			"critperlevel": 0,
+			"attackdamage": 60,
+			"attackdamageperlevel": 0,
+			"attackspeedperlevel": 2.5,
+			"attackspeed": 0.625
+		},
+		"passive": {
+			"name": "Rising Spell Force",
+			"text": "Ezreal gains increasing Attack Speed each time he successfully hits a spell, stacking up to 5 times."
+		},
+		"spells": [
+			{
+				"slot": "Q",
+				"name": "Mystic Shot",
+				"cooldown": [
+					5.5,
+					5.25,
+					5,
+					4.75,
+					4.5
+				],
+				"cost": [
+					28,
+					31,
+					34,
+					37,
+					40
+				],
+				"range": [
+					1150,
+					1150,
+					1150,
+					1150,
+					1150
+				],
+				"text": "Ezreal fires a damaging bolt of energy which reduces all of his cooldowns slightly if it strikes an enemy unit."
+			},
+			{
+				"slot": "W",
+				"name": "Essence Flux",
+				"cooldown": [
+					8,
+					8,
+					8,
+					8,
+					8
+				],
+				"cost": [
+					50,
+					50,
+					50,
+					50,
+					50
+				],
+				"range": [
+					1150,
+					1150,
+					1150,
+					1150,
+					1150
+				],
+				"text": "Ezreal fires an orb that sticks to the first champion or objective hit. If Ezreal hits an enemy with the orb, it detonates and deals damage."
+			},
+			{
+				"slot": "E",
+				"name": "Arcane Shift",
+				"cooldown": [
+					26,
+					23,
+					20,
+					17,
+					14
+				],
+				"cost": [
+					70,
+					70,
+					70,
+					70,
+					70
+				],
+				"range": [
+					475,
+					475,
+					475,
+					475,
+					475
+				],
+				"text": "Ezreal teleports to a target nearby location and fires a homing bolt which strikes the nearest enemy unit. Prioritizes enemies stuck with Essence Flux."
+			},
+			{
+				"slot": "R",
+				"name": "Trueshot Barrage",
+				"cooldown": [
+					120,
+					105,
+					90
+				],
+				"cost": [
+					100,
+					100,
+					100
+				],
+				"range": [
+					25000,
+					25000,
+					25000
+				],
+				"text": "Ezreal winds up before firing a powerful barrage of energy that deals massive damage to each unit it passes through (damage is reduced for minions and non-epic monsters)."
+			}
+		]
+	},
+	"coaching": {
+		"axis": {
+			"value": "Ezreal can poke with Mystic Shot and Essence Flux from 1150 range.",
+			"sources": [
+				"game-1"
+			]
+		},
+		"spikes": [],
+		"bait": [
+			{
+				"slot": "E",
+				"why": "After Ezreal uses Arcane Shift, its teleport is unavailable until the cooldown ends.",
+				"sources": [
+					"game-1"
+				]
+			},
+			{
+				"slot": "R",
+				"why": "After Ezreal fires Trueshot Barrage, its long cooldown leaves the barrage unavailable.",
+				"sources": [
+					"game-1"
+				]
+			}
+		],
+		"mistakes": [
+			{
+				"value": "Ezreal loses Mystic Shot’s cooldown reduction when he misses an enemy unit.",
+				"sources": [
+					"game-1"
+				]
+			}
+		],
+		"comp": {
+			"tags": [
+				"poke"
+			],
+			"sources": [
+				"game-1"
+			]
+		}
+	}
+}

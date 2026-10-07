@@ -1,0 +1,34 @@
+{
+	"id": "cmd-matchup-two",
+	"title": "/matchup Katarina vs Ahri",
+	"split": "train",
+	"steps": [
+		{
+			"send": "/matchup Katarina vs Ahri"
+		},
+		{
+			"idle": true
+		}
+	],
+	"env": {
+		"VOXREN_COACH_CHAMPION": "Syndra"
+	},
+	"gates": {
+		"tools": [
+			"voxren_meta_research"
+		],
+		"maxSeconds": 150,
+		"icons": {
+			"expect": "all"
+		},
+		"expect": [
+			"tip screened by jev",
+			"checked by jev"
+		],
+		"absent": [
+			"not screened",
+			"not checked",
+			"unavailable ("
+		]
+	}
+}

@@ -1,0 +1,210 @@
+{
+	"meta": {
+		"version": "16.19.1",
+		"generated": "2026-10-05",
+		"model": "gpt-6-sol",
+		"sources": [
+			{
+				"id": "s1",
+				"title": "Wukong Build Guide: [League Classic 2026] My Place Is At The Top - Wukong Top/Mid/Jungle Revision!",
+				"url": "https://www.mobafire.com/league-of-legends/build/league-classic-2026-my-place-is-at-the-top-wukong-top-mid-jungle-revision-429127"
+			},
+			{
+				"id": "s2",
+				"title": "Wukong Build Guide: WINkong Jungle",
+				"url": "https://www.mobafire.com/league-of-legends/build/winkong-jungle-644605"
+			},
+			{
+				"id": "game-1",
+				"title": "Riot Data Dragon 16.19.1",
+				"url": "https://ddragon.leagueoflegends.com/cdn/16.19.1/data/en_US/champion/MonkeyKing.json"
+			}
+		]
+	},
+	"id": "MonkeyKing",
+	"name": "Wukong",
+	"facts": {
+		"title": "the Monkey King",
+		"tags": [
+			"Fighter",
+			"Tank"
+		],
+		"resource": "Mana",
+		"stats": {
+			"hp": 610,
+			"hpperlevel": 99,
+			"mp": 330,
+			"mpperlevel": 65,
+			"movespeed": 340,
+			"armor": 31,
+			"armorperlevel": 4.7,
+			"spellblock": 28,
+			"spellblockperlevel": 2.05,
+			"attackrange": 175,
+			"hpregen": 3.5,
+			"hpregenperlevel": 0.65,
+			"mpregen": 8,
+			"mpregenperlevel": 0.8,
+			"crit": 0,
+			"critperlevel": 0,
+			"attackdamage": 66,
+			"attackdamageperlevel": 0,
+			"attackspeedperlevel": 3,
+			"attackspeed": 0.69
+		},
+		"passive": {
+			"name": "Stone Skin",
+			"text": "Wukong gains stacking armor and max health regeneration while fighting champions and monsters."
+		},
+		"spells": [
+			{
+				"slot": "Q",
+				"name": "Crushing Blow",
+				"cooldown": [
+					8,
+					7.5,
+					7,
+					6.5,
+					6
+				],
+				"cost": [
+					20,
+					20,
+					20,
+					20,
+					20
+				],
+				"range": [
+					250,
+					275,
+					300,
+					325,
+					350
+				],
+				"text": "Wukong's next attack gains attack range, deals bonus damage, and reduces the target's armor for a few seconds."
+			},
+			{
+				"slot": "W",
+				"name": "Warrior Trickster",
+				"cooldown": [
+					22,
+					21,
+					20,
+					19,
+					18
+				],
+				"cost": [
+					60,
+					55,
+					50,
+					45,
+					40
+				],
+				"range": [
+					275,
+					275,
+					275,
+					275,
+					275
+				],
+				"text": "Wukong becomes Invisible and dashes in a direction, leaving behind a clone that will attack nearby enemies."
+			},
+			{
+				"slot": "E",
+				"name": "Nimbus Strike",
+				"cooldown": [
+					10,
+					9.25,
+					8.5,
+					7.75,
+					7
+				],
+				"cost": [
+					30,
+					35,
+					40,
+					45,
+					50
+				],
+				"range": [
+					650,
+					650,
+					650,
+					650,
+					650
+				],
+				"text": "Wukong dashes to a targeted enemy and sends out images to attack enemies near his target, dealing damage to each enemy struck."
+			},
+			{
+				"slot": "R",
+				"name": "Cyclone",
+				"cooldown": [
+					130,
+					110,
+					90
+				],
+				"cost": [
+					100,
+					100,
+					100
+				],
+				"range": [
+					315,
+					315,
+					315
+				],
+				"text": "Wukong's extends his staff and spins it around repeatedly, gaining Move Speed.Enemies struck take damage and are knocked up."
+			}
+		]
+	},
+	"coaching": {
+		"archetype": {
+			"value": "Wukong is a durable fighter who thrives in extended fights.",
+			"sources": [
+				"s2"
+			]
+		},
+		"axis": {
+			"value": "Wukong favors sustained fights over short burst trades.",
+			"sources": [
+				"s2"
+			]
+		},
+		"spikes": [
+			{
+				"at": "Youmuu's Ghostblade",
+				"why": "Wukong can use its active to engage and catch targets.",
+				"sources": [
+					"s1"
+				]
+			},
+			{
+				"at": "Stone Skin fully stacked",
+				"why": "Wukong becomes more durable, especially against physical damage.",
+				"sources": [
+					"s2"
+				]
+			}
+		],
+		"bait": [],
+		"mistakes": [
+			{
+				"value": "Wukong loses value from Youmuu's Ghostblade when he does not use its active.",
+				"sources": [
+					"s1"
+				]
+			}
+		],
+		"comp": {
+			"tags": [
+				"engage",
+				"dive"
+			],
+			"sources": [
+				"s1",
+				"s2",
+				"game-1"
+			]
+		}
+	}
+}

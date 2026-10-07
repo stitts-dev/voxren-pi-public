@@ -1,0 +1,931 @@
+{
+	"id": "cmd-review-1-scenes",
+	"turns": [
+		{
+			"thinking": [
+				"**Auditing a win sample**\n\n**Refining matchup notes**\n\n**Checking early deaths**"
+			],
+			"text": "",
+			"calls": [
+				{
+					"name": "voxren_player_audit",
+					"args": {
+						"count": 1
+					}
+				}
+			]
+		},
+		{
+			"thinking": [
+				""
+			],
+			"text": "",
+			"calls": [
+				{
+					"name": "voxren_strategy_frame",
+					"args": {
+						"question": "Review one latest Fizz ranked win against Akali, distinguish worthwhile deaths, early avoidable death, kill conversions and lead shape.",
+						"claims": [
+							"The Fizz versus Akali game was a win at 6/6/5 with four deaths before 15 and two afterward.",
+							"At minute 10.5 Akali killed the player in mid with 608 gold unspent, 383 gold behind, and nothing traded back.",
+							"In the minute 10.5 death Akali Q dealt 57% of killing damage, Akali R 24%, and the damage was 81% magic and 15% true.",
+							"At minute 3.3 Akali killed the player in enemy top jungle with 529 gold unspent; the team traded back.",
+							"The deaths at minutes 8.2, 20.4, and 24.1 were marked worth taking because the team took objectives or won the fight.",
+							"At minute 8.3 Fizz solo-killed Akali and the team took dragon and voidgrubs; at minute 13.6 another solo Akali kill led to a tower.",
+							"Six of eleven takedowns converted to an objective or tower within a minute, while the player's gold difference changed from -292 at 15 to +1200 at 20.",
+							"The player farmed 6.3 CS per minute before 15 and 6.8 after 15; Blackfire Torch completed at 14.2 minutes."
+						],
+						"evidence": [
+							{
+								"id": "audit-1"
+							},
+							{
+								"id": "audit-ref-1"
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"thinking": [
+				"**Holding for wave clear**"
+			],
+			"text": "**Keep converting Akali kills into objectives, but cut the early deaths that buy nothing.** This was a win, and four of your six deaths came before minute 15. At minute 10.5, Akali killed you mid with 608 gold unspent; your team got nothing back. Her Q dealt 57% of that death’s damage. When E is unavailable, give up the contested minion rather than take another Q trade, then reset when the wave lets you.\n\nThe minute 3.3 trip into enemy top jungle also cost a death with 529 gold unspent. Your team traded back, but you gave Akali a chance to follow you out of lane. Secure the mid wave before entering her side of the map. That gives up a speculative jungle play in exchange for a safer recall and your lane gold.\n\n**Keep the conversion pattern:** your solo kill on Akali at minute 8.3 became dragon and voidgrubs; the solo kill at 13.6 became a tower. Six of your eleven takedowns became an objective or tower within a minute. That is how you turned a 292-gold deficit at minute 15 into a 1200-gold lead at minute 20. I would not count the deaths at 8.2, 20.4, or 24.1 against you: they bought objectives or a won fight.\n\nNext game, make the minute 10.5 decision differently: **Akali Q ready, E down: concede the minion instead of donating another death.**",
+			"calls": []
+		}
+	],
+	"tools": [
+		{
+			"name": "voxren_player_audit",
+			"operation": "player_audit",
+			"args": {
+				"count": 1
+			},
+			"ms": 3268,
+			"response": {
+				"version": "research-contract-v1",
+				"operation": "player_audit",
+				"data": {
+					"account": "[riot-id]",
+					"queue": "ranked solo/duo (420)",
+					"retrievedAt": "2026-10-06T13:09:04.044Z",
+					"requested": 1,
+					"analyzed": 1,
+					"skipped": [],
+					"patches": [
+						"16.19"
+					],
+					"patchNotesLabels": [
+						"26.19"
+					],
+					"summary": {
+						"games": 1,
+						"wins": 1,
+						"winRatePct": 100,
+						"avgKills": 6,
+						"avgDeaths": 6,
+						"avgAssists": 5,
+						"gamesWithDeathBefore6": 1,
+						"gamesWithMax3Deaths": 0,
+						"avgDeathsAt15": 4,
+						"avgDeathsAfter15": 2,
+						"avgKillsAt15": 5,
+						"avgCsAt10": 54,
+						"avgCsAt15": 94,
+						"avgGoldDiffAt10": -383,
+						"avgGoldDiffAt15": -292,
+						"avgLevel6Min": 5.6,
+						"avgFirstBackMin": 3.4,
+						"avgDurationMin": 24.8,
+						"keystones": {
+							"Electrocute": 1
+						},
+						"skillOrders": {
+							"EWQ": 1
+						},
+						"opponents": {
+							"Akali": 1
+						},
+						"medianItemTimingMin": {
+							"Mejai's Soulstealer": 15.7,
+							"Doran's Ring": 0.3,
+							"Blackfire Torch": 14.2,
+							"Zhonya's Hourglass": 21.1,
+							"Mercury's Treads": 14.2
+						},
+						"itemPurchaseCount": {
+							"Mejai's Soulstealer": 1,
+							"Doran's Ring": 1,
+							"Blackfire Torch": 1,
+							"Zhonya's Hourglass": 1,
+							"Mercury's Treads": 1
+						},
+						"aheadAt15": {
+							"games": 0,
+							"wins": 0,
+							"avgDeathsAfter15Won": null,
+							"avgDeathsAfter15Lost": null
+						},
+						"avgKillParticipationPct": 33,
+						"avgDamageSharePct": 18,
+						"avgVisionPerMin": 0.36,
+						"avgCsPerMinTo15": 6.3,
+						"avgCsPerMinAfter15": 6.8,
+						"avgGoldDiffAt20": 1200,
+						"avgDeadPct": 8,
+						"avgObjectives": {
+							"dragons": [
+								3,
+								0
+							],
+							"barons": [
+								1,
+								0
+							],
+							"heralds": [
+								1,
+								0
+							],
+							"grubs": [
+								3,
+								0
+							],
+							"towers": [
+								10,
+								0
+							]
+						},
+						"medians": {
+							"all": {
+								"games": 1,
+								"visionScore": 9,
+								"wardsPlaced": 4,
+								"wardsKilled": 0,
+								"controlWards": 0,
+								"damagePerMin": 642,
+								"damageTakenSharePct": 15,
+								"plates": 8
+							},
+							"won": {
+								"games": 1,
+								"visionScore": 9,
+								"wardsPlaced": 4,
+								"wardsKilled": 0,
+								"controlWards": 0,
+								"damagePerMin": 642,
+								"damageTakenSharePct": 15,
+								"plates": 8
+							},
+							"lost": {
+								"games": 0,
+								"visionScore": null,
+								"wardsPlaced": null,
+								"wardsKilled": null,
+								"controlWards": null,
+								"damagePerMin": null,
+								"damageTakenSharePct": null,
+								"plates": null
+							}
+						},
+						"participation": {
+							"dragon": [
+								1,
+								3
+							],
+							"herald": [
+								1,
+								1
+							],
+							"baron": [
+								1,
+								1
+							],
+							"tower": [
+								1,
+								10
+							]
+						},
+						"byResult": {
+							"won": {
+								"games": 1,
+								"deaths": 6,
+								"deathsAfter15": 2,
+								"csAt15": 94,
+								"goldDiffAt15": -292,
+								"killParticipationPct": 33,
+								"visionPerMin": 0.36,
+								"csPerMinAfter15": 6.8,
+								"goldDiffAt20": 1200,
+								"deadPct": 8,
+								"dragons": [
+									3,
+									0
+								],
+								"towers": [
+									10,
+									0
+								]
+							},
+							"lost": {
+								"games": 0,
+								"deaths": null,
+								"deathsAfter15": null,
+								"csAt15": null,
+								"goldDiffAt15": null,
+								"killParticipationPct": null,
+								"visionPerMin": null,
+								"csPerMinAfter15": null,
+								"goldDiffAt20": null,
+								"deadPct": null,
+								"dragons": [
+									null,
+									null
+								],
+								"towers": [
+									null,
+									null
+								]
+							}
+						}
+					},
+					"habits": [
+						"not on the team's epic monster takes: 5 of 8 takes",
+						"bought no control ward: 1 of 1 games",
+						"died before minute 6: 1 of 1 games",
+						"in fewer than 40% of the team's kills: 1 of 1 games",
+						"died to the enemy jungler by minute 15: 1 of 3 deaths",
+						"died with nothing taken back by the team: 1 of 3 deaths"
+					],
+					"killPatterns": [
+						"kills and assists the team turned into an objective or tower within a minute: 6 of 11 takedowns",
+						"kills landed alone: 3 of 6 kills",
+						"kills and assists away from the player's own lane by minute 15: 1 of 5 takedowns",
+						"kills and assists followed within a minute by a death not worth taking: 1 of 11 takedowns"
+					],
+					"keyDeaths": [
+						"vs Akali (win), minute 10.5, mid lane, own side: killed by Akali, 608 gold unspent, 383 gold behind the lane opponent, nothing traded back; killing damage: Akali Q 57%, Akali R 24%, Akali Ignite 15% (81% magic, 4% physical, 15% true).",
+						"vs Akali (win), minute 5.9, mid lane, own side: killed by Akali with Udyr, 264 gold unspent, 64 gold behind the lane opponent, enemy jungler on the kill, team traded back; killing damage: Akali R 24%, Akali Q 20%, Udyr Q 19% (69% magic, 18% physical, 13% true).",
+						"vs Akali (win), minute 3.3, enemy top jungle: killed by Akali, 529 gold unspent, 50 gold ahead of the lane opponent, team traded back; killing damage: Akali Q 43%, Akali E 37%, Akali autos 14% (80% magic, 20% physical)."
+					],
+					"games": [
+						{
+							"id": "[match-id]",
+							"date": "2026-10-06",
+							"playedAtMs": 1791290552119,
+							"patch": "16.19",
+							"win": true,
+							"remake": false,
+							"champ": "Fizz",
+							"vs": "Akali",
+							"kda": "6/6/5",
+							"dur": 24.8,
+							"d6": 2,
+							"d15": 4,
+							"dLate": 2,
+							"k15": 5,
+							"cs10": 54,
+							"cs15": 94,
+							"gd10": -383,
+							"gd15": -292,
+							"lvl6": 5.6,
+							"back1": 3.4,
+							"keystone": "Electrocute",
+							"skills": "EWQ max E>W",
+							"items": "Doran's Ring@0.3, Blackfire Torch@14.2, Mercury's Treads@14.2, Mejai's Soulstealer@15.7, Zhonya's Hourglass@21.1",
+							"dAfterAlly": 1,
+							"dUntraded": 1,
+							"dWorth": 3,
+							"cspm15": 6.3,
+							"cspmLate": 6.8,
+							"gd20": 1200,
+							"gdPeak": 1506,
+							"gdPeakMin": 25,
+							"gdEnd": 1506,
+							"obj": "dragons 3-0, Barons 1-0, Heralds 1-0, grubs 3-0, towers 10-0",
+							"epic": "3 of 8",
+							"deadPct": 8,
+							"towers": 1,
+							"kp": 33,
+							"dmg": 18,
+							"vis": 0.36,
+							"cw": 0,
+							"ward": "9/4/0",
+							"dpm": 642,
+							"taken": 15,
+							"plates": 8,
+							"part": "1 of 3 dragons, 1 of 1 heralds, 1 of 1 Barons, 1 of 10 towers",
+							"deaths": [
+								"minute 3.3, enemy top jungle: killed by Akali, 529 gold unspent, 50 gold ahead of the lane opponent, team traded back; killing damage: Akali Q 43%, Akali E 37%, Akali autos 14% (80% magic, 20% physical).",
+								"minute 5.9, mid lane, own side: killed by Akali with Udyr, 264 gold unspent, 64 gold behind the lane opponent, enemy jungler on the kill, team traded back; killing damage: Akali R 24%, Akali Q 20%, Udyr Q 19% (69% magic, 18% physical, 13% true).",
+								"minute 8.2, mid lane, own side: killed by Akali, 799 gold unspent, 389 gold behind the lane opponent; killing damage: Akali Q 59%, Akali autos 21%, Akali R 20% (79% magic, 21% physical); worth taking: the team took an objective after.",
+								"minute 10.5, mid lane, own side: killed by Akali, 608 gold unspent, 383 gold behind the lane opponent, nothing traded back; killing damage: Akali Q 57%, Akali R 24%, Akali Ignite 15% (81% magic, 4% physical, 15% true).",
+								"minute 20.4, enemy base: killed by Karma with Akali and Xayah and Soraka, 138 gold unspent, 1200 gold ahead of the lane opponent, just after a teammate died nearby; killing damage: Xayah autos 38%, Karma R 18%, tower 12% (39% magic, 61% physical); worth taking: the team took an objective after.",
+								"minute 24.1, top lane, enemy side: killed by Xayah with Karma and Soraka, 433 gold unspent, 1327 gold ahead of the lane opponent; killing damage: Xayah autos 51%, Xayah E 26%, Xayah W 9% (10% magic, 90% physical); worth taking: the team won the fight around it."
+							],
+							"kills": [
+								"minute 3.4, mid lane, enemy side: assist on Akali with MonkeyKing.",
+								"minute 6, mid lane, own side: assist on Akali with Amumu and MonkeyKing.",
+								"minute 8.3, mid lane, own side: killed Akali alone; team then took a dragon, voidgrubs.",
+								"minute 9.7, own bot jungle: assist on Udyr with Twitch and MonkeyKing and Amumu.",
+								"minute 13.6, mid lane, own side: killed Akali alone; team then took a tower.",
+								"minute 15.2, bot lane, own side: killed Soraka with MonkeyKing.",
+								"minute 15.2, bot lane, own side: killed Xayah with MonkeyKing; team then took a tower.",
+								"minute 18.7, top lane, enemy side: killed Karma alone; team then took a tower.",
+								"minute 20.7, enemy bot jungle: assist on Xayah with MonkeyKing.",
+								"minute 22.2, enemy top jungle: killed Akali with MonkeyKing; team then took an inhibitor.",
+								"minute 24.3, top lane, enemy side: assist on Xayah with MonkeyKing and Nasus; team then took a tower."
+							],
+							"chart": {
+								"gd": [
+									0,
+									0,
+									-76,
+									50,
+									-28,
+									-64,
+									-361,
+									-381,
+									-389,
+									-260,
+									-383,
+									-815,
+									-533,
+									-505,
+									92,
+									-292,
+									400,
+									891,
+									1196,
+									1352,
+									1200,
+									1127,
+									1135,
+									1288,
+									1327,
+									1506
+								],
+								"deaths": [
+									{
+										"min": 3.3,
+										"x": 4699,
+										"y": 6489,
+										"afterAllyDeath": false,
+										"traded": true,
+										"scene": {
+											"killers": [
+												"Akali"
+											],
+											"offsetSec": -18,
+											"champions": [
+												{
+													"name": "Akali",
+													"ally": false,
+													"x": 5545,
+													"y": 6110
+												}
+											]
+										},
+										"damage": [
+											{
+												"from": "Akali",
+												"how": "Q",
+												"pct": 43
+											},
+											{
+												"from": "Akali",
+												"how": "E",
+												"pct": 37
+											},
+											{
+												"from": "Akali",
+												"how": "autos",
+												"pct": 14
+											}
+										]
+									},
+									{
+										"min": 5.9,
+										"x": 8213,
+										"y": 8394,
+										"afterAllyDeath": false,
+										"traded": true,
+										"scene": {
+											"killers": [
+												"Akali",
+												"Udyr"
+											],
+											"offsetSec": 4,
+											"champions": [
+												{
+													"name": "Akali",
+													"ally": false,
+													"x": 7569,
+													"y": 7991
+												},
+												{
+													"name": "MonkeyKing",
+													"ally": true,
+													"x": 7729,
+													"y": 7780
+												},
+												{
+													"name": "Amumu",
+													"ally": true,
+													"x": 8317,
+													"y": 6752
+												}
+											]
+										},
+										"damage": [
+											{
+												"from": "Akali",
+												"how": "R",
+												"pct": 24
+											},
+											{
+												"from": "Akali",
+												"how": "Q",
+												"pct": 20
+											},
+											{
+												"from": "Udyr",
+												"how": "Q",
+												"pct": 19
+											}
+										]
+									},
+									{
+										"min": 8.2,
+										"x": 8498,
+										"y": 8485,
+										"afterAllyDeath": false,
+										"traded": true,
+										"scene": {
+											"killers": [
+												"Akali"
+											],
+											"offsetSec": -14,
+											"champions": [
+												{
+													"name": "Akali",
+													"ally": false,
+													"x": 6994,
+													"y": 7296
+												}
+											]
+										},
+										"damage": [
+											{
+												"from": "Akali",
+												"how": "Q",
+												"pct": 59
+											},
+											{
+												"from": "Akali",
+												"how": "autos",
+												"pct": 21
+											},
+											{
+												"from": "Akali",
+												"how": "R",
+												"pct": 20
+											}
+										]
+									},
+									{
+										"min": 10.5,
+										"x": 7606,
+										"y": 8682,
+										"afterAllyDeath": false,
+										"traded": false,
+										"scene": {
+											"killers": [
+												"Akali"
+											],
+											"offsetSec": 28,
+											"champions": [
+												{
+													"name": "Akali",
+													"ally": false,
+													"x": 7381,
+													"y": 7468
+												}
+											]
+										},
+										"damage": [
+											{
+												"from": "Akali",
+												"how": "Q",
+												"pct": 57
+											},
+											{
+												"from": "Akali",
+												"how": "R",
+												"pct": 24
+											},
+											{
+												"from": "Akali",
+												"how": "Ignite",
+												"pct": 15
+											}
+										]
+									},
+									{
+										"min": 20.4,
+										"x": 4520,
+										"y": 727,
+										"afterAllyDeath": true,
+										"traded": true,
+										"scene": {
+											"killers": [
+												"Karma",
+												"Akali",
+												"Xayah",
+												"Soraka"
+											],
+											"offsetSec": -21,
+											"champions": [
+												{
+													"name": "Karma",
+													"ally": false,
+													"x": 5870,
+													"y": 1424
+												},
+												{
+													"name": "Udyr",
+													"ally": false,
+													"x": 6271,
+													"y": 2881
+												},
+												{
+													"name": "Xayah",
+													"ally": false,
+													"x": 4687,
+													"y": 1845
+												}
+											]
+										},
+										"damage": [
+											{
+												"from": "Xayah",
+												"how": "autos",
+												"pct": 38
+											},
+											{
+												"from": "Karma",
+												"how": "R",
+												"pct": 18
+											},
+											{
+												"from": "tower",
+												"how": "",
+												"pct": 12
+											}
+										]
+									},
+									{
+										"min": 24.1,
+										"x": 957,
+										"y": 7098,
+										"afterAllyDeath": false,
+										"traded": true,
+										"scene": {
+											"killers": [
+												"Xayah",
+												"Karma",
+												"Soraka"
+											],
+											"offsetSec": -8,
+											"champions": [
+												{
+													"name": "Karma",
+													"ally": false,
+													"x": 872,
+													"y": 6732
+												},
+												{
+													"name": "Akali",
+													"ally": false,
+													"x": 1006,
+													"y": 7998
+												},
+												{
+													"name": "Xayah",
+													"ally": false,
+													"x": 1149,
+													"y": 6998
+												},
+												{
+													"name": "Soraka",
+													"ally": false,
+													"x": 769,
+													"y": 6566
+												},
+												{
+													"name": "Nasus",
+													"ally": true,
+													"x": 1167,
+													"y": 7984
+												},
+												{
+													"name": "Twitch",
+													"ally": true,
+													"x": 2626,
+													"y": 8339
+												},
+												{
+													"name": "Amumu",
+													"ally": true,
+													"x": 1198,
+													"y": 8101
+												}
+											]
+										},
+										"damage": [
+											{
+												"from": "Xayah",
+												"how": "autos",
+												"pct": 51
+											},
+											{
+												"from": "Xayah",
+												"how": "E",
+												"pct": 26
+											},
+											{
+												"from": "Xayah",
+												"how": "W",
+												"pct": 9
+											}
+										]
+									}
+								],
+								"kills": [
+									3.4,
+									6,
+									8.3,
+									9.7,
+									13.6,
+									15.2,
+									15.2,
+									18.7,
+									20.7,
+									22.2,
+									24.3
+								],
+								"items": [
+									{
+										"name": "Doran's Ring",
+										"min": 0.3
+									},
+									{
+										"name": "Blackfire Torch",
+										"min": 14.2
+									},
+									{
+										"name": "Mercury's Treads",
+										"min": 14.2
+									},
+									{
+										"name": "Mejai's Soulstealer",
+										"min": 15.7
+									},
+									{
+										"name": "Zhonya's Hourglass",
+										"min": 21.1
+									}
+								]
+							}
+						}
+					],
+					"reference": {
+						"title": "[riot-id] on Fizz (saved from /otp: 5 ranked games, patch 16.19)",
+						"url": "https://op.gg/lol/summoners/kr/%EB%81%9D%EA%B9%8C%EC%A7%80%20%ED%8F%AC%EA%B8%B0%ED%95%98%EC%A7%80%EB%A7%90%EC%9E%90-never?queue_type=SOLORANKED",
+						"trust": "one-trick reference; untrusted, one player's habits",
+						"champion": "Fizz",
+						"patch": "16.19",
+						"games": 5,
+						"perGame": {
+							"kills": 9.6,
+							"deaths": 7.8,
+							"assists": 5.8,
+							"kda": 1.97,
+							"durationMin": 26.44,
+							"killsAt15": 6.8,
+							"deathsAt15": 3.8,
+							"csAt10": 67.4,
+							"csAt15": 108,
+							"goldDiffAt10": 267,
+							"goldDiffAt15": 14.4,
+							"level6Min": 6.68,
+							"firstBackMin": 3.24
+						},
+						"itemTimingMin": {
+							"Mejai's Soulstealer": 22.5,
+							"Doran's Ring": 0.2,
+							"Blackfire Torch": 9.8,
+							"Lich Bane": 20.1,
+							"Zhonya's Hourglass": 21.5,
+							"Gustwalker Hatchling": 0.1,
+							"Dusk and Dawn": 8.9,
+							"Mercury's Treads": 13.5
+						},
+						"deathBandWinPct": {},
+						"deathsAt15WinPct": {},
+						"rules": [],
+						"matchups": []
+					}
+				},
+				"evidence": [
+					{
+						"id": "audit-1",
+						"source": "voxren_player_audit",
+						"title": "Riot match-v5 ranked solo history [riot-id] (1 games)",
+						"url": "https://www.op.gg/summoners/na/player-0000",
+						"retrievedAt": "2026-10-06T13:09:04.044Z"
+					},
+					{
+						"id": "audit-ref-1",
+						"source": "voxren_player_audit",
+						"title": "[riot-id] on Fizz (saved from /otp: 5 ranked games, patch 16.19)",
+						"url": "https://op.gg/lol/summoners/kr/%EB%81%9D%EA%B9%8C%EC%A7%80%20%ED%8F%AC%EA%B8%B0%ED%95%98%EC%A7%80%EB%A7%90%EC%9E%90-never?queue_type=SOLORANKED",
+						"retrievedAt": "2026-10-06T13:09:04.044Z"
+					}
+				]
+			}
+		},
+		{
+			"name": "voxren_strategy_frame",
+			"operation": "strategy_frame",
+			"args": {
+				"question": "Review one latest Fizz ranked win against Akali, distinguish worthwhile deaths, early avoidable death, kill conversions and lead shape.",
+				"claims": [
+					"The Fizz versus Akali game was a win at 6/6/5 with four deaths before 15 and two afterward.",
+					"At minute 10.5 Akali killed the player in mid with 608 gold unspent, 383 gold behind, and nothing traded back.",
+					"In the minute 10.5 death Akali Q dealt 57% of killing damage, Akali R 24%, and the damage was 81% magic and 15% true.",
+					"At minute 3.3 Akali killed the player in enemy top jungle with 529 gold unspent; the team traded back.",
+					"The deaths at minutes 8.2, 20.4, and 24.1 were marked worth taking because the team took objectives or won the fight.",
+					"At minute 8.3 Fizz solo-killed Akali and the team took dragon and voidgrubs; at minute 13.6 another solo Akali kill led to a tower.",
+					"Six of eleven takedowns converted to an objective or tower within a minute, while the player's gold difference changed from -292 at 15 to +1200 at 20.",
+					"The player farmed 6.3 CS per minute before 15 and 6.8 after 15; Blackfire Torch completed at 14.2 minutes."
+				],
+				"evidence": [
+					{
+						"id": "audit-1"
+					},
+					{
+						"id": "audit-ref-1"
+					}
+				]
+			},
+			"ms": 423,
+			"response": {
+				"version": "research-contract-v1",
+				"operation": "strategy_frame",
+				"data": {
+					"goal": "Review one latest Fizz ranked win against Akali, distinguish worthwhile deaths, early avoidable death, kill conversions and lead shape.",
+					"claims": [
+						{
+							"claim": "The Fizz versus Akali game was a win at 6/6/5 with four deaths before 15 and two afterward.",
+							"route": "grounded",
+							"p": {
+								"supported": 0.96,
+								"contradicted": 0.23
+							},
+							"source": "audit-1",
+							"sourceP": {
+								"audit-1": 0.98,
+								"audit-ref-1": 0,
+								"none": 0.02
+							}
+						},
+						{
+							"claim": "At minute 10.5 Akali killed the player in mid with 608 gold unspent, 383 gold behind, and nothing traded back.",
+							"route": "grounded",
+							"p": {
+								"supported": 0.98,
+								"contradicted": 0.08
+							},
+							"source": "audit-1",
+							"sourceP": {
+								"audit-1": 1,
+								"none": 0,
+								"audit-ref-1": 0
+							}
+						},
+						{
+							"claim": "In the minute 10.5 death Akali Q dealt 57% of killing damage, Akali R 24%, and the damage was 81% magic and 15% true.",
+							"route": "grounded",
+							"p": {
+								"supported": 0.96,
+								"contradicted": 0.09
+							},
+							"source": "audit-1",
+							"sourceP": {
+								"audit-1": 1,
+								"audit-ref-1": 0,
+								"none": 0
+							}
+						},
+						{
+							"claim": "At minute 3.3 Akali killed the player in enemy top jungle with 529 gold unspent; the team traded back.",
+							"route": "grounded",
+							"p": {
+								"supported": 0.97,
+								"contradicted": 0.09
+							},
+							"source": "audit-1",
+							"sourceP": {
+								"audit-ref-1": 0,
+								"none": 0,
+								"audit-1": 1
+							}
+						},
+						{
+							"claim": "The deaths at minutes 8.2, 20.4, and 24.1 were marked worth taking because the team took objectives or won the fight.",
+							"route": "grounded",
+							"p": {
+								"supported": 0.96,
+								"contradicted": 0.08
+							},
+							"source": "audit-1",
+							"sourceP": {
+								"audit-ref-1": 0,
+								"none": 0,
+								"audit-1": 1
+							}
+						},
+						{
+							"claim": "At minute 8.3 Fizz solo-killed Akali and the team took dragon and voidgrubs; at minute 13.6 another solo Akali kill led to a tower.",
+							"route": "grounded",
+							"p": {
+								"supported": 0.98,
+								"contradicted": 0.08
+							},
+							"source": "audit-1",
+							"sourceP": {
+								"none": 0,
+								"audit-1": 1,
+								"audit-ref-1": 0
+							}
+						},
+						{
+							"claim": "Six of eleven takedowns converted to an objective or tower within a minute, while the player's gold difference changed from -292 at 15 to +1200 at 20.",
+							"route": "grounded",
+							"p": {
+								"supported": 0.97,
+								"contradicted": 0.1
+							},
+							"source": "audit-1",
+							"sourceP": {
+								"audit-1": 1,
+								"audit-ref-1": 0,
+								"none": 0
+							}
+						},
+						{
+							"claim": "The player farmed 6.3 CS per minute before 15 and 6.8 after 15; Blackfire Torch completed at 14.2 minutes.",
+							"route": "disputed",
+							"p": {
+								"supported": 0.94,
+								"contradicted": 0.84
+							},
+							"source": "audit-1",
+							"sourceP": {
+								"none": 0.01,
+								"audit-1": 0.99,
+								"audit-ref-1": 0
+							},
+							"contradictedBy": "audit-ref-1"
+						}
+					],
+					"citation_ids": [
+						"audit-1",
+						"audit-ref-1"
+					],
+					"sources": [
+						{
+							"id": "audit-1",
+							"title": "Riot match-v5 ranked solo history [riot-id] (1 games)"
+						},
+						{
+							"id": "audit-ref-1",
+							"title": "[riot-id] on Fizz (saved from /otp: 5 ranked games, patch 16.19)"
+						}
+					],
+					"judgment": {
+						"judge": "jev",
+						"status": "judged",
+						"model": "jev-1.13.0",
+						"latencyMs": 420,
+						"inputTokens": 29478,
+						"checked": 8,
+						"note": "Jev grounding: each claim checked against cited passage text; grounded, unsupported, contradicted, or disputed (one source states it, another opposes it). A flag, not a truth check."
+					}
+				},
+				"evidence": []
+			}
+		}
+	]
+}

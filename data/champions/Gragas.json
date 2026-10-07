@@ -1,0 +1,231 @@
+{
+	"meta": {
+		"version": "16.19.1",
+		"generated": "2026-10-05",
+		"model": "gpt-6-sol",
+		"sources": [
+			{
+				"id": "s1",
+				"title": "Challenger Gragas top guide by Bomba Guy💣💥📚",
+				"url": "https://www.mobafire.com/league-of-legends/build/challenger-gragas-top-guide-by-bomba-guy-580545"
+			},
+			{
+				"id": "game-1",
+				"title": "Riot Data Dragon 16.19.1",
+				"url": "https://ddragon.leagueoflegends.com/cdn/16.19.1/data/en_US/champion/Gragas.json"
+			}
+		]
+	},
+	"id": "Gragas",
+	"name": "Gragas",
+	"facts": {
+		"title": "the Rabble Rouser",
+		"tags": [
+			"Fighter",
+			"Mage"
+		],
+		"resource": "Mana",
+		"stats": {
+			"hp": 640,
+			"hpperlevel": 115,
+			"mp": 400,
+			"mpperlevel": 47,
+			"movespeed": 330,
+			"armor": 38,
+			"armorperlevel": 5,
+			"spellblock": 32,
+			"spellblockperlevel": 2.05,
+			"attackrange": 125,
+			"hpregen": 5.5,
+			"hpregenperlevel": 0.5,
+			"mpregen": 6,
+			"mpregenperlevel": 0.8,
+			"crit": 0,
+			"critperlevel": 0,
+			"attackdamage": 64,
+			"attackdamageperlevel": 0,
+			"attackspeedperlevel": 2.05,
+			"attackspeed": 0.675
+		},
+		"passive": {
+			"name": "Happy Hour",
+			"text": "Gragas periodically heals upon using a skill."
+		},
+		"spells": [
+			{
+				"slot": "Q",
+				"name": "Barrel Roll",
+				"cooldown": [
+					10,
+					9,
+					8,
+					7,
+					6
+				],
+				"cost": [
+					80,
+					80,
+					80,
+					80,
+					80
+				],
+				"range": [
+					850,
+					850,
+					850,
+					850,
+					850
+				],
+				"text": "Gragas rolls his cask to a location, which can be activated to explode or will explode on its own after 4 seconds. The potency of the explosion increases over time. Enemies struck by the blast have their Move Speed slowed."
+			},
+			{
+				"slot": "W",
+				"name": "Drunken Rage",
+				"cooldown": [
+					5,
+					5,
+					5,
+					5,
+					5
+				],
+				"cost": [
+					30,
+					30,
+					30,
+					30,
+					30
+				],
+				"range": [
+					20,
+					20,
+					20,
+					20,
+					20
+				],
+				"text": "Gragas samples his latest brew for 1 second. After finishing, he becomes boisterous and belligerent, dealing magic damage to all nearby enemies on his next basic attack and reducing damage received."
+			},
+			{
+				"slot": "E",
+				"name": "Body Slam",
+				"cooldown": [
+					14,
+					13.5,
+					13,
+					12.5,
+					12
+				],
+				"cost": [
+					50,
+					50,
+					50,
+					50,
+					50
+				],
+				"range": [
+					600,
+					600,
+					600,
+					600,
+					600
+				],
+				"text": "Gragas charges to a location and collides with the first enemy unit he comes across, dealing damage to all nearby enemy units and stunning them."
+			},
+			{
+				"slot": "R",
+				"name": "Explosive Cask",
+				"cooldown": [
+					100,
+					85,
+					70
+				],
+				"cost": [
+					100,
+					100,
+					100
+				],
+				"range": [
+					1000,
+					1000,
+					1000
+				],
+				"text": "Gragas hurls his cask to a location, dealing damage and knocking back enemies caught in the blast radius."
+			}
+		]
+	},
+	"coaching": {
+		"damage": {
+			"value": "Gragas deals AP burst damage when built as an assassin.",
+			"sources": [
+				"s1"
+			]
+		},
+		"archetype": {
+			"value": "Gragas is a flexible pick with both damage and utility, though his full-AP mid style is high risk.",
+			"sources": [
+				"s1"
+			]
+		},
+		"axis": {
+			"value": "Gragas should farm with W early, avoid excessive Q poke, and push once strong enough.",
+			"sources": [
+				"s1"
+			]
+		},
+		"winCondition": {
+			"value": "Gragas uses his crowd control and Explosive Cask to engage, disengage, and remove a carry from a fight.",
+			"sources": [
+				"s1"
+			]
+		},
+		"spikes": [
+			{
+				"at": "First recall or level 6",
+				"why": "Gragas can usually start pushing to assert pressure.",
+				"sources": [
+					"s1"
+				]
+			},
+			{
+				"at": "More points in Q and more mana",
+				"why": "Gragas can farm and poke with Q more freely.",
+				"sources": [
+					"s1"
+				]
+			},
+			{
+				"at": "Barrel Roll’s cooldown reaches 6 seconds",
+				"why": "Gragas can use Barrel Roll more often as its cooldown falls from 10 to 6 seconds.",
+				"sources": [
+					"game-1"
+				]
+			}
+		],
+		"bait": [
+			{
+				"slot": "Q",
+				"why": "Gragas has high cooldowns early, so spending Q reduces his immediate damage threat.",
+				"sources": [
+					"s1"
+				]
+			}
+		],
+		"mistakes": [
+			{
+				"value": "Gragas runs out of mana quickly if he spams Q for early poke.",
+				"sources": [
+					"s1"
+				]
+			}
+		],
+		"comp": {
+			"tags": [
+				"peel",
+				"engage"
+			],
+			"sources": [
+				"s1",
+				"game-1"
+			]
+		}
+	}
+}

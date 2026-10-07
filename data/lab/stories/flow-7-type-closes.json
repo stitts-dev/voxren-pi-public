@@ -1,0 +1,23 @@
+{
+	"id": "flow-7-type-closes",
+	"title": "Typing a character closes the tree and lands in the editor",
+	"split": "train",
+	"steps": [
+		{
+			"wait": "COMMAND TREE"
+		},
+		{
+			"type": "/"
+		},
+		{
+			"wait": "COMMAND TREE",
+			"absent": true
+		}
+	],
+	"gates": {
+		"absent": [
+			"COMMAND TREE"
+		],
+		"maxSeconds": 60
+	}
+}

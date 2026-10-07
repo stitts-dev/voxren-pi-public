@@ -1,0 +1,25 @@
+{
+	"id": "flow-4-end-home",
+	"title": "End jumps to /pick, Home back to /review",
+	"split": "train",
+	"steps": [
+		{
+			"wait": "COMMAND TREE"
+		},
+		{
+			"key": "end"
+		},
+		{
+			"wait": "[/pick]"
+		},
+		{
+			"key": "home"
+		},
+		{
+			"wait": "[/review]"
+		}
+	],
+	"gates": {
+		"maxSeconds": 60
+	}
+}

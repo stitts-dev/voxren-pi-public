@@ -1,0 +1,237 @@
+{
+	"meta": {
+		"version": "16.19.1",
+		"generated": "2026-10-05",
+		"model": "gpt-6-sol",
+		"sources": [
+			{
+				"id": "s2",
+				"title": "🔱styllEE's Challenger Camille, [TOP+JNG]🔱",
+				"url": "https://www.mobafire.com/league-of-legends/build/styllees-challenger-camille-top-jng-540100"
+			},
+			{
+				"id": "game-1",
+				"title": "Riot Data Dragon 16.19.1",
+				"url": "https://ddragon.leagueoflegends.com/cdn/16.19.1/data/en_US/champion/Camille.json"
+			}
+		]
+	},
+	"id": "Camille",
+	"name": "Camille",
+	"facts": {
+		"title": "the Steel Shadow",
+		"tags": [
+			"Fighter",
+			"Assassin"
+		],
+		"resource": "Mana",
+		"stats": {
+			"hp": 650,
+			"hpperlevel": 99,
+			"mp": 375,
+			"mpperlevel": 52,
+			"movespeed": 340,
+			"armor": 35,
+			"armorperlevel": 4.5,
+			"spellblock": 32,
+			"spellblockperlevel": 2.05,
+			"attackrange": 125,
+			"hpregen": 8.5,
+			"hpregenperlevel": 0.8,
+			"mpregen": 8.15,
+			"mpregenperlevel": 0.75,
+			"crit": 0,
+			"critperlevel": 0,
+			"attackdamage": 68,
+			"attackdamageperlevel": 0,
+			"attackspeedperlevel": 2.5,
+			"attackspeed": 0.644
+		},
+		"passive": {
+			"name": "Adaptive Defenses",
+			"text": "Basic attacks on champions grant a shield equal to a percentage of Camille's maximum health against their damage type (Physical or Magic) for a brief duration."
+		},
+		"spells": [
+			{
+				"slot": "Q",
+				"name": "Precision Protocol",
+				"cooldown": [
+					9,
+					8,
+					7,
+					6,
+					5
+				],
+				"cost": [
+					25,
+					25,
+					25,
+					25,
+					25
+				],
+				"range": [
+					325,
+					325,
+					325,
+					325,
+					325
+				],
+				"text": "Camille's next attack deals bonus damage and grants bonus Move Speed. This spell can be recast for a short period of time, doing significantly increased bonus damage if Camille delays a period of time between the two attacks."
+			},
+			{
+				"slot": "W",
+				"name": "Tactical Sweep",
+				"cooldown": [
+					12,
+					11.5,
+					11,
+					10.5,
+					10
+				],
+				"cost": [
+					50,
+					55,
+					60,
+					65,
+					70
+				],
+				"range": [
+					610,
+					610,
+					610,
+					610,
+					610
+				],
+				"text": "Camille blasts in a cone after a delay, dealing damage. Enemies in the outer half are slowed and take extra damage, while also healing Camille."
+			},
+			{
+				"slot": "E",
+				"name": "Hookshot",
+				"cooldown": [
+					16,
+					15,
+					14,
+					13,
+					12
+				],
+				"cost": [
+					70,
+					70,
+					70,
+					70,
+					70
+				],
+				"range": [
+					800,
+					800,
+					800,
+					800,
+					800
+				],
+				"text": "Camille pulls herself to a wall, leaping off and knocking up enemy champions upon landing."
+			},
+			{
+				"slot": "R",
+				"name": "The Hextech Ultimatum",
+				"cooldown": [
+					140,
+					115,
+					90
+				],
+				"cost": [
+					100,
+					100,
+					100
+				],
+				"range": [
+					475,
+					475,
+					475
+				],
+				"text": "Camille dashes to target champion, anchoring them to the area. She also deals bonus magic damage to the target with her basic attacks."
+			}
+		]
+	},
+	"coaching": {
+		"damage": {
+			"value": "Camille deals sustained bonus magic damage with basic attacks against her R target.",
+			"sources": [
+				"game-1"
+			]
+		},
+		"archetype": {
+			"value": "Camille is a mobile bruiser who uses a shield, healing, and basic attacks to fight up close.",
+			"sources": [
+				"game-1"
+			]
+		},
+		"axis": {
+			"value": "Camille can take short trades with her passive shield and Q-empowered attacks.",
+			"sources": [
+				"game-1"
+			]
+		},
+		"winCondition": {
+			"value": "Camille wins by getting an early lead, snowballing, and carrying.",
+			"sources": [
+				"s2"
+			]
+		},
+		"spikes": [
+			{
+				"at": "Level 2",
+				"why": "Camille can look for an early gank and start snowballing.",
+				"sources": [
+					"s2"
+				]
+			},
+			{
+				"at": "Level 3",
+				"why": "Camille gains a slow from W, improving her ganks.",
+				"sources": [
+					"s2"
+				]
+			},
+			{
+				"at": "Delayed Q recast",
+				"why": "Camille deals significantly increased bonus damage when she waits between Q attacks.",
+				"sources": [
+					"game-1"
+				]
+			}
+		],
+		"bait": [
+			{
+				"slot": "E",
+				"why": "Camille cannot use Hookshot to reach a wall and leap off again until its cooldown ends.",
+				"sources": [
+					"game-1"
+				]
+			}
+		],
+		"mistakes": [
+			{
+				"value": "Camille can fall behind if she fails to build an early lead.",
+				"sources": [
+					"s2"
+				]
+			},
+			{
+				"value": "Camille loses Q's significantly increased bonus damage by recasting before the required delay.",
+				"sources": [
+					"game-1"
+				]
+			}
+		],
+		"comp": {
+			"tags": [
+				"pick",
+				"split"
+			],
+			"sources": [
+				"s2",
+				"game-1"
+			]
+		}
+	}
+}

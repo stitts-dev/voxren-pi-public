@@ -1,0 +1,31 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "coach",
+			"type": "node",
+			"request": "launch",
+			"program": "${workspaceFolder}/bin/coach.mjs",
+			"console": "integratedTerminal"
+		},
+		{
+			"name": "coach (continue last)",
+			"type": "node",
+			"request": "launch",
+			"program": "${workspaceFolder}/bin/coach.mjs",
+			"args": ["-c"],
+			"console": "integratedTerminal"
+		},
+		{
+			"name": "coach -p (ask once)",
+			"type": "node",
+			"request": "launch",
+			"program": "${workspaceFolder}/bin/coach.mjs",
+			"args": ["-p", "${input:question}"],
+			"console": "integratedTerminal"
+		}
+	],
+	"inputs": [
+		{ "id": "question", "type": "promptString", "description": "Question or /command", "default": "/review 3" }
+	]
+}

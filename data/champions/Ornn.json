@@ -1,0 +1,214 @@
+{
+	"meta": {
+		"version": "16.19.1",
+		"generated": "2026-10-04",
+		"model": "gpt-6-sol",
+		"sources": [
+			{
+				"id": "s1",
+				"title": "Ornn Build Guide : [26.19] Master OTP Ornn In-Depth Guide",
+				"url": "https://www.mobafire.com/league-of-legends/build/26-19-master-otp-ornn-in-depth-guide-642099"
+			},
+			{
+				"id": "game-1",
+				"title": "Riot Data Dragon 16.19.1",
+				"url": "https://ddragon.leagueoflegends.com/cdn/16.19.1/data/en_US/champion/Ornn.json"
+			}
+		]
+	},
+	"id": "Ornn",
+	"name": "Ornn",
+	"facts": {
+		"title": "The Fire below the Mountain",
+		"tags": [
+			"Tank"
+		],
+		"resource": "Mana",
+		"stats": {
+			"hp": 660,
+			"hpperlevel": 109,
+			"mp": 341,
+			"mpperlevel": 65,
+			"movespeed": 335,
+			"armor": 33,
+			"armorperlevel": 5.2,
+			"spellblock": 32,
+			"spellblockperlevel": 2.05,
+			"attackrange": 175,
+			"hpregen": 9,
+			"hpregenperlevel": 0.9,
+			"mpregen": 8,
+			"mpregenperlevel": 0.6,
+			"crit": 0,
+			"critperlevel": 0,
+			"attackdamage": 69,
+			"attackdamageperlevel": 0,
+			"attackspeedperlevel": 2,
+			"attackspeed": 0.625
+		},
+		"passive": {
+			"name": "Living Forge",
+			"text": "Ornn gains an additional bonus Armor and Magic Resist from all sources.Ornn can spend gold to forge non-consumable items anywhere.Additionally, he can create masterwork items for himself and for his allies."
+		},
+		"spells": [
+			{
+				"slot": "Q",
+				"name": "Volcanic Rupture",
+				"cooldown": [
+					9,
+					8.5,
+					8,
+					7.5,
+					7
+				],
+				"cost": [
+					45,
+					45,
+					45,
+					45,
+					45
+				],
+				"range": [
+					800,
+					800,
+					800,
+					800,
+					800
+				],
+				"text": "Ornn slams the ground, sending out a fissure dealing damage and slowing enemies hit. After a small delay, a magma pillar forms at the end location."
+			},
+			{
+				"slot": "W",
+				"name": "Bellows Breath",
+				"cooldown": [
+					12,
+					11.5,
+					11,
+					10.5,
+					10
+				],
+				"cost": [
+					45,
+					50,
+					55,
+					60,
+					65
+				],
+				"range": [
+					25000,
+					25000,
+					25000,
+					25000,
+					25000
+				],
+				"text": "Ornn advances, breathing fire. Enemies hit by the final gout of flame become Brittle."
+			},
+			{
+				"slot": "E",
+				"name": "Searing Charge",
+				"cooldown": [
+					14,
+					13.5,
+					13,
+					12.5,
+					12
+				],
+				"cost": [
+					35,
+					40,
+					45,
+					50,
+					55
+				],
+				"range": [
+					450,
+					450,
+					450,
+					450,
+					450
+				],
+				"text": "Ornn charges, dealing damage to enemies he passes through. If Ornn collides with terrain while charging, the impact creates a shockwave around him which deals damage and knocks up enemies."
+			},
+			{
+				"slot": "R",
+				"name": "Call of the Forge God",
+				"cooldown": [
+					140,
+					120,
+					100
+				],
+				"cost": [
+					100,
+					100,
+					100
+				],
+				"range": [
+					2500,
+					2500,
+					2500
+				],
+				"text": "Ornn summons a massive elemental at a location which travels toward him with increasing speed. Enemies run over by the elemental take damage, are slowed and are made Brittle. Ornn can recast the ability to charge into the elemental, redirecting it in the direction he hits it, causing the elemental to affect any enemies it runs over to be knocked up, dealing the same damage and re-applying Brittle."
+			}
+		]
+	},
+	"coaching": {
+		"archetype": {
+			"value": "Ornn is a tank who gains bonus Armor and Magic Resist and disrupts enemies with slows and knockups.",
+			"sources": [
+				"game-1"
+			]
+		},
+		"axis": {
+			"value": "Ornn can poke with Volcanic Rupture, which damages and slows enemies at range.",
+			"sources": [
+				"game-1"
+			]
+		},
+		"winCondition": {
+			"value": "Ornn plays consistently and solidly early to transition into impacting the map with R.",
+			"sources": [
+				"s1"
+			]
+		},
+		"spikes": [
+			{
+				"at": "mid game",
+				"why": "Ornn can impact the map with R after a consistent early game.",
+				"sources": [
+					"s1"
+				]
+			}
+		],
+		"bait": [
+			{
+				"slot": "Q",
+				"why": "Ornn cannot use Volcanic Rupture to slow enemies again until its cooldown ends.",
+				"sources": [
+					"game-1"
+				]
+			}
+		],
+		"mistakes": [
+			{
+				"value": "Ornn can get stuck and die by misusing his only mobility.",
+				"sources": [
+					"s1"
+				]
+			},
+			{
+				"value": "Ornn misses Searing Charge’s shockwave and knockup if he charges without colliding with terrain.",
+				"sources": [
+					"game-1"
+				]
+			}
+		],
+		"comp": {
+			"tags": [
+				"engage"
+			],
+			"sources": [
+				"game-1"
+			]
+		}
+	}
+}

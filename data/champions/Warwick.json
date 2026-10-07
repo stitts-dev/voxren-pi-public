@@ -1,0 +1,255 @@
+{
+	"meta": {
+		"version": "16.19.1",
+		"generated": "2026-10-05",
+		"model": "gpt-6-sol",
+		"sources": [
+			{
+				"id": "s1",
+				"title": "Textwall Quickstart + Tryhard Warwick Jungle guide",
+				"url": "https://www.mobafire.com/league-of-legends/build/textwall-quickstart-tryhard-warwick-jungle-guide-648929"
+			},
+			{
+				"id": "s2",
+				"title": "[13.8] Warwick Top // High Elo Builds, Matchup Tips and Useful Links",
+				"url": "https://www.mobafire.com/league-of-legends/build/13-8-warwick-top-high-elo-builds-matchup-tips-and-useful-links-624908"
+			},
+			{
+				"id": "game-1",
+				"title": "Riot Data Dragon 16.19.1",
+				"url": "https://ddragon.leagueoflegends.com/cdn/16.19.1/data/en_US/champion/Warwick.json"
+			}
+		]
+	},
+	"id": "Warwick",
+	"name": "Warwick",
+	"facts": {
+		"title": "the Uncaged Wrath of Zaun",
+		"tags": [
+			"Fighter",
+			"Tank"
+		],
+		"resource": "Mana",
+		"stats": {
+			"hp": 620,
+			"hpperlevel": 99,
+			"mp": 280,
+			"mpperlevel": 35,
+			"movespeed": 335,
+			"armor": 33,
+			"armorperlevel": 4.4,
+			"spellblock": 32,
+			"spellblockperlevel": 2.05,
+			"attackrange": 125,
+			"hpregen": 4,
+			"hpregenperlevel": 0.75,
+			"mpregen": 7.45,
+			"mpregenperlevel": 0.6,
+			"crit": 0,
+			"critperlevel": 0,
+			"attackdamage": 65,
+			"attackdamageperlevel": 0,
+			"attackspeedperlevel": 2,
+			"attackspeed": 0.638
+		},
+		"passive": {
+			"name": "Eternal Hunger",
+			"text": "Warwick's basic attacks deal bonus magic damage. If Warwick is below 50% health, he heals the same amount. If Warwick is below 25% health, this healing triples."
+		},
+		"spells": [
+			{
+				"slot": "Q",
+				"name": "Jaws of the Beast",
+				"cooldown": [
+					8,
+					7.5,
+					7,
+					6.5,
+					6
+				],
+				"cost": [
+					80,
+					85,
+					90,
+					95,
+					100
+				],
+				"range": [
+					365,
+					365,
+					365,
+					365,
+					365
+				],
+				"text": "Warwick lunges forward and bites his target, dealing damage based on their maximum health and healing for damage dealt."
+			},
+			{
+				"slot": "W",
+				"name": "Blood Hunt",
+				"cooldown": [
+					80,
+					70,
+					60,
+					50,
+					40
+				],
+				"cost": [
+					55,
+					55,
+					55,
+					55,
+					55
+				],
+				"range": [
+					4000,
+					4000,
+					4000,
+					4000,
+					4000
+				],
+				"text": "Warwick senses enemies below 50% health, gaining Move Speed toward and attack speed against them. When they fall below 25% health, he frenzies and these bonuses triple."
+			},
+			{
+				"slot": "E",
+				"name": "Primal Howl",
+				"cooldown": [
+					15,
+					14,
+					13,
+					12,
+					11
+				],
+				"cost": [
+					40,
+					40,
+					40,
+					40,
+					40
+				],
+				"range": [
+					375,
+					375,
+					375,
+					375,
+					375
+				],
+				"text": "Warwick gains damage reduction for 2.5 seconds. At the end, or if re-activated, he howls, causing nearby enemies to flee for 1 second."
+			},
+			{
+				"slot": "R",
+				"name": "Infinite Duress",
+				"cooldown": [
+					110,
+					90,
+					70
+				],
+				"cost": [
+					100,
+					100,
+					100
+				],
+				"range": [
+					25000,
+					25000,
+					25000
+				],
+				"text": "Warwick leaps in a direction (scaling with his bonus Move Speed), suppressing the first champion he collides with for 1.5 seconds."
+			}
+		]
+	},
+	"coaching": {
+		"damage": {
+			"value": "Warwick deals mixed physical and magic damage through sustained autoattacks.",
+			"sources": [
+				"s1"
+			]
+		},
+		"archetype": {
+			"value": "Warwick is an autoattack-reliant, strong early-game jungler.",
+			"sources": [
+				"s1"
+			]
+		},
+		"axis": {
+			"value": "Warwick looks for favorable long trades.",
+			"sources": [
+				"s1"
+			]
+		},
+		"winCondition": {
+			"value": "Warwick can snowball by using his early strength to draw pressure and secure kills.",
+			"sources": [
+				"s2"
+			]
+		},
+		"spikes": [
+			{
+				"at": "Levels 3–5",
+				"why": "Warwick is especially strong early and has outplay potential with his E and passives.",
+				"sources": [
+					"s2"
+				]
+			},
+			{
+				"at": "Item spikes",
+				"why": "Warwick benefits from conserving early gold to reach his items sooner.",
+				"sources": [
+					"s2"
+				]
+			},
+			{
+				"at": "When a target falls below 25% health",
+				"why": "Warwick's Blood Hunt bonuses triple against that target.",
+				"sources": [
+					"game-1"
+				]
+			}
+		],
+		"bait": [
+			{
+				"slot": "E",
+				"why": "Warwick usually uses Primal Howl only once per fight, leaving Warwick without its fear after the recast.",
+				"sources": [
+					"s1"
+				]
+			},
+			{
+				"slot": "Q",
+				"why": "Warwick cannot use Jaws of the Beast to bite and heal while it is on cooldown.",
+				"sources": [
+					"game-1"
+				]
+			}
+		],
+		"mistakes": [
+			{
+				"value": "Warwick can miss Primal Howl’s fear if Warwick misjudges its reactivation radius.",
+				"sources": [
+					"s1"
+				]
+			},
+			{
+				"value": "Warwick players should not copy high-Elo builds without considering the team composition.",
+				"sources": [
+					"s2"
+				]
+			},
+			{
+				"value": "Warwick players should not rely on Barrier to win early fights, because it is weak after level 6 and late in the game.",
+				"sources": [
+					"s2"
+				]
+			}
+		],
+		"comp": {
+			"tags": [
+				"peel",
+				"pick"
+			],
+			"sources": [
+				"s1",
+				"game-1"
+			]
+		}
+	}
+}

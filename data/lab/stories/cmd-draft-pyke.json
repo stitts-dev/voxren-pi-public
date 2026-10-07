@@ -1,0 +1,25 @@
+{
+	"id": "cmd-draft-pyke",
+	"title": "/draft on the pyke-picks replay",
+	"split": "train",
+	"steps": [
+		{
+			"wait": "picks 10/10",
+			"timeout": 30
+		},
+		{
+			"send": "/draft"
+		},
+		{
+			"idle": true
+		}
+	],
+	"replay": "data/lab/drafts/pyke-picks.json",
+	"replayStepMs": 100,
+	"gates": {
+		"maxSeconds": 120,
+		"icons": {
+			"expect": "all"
+		}
+	}
+}

@@ -1,0 +1,28 @@
+{
+	"id": "patch-after-matchup",
+	"title": "/patch Ahri after /matchup Katarina vs Ahri answers the patch, not the matchup",
+	"split": "train",
+	"steps": [
+		{
+			"send": "/matchup Katarina vs Ahri"
+		},
+		{
+			"idle": true
+		},
+		{
+			"send": "/patch Ahri"
+		},
+		{
+			"idle": true
+		}
+	],
+	"env": {
+		"VOXREN_COACH_CHAMPION": "Syndra"
+	},
+	"gates": {
+		"answerNot": [
+			"gives_lane_or_matchup_advice"
+		],
+		"maxSeconds": 300
+	}
+}

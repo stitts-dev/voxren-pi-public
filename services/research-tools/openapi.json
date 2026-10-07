@@ -1,0 +1,1883 @@
+{
+  "components": {
+    "schemas": {
+      "ClientsRequest": {
+        "properties": {
+          "pids": {
+            "description": "Process ids of every window using this service now. Replaces the list.",
+            "items": {
+              "type": "integer"
+            },
+            "minItems": 1,
+            "title": "Pids",
+            "type": "array"
+          }
+        },
+        "required": [
+          "pids"
+        ],
+        "title": "ClientsRequest",
+        "type": "object"
+      },
+      "ClientsResponse": {
+        "properties": {
+          "pids": {
+            "items": {
+              "type": "integer"
+            },
+            "title": "Pids",
+            "type": "array"
+          }
+        },
+        "required": [
+          "pids"
+        ],
+        "title": "ClientsResponse",
+        "type": "object"
+      },
+      "ErrorBody": {
+        "description": "The JSON a ToolError becomes.",
+        "properties": {
+          "detail": {
+            "$ref": "#/components/schemas/ErrorDetail"
+          }
+        },
+        "required": [
+          "detail"
+        ],
+        "title": "ErrorBody",
+        "type": "object"
+      },
+      "ErrorDetail": {
+        "properties": {
+          "code": {
+            "description": "Stable name of the failure, listed in the README's Errors table",
+            "title": "Code",
+            "type": "string"
+          },
+          "message": {
+            "description": "What happened, in a sentence. Never holds a key or a token",
+            "title": "Message",
+            "type": "string"
+          }
+        },
+        "required": [
+          "code",
+          "message"
+        ],
+        "title": "ErrorDetail",
+        "type": "object"
+      },
+      "HTTPValidationError": {
+        "properties": {
+          "detail": {
+            "items": {
+              "$ref": "#/components/schemas/ValidationError"
+            },
+            "title": "Detail",
+            "type": "array"
+          }
+        },
+        "title": "HTTPValidationError",
+        "type": "object"
+      },
+      "HealthResponse": {
+        "properties": {
+          "invalid_config": {
+            "description": "Environment variables that are set to a value the service cannot use, by name and never by value. The service works without them: a Gemini key that cannot be sent as a header leaves transcripts with the captions",
+            "items": {
+              "type": "string"
+            },
+            "title": "Invalid Config",
+            "type": "array"
+          },
+          "missing_config": {
+            "description": "Environment variables the service needs and does not have",
+            "items": {
+              "type": "string"
+            },
+            "title": "Missing Config",
+            "type": "array"
+          },
+          "search_providers": {
+            "description": "Web search providers that have a key, in the order a search tries them. Empty is not degraded: only /web/search and /web/research need one",
+            "items": {
+              "type": "string"
+            },
+            "title": "Search Providers",
+            "type": "array"
+          },
+          "service": {
+            "title": "Service",
+            "type": "string"
+          },
+          "status": {
+            "description": "degraded means a tool route will refuse: see missing_config",
+            "enum": [
+              "ready",
+              "degraded"
+            ],
+            "title": "Status",
+            "type": "string"
+          },
+          "transcript_source": {
+            "description": "Where a transcript is made first: gemini when a usable Gemini key is set, else captions (YouTube's caption endpoints)",
+            "enum": [
+              "captions",
+              "gemini"
+            ],
+            "title": "Transcript Source",
+            "type": "string"
+          },
+          "version": {
+            "title": "Version",
+            "type": "string"
+          }
+        },
+        "required": [
+          "status",
+          "service",
+          "version",
+          "missing_config",
+          "invalid_config",
+          "search_providers",
+          "transcript_source"
+        ],
+        "title": "HealthResponse",
+        "type": "object"
+      },
+      "PassageOut": {
+        "properties": {
+          "at": {
+            "default": 0,
+            "description": "Start second in a video; 0 in a page",
+            "title": "At",
+            "type": "integer"
+          },
+          "id": {
+            "description": "Stable within one document: p1, p2, ... in document order",
+            "title": "Id",
+            "type": "string"
+          },
+          "score": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "BM25 score against the query; null when no query was given",
+            "title": "Score"
+          },
+          "text": {
+            "title": "Text",
+            "type": "string"
+          },
+          "url": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "Link to this spot: a video link with a start time, or the page",
+            "title": "Url"
+          }
+        },
+        "required": [
+          "id",
+          "text"
+        ],
+        "title": "PassageOut",
+        "type": "object"
+      },
+      "ResearchPage": {
+        "properties": {
+          "cached": {
+            "title": "Cached",
+            "type": "boolean"
+          },
+          "chars": {
+            "description": "Length of the whole page's text",
+            "title": "Chars",
+            "type": "integer"
+          },
+          "date": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Date"
+          },
+          "parts": {
+            "description": "Number of parts the whole page was cut into",
+            "title": "Parts",
+            "type": "integer"
+          },
+          "passages": {
+            "items": {
+              "$ref": "#/components/schemas/PassageOut"
+            },
+            "title": "Passages",
+            "type": "array"
+          },
+          "result_title": {
+            "description": "The title the search provider gave this result",
+            "title": "Result Title",
+            "type": "string"
+          },
+          "snapshot_age_days": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "Age of the archive's copy in days; null for origin",
+            "title": "Snapshot Age Days"
+          },
+          "snapshot_timestamp": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "When the archive captured the copy, YYYYMMDDhhmmss in UTC; null for origin",
+            "title": "Snapshot Timestamp"
+          },
+          "snippet": {
+            "title": "Snippet",
+            "type": "string"
+          },
+          "source": {
+            "description": "origin: the site itself. archive: the Internet Archive's copy, which can be months old",
+            "enum": [
+              "origin",
+              "archive"
+            ],
+            "title": "Source",
+            "type": "string"
+          },
+          "title": {
+            "description": "The page's title; empty when it has none",
+            "title": "Title",
+            "type": "string"
+          },
+          "truncated": {
+            "description": "True when the page was longer than the 2 MB the service reads and the end was dropped",
+            "title": "Truncated",
+            "type": "boolean"
+          },
+          "url": {
+            "description": "The URL that was asked for",
+            "title": "Url",
+            "type": "string"
+          }
+        },
+        "required": [
+          "url",
+          "source",
+          "snapshot_timestamp",
+          "snapshot_age_days",
+          "title",
+          "chars",
+          "parts",
+          "truncated",
+          "cached",
+          "passages",
+          "result_title",
+          "snippet",
+          "date"
+        ],
+        "title": "ResearchPage",
+        "type": "object"
+      },
+      "ResearchVideo": {
+        "properties": {
+          "age_months": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "`published` as months, rounded down the way YouTube does (\"1 year ago\" is 12, though the video may be up to 24 months old); null when YouTube gave no age",
+            "title": "Age Months"
+          },
+          "channel": {
+            "title": "Channel",
+            "type": "string"
+          },
+          "chars": {
+            "title": "Chars",
+            "type": "integer"
+          },
+          "cut_at_seconds": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "Set when the video is longer than Gemini's cap: the transcript covers only the first this many seconds",
+            "title": "Cut At Seconds"
+          },
+          "generated": {
+            "title": "Generated",
+            "type": "boolean"
+          },
+          "id": {
+            "title": "Id",
+            "type": "string"
+          },
+          "language": {
+            "title": "Language",
+            "type": "string"
+          },
+          "parts": {
+            "title": "Parts",
+            "type": "integer"
+          },
+          "passages": {
+            "items": {
+              "$ref": "#/components/schemas/PassageOut"
+            },
+            "title": "Passages",
+            "type": "array"
+          },
+          "published": {
+            "description": "YouTube's own relative age, e.g. \"3 months ago\"; empty when absent",
+            "title": "Published",
+            "type": "string"
+          },
+          "seconds": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "Length; null for a live stream or premiere",
+            "title": "Seconds"
+          },
+          "source": {
+            "enum": [
+              "captions",
+              "gemini"
+            ],
+            "title": "Source",
+            "type": "string"
+          },
+          "title": {
+            "title": "Title",
+            "type": "string"
+          },
+          "url": {
+            "title": "Url",
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "title",
+          "channel",
+          "seconds",
+          "published",
+          "age_months",
+          "url",
+          "language",
+          "generated",
+          "source",
+          "chars",
+          "parts",
+          "passages"
+        ],
+        "title": "ResearchVideo",
+        "type": "object"
+      },
+      "SkippedPage": {
+        "properties": {
+          "reason": {
+            "description": "The error code the read failed with (fetch_refused, not_archived, ...), or no_match when no part matched the focus",
+            "title": "Reason",
+            "type": "string"
+          },
+          "url": {
+            "title": "Url",
+            "type": "string"
+          }
+        },
+        "required": [
+          "url",
+          "reason"
+        ],
+        "title": "SkippedPage",
+        "type": "object"
+      },
+      "SkippedVideo": {
+        "properties": {
+          "id": {
+            "title": "Id",
+            "type": "string"
+          },
+          "reason": {
+            "enum": [
+              "no_captions",
+              "no_english",
+              "unplayable",
+              "too_short",
+              "no_match",
+              "rate_limited",
+              "po_token_required",
+              "timeout",
+              "error"
+            ],
+            "title": "Reason",
+            "type": "string"
+          },
+          "title": {
+            "title": "Title",
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "title",
+          "reason"
+        ],
+        "title": "SkippedVideo",
+        "type": "object"
+      },
+      "TranscriptRequest": {
+        "additionalProperties": false,
+        "properties": {
+          "max_passages": {
+            "default": 8,
+            "maximum": 200.0,
+            "minimum": 1.0,
+            "title": "Max Passages",
+            "type": "integer"
+          },
+          "part_chars": {
+            "default": 1200,
+            "description": "Target size of one part of the transcript",
+            "maximum": 4000.0,
+            "minimum": 300.0,
+            "title": "Part Chars",
+            "type": "integer"
+          },
+          "query": {
+            "anyOf": [
+              {
+                "maxLength": 300,
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "Rank the parts against this and return the best `max_passages`. Omit for every part in order.",
+            "title": "Query"
+          },
+          "video_id": {
+            "pattern": "^[A-Za-z0-9_-]{11}$",
+            "title": "Video Id",
+            "type": "string"
+          }
+        },
+        "required": [
+          "video_id"
+        ],
+        "title": "TranscriptRequest",
+        "type": "object"
+      },
+      "TranscriptResponse": {
+        "properties": {
+          "cached": {
+            "title": "Cached",
+            "type": "boolean"
+          },
+          "chars": {
+            "description": "Length of the whole transcript",
+            "title": "Chars",
+            "type": "integer"
+          },
+          "cut_at_seconds": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "Set when the video is longer than Gemini's cap: the transcript covers only the first this many seconds",
+            "title": "Cut At Seconds"
+          },
+          "generated": {
+            "description": "True when a machine made the transcript (auto captions, or Gemini), which can misspell names",
+            "title": "Generated",
+            "type": "boolean"
+          },
+          "language": {
+            "title": "Language",
+            "type": "string"
+          },
+          "parts": {
+            "description": "Number of parts the whole transcript was cut into",
+            "title": "Parts",
+            "type": "integer"
+          },
+          "passages": {
+            "items": {
+              "$ref": "#/components/schemas/PassageOut"
+            },
+            "title": "Passages",
+            "type": "array"
+          },
+          "source": {
+            "description": "captions: YouTube's own caption track. gemini: Gemini read the video and wrote down what is said",
+            "enum": [
+              "captions",
+              "gemini"
+            ],
+            "title": "Source",
+            "type": "string"
+          },
+          "video_id": {
+            "title": "Video Id",
+            "type": "string"
+          }
+        },
+        "required": [
+          "video_id",
+          "language",
+          "generated",
+          "source",
+          "chars",
+          "parts",
+          "cached",
+          "passages"
+        ],
+        "title": "TranscriptResponse",
+        "type": "object"
+      },
+      "ValidationError": {
+        "properties": {
+          "ctx": {
+            "title": "Context",
+            "type": "object"
+          },
+          "input": {
+            "title": "Input"
+          },
+          "loc": {
+            "items": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "integer"
+                }
+              ]
+            },
+            "title": "Location",
+            "type": "array"
+          },
+          "msg": {
+            "title": "Message",
+            "type": "string"
+          },
+          "type": {
+            "title": "Error Type",
+            "type": "string"
+          }
+        },
+        "required": [
+          "loc",
+          "msg",
+          "type"
+        ],
+        "title": "ValidationError",
+        "type": "object"
+      },
+      "VideoOut": {
+        "properties": {
+          "age_months": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "`published` as months, rounded down the way YouTube does (\"1 year ago\" is 12, though the video may be up to 24 months old); null when YouTube gave no age",
+            "title": "Age Months"
+          },
+          "channel": {
+            "title": "Channel",
+            "type": "string"
+          },
+          "id": {
+            "title": "Id",
+            "type": "string"
+          },
+          "published": {
+            "description": "YouTube's own relative age, e.g. \"3 months ago\"; empty when absent",
+            "title": "Published",
+            "type": "string"
+          },
+          "seconds": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "Length; null for a live stream or premiere",
+            "title": "Seconds"
+          },
+          "title": {
+            "title": "Title",
+            "type": "string"
+          },
+          "url": {
+            "title": "Url",
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "title",
+          "channel",
+          "seconds",
+          "published",
+          "age_months",
+          "url"
+        ],
+        "title": "VideoOut",
+        "type": "object"
+      },
+      "WebReadRequest": {
+        "additionalProperties": false,
+        "properties": {
+          "archive": {
+            "default": "fallback",
+            "description": "fallback: read the site, and read the Internet Archive's copy when the site refuses scripts. only: read the archive's copy. never: read the site only.",
+            "enum": [
+              "fallback",
+              "only",
+              "never"
+            ],
+            "title": "Archive",
+            "type": "string"
+          },
+          "max_passages": {
+            "default": 6,
+            "maximum": 100.0,
+            "minimum": 1.0,
+            "title": "Max Passages",
+            "type": "integer"
+          },
+          "part_chars": {
+            "default": 1200,
+            "description": "Target size of one part of the page",
+            "maximum": 4000.0,
+            "minimum": 300.0,
+            "title": "Part Chars",
+            "type": "integer"
+          },
+          "query": {
+            "anyOf": [
+              {
+                "maxLength": 300,
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "Rank the parts against this and return the best `max_passages`. Omit for the first parts in order.",
+            "title": "Query"
+          },
+          "url": {
+            "description": "An http or https page. Addresses on a private network are refused",
+            "maxLength": 2000,
+            "pattern": "^[Hh][Tt][Tt][Pp][Ss]?://",
+            "title": "Url",
+            "type": "string"
+          }
+        },
+        "required": [
+          "url"
+        ],
+        "title": "WebReadRequest",
+        "type": "object"
+      },
+      "WebReadResponse": {
+        "properties": {
+          "cached": {
+            "title": "Cached",
+            "type": "boolean"
+          },
+          "chars": {
+            "description": "Length of the whole page's text",
+            "title": "Chars",
+            "type": "integer"
+          },
+          "parts": {
+            "description": "Number of parts the whole page was cut into",
+            "title": "Parts",
+            "type": "integer"
+          },
+          "passages": {
+            "items": {
+              "$ref": "#/components/schemas/PassageOut"
+            },
+            "title": "Passages",
+            "type": "array"
+          },
+          "snapshot_age_days": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "Age of the archive's copy in days; null for origin",
+            "title": "Snapshot Age Days"
+          },
+          "snapshot_timestamp": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "When the archive captured the copy, YYYYMMDDhhmmss in UTC; null for origin",
+            "title": "Snapshot Timestamp"
+          },
+          "source": {
+            "description": "origin: the site itself. archive: the Internet Archive's copy, which can be months old",
+            "enum": [
+              "origin",
+              "archive"
+            ],
+            "title": "Source",
+            "type": "string"
+          },
+          "title": {
+            "description": "The page's title; empty when it has none",
+            "title": "Title",
+            "type": "string"
+          },
+          "truncated": {
+            "description": "True when the page was longer than the 2 MB the service reads and the end was dropped",
+            "title": "Truncated",
+            "type": "boolean"
+          },
+          "url": {
+            "description": "The URL that was asked for",
+            "title": "Url",
+            "type": "string"
+          }
+        },
+        "required": [
+          "url",
+          "source",
+          "snapshot_timestamp",
+          "snapshot_age_days",
+          "title",
+          "chars",
+          "parts",
+          "truncated",
+          "cached",
+          "passages"
+        ],
+        "title": "WebReadResponse",
+        "type": "object"
+      },
+      "WebResearchRequest": {
+        "additionalProperties": false,
+        "properties": {
+          "archive": {
+            "default": "fallback",
+            "enum": [
+              "fallback",
+              "only",
+              "never"
+            ],
+            "title": "Archive",
+            "type": "string"
+          },
+          "domains": {
+            "items": {
+              "pattern": "^[A-Za-z0-9.-]{1,253}$",
+              "type": "string"
+            },
+            "maxItems": 10,
+            "title": "Domains",
+            "type": "array"
+          },
+          "focus": {
+            "anyOf": [
+              {
+                "maxLength": 300,
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "What to rank page parts against; defaults to `query`",
+            "title": "Focus"
+          },
+          "freshness_days": {
+            "anyOf": [
+              {
+                "maximum": 365.0,
+                "minimum": 1.0,
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Freshness Days"
+          },
+          "max_passages_per_page": {
+            "default": 3,
+            "maximum": 20.0,
+            "minimum": 1.0,
+            "title": "Max Passages Per Page",
+            "type": "integer"
+          },
+          "max_results": {
+            "default": 4,
+            "description": "How many of the top results to read",
+            "maximum": 8.0,
+            "minimum": 1.0,
+            "title": "Max Results",
+            "type": "integer"
+          },
+          "part_chars": {
+            "default": 1200,
+            "maximum": 4000.0,
+            "minimum": 300.0,
+            "title": "Part Chars",
+            "type": "integer"
+          },
+          "query": {
+            "description": "What to search the web for",
+            "maxLength": 300,
+            "minLength": 3,
+            "title": "Query",
+            "type": "string"
+          }
+        },
+        "required": [
+          "query"
+        ],
+        "title": "WebResearchRequest",
+        "type": "object"
+      },
+      "WebResearchResponse": {
+        "properties": {
+          "pages": {
+            "items": {
+              "$ref": "#/components/schemas/ResearchPage"
+            },
+            "title": "Pages",
+            "type": "array"
+          },
+          "provider": {
+            "title": "Provider",
+            "type": "string"
+          },
+          "skipped": {
+            "items": {
+              "$ref": "#/components/schemas/SkippedPage"
+            },
+            "title": "Skipped",
+            "type": "array"
+          }
+        },
+        "required": [
+          "provider",
+          "pages",
+          "skipped"
+        ],
+        "title": "WebResearchResponse",
+        "type": "object"
+      },
+      "WebResult": {
+        "properties": {
+          "date": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "The provider's own date or age for the page, as it gave it; null when absent",
+            "title": "Date"
+          },
+          "snippet": {
+            "description": "What the provider quotes from the page for this query; may be empty",
+            "title": "Snippet",
+            "type": "string"
+          },
+          "title": {
+            "title": "Title",
+            "type": "string"
+          },
+          "url": {
+            "title": "Url",
+            "type": "string"
+          }
+        },
+        "required": [
+          "title",
+          "url",
+          "snippet",
+          "date"
+        ],
+        "title": "WebResult",
+        "type": "object"
+      },
+      "WebSearchRequest": {
+        "additionalProperties": false,
+        "properties": {
+          "domains": {
+            "description": "Only results from these domains, e.g. example.com",
+            "items": {
+              "pattern": "^[A-Za-z0-9.-]{1,253}$",
+              "type": "string"
+            },
+            "maxItems": 10,
+            "title": "Domains",
+            "type": "array"
+          },
+          "freshness_days": {
+            "anyOf": [
+              {
+                "maximum": 365.0,
+                "minimum": 1.0,
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "Only pages from about this many days back. Providers filter in steps: a day, a week, a month, a year",
+            "title": "Freshness Days"
+          },
+          "max_results": {
+            "default": 8,
+            "maximum": 20.0,
+            "minimum": 1.0,
+            "title": "Max Results",
+            "type": "integer"
+          },
+          "query": {
+            "maxLength": 300,
+            "minLength": 3,
+            "title": "Query",
+            "type": "string"
+          }
+        },
+        "required": [
+          "query"
+        ],
+        "title": "WebSearchRequest",
+        "type": "object"
+      },
+      "WebSearchResponse": {
+        "properties": {
+          "provider": {
+            "description": "Which provider answered: brave or perplexity",
+            "title": "Provider",
+            "type": "string"
+          },
+          "results": {
+            "items": {
+              "$ref": "#/components/schemas/WebResult"
+            },
+            "title": "Results",
+            "type": "array"
+          }
+        },
+        "required": [
+          "provider",
+          "results"
+        ],
+        "title": "WebSearchResponse",
+        "type": "object"
+      },
+      "YoutubeResearchRequest": {
+        "additionalProperties": false,
+        "properties": {
+          "deadline_seconds": {
+            "anyOf": [
+              {
+                "exclusiveMinimum": 0.0,
+                "maximum": 600.0,
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": 70,
+            "description": "Answer within this many seconds with the videos done by then: one still being fetched is skipped as timeout (it keeps downloading into the cache, so a retry is served from it), and Gemini gives way to the captions early enough for them to arrive. The default, 70, is below the Voxren coach's own 90 second wait.",
+            "title": "Deadline Seconds"
+          },
+          "focus": {
+            "anyOf": [
+              {
+                "maxLength": 300,
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "What to rank transcript parts against; defaults to `query`",
+            "title": "Focus"
+          },
+          "max_age_months": {
+            "anyOf": [
+              {
+                "exclusiveMinimum": 0.0,
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": 12,
+            "description": "Drop videos that may be older than this, and videos with no age. YouTube rounds ages down, so \"1 year ago\" counts as 24 months",
+            "title": "Max Age Months"
+          },
+          "max_passages_per_video": {
+            "default": 4,
+            "maximum": 20.0,
+            "minimum": 1.0,
+            "title": "Max Passages Per Video",
+            "type": "integer"
+          },
+          "max_per_channel": {
+            "default": 2,
+            "maximum": 8.0,
+            "minimum": 1.0,
+            "title": "Max Per Channel",
+            "type": "integer"
+          },
+          "max_seconds": {
+            "default": 2700,
+            "minimum": 1.0,
+            "title": "Max Seconds",
+            "type": "integer"
+          },
+          "max_videos": {
+            "default": 4,
+            "maximum": 8.0,
+            "minimum": 1.0,
+            "title": "Max Videos",
+            "type": "integer"
+          },
+          "min_chars": {
+            "default": 2500,
+            "description": "Skip a transcript shorter than this: a replay with no commentary",
+            "minimum": 0.0,
+            "title": "Min Chars",
+            "type": "integer"
+          },
+          "min_seconds": {
+            "default": 180,
+            "minimum": 0.0,
+            "title": "Min Seconds",
+            "type": "integer"
+          },
+          "part_chars": {
+            "default": 1200,
+            "maximum": 4000.0,
+            "minimum": 300.0,
+            "title": "Part Chars",
+            "type": "integer"
+          },
+          "query": {
+            "description": "What to search YouTube for",
+            "maxLength": 200,
+            "minLength": 3,
+            "title": "Query",
+            "type": "string"
+          },
+          "title_terms": {
+            "items": {
+              "type": "string"
+            },
+            "maxItems": 6,
+            "title": "Title Terms",
+            "type": "array"
+          }
+        },
+        "required": [
+          "query"
+        ],
+        "title": "YoutubeResearchRequest",
+        "type": "object"
+      },
+      "YoutubeResearchResponse": {
+        "properties": {
+          "rate_limited": {
+            "description": "True when YouTube throttled caption downloads; the list is what was fetched before that. Wait before calling again.",
+            "title": "Rate Limited",
+            "type": "boolean"
+          },
+          "skipped": {
+            "items": {
+              "$ref": "#/components/schemas/SkippedVideo"
+            },
+            "title": "Skipped",
+            "type": "array"
+          },
+          "videos": {
+            "items": {
+              "$ref": "#/components/schemas/ResearchVideo"
+            },
+            "title": "Videos",
+            "type": "array"
+          }
+        },
+        "required": [
+          "videos",
+          "skipped",
+          "rate_limited"
+        ],
+        "title": "YoutubeResearchResponse",
+        "type": "object"
+      },
+      "YoutubeSearchRequest": {
+        "additionalProperties": false,
+        "properties": {
+          "max_age_months": {
+            "anyOf": [
+              {
+                "exclusiveMinimum": 0.0,
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "Drop videos that may be older than this, and videos with no age. YouTube rounds ages down, so the oldest a video can be is its age plus one unit: \"1 year ago\" counts as 24 months",
+            "title": "Max Age Months"
+          },
+          "max_results": {
+            "default": 10,
+            "maximum": 25.0,
+            "minimum": 1.0,
+            "title": "Max Results",
+            "type": "integer"
+          },
+          "max_seconds": {
+            "anyOf": [
+              {
+                "minimum": 1.0,
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Max Seconds"
+          },
+          "min_seconds": {
+            "anyOf": [
+              {
+                "minimum": 0.0,
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Min Seconds"
+          },
+          "query": {
+            "maxLength": 200,
+            "minLength": 3,
+            "title": "Query",
+            "type": "string"
+          },
+          "title_terms": {
+            "description": "Every term must be in the title, compared without case, spaces, or punctuation",
+            "items": {
+              "type": "string"
+            },
+            "maxItems": 6,
+            "title": "Title Terms",
+            "type": "array"
+          }
+        },
+        "required": [
+          "query"
+        ],
+        "title": "YoutubeSearchRequest",
+        "type": "object"
+      },
+      "YoutubeSearchResponse": {
+        "properties": {
+          "videos": {
+            "items": {
+              "$ref": "#/components/schemas/VideoOut"
+            },
+            "title": "Videos",
+            "type": "array"
+          }
+        },
+        "required": [
+          "videos"
+        ],
+        "title": "YoutubeSearchResponse",
+        "type": "object"
+      }
+    },
+    "securitySchemes": {
+      "HTTPBearer": {
+        "scheme": "bearer",
+        "type": "http"
+      }
+    }
+  },
+  "info": {
+    "description": "Sources for agents: YouTube search and transcripts, web search and page text, cut into passages an agent can quote and check a claim against.",
+    "title": "Research tools",
+    "version": "0.1.0"
+  },
+  "openapi": "3.1.0",
+  "paths": {
+    "/clients": {
+      "post": {
+        "operationId": "register_clients_clients_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ClientsRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ClientsResponse"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "401": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorBody"
+                }
+              }
+            },
+            "description": "auth_invalid: the bearer token is missing or wrong"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          },
+          "503": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorBody"
+                }
+              }
+            },
+            "description": "auth_unconfigured (no token set on the service), or search_unconfigured (no search key, on the search routes)"
+          }
+        },
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "summary": "Register Clients",
+        "tags": [
+          "clients"
+        ]
+      }
+    },
+    "/health": {
+      "get": {
+        "operationId": "health_health_get",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HealthResponse"
+                }
+              }
+            },
+            "description": "Successful Response"
+          }
+        },
+        "summary": "Health",
+        "tags": [
+          "health"
+        ]
+      }
+    },
+    "/web/read": {
+      "post": {
+        "operationId": "read_web_read_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/WebReadRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/WebReadResponse"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "401": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorBody"
+                }
+              }
+            },
+            "description": "auth_invalid: the bearer token is missing or wrong"
+          },
+          "404": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorBody"
+                }
+              }
+            },
+            "description": "The video or page cannot be had: no_captions, no_english, unplayable, not_archived"
+          },
+          "415": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorBody"
+                }
+              }
+            },
+            "description": "unsupported_content: the page is not HTML or plain text"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          },
+          "502": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorBody"
+                }
+              }
+            },
+            "description": "The upstream failed or refused: upstream_error, po_token_required, search_unavailable, fetch_refused, fetch_failed, archive_unavailable"
+          },
+          "503": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorBody"
+                }
+              }
+            },
+            "description": "auth_unconfigured (no token set on the service), or search_unconfigured (no search key, on the search routes)"
+          }
+        },
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "summary": "Read",
+        "tags": [
+          "web"
+        ]
+      }
+    },
+    "/web/research": {
+      "post": {
+        "operationId": "research_web_research_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/WebResearchRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/WebResearchResponse"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "401": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorBody"
+                }
+              }
+            },
+            "description": "auth_invalid: the bearer token is missing or wrong"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          },
+          "502": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorBody"
+                }
+              }
+            },
+            "description": "The upstream failed or refused: upstream_error, po_token_required, search_unavailable, fetch_refused, fetch_failed, archive_unavailable"
+          },
+          "503": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorBody"
+                }
+              }
+            },
+            "description": "auth_unconfigured (no token set on the service), or search_unconfigured (no search key, on the search routes)"
+          }
+        },
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "summary": "Research",
+        "tags": [
+          "web"
+        ]
+      }
+    },
+    "/web/search": {
+      "post": {
+        "operationId": "search_web_search_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/WebSearchRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/WebSearchResponse"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "401": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorBody"
+                }
+              }
+            },
+            "description": "auth_invalid: the bearer token is missing or wrong"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          },
+          "502": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorBody"
+                }
+              }
+            },
+            "description": "The upstream failed or refused: upstream_error, po_token_required, search_unavailable, fetch_refused, fetch_failed, archive_unavailable"
+          },
+          "503": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorBody"
+                }
+              }
+            },
+            "description": "auth_unconfigured (no token set on the service), or search_unconfigured (no search key, on the search routes)"
+          }
+        },
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "summary": "Search",
+        "tags": [
+          "web"
+        ]
+      }
+    },
+    "/youtube/research": {
+      "post": {
+        "description": "Walk the first MAX_CANDIDATES search hits in order until `max_videos` have passages.\n\nWithout a Gemini key the walk fetches one transcript at a time: each caption download counts against YouTube's throttle.\nWith one it fetches as many hits at once as videos are still needed, and the answer keeps YouTube's order.\nWith `deadline_seconds` the answer is what is done by then, and no fetch starts after it.",
+        "operationId": "research_youtube_research_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/YoutubeResearchRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/YoutubeResearchResponse"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "401": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorBody"
+                }
+              }
+            },
+            "description": "auth_invalid: the bearer token is missing or wrong"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          },
+          "502": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorBody"
+                }
+              }
+            },
+            "description": "The upstream failed or refused: upstream_error, po_token_required, search_unavailable, fetch_refused, fetch_failed, archive_unavailable"
+          },
+          "503": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorBody"
+                }
+              }
+            },
+            "description": "auth_unconfigured (no token set on the service), or search_unconfigured (no search key, on the search routes)"
+          }
+        },
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "summary": "Research",
+        "tags": [
+          "youtube"
+        ]
+      }
+    },
+    "/youtube/search": {
+      "post": {
+        "operationId": "search_youtube_search_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/YoutubeSearchRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/YoutubeSearchResponse"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "401": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorBody"
+                }
+              }
+            },
+            "description": "auth_invalid: the bearer token is missing or wrong"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          },
+          "502": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorBody"
+                }
+              }
+            },
+            "description": "The upstream failed or refused: upstream_error, po_token_required, search_unavailable, fetch_refused, fetch_failed, archive_unavailable"
+          },
+          "503": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorBody"
+                }
+              }
+            },
+            "description": "auth_unconfigured (no token set on the service), or search_unconfigured (no search key, on the search routes)"
+          }
+        },
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "summary": "Search",
+        "tags": [
+          "youtube"
+        ]
+      }
+    },
+    "/youtube/transcript": {
+      "post": {
+        "operationId": "transcript_youtube_transcript_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TranscriptRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TranscriptResponse"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "401": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorBody"
+                }
+              }
+            },
+            "description": "auth_invalid: the bearer token is missing or wrong"
+          },
+          "404": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorBody"
+                }
+              }
+            },
+            "description": "The video or page cannot be had: no_captions, no_english, unplayable, not_archived"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            },
+            "description": "Validation Error"
+          },
+          "429": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorBody"
+                }
+              }
+            },
+            "description": "rate_limited: wait for Retry-After seconds before asking again",
+            "headers": {
+              "Retry-After": {
+                "description": "Seconds to wait",
+                "schema": {
+                  "type": "integer"
+                }
+              }
+            }
+          },
+          "502": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorBody"
+                }
+              }
+            },
+            "description": "The upstream failed or refused: upstream_error, po_token_required, search_unavailable, fetch_refused, fetch_failed, archive_unavailable"
+          },
+          "503": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorBody"
+                }
+              }
+            },
+            "description": "auth_unconfigured (no token set on the service), or search_unconfigured (no search key, on the search routes)"
+          }
+        },
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "summary": "Transcript",
+        "tags": [
+          "youtube"
+        ]
+      }
+    }
+  }
+}

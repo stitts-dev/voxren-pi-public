@@ -1,0 +1,207 @@
+{
+	"meta": {
+		"version": "16.19.1",
+		"generated": "2026-10-05",
+		"model": "gpt-6-sol",
+		"sources": [
+			{
+				"id": "s1",
+				"title": "Sivir Build Guide: The Ricochet Reign | An in-depth Sivir Guide!",
+				"url": "https://www.mobafire.com/league-of-legends/build/the-ricochet-reign-an-in-depth-sivir-guide-650926"
+			},
+			{
+				"id": "game-1",
+				"title": "Riot Data Dragon 16.19.1",
+				"url": "https://ddragon.leagueoflegends.com/cdn/16.19.1/data/en_US/champion/Sivir.json"
+			}
+		]
+	},
+	"id": "Sivir",
+	"name": "Sivir",
+	"facts": {
+		"title": "the Battle Mistress",
+		"tags": [
+			"Marksman"
+		],
+		"resource": "Mana",
+		"stats": {
+			"hp": 600,
+			"hpperlevel": 104,
+			"mp": 340,
+			"mpperlevel": 45,
+			"movespeed": 335,
+			"armor": 30,
+			"armorperlevel": 4,
+			"spellblock": 33,
+			"spellblockperlevel": 1.1,
+			"attackrange": 500,
+			"hpregen": 3.25,
+			"hpregenperlevel": 0.55,
+			"mpregen": 6,
+			"mpregenperlevel": 0.8,
+			"crit": 0,
+			"critperlevel": 0,
+			"attackdamage": 60,
+			"attackdamageperlevel": 0,
+			"attackspeedperlevel": 1.6,
+			"attackspeed": 0.625
+		},
+		"passive": {
+			"name": "Fleet of Foot",
+			"text": "Sivir gains a short burst of Move Speed when she attacks an enemy champion."
+		},
+		"spells": [
+			{
+				"slot": "Q",
+				"name": "Boomerang Blade",
+				"cooldown": [
+					10,
+					9.5,
+					9,
+					8.5,
+					8
+				],
+				"cost": [
+					55,
+					60,
+					65,
+					70,
+					75
+				],
+				"range": [
+					1200,
+					1200,
+					1200,
+					1200,
+					1200
+				],
+				"text": "Sivir hurls her crossblade like a boomerang, dealing damage each way."
+			},
+			{
+				"slot": "W",
+				"name": "Ricochet",
+				"cooldown": [
+					12,
+					12,
+					12,
+					12,
+					12
+				],
+				"cost": [
+					60,
+					60,
+					60,
+					60,
+					60
+				],
+				"range": [
+					20,
+					20,
+					20,
+					20,
+					20
+				],
+				"text": "Sivir's next few basic attacks gain additional attack speed and bounce to nearby targets, dealing reduced damage while bouncing."
+			},
+			{
+				"slot": "E",
+				"name": "Spell Shield",
+				"cooldown": [
+					24,
+					22.5,
+					21,
+					19.5,
+					18
+				],
+				"cost": [
+					0,
+					0,
+					0,
+					0,
+					0
+				],
+				"range": [
+					20,
+					20,
+					20,
+					20,
+					20
+				],
+				"text": "Creates a magical barrier that blocks a single enemy ability cast on Sivir. She receives health and a burst of movement speed if a spell is blocked."
+			},
+			{
+				"slot": "R",
+				"name": "On The Hunt",
+				"cooldown": [
+					120,
+					100,
+					80
+				],
+				"cost": [
+					100,
+					100,
+					100
+				],
+				"range": [
+					1000,
+					1000,
+					1000
+				],
+				"text": "Sivir leads her allies in battle, granting them a surge of Move Speed for a period of time. In addition, Sivir's attacks reduce her spell cooldowns."
+			}
+		]
+	},
+	"coaching": {
+		"archetype": {
+			"value": "Sivir is an ADC who uses wave clear and team utility to control the map.",
+			"sources": [
+				"s1"
+			]
+		},
+		"axis": {
+			"value": "Sivir plays by shoving waves and choosing when to rotate.",
+			"sources": [
+				"s1"
+			]
+		},
+		"winCondition": {
+			"value": "Sivir wins through wave clear, well-timed rotations, and effective use of On The Hunt.",
+			"sources": [
+				"s1"
+			]
+		},
+		"spikes": [
+			{
+				"at": "Essence Reaver, Berserker's Greaves, and Navori Flickerblade",
+				"why": "Sivir reaches a standard power spike with these items.",
+				"sources": [
+					"s1"
+				]
+			},
+			{
+				"at": "Q cooldown reaches 8 seconds",
+				"why": "Sivir can throw Boomerang Blade more often.",
+				"sources": [
+					"game-1"
+				]
+			}
+		],
+		"bait": [],
+		"mistakes": [
+			{
+				"value": "Sivir struggles when she mismanages mana or positions without accounting for her short range.",
+				"sources": [
+					"s1"
+				]
+			}
+		],
+		"comp": {
+			"tags": [
+				"engage"
+			],
+			"sources": [
+				"game-1"
+			]
+		}
+	}
+}

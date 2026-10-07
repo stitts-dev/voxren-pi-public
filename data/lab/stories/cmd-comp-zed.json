@@ -1,0 +1,22 @@
+{
+	"id": "cmd-comp-zed",
+	"title": "/comp on the zed-support-dive replay (about 72 s)",
+	"split": "holdout",
+	"steps": [
+		{
+			"wait": "picks 10/10",
+			"timeout": 30
+		},
+		{
+			"send": "/comp"
+		},
+		{
+			"idle": true
+		}
+	],
+	"replay": "data/lab/drafts/zed-support-dive.json",
+	"replayStepMs": 100,
+	"gates": {
+		"maxSeconds": 150
+	}
+}

@@ -1,0 +1,19 @@
+{
+	"id": "cmd-patch",
+	"title": "/patch",
+	"split": "train",
+	"steps": [
+		{
+			"send": "/patch"
+		},
+		{
+			"idle": true
+		}
+	],
+	"env": {
+		"VOXREN_COACH_CHAMPION": "Syndra"
+	},
+	"gates": {
+		"maxSeconds": 180
+	}
+}

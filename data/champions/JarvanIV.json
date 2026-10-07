@@ -1,0 +1,223 @@
+{
+	"meta": {
+		"version": "16.19.1",
+		"generated": "2026-10-05",
+		"model": "gpt-6-sol",
+		"sources": [
+			{
+				"id": "s1",
+				"title": "Jarvan IV Build Guide: 🔸 Jarvan IV / King of the Jungling🔸",
+				"url": "https://www.mobafire.com/league-of-legends/build/jarvan-iv-king-of-the-jungling-650921"
+			},
+			{
+				"id": "game-1",
+				"title": "Riot Data Dragon 16.19.1",
+				"url": "https://ddragon.leagueoflegends.com/cdn/16.19.1/data/en_US/champion/JarvanIV.json"
+			}
+		]
+	},
+	"id": "JarvanIV",
+	"name": "Jarvan IV",
+	"facts": {
+		"title": "the Exemplar of Demacia",
+		"tags": [
+			"Fighter",
+			"Tank"
+		],
+		"resource": "Mana",
+		"stats": {
+			"hp": 640,
+			"hpperlevel": 104,
+			"mp": 300,
+			"mpperlevel": 55,
+			"movespeed": 340,
+			"armor": 36,
+			"armorperlevel": 4.6,
+			"spellblock": 32,
+			"spellblockperlevel": 2.05,
+			"attackrange": 175,
+			"hpregen": 8,
+			"hpregenperlevel": 0.7,
+			"mpregen": 6.5,
+			"mpregenperlevel": 0.45,
+			"crit": 0,
+			"critperlevel": 0,
+			"attackdamage": 64,
+			"attackdamageperlevel": 0,
+			"attackspeedperlevel": 2.5,
+			"attackspeed": 0.658
+		},
+		"passive": {
+			"name": "Martial Cadence",
+			"text": "Jarvan's first basic attack on an enemy deals bonus physical damage based on their current Health. This effect cannot occur again on the same enemy for a few seconds."
+		},
+		"spells": [
+			{
+				"slot": "Q",
+				"name": "Dragon Strike",
+				"cooldown": [
+					10,
+					9,
+					8,
+					7,
+					6
+				],
+				"cost": [
+					45,
+					50,
+					55,
+					60,
+					65
+				],
+				"range": [
+					770,
+					770,
+					770,
+					770,
+					770
+				],
+				"text": "Jarvan IV extends his lance, dealing physical damage and lowering the Armor of enemies in its path. Additionally, this will pull Jarvan to his Demacian Standard, knocking up enemies in his path."
+			},
+			{
+				"slot": "W",
+				"name": "Golden Aegis",
+				"cooldown": [
+					9,
+					9,
+					9,
+					9,
+					9
+				],
+				"cost": [
+					30,
+					30,
+					30,
+					30,
+					30
+				],
+				"range": [
+					625,
+					625,
+					625,
+					625,
+					625
+				],
+				"text": "Jarvan IV calls upon the ancient kings of Demacia to shield him from harm and slow surrounding enemies."
+			},
+			{
+				"slot": "E",
+				"name": "Demacian Standard",
+				"cooldown": [
+					12,
+					11.5,
+					11,
+					10.5,
+					10
+				],
+				"cost": [
+					55,
+					55,
+					55,
+					55,
+					55
+				],
+				"range": [
+					860,
+					860,
+					860,
+					860,
+					860
+				],
+				"text": "Jarvan IV carries the pride of Demacia, passively granting him bonus Attack Speed. Activating Demacian Standard allows Jarvan IV to place a Demacian flag that deals magic damage on impact and grants Attack Speed to nearby allied champions."
+			},
+			{
+				"slot": "R",
+				"name": "Cataclysm",
+				"cooldown": [
+					120,
+					105,
+					90
+				],
+				"cost": [
+					100,
+					100,
+					100
+				],
+				"range": [
+					650,
+					650,
+					650
+				],
+				"text": "Jarvan IV heroically leaps into battle at a target with such force that he terraforms the surrounding area to create an arena around them. Nearby enemies are damaged at the moment of impact."
+			}
+		]
+	},
+	"coaching": {
+		"damage": {
+			"value": "Jarvan IV deals burst physical damage with his first basic attack on an enemy and Dragon Strike, while Demacian Standard deals magic damage on impact.",
+			"sources": [
+				"game-1"
+			]
+		},
+		"archetype": {
+			"value": "Jarvan IV is a proactive jungler who controls tempo through ganks and initiation.",
+			"sources": [
+				"s1"
+			]
+		},
+		"axis": {
+			"value": "Jarvan IV can commit to an all-in by pulling to his Demacian Standard with Dragon Strike and knocking up enemies in his path.",
+			"sources": [
+				"game-1"
+			]
+		},
+		"winCondition": {
+			"value": "Jarvan IV wins by turning early ganks and decisive engages into opportunities for his team.",
+			"sources": [
+				"s1"
+			]
+		},
+		"spikes": [
+			{
+				"at": "Late-game teamfights",
+				"why": "Jarvan IV gains value from his teamfight control and Cataclysm engages.",
+				"sources": [
+					"s1"
+				]
+			},
+			{
+				"at": "Dragon Strike available alongside Demacian Standard",
+				"why": "Jarvan IV can pull to the flag and knock up enemies in his path.",
+				"sources": [
+					"game-1"
+				]
+			}
+		],
+		"bait": [
+			{
+				"slot": "W",
+				"why": "After Jarvan IV spends Golden Aegis, its shield and surrounding slow are unavailable for 9 seconds.",
+				"sources": [
+					"game-1"
+				]
+			}
+		],
+		"mistakes": [
+			{
+				"value": "Jarvan IV cannot use Dragon Strike to pull to his Demacian Standard if he has not placed the flag.",
+				"sources": [
+					"game-1"
+				]
+			}
+		],
+		"comp": {
+			"tags": [
+				"engage"
+			],
+			"sources": [
+				"s1",
+				"game-1"
+			]
+		}
+	}
+}

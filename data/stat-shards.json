@@ -1,0 +1,14 @@
+{
+	"source": "The rune page's stat shards by Riot's perk id, as match-v5 (statPerks) and OP.GG (stat_mod_names) report them: the name coach.yaml's <build> section uses, and the Data Dragon icon at cdn/img/perk-images/StatMods/<icon>. Data Dragon's runesReforged.json carries no shards, so this file names them. Armor and Magic Resist left the page in 2024 and stay for older games.",
+	"shards": {
+		"5008": { "name": "Adaptive Force", "icon": "StatModsAdaptiveForceIcon.png" },
+		"5005": { "name": "Attack Speed", "icon": "StatModsAttackSpeedIcon.png" },
+		"5007": { "name": "Ability Haste", "icon": "StatModsCDRScalingIcon.png" },
+		"5010": { "name": "Move Speed", "icon": "StatModsMovementSpeedIcon.png" },
+		"5011": { "name": "Health", "icon": "StatModsHealthPlusIcon.png" },
+		"5001": { "name": "Health Scaling", "icon": "StatModsHealthScalingIcon.png" },
+		"5013": { "name": "Tenacity and Slow Resist", "icon": "StatModsTenacityIcon.png" },
+		"5002": { "name": "Armor", "icon": "StatModsArmorIcon.png" },
+		"5003": { "name": "Magic Resist", "icon": "StatModsMagicResIcon.png" }
+	}
+}

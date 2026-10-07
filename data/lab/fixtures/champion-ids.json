@@ -1,0 +1,4 @@
+{
+	"meta": {"source": "Riot Data Dragon champion keys; tests use them to stand in for the name lookup championLane does over the network"},
+	"ids": {"Ahri": 103, "Corki": 42, "Darius": 122, "Fizz": 105, "Graves": 104, "Jinx": 222, "Malzahar": 90, "Pantheon": 80, "Pyke": 555, "Syndra": 134, "Wukong": 62, "Yasuo": 157, "Zed": 238}
+}

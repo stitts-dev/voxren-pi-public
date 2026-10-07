@@ -1,0 +1,789 @@
+{
+	"id": "cmd-comp-zed",
+	"turns": [
+		{
+			"thinking": [
+				"**Researching for notes**",
+				"**Framing claims by row**",
+				""
+			],
+			"text": "",
+			"calls": [
+				{
+					"name": "voxren_meta_research",
+					"args": {
+						"query_type": "matchup",
+						"champion": "Fizz",
+						"opponent": "Ahri",
+						"position": "middle"
+					}
+				},
+				{
+					"name": "voxren_game_facts",
+					"args": {
+						"entities": [
+							{
+								"kind": "champion",
+								"name": "Fizz"
+							},
+							{
+								"kind": "champion",
+								"name": "Ahri"
+							},
+							{
+								"kind": "champion",
+								"name": "Qiyana"
+							}
+						],
+						"detail": "compact"
+					}
+				}
+			]
+		},
+		{
+			"thinking": [],
+			"text": "",
+			"calls": [
+				{
+					"name": "web_search",
+					"args": {
+						"query": "Fizz vs Ahri matchup guide Charm Playful Trickster trade wave ultimate",
+						"domains": [
+							"mobafire.com"
+						],
+						"max_results": 5
+					}
+				},
+				{
+					"name": "voxren_video_research",
+					"args": {
+						"query": "Fizz vs Ahri matchup guide",
+						"focus": "Charm dodge Playful Trickster, Q trade, wave management, ultimate Ahri Spirit Rush",
+						"title_terms": [
+							"Fizz",
+							"Ahri"
+						]
+					}
+				}
+			]
+		},
+		{
+			"thinking": [],
+			"text": "",
+			"calls": [
+				{
+					"name": "voxren_strategy_frame",
+					"args": {
+						"question": "Fizz mid versus Ahri, Qiyana jungle, Mordekaiser top, Xayah bot, Karma support, draft-only concise plan",
+						"claims": [
+							"Ahri's Orb of Deception pressures Fizz early, and Fizz can dodge Charm with Playful / Trickster.",
+							"Ahri's Charm cooldown is 12 seconds at all ranks.",
+							"Ahri can use Spirit Rush to dodge Chum the Waters.",
+							"Qiyana has Supreme Display of Talent as her ultimate.",
+							"Ahri can Charm Fizz as he lands from Playful / Trickster or during Urchin Strike.",
+							"Ahri tends to control the early wave against Fizz."
+						],
+						"evidence": [
+							{
+								"id": "matchup-1"
+							},
+							{
+								"id": "game-1"
+							},
+							{
+								"id": "web-1"
+							},
+							{
+								"id": "web-2"
+							},
+							{
+								"id": "web-3"
+							},
+							{
+								"id": "video-3"
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"thinking": [],
+			"text": "Lane: Ahri misses Orb of Deception: **step in** for a short trade; save Playful / Trickster for Charm.\nKill: Ahri's Charm misses and her health is low: **commit**; until then, hold pressure and farm.\nThreat: Qiyana approaches near terrain: **keep Playful / Trickster** for Supreme Display of Talent.\nFights: Xayah uses Featherstorm: **wait**, then enter on her once she lands.\nWin: Ahri answers your side wave: **take the free window** to move toward Graves.\nEdge: Ahri still has Spirit Rush: **bait it before casting Chum the Waters**.",
+			"calls": []
+		}
+	],
+	"tools": [
+		{
+			"name": "voxren_game_facts",
+			"operation": "gamedata.lookup",
+			"args": {
+				"entities": [
+					{
+						"kind": "champion",
+						"name": "Fizz"
+					},
+					{
+						"kind": "champion",
+						"name": "Ahri"
+					},
+					{
+						"kind": "champion",
+						"name": "Qiyana"
+					}
+				],
+				"detail": "compact"
+			},
+			"ms": 356,
+			"response": {
+				"version": "research-contract-v1",
+				"operation": "gamedata.lookup",
+				"data": {
+					"patch": "16.19.1",
+					"patchNotesLabel": "26.19",
+					"provenance": "Riot Data Dragon static data",
+					"retrievedAt": "2026-10-04T09:18:47.607Z",
+					"entities": [
+						{
+							"name": "Fizz",
+							"kind": "champion",
+							"fact": "the Tidal Trickster. Passive Nimble Fighter. Q Urchin Strike: cd 8/7.5/7/6.5/6, cost 50/50/50/50/50, range 550; W Seastone Trident: cd 7/6/5/4/3, cost 30/40/50/60/70, range 600; E Playful / Trickster: cd 16/14/12/10/8, cost 75/80/85/90/95, range 400; R Chum the Waters: cd 120/100/80, cost 100/100/100, range 1300",
+							"card": {
+								"version": "16.19.1",
+								"stale": false
+							}
+						},
+						{
+							"name": "Ahri",
+							"kind": "champion",
+							"fact": "the Nine-Tailed Fox. Passive Essence Theft. Q Orb of Deception: cd 7/7/7/7/7, cost 55/65/75/85/95, range 970; W Fox-Fire: cd 9/8/7/6/5, cost 30/30/30/30/30, range 700; E Charm: cd 12/12/12/12/12, cost 60/60/60/60/60, range 975; R Spirit Rush: cd 140/120/100, cost 100/100/100, range 450"
+						},
+						{
+							"name": "Qiyana",
+							"kind": "champion",
+							"fact": "Empress of the Elements. Passive Royal Privilege. Q Elemental Wrath / Edge of Ixtal: cd 7/7/7/7/7, cost 35/35/35/35/35, range 525; W Terrashape: cd 7/7/7/7/7, cost 25/30/35/40/45, range 1100; E Audacity: cd 11/10/9/8/7, cost 40/45/50/55/60, range 650; R Supreme Display of Talent: cd 120/120/120, cost 100/100/100, range 950"
+						}
+					]
+				},
+				"evidence": [
+					{
+						"id": "game-1",
+						"source": "voxren_game_facts",
+						"title": "Riot Data Dragon 16.19.1",
+						"url": "https://ddragon.leagueoflegends.com/cdn/16.19.1/data/en_US/champion.json",
+						"retrievedAt": "2026-10-04T09:18:47.607Z"
+					}
+				]
+			}
+		},
+		{
+			"name": "voxren_meta_research",
+			"operation": "meta.matchup",
+			"args": {
+				"query_type": "matchup",
+				"champion": "Fizz",
+				"opponent": "Ahri",
+				"position": "middle"
+			},
+			"ms": 3663,
+			"response": {
+				"version": "research-contract-v1",
+				"operation": "meta.matchup",
+				"data": {
+					"provider": "op.gg public MCP",
+					"request": "lol_get_lane_matchup_guide(position=mid, my_champion=FIZZ, opponent_champion=AHRI)",
+					"sample": "Emerald+ ranked (OP.GG default)",
+					"staleness": "retrieved 2026-10-04; third-party aggregate, not reviewed",
+					"retrievedAt": "2026-10-04T09:18:50.713Z",
+					"champion": "Fizz",
+					"opponent": "Ahri",
+					"patch": "16.19",
+					"patchNotesLabel": "26.19",
+					"laneAdvantage": "Fizz",
+					"soloKillAdvantage": "Fizz",
+					"playStyle": "aggressive",
+					"tip": "Try not to be damaged by Ahri’s (Q). Use [Q] to engage whenever Ahri steps in range. It is important to avoid Charm (E) with Playful/Trickster [E].",
+					"starters": [
+						{
+							"items": [
+								"Doran's Ring",
+								"Health Potion",
+								"Health Potion"
+							],
+							"games": 3786,
+							"winRate": 0.508
+						},
+						{
+							"items": [
+								"Dark Seal",
+								"Health Potion",
+								"Health Potion",
+								"Health Potion"
+							],
+							"games": 108,
+							"winRate": 0.472
+						}
+					],
+					"core": [
+						{
+							"items": [
+								"Lich Bane",
+								"Zhonya's Hourglass",
+								"Shadowflame"
+							],
+							"games": 309,
+							"winRate": 0.463
+						},
+						{
+							"items": [
+								"Lich Bane",
+								"Shadowflame",
+								"Zhonya's Hourglass"
+							],
+							"games": 281,
+							"winRate": 0.48
+						},
+						{
+							"items": [
+								"Lich Bane",
+								"Zhonya's Hourglass",
+								"Rabadon's Deathcap"
+							],
+							"games": 250,
+							"winRate": 0.464
+						}
+					],
+					"boots": [
+						{
+							"items": [
+								"Sorcerer's Shoes"
+							],
+							"games": 2546,
+							"winRate": 0.502
+						},
+						{
+							"items": [
+								"Ionian Boots of Lucidity"
+							],
+							"games": 1180,
+							"winRate": 0.529
+						}
+					],
+					"summoners": [
+						{
+							"items": [
+								"Flash",
+								"Ignite"
+							],
+							"games": 3921,
+							"winRate": 0.509
+						}
+					],
+					"runes": [
+						{
+							"primary": [
+								"Electrocute",
+								"Sudden Impact",
+								"Grisly Mementos",
+								"Treasure Hunter"
+							],
+							"secondary": [
+								"Transcendence",
+								"Scorch"
+							],
+							"shards": [
+								"Adaptive Force",
+								"Adaptive Force",
+								"Health Scaling"
+							],
+							"games": 1439,
+							"winRate": 0.506
+						},
+						{
+							"primary": [
+								"Electrocute",
+								"Sudden Impact",
+								"Grisly Mementos",
+								"Treasure Hunter"
+							],
+							"secondary": [
+								"Coup de Grace",
+								"Triumph"
+							],
+							"shards": [
+								"Adaptive Force",
+								"Adaptive Force",
+								"Health Scaling"
+							],
+							"games": 869,
+							"winRate": 0.513
+						}
+					],
+					"skillMax": [
+						{
+							"order": [
+								"E",
+								"W",
+								"Q"
+							],
+							"games": 2502,
+							"winRate": 0.563
+						}
+					],
+					"notesBuilding": true,
+					"judgment": {
+						"judge": "jev",
+						"status": "judged",
+						"model": "jev-1.13.0",
+						"latencyMs": 234,
+						"inputTokens": 732,
+						"answer": "evidence",
+						"kept": 1,
+						"removed": [],
+						"p": {
+							"relevant": 0.98,
+							"support": 0.96,
+							"injection": 0.02
+						},
+						"note": "Jev screen: relevance and prompt-injection routing, not a truth check; kept passages stay untrusted."
+					}
+				},
+				"evidence": [
+					{
+						"id": "matchup-1",
+						"source": "voxren_meta_research",
+						"title": "OP.GG matchup: Fizz vs Ahri mid",
+						"url": "https://www.op.gg/champions/fizz/counters/mid?target_champion=ahri",
+						"retrievedAt": "2026-10-04T09:18:50.713Z"
+					}
+				]
+			}
+		},
+		{
+			"name": "voxren_video_research",
+			"operation": "research_video",
+			"args": {
+				"query": "Fizz vs Ahri matchup guide",
+				"focus": "Charm dodge Playful Trickster, Q trade, wave management, ultimate Ahri Spirit Rush",
+				"title_terms": [
+					"Fizz",
+					"Ahri"
+				]
+			},
+			"ms": 15379,
+			"response": {
+				"version": "research-contract-v1",
+				"operation": "research_video",
+				"data": {
+					"provider": "YouTube transcripts (research service)",
+					"retrievedAt": "2026-10-04T09:19:10.073Z",
+					"videos": [
+						{
+							"title": "Mango Fish LoL: Mangofish Fizz vs Ahri - Challenger Elo ✅ 2346 LP Fizz Guide",
+							"url": "https://youtu.be/oX5NlMpbb-M",
+							"published": "4 months ago",
+							"transcript": "gemini",
+							"autoCaptions": false,
+							"passages": [
+								{
+									"at": 468,
+									"text": "对面放大嫌弃对我 这个没大招了没引爆 这波被孤立有点爽啊 凭什么你在这做对呀？ 刚吃了个 点到位置了 哎呦，差一点点，能做到吗？ 能做到吗？ 算了，看他有没有助攻，快快快杀。 没助攻吧，不知道，有助攻没有？ 要不这个我死，你得撤退。撤退换呢。 这边贴身呢。 Let me kill this guy. Look at this. Flashing is useless! Why rush to enter the tower? It's impossible to push the tower this way. It's totally not worth it. Totally not worth it. It shouldn't be done this way. Got his Flash. That guy used Flash again. That guy. No Ult? No Ult. I need to defend against Shaco. I can't blindly dive the tower to kill, right? A one-for-one trade is a loss. Dive the tower. It's almost time to go. Can't lower his HP, huh? Still haven't made a sound."
+								}
+							],
+							"route": "weak",
+							"p": {
+								"relevant": 0.74,
+								"support": 0.27,
+								"injection": 0.03
+							}
+						},
+						{
+							"title": "LegitKorea: The WORST Ahri Matchup Is Literal Hell (Ahri vs Fizz)",
+							"url": "https://youtu.be/N8kRL-coHwU",
+							"published": "1 year ago",
+							"transcript": "gemini",
+							"autoCaptions": false,
+							"passages": [
+								{
+									"at": 486,
+									"text": "He's actually going for it. Man, that's really annoying. Oh, he's going to engage. I got to reset. Got to be careful. Even if he ultis me, he can't kill me. So, that's why we're TPing a little bit aggressively. Oh. I'm going to charm him if he Qs. Okay, that's good. Very nice. Ekko's bot. We're free to push this. I got to play a little seriously cuz this is a higher Elo lobby. I don't want to kind of mess around too much. How did the charm hit? Just got to aim, you know? [10:21] There's a ward. [10:26] An ally has been slain. [10:57] Just kind of sucks that I didn't land that. Should have been free. [11:06] Unstoppable. [11:24] Fizz does have ulti. [11:28] Should be fine. We can get this ulti. We can get this wave and then just reset. [11:35] So if we can get Malignance. [11:41] There's a…"
+								},
+								{
+									"at": 1178,
+									"text": "So, I just need to make sure I don't get like uh 1v2'd on bot side because it's very likely that that could happen. Okay. What the... He almost juked us. Bro, how'd he even get an assist? Keep him as my pet. Goobie, Goobie, Goobie, Goobie. What? No, no. No! Stop! Stop! Yo! What is this game devolved into? Alright well, that's pretty much the Fizz matchup as Ahri. Um, it's a little difficult, but if you have the right set up like this is a set up that I use: Aery, Manaflow, Transcendence, Scorch, Bone Plating, and Overgrowth. Um, and with a little bit of experience and practice it's not too bad."
+								}
+							],
+							"route": "evidence",
+							"p": {
+								"relevant": 0.96,
+								"support": 0.94,
+								"injection": 0.03
+							}
+						},
+						{
+							"title": "Rosehan: AHRI MATCHUP GUIDE EP.1 FIZZ",
+							"url": "https://youtu.be/JKdvGGKhNB4",
+							"published": "1 year ago",
+							"transcript": "gemini",
+							"autoCaptions": false,
+							"passages": [
+								{
+									"at": 249,
+									"text": "So now we just let it slow push back into us. You see that? And then there's another good trade. Fizz will usually use his E to wave clear if he wants the wave to get in. So, you will see here he uses his E. Uses the E, you charm him on the E when he comes down, and then you just get a free trade. Now he just wants to push this wave and base, which is fine, cuz we will have a better base than him and we have TP. So we get all these minions. He's going to base. We get this minion. I think we get an extra wave, also. Push this one out. Yeah, nice. So, yeah. We have a better base than him. He just has a Dark Seal and refill. We got amp"
+								},
+								{
+									"at": 474,
+									"text": "Um, and you can just proc Grasp as well with just the auto-W, which is also nice. You space well when you're going for them auto-Ws. You need to also factor in his E, not go too up. Otherwise, you will lose the trade if you go if you posture too aggressively, you will lose the trade, so you need to space well. You need to punish the Es. When he uses his E and he's about to drop down, you could use your Charm as soon as he drops down. And you can also charm him on his way to when he tries to Q you, but it's kind of hard to sometimes react to that, so I think it's easier to react to the E when he comes down on the E. So, yeah. And by doing that, you should stay healthy in lane. Your Bone Plating should uh keep you healthy, you should usually"
+								}
+							],
+							"route": "evidence",
+							"p": {
+								"relevant": 0.96,
+								"support": 0.96,
+								"injection": 0.02
+							}
+						}
+					],
+					"skipped": 0,
+					"rateLimited": false,
+					"judgment": {
+						"judge": "jev",
+						"status": "judged",
+						"model": "jev-1.13.0",
+						"latencyMs": 308,
+						"inputTokens": 3141,
+						"kept": 3,
+						"removed": [],
+						"note": "Jev screen: relevance and prompt-injection routing, not a truth check; kept passages stay untrusted."
+					}
+				},
+				"evidence": [
+					{
+						"id": "video-1",
+						"source": "voxren_video_research",
+						"title": "Mango Fish LoL: Mangofish Fizz vs Ahri - Challenger Elo ✅ 2346 LP Fizz Guide",
+						"url": "https://youtu.be/oX5NlMpbb-M",
+						"retrievedAt": "2026-10-04T09:19:10.073Z"
+					},
+					{
+						"id": "video-2",
+						"source": "voxren_video_research",
+						"title": "LegitKorea: The WORST Ahri Matchup Is Literal Hell (Ahri vs Fizz)",
+						"url": "https://youtu.be/N8kRL-coHwU",
+						"retrievedAt": "2026-10-04T09:19:10.073Z"
+					},
+					{
+						"id": "video-3",
+						"source": "voxren_video_research",
+						"title": "Rosehan: AHRI MATCHUP GUIDE EP.1 FIZZ",
+						"url": "https://youtu.be/JKdvGGKhNB4",
+						"retrievedAt": "2026-10-04T09:19:10.073Z"
+					}
+				]
+			}
+		},
+		{
+			"name": "web_search",
+			"operation": "research_web_search",
+			"args": {
+				"query": "Fizz vs Ahri matchup guide Charm Playful Trickster trade wave ultimate",
+				"domains": [
+					"mobafire.com"
+				],
+				"max_results": 5
+			},
+			"ms": 22398,
+			"response": {
+				"version": "research-contract-v1",
+				"operation": "research_web_search",
+				"data": {
+					"provider": "hosted web search (model provider)",
+					"retrievedAt": "2026-10-04T09:19:17.030Z",
+					"results": [
+						{
+							"title": "Ahri Build Guide : Trick of the Tails",
+							"url": "https://www.mobafire.com/league-of-legends/build/trick-of-the-tails-409690",
+							"domain": "www.mobafire.com",
+							"snippet": "Early-game, Fizz is quite weak so you have a slight advantage there. You will want to try and harass him with Orb of Deception and auto attacks as much as possible, but make sure that you do not use Charm until he uses his Playful / Trickster or else you'll likely never hit it. … In many cases, you may have to use your ult to dodge his ult too if you see it coming towards you. … The best way to play against a Fizz is to try and poke him down early-game and get a small lead from your only window of advantage, but for the most part you need to play safe.",
+							"date": "",
+							"retrievedAt": "2026-10-04T09:19:17.030Z",
+							"route": "evidence",
+							"p": {
+								"relevant": 0.96,
+								"support": 0.97,
+								"injection": 0.02
+							}
+						},
+						{
+							"title": "Ahri Build Guide : -Temptations of the Fox-",
+							"url": "https://www.mobafire.com/league-of-legends/build/temptations-of-the-fox-405434",
+							"domain": "www.mobafire.com",
+							"snippet": "When facing Fizz, you have to wait for him to initiate. If you use Charm to try and engage, he can easily dodge it with playful/trickster and then jump to you with Urchin Strike and you'll have no way of escaping. … His ultimate has a travel time, so you can attempt to dodge it with a charge of Spirit Rush. … Against this match-up, you must poke him down as much as possible, otherwise he'll destroy you once he hits 6.",
+							"date": "",
+							"retrievedAt": "2026-10-04T09:19:17.030Z",
+							"route": "evidence",
+							"p": {
+								"relevant": 0.96,
+								"support": 0.97,
+								"injection": 0.02
+							}
+						},
+						{
+							"title": "Fizz Build Guide : Let's go Fishing!",
+							"url": "https://www.mobafire.com/league-of-legends/build/lets-go-fishing-392845",
+							"domain": "www.mobafire.com",
+							"snippet": "But normally Ahri will just push against you early and take the lane control from there, but if she messes up you can win … If she uses her Q/E to farm go harass her at that time since she can’t really fight back.",
+							"date": "",
+							"retrievedAt": "2026-10-04T09:19:17.030Z",
+							"route": "evidence",
+							"p": {
+								"relevant": 0.89,
+								"support": 0.92,
+								"injection": 0.02
+							}
+						}
+					],
+					"answer": "Poke Fizz early with Orb of Deception and autos, but save Charm until after he uses Playful / Trickster; use Spirit Rush to dodge Chum the Waters. Fizz can dodge Ahri’s Charm with E and punish her, while Ahri’s ultimate can evade his E and R; Ahri may push early and control the wave.",
+					"judgment": {
+						"judge": "jev",
+						"status": "judged",
+						"model": "jev-1.13.0",
+						"latencyMs": 369,
+						"inputTokens": 3125,
+						"answer": "evidence",
+						"answerP": {
+							"relevant": 0.97,
+							"support": 0.96,
+							"injection": 0.03
+						},
+						"kept": 3,
+						"removed": [],
+						"note": "Jev screen: relevance and prompt-injection routing, not a truth check; kept passages stay untrusted."
+					}
+				},
+				"evidence": [
+					{
+						"id": "web-1",
+						"source": "web_search",
+						"title": "Ahri Build Guide : Trick of the Tails",
+						"url": "https://www.mobafire.com/league-of-legends/build/trick-of-the-tails-409690",
+						"retrievedAt": "2026-10-04T09:19:17.030Z"
+					},
+					{
+						"id": "web-2",
+						"source": "web_search",
+						"title": "Ahri Build Guide : -Temptations of the Fox-",
+						"url": "https://www.mobafire.com/league-of-legends/build/temptations-of-the-fox-405434",
+						"retrievedAt": "2026-10-04T09:19:17.030Z"
+					},
+					{
+						"id": "web-3",
+						"source": "web_search",
+						"title": "Fizz Build Guide : Let's go Fishing!",
+						"url": "https://www.mobafire.com/league-of-legends/build/lets-go-fishing-392845",
+						"retrievedAt": "2026-10-04T09:19:17.030Z"
+					}
+				]
+			}
+		},
+		{
+			"name": "voxren_strategy_frame",
+			"operation": "strategy_frame",
+			"args": {
+				"question": "Fizz mid versus Ahri, Qiyana jungle, Mordekaiser top, Xayah bot, Karma support, draft-only concise plan",
+				"claims": [
+					"Ahri's Orb of Deception pressures Fizz early, and Fizz can dodge Charm with Playful / Trickster.",
+					"Ahri's Charm cooldown is 12 seconds at all ranks.",
+					"Ahri can use Spirit Rush to dodge Chum the Waters.",
+					"Qiyana has Supreme Display of Talent as her ultimate.",
+					"Ahri can Charm Fizz as he lands from Playful / Trickster or during Urchin Strike.",
+					"Ahri tends to control the early wave against Fizz."
+				],
+				"evidence": [
+					{
+						"id": "matchup-1"
+					},
+					{
+						"id": "game-1"
+					},
+					{
+						"id": "web-1"
+					},
+					{
+						"id": "web-2"
+					},
+					{
+						"id": "web-3"
+					},
+					{
+						"id": "video-3"
+					}
+				]
+			},
+			"ms": 288,
+			"response": {
+				"version": "research-contract-v1",
+				"operation": "strategy_frame",
+				"data": {
+					"goal": "Fizz mid versus Ahri, Qiyana jungle, Mordekaiser top, Xayah bot, Karma support, draft-only concise plan",
+					"claims": [
+						{
+							"claim": "Ahri's Orb of Deception pressures Fizz early, and Fizz can dodge Charm with Playful / Trickster.",
+							"route": "grounded",
+							"p": {
+								"supported": 0.95,
+								"contradicted": 0.51
+							},
+							"source": "web-1",
+							"sourceP": {
+								"game-1": 0.01,
+								"none": 0.01,
+								"web-1": 0.68,
+								"web-2": 0.25,
+								"video-3": 0,
+								"matchup-1": 0.05,
+								"web-3": 0
+							}
+						},
+						{
+							"claim": "Ahri's Charm cooldown is 12 seconds at all ranks.",
+							"route": "grounded",
+							"p": {
+								"supported": 0.97,
+								"contradicted": 0.07
+							},
+							"source": "game-1",
+							"sourceP": {
+								"web-3": 0,
+								"matchup-1": 0,
+								"web-1": 0,
+								"game-1": 1,
+								"none": 0,
+								"web-2": 0,
+								"video-3": 0
+							}
+						},
+						{
+							"claim": "Ahri can use Spirit Rush to dodge Chum the Waters.",
+							"route": "grounded",
+							"p": {
+								"supported": 0.95,
+								"contradicted": 0.1
+							},
+							"source": "web-2",
+							"sourceP": {
+								"none": 0,
+								"game-1": 0,
+								"web-1": 0.07,
+								"video-3": 0,
+								"matchup-1": 0,
+								"web-2": 0.93,
+								"web-3": 0
+							}
+						},
+						{
+							"claim": "Qiyana has Supreme Display of Talent as her ultimate.",
+							"route": "grounded",
+							"p": {
+								"supported": 0.98,
+								"contradicted": 0.06
+							},
+							"source": "game-1",
+							"sourceP": {
+								"none": 0,
+								"game-1": 1,
+								"web-1": 0,
+								"video-3": 0,
+								"web-3": 0,
+								"web-2": 0,
+								"matchup-1": 0
+							}
+						},
+						{
+							"claim": "Ahri can Charm Fizz as he lands from Playful / Trickster or during Urchin Strike.",
+							"route": "contradicted",
+							"p": {
+								"supported": 0.93,
+								"contradicted": 0.67
+							},
+							"source": "video-3",
+							"sourceP": {
+								"none": 0.01,
+								"matchup-1": 0,
+								"web-3": 0,
+								"web-2": 0,
+								"video-3": 0.98,
+								"game-1": 0.01,
+								"web-1": 0
+							},
+							"contradictedBy": "web-1"
+						},
+						{
+							"claim": "Ahri tends to control the early wave against Fizz.",
+							"route": "contradicted",
+							"p": {
+								"supported": 0.9,
+								"contradicted": 0.82
+							},
+							"source": "web-3",
+							"sourceP": {
+								"web-1": 0.02,
+								"none": 0.01,
+								"video-3": 0.03,
+								"matchup-1": 0,
+								"web-3": 0.94,
+								"game-1": 0,
+								"web-2": 0
+							},
+							"contradictedBy": "matchup-1"
+						}
+					],
+					"citation_ids": [
+						"matchup-1",
+						"game-1",
+						"web-1",
+						"web-2",
+						"web-3",
+						"video-3"
+					],
+					"sources": [
+						{
+							"id": "matchup-1",
+							"title": "OP.GG matchup: Fizz vs Ahri mid"
+						},
+						{
+							"id": "game-1",
+							"title": "Riot Data Dragon 16.19.1"
+						},
+						{
+							"id": "web-1",
+							"title": "Ahri Build Guide : Trick of the Tails"
+						},
+						{
+							"id": "web-2",
+							"title": "Ahri Build Guide : -Temptations of the Fox-"
+						},
+						{
+							"id": "web-3",
+							"title": "Fizz Build Guide : Let's go Fishing!"
+						},
+						{
+							"id": "video-3",
+							"title": "Rosehan: AHRI MATCHUP GUIDE EP.1 FIZZ"
+						}
+					],
+					"judgment": {
+						"judge": "jev",
+						"status": "judged",
+						"model": "jev-1.13.0",
+						"latencyMs": 284,
+						"inputTokens": 18622,
+						"checked": 6,
+						"note": "Jev grounding: each claim checked against cited passage text; grounded, unsupported, or contradicted. A flag, not a truth check."
+					}
+				},
+				"evidence": []
+			}
+		}
+	]
+}

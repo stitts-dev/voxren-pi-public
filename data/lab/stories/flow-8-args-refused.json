@@ -1,0 +1,29 @@
+{
+	"id": "flow-8-args-refused",
+	"title": "/flow with an argument is refused with a notice",
+	"split": "train",
+	"steps": [
+		{
+			"wait": "COMMAND TREE"
+		},
+		{
+			"key": "esc"
+		},
+		{
+			"wait": "COMMAND TREE",
+			"absent": true
+		},
+		{
+			"send": "/flow matchup"
+		},
+		{
+			"wait": "takes no arguments"
+		}
+	],
+	"gates": {
+		"expect": [
+			"takes no arguments"
+		],
+		"maxSeconds": 60
+	}
+}

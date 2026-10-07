@@ -1,0 +1,25 @@
+{
+	"id": "cmd-matchup-one",
+	"title": "/matchup Ahri (main champion from the profile)",
+	"split": "train",
+	"steps": [
+		{
+			"send": "/matchup Ahri"
+		},
+		{
+			"idle": true
+		}
+	],
+	"env": {
+		"VOXREN_COACH_CHAMPION": "Syndra"
+	},
+	"gates": {
+		"tools": [
+			"voxren_meta_research"
+		],
+		"maxSeconds": 150,
+		"icons": {
+			"expect": "all"
+		}
+	}
+}

@@ -1,0 +1,240 @@
+{
+	"meta": {
+		"version": "16.19.1",
+		"generated": "2026-10-05",
+		"model": "gpt-6-sol",
+		"sources": [
+			{
+				"id": "s1",
+				"title": "Tahm Kench Build Guides, Runes, Items, and Abilities - Patch 26.19",
+				"url": "https://www.mobafire.com/league-of-legends/champion/tahm-kench-126"
+			},
+			{
+				"id": "s2",
+				"title": "Tahm Kench Build Guide: The River King",
+				"url": "https://www.mobafire.com/league-of-legends/build/the-river-king-648229"
+			},
+			{
+				"id": "s3",
+				"title": "Tahm Kench Build Guide: My IMMORTAL Tahm Kench Season 16 Build",
+				"url": "https://www.mobafire.com/league-of-legends/build/my-immortal-tahm-kench-season-16-build-574530"
+			},
+			{
+				"id": "game-1",
+				"title": "Riot Data Dragon 16.19.1",
+				"url": "https://ddragon.leagueoflegends.com/cdn/16.19.1/data/en_US/champion/TahmKench.json"
+			}
+		]
+	},
+	"id": "TahmKench",
+	"name": "Tahm Kench",
+	"facts": {
+		"title": "The River King",
+		"tags": [
+			"Tank",
+			"Support"
+		],
+		"resource": "Mana",
+		"stats": {
+			"hp": 640,
+			"hpperlevel": 103,
+			"mp": 325,
+			"mpperlevel": 50,
+			"movespeed": 335,
+			"armor": 39,
+			"armorperlevel": 4.7,
+			"spellblock": 32,
+			"spellblockperlevel": 2.05,
+			"attackrange": 175,
+			"hpregen": 6.5,
+			"hpregenperlevel": 0.55,
+			"mpregen": 8,
+			"mpregenperlevel": 1,
+			"crit": 0,
+			"critperlevel": 0,
+			"attackdamage": 56,
+			"attackdamageperlevel": 0,
+			"attackspeedperlevel": 2.5,
+			"attackspeed": 0.658
+		},
+		"passive": {
+			"name": "An Acquired Taste",
+			"text": "Tahm Kench puts the heft of his immense body behind his attacks, gaining extra damage based on his total health. Damaging enemy champions builds stacks of An Acquired Taste. At three stacks, he can use Devour on an enemy champion."
+		},
+		"spells": [
+			{
+				"slot": "Q",
+				"name": "Tongue Lash",
+				"cooldown": [
+					7,
+					6.5,
+					6,
+					5.5,
+					5
+				],
+				"cost": [
+					50,
+					46,
+					42,
+					38,
+					34
+				],
+				"range": [
+					900,
+					900,
+					900,
+					900,
+					900
+				],
+				"text": "Tahm Kench lashes out with his tongue, damaging and slowing the first unit hit and healing himself if he strikes an enemy champion.Applies a stack of An Acquired Taste to enemy champions. If the champion already has 3 stacks of An Acquired Taste, they are stunned and the stacks are consumed."
+			},
+			{
+				"slot": "W",
+				"name": "Abyssal Dive",
+				"cooldown": [
+					21,
+					20,
+					19,
+					18,
+					17
+				],
+				"cost": [
+					60,
+					75,
+					90,
+					105,
+					120
+				],
+				"range": [
+					1000,
+					1050,
+					1100,
+					1150,
+					1200
+				],
+				"text": "Dive down and then re-appear at target location, damaging and knocking up all enemies in an area."
+			},
+			{
+				"slot": "E",
+				"name": "Thick Skin",
+				"cooldown": [
+					3,
+					3,
+					3,
+					3,
+					3
+				],
+				"cost": [
+					0,
+					0,
+					0,
+					0,
+					0
+				],
+				"range": [
+					2400,
+					2400,
+					2400,
+					2400,
+					2400
+				],
+				"text": "Passive: Tahm Kench stores a percent of the damage he takes and heals based on it while out of combat.Active: Convert all stored damage into a temporary shield."
+			},
+			{
+				"slot": "R",
+				"name": "Devour",
+				"cooldown": [
+					0,
+					0,
+					0
+				],
+				"cost": [
+					100,
+					100,
+					100
+				],
+				"range": [
+					25000,
+					25000,
+					25000
+				],
+				"text": "Tahm Kench devours a champion for a few seconds, dealing magic damage if they are an enemy, or shielding them if they are an ally."
+			}
+		]
+	},
+	"coaching": {
+		"damage": {
+			"value": "Tahm Kench deals sustained bonus magic damage with his attacks.",
+			"sources": [
+				"s1"
+			]
+		},
+		"archetype": {
+			"value": "Tahm Kench is a tanky frontline champion who absorbs pressure and can protect teammates.",
+			"sources": [
+				"s2"
+			]
+		},
+		"axis": {
+			"value": "Tahm Kench should prioritize surviving difficult lanes rather than forcing fights.",
+			"sources": [
+				"s2"
+			]
+		},
+		"winCondition": {
+			"value": "Tahm Kench wins through teamfights by absorbing pressure, dealing damage, and using his ultimate to save a teammate or remove a key enemy.",
+			"sources": [
+				"s2"
+			]
+		},
+		"spikes": [
+			{
+				"at": "Mid game with two or three core items",
+				"why": "Tahm Kench can recover from falling behind and contribute to teamfights.",
+				"sources": [
+					"s2"
+				]
+			},
+			{
+				"at": "Dusk & Dawn",
+				"why": "Tahm Kench gains strong on-hit stats from the item.",
+				"sources": [
+					"s3"
+				]
+			},
+			{
+				"at": "Riftmaker",
+				"why": "Tahm Kench gains more healing from the item.",
+				"sources": [
+					"s3"
+				]
+			}
+		],
+		"bait": [],
+		"mistakes": [
+			{
+				"value": "Tahm Kench makes a difficult lane harder to recover from by giving away kills.",
+				"sources": [
+					"s2"
+				]
+			},
+			{
+				"value": "Tahm Kench wastes his stronger mid-game teamfighting by trying to split-push despite weak waveclear.",
+				"sources": [
+					"s2"
+				]
+			}
+		],
+		"comp": {
+			"tags": [
+				"peel",
+				"engage"
+			],
+			"sources": [
+				"s2",
+				"s3",
+				"game-1"
+			]
+		}
+	}
+}

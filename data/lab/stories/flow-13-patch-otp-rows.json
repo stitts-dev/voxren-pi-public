@@ -1,0 +1,70 @@
+{
+	"id": "flow-13-patch-otp-rows",
+	"title": "/patch steps the live Data Dragon list and wraps through none; /otp says none are saved",
+	"split": "train",
+	"steps": [
+		{
+			"wait": "COMMAND TREE"
+		},
+		{
+			"key": "home"
+		},
+		{
+			"key": "right"
+		},
+		{
+			"key": "right"
+		},
+		{
+			"key": "right"
+		},
+		{
+			"wait": "[/patch]"
+		},
+		{
+			"key": "down"
+		},
+		{
+			"key": "right"
+		},
+		{
+			"wait": "‹ Aatrox ›"
+		},
+		{
+			"key": "left"
+		},
+		{
+			"wait": "‹ none ›"
+		},
+		{
+			"key": "left"
+		},
+		{
+			"wait": "‹ Zyra ›"
+		},
+		{
+			"key": "esc"
+		},
+		{
+			"key": "right"
+		},
+		{
+			"wait": "[/otp]"
+		},
+		{
+			"key": "down"
+		},
+		{
+			"key": "right"
+		},
+		{
+			"wait": "No one-tricks saved yet"
+		}
+	],
+	"gates": {
+		"expect": [
+			"No one-tricks saved yet"
+		],
+		"maxSeconds": 90
+	}
+}

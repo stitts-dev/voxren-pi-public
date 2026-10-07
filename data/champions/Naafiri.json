@@ -1,0 +1,214 @@
+{
+	"meta": {
+		"version": "16.19.1",
+		"generated": "2026-10-05",
+		"model": "gpt-6-sol",
+		"sources": [
+			{
+				"id": "s1",
+				"title": "Naafiri Build Guide: [26.15] Naafiri MID/JUNGLE Guide",
+				"url": "https://www.mobafire.com/league-of-legends/build/26-15-naafiri-mid-jungle-guide-647530"
+			},
+			{
+				"id": "game-1",
+				"title": "Riot Data Dragon 16.19.1",
+				"url": "https://ddragon.leagueoflegends.com/cdn/16.19.1/data/en_US/champion/Naafiri.json"
+			}
+		]
+	},
+	"id": "Naafiri",
+	"name": "Naafiri",
+	"facts": {
+		"title": "the Hound of a Hundred Bites",
+		"tags": [
+			"Assassin",
+			"Fighter"
+		],
+		"resource": "Mana",
+		"stats": {
+			"hp": 610,
+			"hpperlevel": 105,
+			"mp": 400,
+			"mpperlevel": 55,
+			"movespeed": 340,
+			"armor": 28,
+			"armorperlevel": 4.2,
+			"spellblock": 32,
+			"spellblockperlevel": 2.05,
+			"attackrange": 125,
+			"hpregen": 6.25,
+			"hpregenperlevel": 0.6,
+			"mpregen": 7.5,
+			"mpregenperlevel": 1,
+			"crit": 0,
+			"critperlevel": 0,
+			"attackdamage": 55,
+			"attackdamageperlevel": 0,
+			"attackspeedperlevel": 2.1,
+			"attackspeed": 0.663
+		},
+		"passive": {
+			"name": "We Are More",
+			"text": "Naafiri spawns packmates that attack the targets of her attacks and abilities."
+		},
+		"spells": [
+			{
+				"slot": "Q",
+				"name": "Darkin Daggers",
+				"cooldown": [
+					9,
+					8.5,
+					8,
+					7.5,
+					7
+				],
+				"cost": [
+					50,
+					60,
+					70,
+					80,
+					90
+				],
+				"range": [
+					900,
+					900,
+					900,
+					900,
+					900
+				],
+				"text": "Naafiri hurls up to two daggers, each inflicting bleed, or each inflicting bonus damage if the target is already bleeding.Packmates leap to attack the first champion or monster hit by this skill."
+			},
+			{
+				"slot": "W",
+				"name": "The Call of the Pack",
+				"cooldown": [
+					26,
+					24,
+					22,
+					20,
+					18
+				],
+				"cost": [
+					60,
+					60,
+					60,
+					60,
+					60
+				],
+				"range": [
+					400,
+					400,
+					400,
+					400,
+					400
+				],
+				"text": "Naafiri becomes Untargetable and empowers her pack, spawning additional packmates and gaining increased Move Speed and Attack Damage."
+			},
+			{
+				"slot": "E",
+				"name": "Eviscerate",
+				"cooldown": [
+					11,
+					10,
+					9,
+					8,
+					7
+				],
+				"cost": [
+					40,
+					40,
+					40,
+					40,
+					40
+				],
+				"range": [
+					450,
+					450,
+					450,
+					450,
+					450
+				],
+				"text": "Naafiri dashes and damages enemies in an area around her, recalling her packmates and fully healing them."
+			},
+			{
+				"slot": "R",
+				"name": "Hounds' Pursuit",
+				"cooldown": [
+					110,
+					95,
+					80
+				],
+				"cost": [
+					100,
+					100,
+					100
+				],
+				"range": [
+					900,
+					900,
+					900
+				],
+				"text": "Naafiri and her packmates dash at a champion, dealing damage. Naafiri reveals nearby enemies if she scores a takedown and can recast this Ability once. The second cast grants a shield."
+			}
+		]
+	},
+	"coaching": {
+		"damage": {
+			"value": "Naafiri deals sustained bleed damage with Q, then bonus damage when a target is already bleeding.",
+			"sources": [
+				"game-1"
+			]
+		},
+		"archetype": {
+			"value": "Naafiri plays as an assassin, closing gaps to burst backline targets and escaping when her abilities are managed correctly.",
+			"sources": [
+				"s1"
+			]
+		},
+		"axis": {
+			"value": "Naafiri looks to close the gap and burst isolated targets when a fight favors her.",
+			"sources": [
+				"s1"
+			]
+		},
+		"winCondition": {
+			"value": "Naafiri wins by roaming, punishing isolated targets, and using her burst to carry games.",
+			"sources": [
+				"s1"
+			]
+		},
+		"spikes": [
+			{
+				"at": "W available",
+				"why": "Naafiri sticks to targets more easily with W, giving them little room to escape.",
+				"sources": [
+					"s1"
+				]
+			},
+			{
+				"at": "Naafiri's Q cooldown falls from 9 to 7 seconds",
+				"why": "Naafiri can throw daggers more often.",
+				"sources": [
+					"game-1"
+				]
+			}
+		],
+		"bait": [],
+		"mistakes": [
+			{
+				"value": "Naafiri players make mistakes when they fight without knowing her limits or neglect the map.",
+				"sources": [
+					"s1"
+				]
+			}
+		],
+		"comp": {
+			"tags": [
+				"dive"
+			],
+			"sources": [
+				"game-1"
+			]
+		}
+	}
+}

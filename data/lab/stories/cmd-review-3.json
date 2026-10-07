@@ -1,0 +1,19 @@
+{
+	"id": "cmd-review-3",
+	"title": "/review 3",
+	"split": "train",
+	"steps": [
+		{
+			"send": "/review 3"
+		},
+		{
+			"idle": true
+		}
+	],
+	"gates": {
+		"tools": [
+			"voxren_player_audit"
+		],
+		"maxSeconds": 180
+	}
+}

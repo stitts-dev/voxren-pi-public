@@ -1,0 +1,16 @@
+{
+	"compilerOptions": {
+		"target": "ES2022",
+		"module": "ESNext",
+		"moduleResolution": "bundler",
+		"strict": true,
+		"noImplicitAny": true,
+		"allowJs": true,
+		"checkJs": true,
+		"noEmit": true,
+		"skipLibCheck": true,
+		"allowImportingTsExtensions": true,
+		"types": ["bun"]
+	},
+	"include": ["src/**/*.ts", "src/riot-key-helper.mjs", "src/launch-secrets.mjs", "bin/coach.mjs", "bin/setup.mjs", "bin/install.mjs", "bin/latest.mjs", "bin/install.test.mjs", "bin/coach.test.mjs", "bin/setup.test.mjs", "bin/latest.test.mjs"]
+}

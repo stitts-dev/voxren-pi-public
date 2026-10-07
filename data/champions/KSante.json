@@ -1,0 +1,203 @@
+{
+	"meta": {
+		"version": "16.19.1",
+		"generated": "2026-10-05",
+		"model": "gpt-6-sol",
+		"sources": [
+			{
+				"id": "s1",
+				"title": "K'Sante Build Guide : K'Sante 2026",
+				"url": "https://www.mobafire.com/league-of-legends/build/ksante-2026-653162"
+			},
+			{
+				"id": "game-1",
+				"title": "Riot Data Dragon 16.19.1",
+				"url": "https://ddragon.leagueoflegends.com/cdn/16.19.1/data/en_US/champion/KSante.json"
+			}
+		]
+	},
+	"id": "KSante",
+	"name": "K'Sante",
+	"facts": {
+		"title": "the Pride of Nazumah",
+		"tags": [
+			"Tank",
+			"Fighter"
+		],
+		"resource": "Mana",
+		"stats": {
+			"hp": 625,
+			"hpperlevel": 120,
+			"mp": 320,
+			"mpperlevel": 60,
+			"movespeed": 330,
+			"armor": 36,
+			"armorperlevel": 5.2,
+			"spellblock": 30,
+			"spellblockperlevel": 2.1,
+			"attackrange": 150,
+			"hpregen": 9.5,
+			"hpregenperlevel": 1,
+			"mpregen": 7,
+			"mpregenperlevel": 1,
+			"crit": 0,
+			"critperlevel": 0,
+			"attackdamage": 64,
+			"attackdamageperlevel": 0,
+			"attackspeedperlevel": 2.5,
+			"attackspeed": 0.688
+		},
+		"passive": {
+			"name": "Dauntless Instinct",
+			"text": "K'Sante's Abilities mark targets to take more damage on his next Attack.When All Out, K'Sante deals more damage with all Attacks and Abilities."
+		},
+		"spells": [
+			{
+				"slot": "Q",
+				"name": "Ntofo Strikes",
+				"cooldown": [
+					3.5,
+					3.5,
+					3.5,
+					3.5,
+					3.5
+				],
+				"cost": [
+					20,
+					20,
+					20,
+					20,
+					20
+				],
+				"range": [
+					450,
+					450,
+					450,
+					450,
+					450
+				],
+				"text": "K'Sante strikes, damaging and slowing enemies in a short line.On hit, grants a stack of Ntofo Strikes. At 2 stacks, K'Sante fires a shockwave that pulls enemies in.When All Out, cooldown is reduced."
+			},
+			{
+				"slot": "W",
+				"name": "Path Maker",
+				"cooldown": [
+					14,
+					13,
+					12,
+					11,
+					10
+				],
+				"cost": [
+					40,
+					45,
+					50,
+					55,
+					60
+				],
+				"range": [
+					600,
+					600,
+					600,
+					600,
+					600
+				],
+				"text": "K'Sante charges up, taking reduced damage, then dashes, knocking back and stunning enemies.When All Out, deals increased damage and no longer knocks back or stuns."
+			},
+			{
+				"slot": "E",
+				"name": "Footwork",
+				"cooldown": [
+					10,
+					9.5,
+					9,
+					8.5,
+					8
+				],
+				"cost": [
+					45,
+					50,
+					55,
+					60,
+					65
+				],
+				"range": [
+					525,
+					525,
+					525,
+					525,
+					525
+				],
+				"text": "K'Sante dashes and gains a shield. If targeting an ally, K'Sante dashes to the ally with increased range and both gain a shield.When All Out, cooldown is reduced and speed is increased."
+			},
+			{
+				"slot": "R",
+				"name": "All Out",
+				"cooldown": [
+					120,
+					100,
+					80
+				],
+				"cost": [
+					100,
+					100,
+					100
+				],
+				"range": [
+					250,
+					250,
+					250
+				],
+				"text": "K'Sante knocks an enemy back, launching them through any wall in their path. Then, K'Sante goes All Out and dashes after them, gaining increased damage, healing, and transformed abilities at the cost of reduced defenses."
+			}
+		]
+	},
+	"coaching": {
+		"archetype": {
+			"value": "K'Sante is a tank/fighter hybrid who plays as a flexible frontliner.",
+			"sources": [
+				"s1"
+			]
+		},
+		"axis": {
+			"value": "K'Sante prefers short trades over long all-ins in the early game.",
+			"sources": [
+				"s1"
+			]
+		},
+		"spikes": [
+			{
+				"at": "Level 6",
+				"why": "K'Sante gains significantly more kill threat.",
+				"sources": [
+					"s1"
+				]
+			},
+			{
+				"at": "When K'Sante goes All Out",
+				"why": "K'Sante gains increased damage, healing, and transformed abilities at the cost of reduced defenses.",
+				"sources": [
+					"game-1"
+				]
+			}
+		],
+		"bait": [],
+		"mistakes": [
+			{
+				"value": "K'Sante gives up defenses during All Out, so using it without accounting for that cost is a mistake.",
+				"sources": [
+					"game-1"
+				]
+			}
+		],
+		"comp": {
+			"tags": [
+				"engage",
+				"peel"
+			],
+			"sources": [
+				"game-1"
+			]
+		}
+	}
+}

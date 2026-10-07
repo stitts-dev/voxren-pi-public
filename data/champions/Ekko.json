@@ -1,0 +1,238 @@
+{
+	"meta": {
+		"version": "16.19.1",
+		"generated": "2026-10-05",
+		"model": "gpt-6-sol",
+		"sources": [
+			{
+				"id": "s1",
+				"title": "[ALL MATCHUPS] [26.14] Ekko Guide 2000LP+ EUW Challenger",
+				"url": "https://www.mobafire.com/league-of-legends/build/all-matchups-26-14-ekko-guide-2000lp-euw-challenger-615187"
+			},
+			{
+				"id": "s2",
+				"title": "Challenger Ekko Jungle Guide [Updated]",
+				"url": "https://www.mobafire.com/league-of-legends/build/challenger-ekko-jungle-guide-updated-578656"
+			},
+			{
+				"id": "s3",
+				"title": "Ekko Build Guides :: League of Legends Strategy Builds, Runes, Items, and Abilities :: Patch 26.19",
+				"url": "https://www.mobafire.com/league-of-legends/champion/ekko-125stats"
+			},
+			{
+				"id": "game-1",
+				"title": "Riot Data Dragon 16.19.1",
+				"url": "https://ddragon.leagueoflegends.com/cdn/16.19.1/data/en_US/champion/Ekko.json"
+			}
+		]
+	},
+	"id": "Ekko",
+	"name": "Ekko",
+	"facts": {
+		"title": "the Boy Who Shattered Time",
+		"tags": [
+			"Assassin",
+			"Mage"
+		],
+		"resource": "Mana",
+		"stats": {
+			"hp": 655,
+			"hpperlevel": 99,
+			"mp": 280,
+			"mpperlevel": 70,
+			"movespeed": 340,
+			"armor": 32,
+			"armorperlevel": 4.2,
+			"spellblock": 32,
+			"spellblockperlevel": 2.05,
+			"attackrange": 125,
+			"hpregen": 9,
+			"hpregenperlevel": 0.9,
+			"mpregen": 7,
+			"mpregenperlevel": 0.8,
+			"crit": 0,
+			"critperlevel": 0,
+			"attackdamage": 58,
+			"attackdamageperlevel": 0,
+			"attackspeedperlevel": 3.3,
+			"attackspeed": 0.688
+		},
+		"passive": {
+			"name": "Z-Drive Resonance",
+			"text": "Every third attack or damaging spell on the same target deals bonus magic damage, and grants Ekko a burst of speed if the target is a champion."
+		},
+		"spells": [
+			{
+				"slot": "Q",
+				"name": "Timewinder",
+				"cooldown": [
+					9,
+					8.5,
+					8,
+					7.5,
+					7
+				],
+				"cost": [
+					40,
+					50,
+					60,
+					70,
+					80
+				],
+				"range": [
+					1075,
+					1075,
+					1075,
+					1075,
+					1075
+				],
+				"text": "Ekko throws a temporal grenade that expands into a time-distortion field upon hitting an enemy champion, slowing and damaging anyone caught inside. After a delay, the grenade rewinds back to Ekko, dealing damage on its return."
+			},
+			{
+				"slot": "W",
+				"name": "Parallel Convergence",
+				"cooldown": [
+					22,
+					20,
+					18,
+					16,
+					14
+				],
+				"cost": [
+					30,
+					35,
+					40,
+					45,
+					50
+				],
+				"range": [
+					1600,
+					1600,
+					1600,
+					1600,
+					1600
+				],
+				"text": "Ekko's basic attacks deal bonus magic damage to low health enemies. He can cast Parallel Convergence to split the timeline, creating an anomaly after a few seconds that slows enemies caught inside. If Ekko enters the anomaly, he gains shielding and stuns enemies by suspending them in time."
+			},
+			{
+				"slot": "E",
+				"name": "Phase Dive",
+				"cooldown": [
+					9,
+					8.5,
+					8,
+					7.5,
+					7
+				],
+				"cost": [
+					40,
+					45,
+					50,
+					55,
+					60
+				],
+				"range": [
+					325,
+					325,
+					325,
+					325,
+					325
+				],
+				"text": "Ekko rolls evasively while charging up his Z-Drive. His next attack deals bonus damage and warps reality, teleporting him to his target."
+			},
+			{
+				"slot": "R",
+				"name": "Chronobreak",
+				"cooldown": [
+					110,
+					80,
+					50
+				],
+				"cost": [
+					100,
+					100,
+					100
+				],
+				"range": [
+					850,
+					850,
+					850
+				],
+				"text": "Ekko shatters his timeline, becoming untargetable and rewinding to a more favorable point in time. He returns to whenever he was a few seconds ago, and heals for a percentage of the damage received in that duration. Enemies near his arrival zone take massive damage."
+			}
+		]
+	},
+	"coaching": {
+		"damage": {
+			"value": "Ekko deals burst magic damage when his third Resonance stack triggers and when Timewinder hits on its return.",
+			"sources": [
+				"s3"
+			]
+		},
+		"archetype": {
+			"value": "Ekko plays as an assassin, using Phase Dive to reach a target and Chronobreak to escape or deal damage.",
+			"sources": [
+				"game-1"
+			]
+		},
+		"axis": {
+			"value": "Ekko can use his W shield for short trades and push waves after level 7 instead of trading.",
+			"sources": [
+				"s1"
+			]
+		},
+		"winCondition": {
+			"value": "Ekko wins by using his waveclear to leave lane and influence the map.",
+			"sources": [
+				"s1"
+			]
+		},
+		"spikes": [
+			{
+				"at": "Dark Harvest stacks",
+				"why": "Ekko can deal more damage with Dark Harvest when he gains enough stacks and procs it multiple times in a teamfight.",
+				"sources": [
+					"s2"
+				]
+			},
+			{
+				"at": "Third Resonance stack",
+				"why": "Ekko deals bonus magic damage and gains movement speed when the target is a champion.",
+				"sources": [
+					"s3"
+				]
+			}
+		],
+		"bait": [
+			{
+				"slot": "W",
+				"why": "Ekko cannot create an anomaly for a shield and stun while Parallel Convergence is on cooldown.",
+				"sources": [
+					"game-1"
+				]
+			}
+		],
+		"mistakes": [
+			{
+				"value": "Ekko is heavily punished for mistakes because he is squishy and vulnerable to crowd control.",
+				"sources": [
+					"s2"
+				]
+			},
+			{
+				"value": "Ekko misses Parallel Convergence’s shield and stun if he does not enter its anomaly.",
+				"sources": [
+					"game-1"
+				]
+			}
+		],
+		"comp": {
+			"tags": [
+				"pick"
+			],
+			"sources": [
+				"s2"
+			]
+		}
+	}
+}

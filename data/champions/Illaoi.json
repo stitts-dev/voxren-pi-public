@@ -1,0 +1,196 @@
+{
+	"meta": {
+		"version": "16.19.1",
+		"generated": "2026-10-05",
+		"model": "gpt-6-sol",
+		"sources": [
+			{
+				"id": "game-1",
+				"title": "Riot Data Dragon 16.19.1",
+				"url": "https://ddragon.leagueoflegends.com/cdn/16.19.1/data/en_US/champion/Illaoi.json"
+			}
+		]
+	},
+	"id": "Illaoi",
+	"name": "Illaoi",
+	"facts": {
+		"title": "the Kraken Priestess",
+		"tags": [
+			"Fighter",
+			"Tank"
+		],
+		"resource": "Mana",
+		"stats": {
+			"hp": 656,
+			"hpperlevel": 115,
+			"mp": 350,
+			"mpperlevel": 50,
+			"movespeed": 350,
+			"armor": 35,
+			"armorperlevel": 5,
+			"spellblock": 32,
+			"spellblockperlevel": 2.05,
+			"attackrange": 125,
+			"hpregen": 9.5,
+			"hpregenperlevel": 0.8,
+			"mpregen": 7.5,
+			"mpregenperlevel": 0.75,
+			"crit": 0,
+			"critperlevel": 0,
+			"attackdamage": 65,
+			"attackdamageperlevel": 0,
+			"attackspeedperlevel": 2.5,
+			"attackspeed": 0.625
+		},
+		"passive": {
+			"name": "Prophet of an Elder God",
+			"text": "Illaoi and the Vessels she creates spawn Tentacles on nearby impassible terrain. Tentacles swing at spirits, Vessels, and victims of Illaoi's Harsh lesson. Tentacles deal physical damage to enemies hit, and will heal Illaoi if they damage a champion."
+		},
+		"spells": [
+			{
+				"slot": "Q",
+				"name": "Tentacle Smash",
+				"cooldown": [
+					10,
+					9,
+					8,
+					7,
+					6
+				],
+				"cost": [
+					40,
+					45,
+					50,
+					55,
+					60
+				],
+				"range": [
+					850,
+					850,
+					850,
+					850,
+					850
+				],
+				"text": "Increases the damage dealt by Tentacles. When activated, Illaoi smashes down a Tentacle that deals physical damage."
+			},
+			{
+				"slot": "W",
+				"name": "Harsh Lesson",
+				"cooldown": [
+					4,
+					4,
+					4,
+					4,
+					4
+				],
+				"cost": [
+					30,
+					30,
+					30,
+					30,
+					30
+				],
+				"range": [
+					400,
+					400,
+					400,
+					400,
+					400
+				],
+				"text": "Illaoi leaps to her target, dealing physical damage and causing nearby Tentacles to also swing at the target."
+			},
+			{
+				"slot": "E",
+				"name": "Test of Spirit",
+				"cooldown": [
+					16,
+					15,
+					14,
+					13,
+					12
+				],
+				"cost": [
+					35,
+					40,
+					45,
+					50,
+					55
+				],
+				"range": [
+					900,
+					900,
+					900,
+					900,
+					900
+				],
+				"text": "Illaoi rips the spirit from a foe's body, forcing it to stand before her. Spirits echo a percentage of the damage they take to the original target. If killed, or if the target gets too far from the spirit, the target will become a Vessel and begin spawning Tentacles."
+			},
+			{
+				"slot": "R",
+				"name": "Leap of Faith",
+				"cooldown": [
+					120,
+					95,
+					70
+				],
+				"cost": [
+					100,
+					100,
+					100
+				],
+				"range": [
+					450,
+					450,
+					450
+				],
+				"text": "Illaoi smashes her idol into the ground, dealing physical damage to nearby enemies. A Tentacle spawns for each enemy champion hit."
+			}
+		]
+	},
+	"coaching": {
+		"damage": {
+			"value": "Illaoi deals sustained physical damage through repeated Tentacle swings and Harsh Lesson.",
+			"sources": [
+				"game-1"
+			]
+		},
+		"archetype": {
+			"value": "Illaoi is a bruiser who fights near Tentacles and heals when they damage a champion.",
+			"sources": [
+				"game-1"
+			]
+		},
+		"axis": {
+			"value": "Illaoi favors extended fights near Tentacles, where Harsh Lesson can trigger additional swings.",
+			"sources": [
+				"game-1"
+			]
+		},
+		"spikes": [],
+		"bait": [
+			{
+				"slot": "E",
+				"why": "Illaoi cannot rip out another spirit while Test of Spirit is on cooldown, which starts at 16 seconds.",
+				"sources": [
+					"game-1"
+				]
+			}
+		],
+		"mistakes": [
+			{
+				"value": "Illaoi loses the extra swings from Harsh Lesson if she uses it without nearby Tentacles.",
+				"sources": [
+					"game-1"
+				]
+			}
+		],
+		"comp": {
+			"tags": [
+				"engage"
+			],
+			"sources": [
+				"game-1"
+			]
+		}
+	}
+}

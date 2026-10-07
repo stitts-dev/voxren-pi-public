@@ -1,0 +1,8 @@
+{
+	"name": "malz-velkoz-teemo",
+	"you": "JUNGLE",
+	"myTeam": { "MIDDLE": "Malzahar", "UTILITY": "Vel'Koz", "BOTTOM": "Jhin", "JUNGLE": "Fizz", "TOP": "Ornn" },
+	"theirTeam": ["Twitch", "Thresh", "Swain", "Amumu", "Teemo"],
+	"bans": { "yours": ["Viktor", "Pyke", "Nocturne", "Shyvana", "Yone"], "theirs": ["Yone", "Smolder", "LeBlanc", "Shyvana", "Nasus"] },
+	"notes": "Issue #30 S2: Fizz jungle into Amumu; Ornn and Malzahar give engage and lockdown, Twitch is the enemy win condition."
+}

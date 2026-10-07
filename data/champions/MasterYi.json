@@ -1,0 +1,197 @@
+{
+	"meta": {
+		"version": "16.19.1",
+		"generated": "2026-10-05",
+		"model": "gpt-6-sol",
+		"sources": [
+			{
+				"id": "game-1",
+				"title": "Riot Data Dragon 16.19.1",
+				"url": "https://ddragon.leagueoflegends.com/cdn/16.19.1/data/en_US/champion/MasterYi.json"
+			}
+		]
+	},
+	"id": "MasterYi",
+	"name": "Master Yi",
+	"facts": {
+		"title": "the Wuju Bladesman",
+		"tags": [
+			"Fighter",
+			"Assassin"
+		],
+		"resource": "Mana",
+		"stats": {
+			"hp": 640,
+			"hpperlevel": 105,
+			"mp": 251,
+			"mpperlevel": 42,
+			"movespeed": 355,
+			"armor": 33,
+			"armorperlevel": 5,
+			"spellblock": 32,
+			"spellblockperlevel": 2.05,
+			"attackrange": 175,
+			"hpregen": 7.5,
+			"hpregenperlevel": 0.65,
+			"mpregen": 7.25,
+			"mpregenperlevel": 0.45,
+			"crit": 0,
+			"critperlevel": 0,
+			"attackdamage": 65,
+			"attackdamageperlevel": 0,
+			"attackspeedperlevel": 2.5,
+			"attackspeed": 0.679
+		},
+		"passive": {
+			"name": "Double Strike",
+			"text": "Every few consecutive basic attack, Master Yi strikes twice."
+		},
+		"spells": [
+			{
+				"slot": "Q",
+				"name": "Alpha Strike",
+				"cooldown": [
+					20,
+					19.5,
+					19,
+					18.5,
+					18
+				],
+				"cost": [
+					50,
+					55,
+					60,
+					65,
+					70
+				],
+				"range": [
+					600,
+					600,
+					600,
+					600,
+					600
+				],
+				"text": "Master Yi teleports across the battlefield with blinding speed, dealing physical damage to multiple units in his path, while simultaneously becoming untargetable. Alpha Strike can critically strike and deals bonus physical damage to monsters. Basic attacks reduce Alpha Strike's cooldown."
+			},
+			{
+				"slot": "W",
+				"name": "Meditate",
+				"cooldown": [
+					10,
+					10,
+					10,
+					10,
+					10
+				],
+				"cost": [
+					40,
+					40,
+					40,
+					40,
+					40
+				],
+				"range": [
+					20,
+					20,
+					20,
+					20,
+					20
+				],
+				"text": "Master Yi rejuvenates his body by focus of mind, restoring Health and taking reduced damage for a short time. In addition, Master Yi will gain stacks of Double Strike and pause the remaining duration on Wuju Style and Highlander for each second he channels."
+			},
+			{
+				"slot": "E",
+				"name": "Wuju Style",
+				"cooldown": [
+					14,
+					14,
+					14,
+					14,
+					14
+				],
+				"cost": [
+					0,
+					0,
+					0,
+					0,
+					0
+				],
+				"range": [
+					20,
+					20,
+					20,
+					20,
+					20
+				],
+				"text": "Grants bonus true damage on basic attacks."
+			},
+			{
+				"slot": "R",
+				"name": "Highlander",
+				"cooldown": [
+					85,
+					85,
+					85
+				],
+				"cost": [
+					100,
+					100,
+					100
+				],
+				"range": [
+					1,
+					1,
+					1
+				],
+				"text": "Master Yi moves with unparalleled agility, temporarily increasing his Move Speed and Attack Speed as well as making him immune to all slowing effects. While active, Champion kills or assists extend Highlander's duration. Passively reduces cooldown for his other abilities on a kill or assist."
+			}
+		]
+	},
+	"coaching": {
+		"damage": {
+			"value": "Master Yi deals burst physical damage with Alpha Strike and sustained true damage through Wuju Style-enhanced basic attacks.",
+			"sources": [
+				"game-1"
+			]
+		},
+		"archetype": {
+			"value": "Master Yi is a basic-attack-focused fighter who uses speed and untargetability to stay in combat.",
+			"sources": [
+				"game-1"
+			]
+		},
+		"winCondition": {
+			"value": "Master Yi can keep Highlander active longer through champion kills or assists.",
+			"sources": [
+				"game-1"
+			]
+		},
+		"spikes": [
+			{
+				"at": "Master Yi gets stronger when Highlander is active",
+				"why": "Master Yi gains Move Speed, Attack Speed, and immunity to slows.",
+				"sources": [
+					"game-1"
+				]
+			}
+		],
+		"bait": [
+			{
+				"slot": "Q",
+				"why": "Master Yi loses access to Alpha Strike's damage and untargetability while it is on cooldown.",
+				"sources": [
+					"game-1"
+				]
+			}
+		],
+		"mistakes": [],
+		"comp": {
+			"tags": [
+				"dive"
+			],
+			"sources": [
+				"game-1"
+			]
+		}
+	}
+}

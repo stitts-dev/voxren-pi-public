@@ -1,0 +1,231 @@
+{
+	"meta": {
+		"version": "16.19.1",
+		"generated": "2026-10-05",
+		"model": "gpt-6-sol",
+		"sources": [
+			{
+				"id": "s1",
+				"title": "Varus Build Guide: [S2026.19] | EASY-TO-READ ✔️ SIMPLE 1v9 ✔️ LIVE AMA ✔️ [FULL GUIDE] ✔️ [UPDATED]",
+				"url": "https://www.mobafire.com/league-of-legends/build/s2026-19-easy-to-read-simple-1v9-live-ama-full-guide-updated-650313"
+			},
+			{
+				"id": "game-1",
+				"title": "Riot Data Dragon 16.19.1",
+				"url": "https://ddragon.leagueoflegends.com/cdn/16.19.1/data/en_US/champion/Varus.json"
+			}
+		]
+	},
+	"id": "Varus",
+	"name": "Varus",
+	"facts": {
+		"title": "the Arrow of Retribution",
+		"tags": [
+			"Marksman",
+			"Mage"
+		],
+		"resource": "Mana",
+		"stats": {
+			"hp": 600,
+			"hpperlevel": 105,
+			"mp": 320,
+			"mpperlevel": 40,
+			"movespeed": 330,
+			"armor": 24,
+			"armorperlevel": 4,
+			"spellblock": 33,
+			"spellblockperlevel": 1.1,
+			"attackrange": 575,
+			"hpregen": 3.5,
+			"hpregenperlevel": 0.55,
+			"mpregen": 8,
+			"mpregenperlevel": 0.8,
+			"crit": 0,
+			"critperlevel": 0,
+			"attackdamage": 59,
+			"attackdamageperlevel": 0,
+			"attackspeedperlevel": 3.5,
+			"attackspeed": 0.658
+		},
+		"passive": {
+			"name": "Living Vengeance",
+			"text": "On kill or assist, Varus temporarily gains Attack Damage and Ability Power. This bonus is larger if the enemy is a champion."
+		},
+		"spells": [
+			{
+				"slot": "Q",
+				"name": "Piercing Arrow",
+				"cooldown": [
+					16,
+					15,
+					14,
+					13,
+					12
+				],
+				"cost": [
+					50,
+					55,
+					60,
+					65,
+					70
+				],
+				"range": [
+					925,
+					925,
+					925,
+					925,
+					925
+				],
+				"text": "Varus readies and then fires a powerful shot that gains extra range and damage the longer he spends preparing to fire."
+			},
+			{
+				"slot": "W",
+				"name": "Blighted Quiver",
+				"cooldown": [
+					40,
+					40,
+					40,
+					40,
+					40
+				],
+				"cost": [
+					0,
+					0,
+					0,
+					0,
+					0
+				],
+				"range": [
+					750,
+					750,
+					750,
+					750,
+					750
+				],
+				"text": "Passive: Varus' basic attacks deal bonus magic damage and apply Blight. Varus' other abilities detonate Blight, dealing magic damage based on the target's maximum Health. Active: Varus empowers his next Piercing Arrow."
+			},
+			{
+				"slot": "E",
+				"name": "Hail of Arrows",
+				"cooldown": [
+					18,
+					16,
+					14,
+					12,
+					10
+				],
+				"cost": [
+					90,
+					90,
+					90,
+					90,
+					90
+				],
+				"range": [
+					925,
+					925,
+					925,
+					925,
+					925
+				],
+				"text": "Varus fires a hail of arrows that deal physical damage and desecrate the ground. Desecrated ground slows enemies' Move Speed and reduces their self healing and regeneration."
+			},
+			{
+				"slot": "R",
+				"name": "Chain of Corruption",
+				"cooldown": [
+					100,
+					80,
+					60
+				],
+				"cost": [
+					100,
+					100,
+					100
+				],
+				"range": [
+					1300,
+					1300,
+					1300
+				],
+				"text": "Varus flings out a damaging tendril of corruption that immobilizes the first enemy champion hit and then spreads towards nearby uninfected champions, immobilizing them too on contact."
+			}
+		]
+	},
+	"coaching": {
+		"damage": {
+			"value": "Varus deals long-range poke and burst with lethality, or sustained damage with on-hit builds.",
+			"sources": [
+				"s1"
+			]
+		},
+		"archetype": {
+			"value": "Varus is an immobile ADC who plays at range and changes his build to suit the fight.",
+			"sources": [
+				"s1"
+			]
+		},
+		"axis": {
+			"value": "Varus pokes with Q in lane or takes short trades with basic attacks into E.",
+			"sources": [
+				"s1"
+			]
+		},
+		"winCondition": {
+			"value": "Varus wins by landing poke before objectives, securing picks with R, or free-hitting in extended fights.",
+			"sources": [
+				"s1"
+			]
+		},
+		"spikes": [
+			{
+				"at": "Three Blight stacks",
+				"why": "Varus can detonate them with E for a stronger trade.",
+				"sources": [
+					"s1"
+				]
+			}
+		],
+		"bait": [
+			{
+				"slot": "Q",
+				"why": "Varus loses lane pressure when Q misses, creating a window while it is unavailable.",
+				"sources": [
+					"s1"
+				]
+			},
+			{
+				"slot": "R",
+				"why": "After Varus uses Chain of Corruption, its cooldown creates a window without its immobilization.",
+				"sources": [
+					"game-1"
+				]
+			}
+		],
+		"mistakes": [
+			{
+				"value": "Varus players lose pressure by missing Q or risk punishment by mispositioning.",
+				"sources": [
+					"s1"
+				]
+			},
+			{
+				"value": "Varus gives up potential range and damage by firing Piercing Arrow before preparing it longer.",
+				"sources": [
+					"game-1"
+				]
+			}
+		],
+		"comp": {
+			"tags": [
+				"poke",
+				"peel",
+				"pick"
+			],
+			"sources": [
+				"s1",
+				"game-1"
+			]
+		}
+	}
+}

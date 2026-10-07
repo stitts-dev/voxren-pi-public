@@ -1,0 +1,32 @@
+{
+	"id": "cmd-matchup-nokey",
+	"title": "/matchup Katarina vs Ahri with no Jev key: every card says it was not screened or checked",
+	"split": "train",
+	"noJevKey": true,
+	"steps": [
+		{
+			"send": "/matchup Katarina vs Ahri"
+		},
+		{
+			"idle": true
+		}
+	],
+	"env": {
+		"VOXREN_COACH_CHAMPION": "Syndra"
+	},
+	"gates": {
+		"tools": [
+			"voxren_meta_research"
+		],
+		"maxSeconds": 120,
+		"expect": [
+			"no key",
+			"not checked"
+		],
+		"absent": [
+			"screened by jev",
+			"checked by jev"
+		],
+		"rubric": false
+	}
+}

@@ -1,0 +1,261 @@
+{
+	"meta": {
+		"version": "16.19.1",
+		"generated": "2026-10-05",
+		"model": "gpt-6-sol",
+		"sources": [
+			{
+				"id": "s1",
+				"title": "[26.18] Shaco_Mid_Lane | 10+ Million Mastery AP Shaco Lane Guide | Outplay & Tilt",
+				"url": "https://www.mobafire.com/league-of-legends/build/26-18-shaco-mid-lane-10-million-mastery-ap-shaco-lane-guide-outplay-amp-tilt-619593"
+			},
+			{
+				"id": "s2",
+				"title": "[26.19][P-C-] How to make ADCs disappear - A Beginner-Friendly AP Shaco Support Guide",
+				"url": "https://www.mobafire.com/league-of-legends/build/26-19-p-c-how-to-make-adcs-disappear-a-beginner-friendly-ap-shaco-support-guide-647013"
+			},
+			{
+				"id": "s3",
+				"title": "Shaco Build Guides, Runes, Items, and Abilities - Patch 26.19",
+				"url": "https://www.mobafire.com/league-of-legends/champion/shaco-41"
+			},
+			{
+				"id": "game-1",
+				"title": "Riot Data Dragon 16.19.1",
+				"url": "https://ddragon.leagueoflegends.com/cdn/16.19.1/data/en_US/champion/Shaco.json"
+			}
+		]
+	},
+	"id": "Shaco",
+	"name": "Shaco",
+	"facts": {
+		"title": "the Demon Jester",
+		"tags": [
+			"Assassin"
+		],
+		"resource": "Mana",
+		"stats": {
+			"hp": 630,
+			"hpperlevel": 99,
+			"mp": 297,
+			"mpperlevel": 40,
+			"movespeed": 345,
+			"armor": 30,
+			"armorperlevel": 4,
+			"spellblock": 32,
+			"spellblockperlevel": 2.05,
+			"attackrange": 125,
+			"hpregen": 8.5,
+			"hpregenperlevel": 0.55,
+			"mpregen": 6,
+			"mpregenperlevel": 0.35,
+			"crit": 0,
+			"critperlevel": 0,
+			"attackdamage": 63,
+			"attackdamageperlevel": 0,
+			"attackspeedperlevel": 3,
+			"attackspeed": 0.694
+		},
+		"passive": {
+			"name": "Backstab",
+			"text": "Shaco's basic attacks and Two-Shiv Poison deal additional damage when striking from behind."
+		},
+		"spells": [
+			{
+				"slot": "Q",
+				"name": "Deceive",
+				"cooldown": [
+					13,
+					12.5,
+					12,
+					11.5,
+					11
+				],
+				"cost": [
+					40,
+					40,
+					40,
+					40,
+					40
+				],
+				"range": [
+					400,
+					400,
+					400,
+					400,
+					400
+				],
+				"text": "Shaco becomes Invisible and teleports to target location.His first attack while Invisible is empowered, dealing bonus damage and critically striking if he attacks from behind."
+			},
+			{
+				"slot": "W",
+				"name": "Jack In The Box",
+				"cooldown": [
+					15,
+					15,
+					15,
+					15,
+					15
+				],
+				"cost": [
+					70,
+					65,
+					60,
+					55,
+					50
+				],
+				"range": [
+					500,
+					500,
+					500,
+					500,
+					500
+				],
+				"text": "Shaco creates a hidden animated Jack-in-the-Box. When triggered, it will fear and attack nearby enemies."
+			},
+			{
+				"slot": "E",
+				"name": "Two-Shiv Poison",
+				"cooldown": [
+					8,
+					8,
+					8,
+					8,
+					8
+				],
+				"cost": [
+					75,
+					75,
+					75,
+					75,
+					75
+				],
+				"range": [
+					625,
+					625,
+					625,
+					625,
+					625
+				],
+				"text": "Shaco's Shivs passively poison targets on hit, slowing their Move Speed. He can throw his Shivs to deal damage and poison the target. The thrown Shiv deals bonus damage if the target is below 30% health."
+			},
+			{
+				"slot": "R",
+				"name": "Hallucinate",
+				"cooldown": [
+					100,
+					90,
+					80
+				],
+				"cost": [
+					100,
+					100,
+					100
+				],
+				"range": [
+					200,
+					200,
+					200
+				],
+				"text": "Shaco creates an illusion of himself near him, which can attack nearby enemies (Deals reduced damage to turrets). Upon death, it explodes, spawning three mini Jack in the Boxes and dealing damage to nearby enemies."
+			}
+		]
+	},
+	"coaching": {
+		"damage": {
+			"value": "Shaco's AP build aims for burst rather than sustained auto-attack damage.",
+			"sources": [
+				"s1"
+			]
+		},
+		"archetype": {
+			"value": "Shaco can play jungle as a bruiser or assassin.",
+			"sources": [
+				"s3"
+			]
+		},
+		"axis": {
+			"value": "Shaco farms safely early, then starts poking after Lost Chapter.",
+			"sources": [
+				"s1"
+			]
+		},
+		"winCondition": {
+			"value": "Shaco survives lane, farms, and scales.",
+			"sources": [
+				"s1"
+			]
+		},
+		"spikes": [
+			{
+				"at": "Lost Chapter",
+				"why": "Shaco can start poking more once Shaco has it.",
+				"sources": [
+					"s1"
+				]
+			},
+			{
+				"at": "When Shaco has Deceive ready",
+				"why": "Shaco can teleport while becoming Invisible and empower his first attack.",
+				"sources": [
+					"game-1"
+				]
+			}
+		],
+		"bait": [
+			{
+				"slot": "Q",
+				"why": "After Shaco uses Deceive, its cooldown creates a window before he can teleport and become Invisible again.",
+				"sources": [
+					"game-1"
+				]
+			},
+			{
+				"slot": "W",
+				"why": "After Shaco places Jack In The Box, its 15-second cooldown creates a window before he can place another box to fear nearby enemies.",
+				"sources": [
+					"game-1"
+				]
+			},
+			{
+				"slot": "E",
+				"why": "After Shaco throws Two-Shiv Poison, its 8-second cooldown creates a window before he can throw another damaging Shiv.",
+				"sources": [
+					"game-1"
+				]
+			}
+		],
+		"mistakes": [
+			{
+				"value": "Shaco players waste boxes by placing them mid-fight instead of setting them up beforehand.",
+				"sources": [
+					"s1"
+				]
+			},
+			{
+				"value": "Shaco players risk throwing lane by fighting too much while Shaco is fragile early.",
+				"sources": [
+					"s1"
+				]
+			},
+			{
+				"value": "Shaco misses Two-Shiv Poison's bonus damage by throwing it before the target falls below 30% health.",
+				"sources": [
+					"game-1"
+				]
+			}
+		],
+		"comp": {
+			"tags": [
+				"scale",
+				"engage",
+				"split"
+			],
+			"sources": [
+				"s1",
+				"s2",
+				"s3"
+			]
+		}
+	}
+}

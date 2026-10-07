@@ -1,0 +1,443 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Voxren Coach Walkthrough</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&display=swap">
+<style>
+:root{
+  --bg:#f4f7f6; --surface:#ffffff; --ink:#15222a; --muted:#56676e; --rule:#d3dddb;
+  --accent:#0f766e; --accent-soft:#e0f2ef; --jev:#a85a07; --jev-soft:#fbefe0; --code-bg:#e8eeed;
+  --sans:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+  --display:"Bricolage Grotesque","IBM Plex Sans",system-ui,sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --bg:#0d1518; --surface:#131e22; --ink:#e2ebe9; --muted:#93a5a8; --rule:#26373b;
+    --accent:#2dd4bf; --accent-soft:#12332f; --jev:#f5a524; --jev-soft:#3a2a10; --code-bg:#1b282c;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --bg:#0d1518; --surface:#131e22; --ink:#e2ebe9; --muted:#93a5a8; --rule:#26373b;
+  --accent:#2dd4bf; --accent-soft:#12332f; --jev:#f5a524; --jev-soft:#3a2a10; --code-bg:#1b282c;
+}
+body{background:var(--bg);color:var(--ink);font:16px/1.6 var(--sans);padding-inline:16px;padding-block:32px 64px}
+.wrap{max-width:760px;margin:0 auto;display:flex;flex-direction:column;gap:40px}
+h1,h2{font-family:var(--display);text-wrap:balance;line-height:1.15;margin:0}
+h1{font-size:2.4rem;letter-spacing:-.01em}
+h2{font-size:1.5rem;display:flex;gap:12px;align-items:baseline}
+h2 .n{font:500 .85rem var(--mono);color:var(--accent)}
+p{margin:0;max-width:65ch}
+.lede{color:var(--muted);font-size:1.05rem}
+section{display:flex;flex-direction:column;gap:14px}
+.label{font:600 .72rem var(--sans);letter-spacing:.09em;text-transform:uppercase;color:var(--muted)}
+.simple{display:flex;flex-direction:column;gap:6px}
+.deep{border-left:3px solid var(--accent);background:var(--surface);padding:14px 16px;display:flex;flex-direction:column;gap:8px}
+.deep .label{color:var(--accent)}
+.deep ul{margin:0;padding-left:18px;display:flex;flex-direction:column;gap:6px}
+code{font:.86em var(--mono);background:var(--code-bg);padding:1px 5px;border-radius:3px}
+figure{margin:0;display:flex;flex-direction:column;gap:8px}
+.scroll{overflow-x:auto;background:var(--surface);border:1px solid var(--rule);border-radius:6px;padding:12px;color:var(--ink)}
+.scroll svg{display:block;width:100%;min-width:640px;height:auto}
+figcaption{font-size:.88rem;color:var(--muted);max-width:65ch}
+table{border-collapse:collapse;width:100%;font-size:.92rem}
+.tbl{overflow-x:auto}
+th,td{text-align:left;padding:7px 10px;border-bottom:1px solid var(--rule);vertical-align:top}
+th{font:600 .72rem var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+td:first-child{white-space:nowrap}
+dl{margin:0;display:grid;grid-template-columns:max-content 1fr;gap:8px 16px}
+dt{font:500 .9rem var(--mono);color:var(--accent)}
+dd{margin:0}
+@media (max-width:520px){dl{grid-template-columns:1fr}dd{margin-bottom:6px}h1{font-size:1.9rem}}
+.gen{display:block;width:100%;height:auto;background:#0f172a;border-radius:6px}
+.more summary{cursor:pointer;font-size:.85rem;color:var(--accent);padding-block:4px}
+.more[open] summary{margin-bottom:8px}
+/* diagram classes */
+.b{fill:var(--surface);stroke:currentColor;stroke-width:1.2}
+.bp{fill:var(--accent-soft);stroke:var(--accent);stroke-width:1.5}
+.bj{fill:var(--jev-soft);stroke:var(--jev);stroke-width:1.5}
+.ln{stroke:currentColor;stroke-width:1.2;fill:none}
+.lj{stroke:var(--jev);stroke-width:1.3;fill:none;stroke-dasharray:5 4}
+.ld{stroke:currentColor;stroke-width:1.1;fill:none;stroke-dasharray:4 4}
+.life{stroke:var(--rule);stroke-width:1.5;stroke-dasharray:3 5}
+.t{fill:currentColor;font:600 13px var(--mono)}
+.s{fill:var(--muted);font:11px var(--sans)}
+.a{fill:var(--muted);font:500 11px var(--sans)}
+.h{fill:var(--accent);font:600 11px var(--sans);letter-spacing:.08em}
+.hj{fill:var(--jev);font:600 13px var(--mono)}
+.ah{fill:currentColor}
+.ahj{fill:var(--jev)}
+</style>
+
+<div class="wrap">
+
+<header style="display:flex;flex-direction:column;gap:12px">
+  <span class="label">voxren-pi · how one session works</span>
+  <h1>Voxren Coach Walkthrough</h1>
+  <p class="lede">You type <code>coach</code>. Eight steps later a League coach answers in your terminal. Each step has a plain version first, then the deeper details for when you want them.</p>
+</header>
+
+<figure>
+  <img class="gen" src="img/architecture2.png" alt="Architecture: the launcher spawns one Pi process; arrows show every call that leaves it." width="1600" height="900" loading="lazy">
+<details class="more"><summary>Detailed diagram, theme-aware</summary>
+<div class="scroll">
+  <svg viewBox="0 0 1000 460" role="img" aria-label="Architecture: the Node launcher reads coach.yaml, the env file and the key store, then spawns one Pi process. Inside Pi, the coach extension registers tools, tools call the gateway, and Jev judges screen and ground. Arrows leave the Pi process to the model provider, the League client, web search, OP.GG MCP, Data Dragon, Riot match-v5, the research service and the Jev API.">
+    <defs>
+      <marker id="m1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="ah" d="M0,0 L10,5 L0,10 z"/></marker>
+      <marker id="m1j" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="ahj" d="M0,0 L10,5 L0,10 z"/></marker>
+    </defs>
+    <!-- left: you, launcher, inputs -->
+    <rect class="b" x="20" y="100" width="140" height="46" rx="6"/>
+    <text class="t" x="90" y="121" text-anchor="middle">You</text>
+    <text class="s" x="90" y="137" text-anchor="middle">type: coach</text>
+    <line class="ln" x1="90" y1="146" x2="90" y2="198" marker-end="url(#m1)"/>
+    <text class="a" x="98" y="176">runs</text>
+    <rect class="b" x="20" y="200" width="140" height="56" rx="6"/>
+    <text class="t" x="90" y="224" text-anchor="middle">bin/coach.mjs</text>
+    <text class="s" x="90" y="242" text-anchor="middle">Node launcher</text>
+    <rect class="b" x="20" y="300" width="140" height="28" rx="5"/><text class="s" x="90" y="318" text-anchor="middle">coach.yaml</text>
+    <rect class="b" x="20" y="336" width="140" height="28" rx="5"/><text class="s" x="90" y="354" text-anchor="middle">.env file</text>
+    <rect class="b" x="20" y="372" width="140" height="28" rx="5"/><text class="s" x="90" y="390" text-anchor="middle">key store (helper child)</text>
+    <line class="ln" x1="90" y1="300" x2="90" y2="258" marker-end="url(#m1)"/>
+    <text class="a" x="98" y="283">reads</text>
+    <line class="ln" x1="160" y1="228" x2="378" y2="228" marker-end="url(#m1)"/>
+    <text class="a" x="268" y="220" text-anchor="middle">spawns, isolated HOME</text>
+    <!-- Pi process -->
+    <rect class="bp" x="380" y="40" width="300" height="400" rx="10"/>
+    <text class="h" x="400" y="64">PI PROCESS</text>
+    <text class="s" x="400" y="82">model: gpt-6-sol / gpt-6-luna</text>
+    <rect class="b" x="405" y="100" width="250" height="46" rx="6"/>
+    <text class="t" x="420" y="120">src/index.ts</text><text class="s" x="420" y="137">coach extension: events, commands</text>
+    <line class="ln" x1="530" y1="146" x2="530" y2="188" marker-end="url(#m1)"/>
+    <text class="a" x="538" y="171">registers</text>
+    <rect class="b" x="405" y="190" width="250" height="46" rx="6"/>
+    <text class="t" x="420" y="210">src/tools.ts</text><text class="s" x="420" y="227">8 tools the model may call</text>
+    <line class="ln" x1="530" y1="236" x2="530" y2="278" marker-end="url(#m1)"/>
+    <text class="a" x="538" y="261">calls</text>
+    <rect class="b" x="405" y="280" width="250" height="46" rx="6"/>
+    <text class="t" x="420" y="300">src/live-gateway.ts</text><text class="s" x="420" y="317">every network call</text>
+    <line class="ln" x1="530" y1="326" x2="530" y2="368" marker-end="url(#m1)"/>
+    <text class="a" x="538" y="351">screens + grounds</text>
+    <rect class="bj" x="405" y="370" width="250" height="46" rx="6"/>
+    <text class="hj" x="420" y="390">Jev judges</text><text class="s" x="420" y="407">route · passage · grounding</text>
+    <!-- right: outside world -->
+    <line class="ln" x1="680" y1="63" x2="728" y2="63" marker-end="url(#m1)"/>
+    <rect class="b" x="730" y="48" width="250" height="30" rx="5"/><text class="s" x="745" y="67">Model provider (openai-codex)</text>
+    <line class="ln" x1="655" y1="123" x2="728" y2="123" marker-end="url(#m1)"/>
+    <text class="a" x="732" y="101">reads on command, and auto</text>
+    <rect class="b" x="730" y="108" width="250" height="30" rx="5"/><text class="s" x="745" y="127">League client · 127.0.0.1, pinned TLS</text>
+    <path class="ln" d="M655,303 L700,303 L700,211 L728,211" marker-end="url(#m1)"/>
+    <path class="ln" d="M700,247 L728,247" marker-end="url(#m1)"/>
+    <path class="ln" d="M700,283 L728,283" marker-end="url(#m1)"/>
+    <path class="ln" d="M700,303 L700,319 L728,319" marker-end="url(#m1)"/>
+    <path class="ln" d="M700,319 L700,355 L728,355" marker-end="url(#m1)"/>
+    <rect class="b" x="730" y="196" width="250" height="30" rx="5"/><text class="s" x="745" y="215">Web search (keyed or hosted)</text>
+    <rect class="b" x="730" y="232" width="250" height="30" rx="5"/><text class="s" x="745" y="251">OP.GG MCP · meta and matchups</text>
+    <rect class="b" x="730" y="268" width="250" height="30" rx="5"/><text class="s" x="745" y="287">Data Dragon · champion and item data</text>
+    <rect class="b" x="730" y="304" width="250" height="30" rx="5"/><text class="s" x="745" y="323">Riot match-v5 · via key helper</text>
+    <rect class="b" x="730" y="340" width="250" height="30" rx="5"/><text class="s" x="745" y="359">Research service (Python)</text>
+    <line class="lj" x1="655" y1="393" x2="728" y2="393" marker-end="url(#m1j)"/>
+    <rect class="bj" x="730" y="378" width="250" height="30" rx="5"/><text class="s" x="745" y="397">Jev API (TypeSafe System One)</text>
+  </svg>
+  </div>
+</details>
+  <figcaption>Images generated with Codex (gpt-5.6-sol). The whole coach is one Pi process (green). Node only launches it. Every arrow that leaves the green box is a network or local-socket call. The coach reads the League client when you run a command and, in champ select, for two automatic calls; the footer polls it on a timer.</figcaption>
+</figure>
+
+<section>
+  <h2><span class="n">01</span>You run <code>coach</code></h2>
+  <div class="simple">
+    <span class="label">Plain version</span>
+    <p>Node runs <code>bin/coach.mjs</code>. It gathers your settings and keys, sets up a private folder, then starts Pi, the AI agent framework, with the coach plugged in. Node waits until Pi exits.</p>
+  </div>
+  <div class="deep">
+    <span class="label">Deeper</span>
+    <ul>
+      <li>Keys load in a fixed order: environment first, then the <code>.env</code> file. Perplexity, TypeSafe and Gemini keys fall back to the OS key store (macOS Keychain or Windows DPAPI), read through a helper child process with a 3 s timeout, so a locked Keychain never hangs launch.</li>
+      <li>An allowlist (<code>FORWARDED_ENV</code>) decides which variables reach Pi. Everything else in your environment stays out.</li>
+      <li>Pi gets its own <code>HOME</code> under the coach home (<code>~/Library/Application Support/voxren-coach</code> on macOS), so your personal Pi config never leaks in.</li>
+      <li>Launch flags strip Pi down: <code>--no-extensions --extension src/index.ts --no-builtin-tools --no-skills</code>. The coach is the only plugin, and Pi's coding tools are off.</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2><span class="n">02</span>Pi loads the coach extension</h2>
+  <div class="simple">
+    <span class="label">Plain version</span>
+    <p>Pi is generic. <code>src/index.ts</code> turns it into a League coach: it adds 8 tools, the slash commands, a header and a footer, and listens for events like "a turn is starting" or "a tool just finished".</p>
+  </div>
+  <div class="deep">
+    <span class="label">Deeper</span>
+    <ul>
+      <li><code>session_start</code>: starts the League client poller (every 5 s, every 2 s in champ select) and warms up the research service.</li>
+      <li><code>before_agent_start</code>: starts a turn timer (180 s default), routes the model, and adds your learnings summary to the prompt.</li>
+      <li><code>tool_call</code>: blocks any tool not on the exact list. <code>model_select</code>: picking a model that isn't approved aborts and shuts the session down.</li>
+      <li><code>user_bash</code>: shell commands are always denied. It's a coach, not a coding agent.</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2><span class="n">03</span>The router picks a model</h2>
+  <div class="simple">
+    <span class="label">Plain version</span>
+    <p>Easy questions go to a fast model. Hard ones get a stronger model that thinks longer. A judge called Jev grades each prompt as quick, standard or deep, and code (never the prompt) makes the final call.</p>
+  </div>
+  <figure>
+    <img class="gen" src="img/routing.png" alt="Routing: checks run in order and stop at the first match." width="1600" height="750" loading="lazy">
+<details class="more"><summary>Detailed diagram, theme-aware</summary>
+<div class="scroll">
+    <svg viewBox="0 0 1000 500" role="img" aria-label="Routing decision chain: pinned model keeps the current model; a slash command uses its tier; no Jev key falls back to standard; a Jev failure or timeout keeps the model at medium thinking; Jev at probability 0.7 or more switches to the graded tier; below 0.7 the model is held.">
+      <defs>
+        <marker id="m4" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="ah" d="M0,0 L10,5 L0,10 z"/></marker>
+      </defs>
+      <rect class="bp" x="40" y="20" width="230" height="40" rx="20"/><text class="t" x="155" y="45" text-anchor="middle">New prompt</text>
+      <line class="ln" x1="155" y1="60" x2="155" y2="88" marker-end="url(#m4)"/>
+      <rect class="b" x="40" y="90" width="230" height="40" rx="6"/><text class="s" x="155" y="115" text-anchor="middle">Did you pin a model yourself?</text>
+      <line class="ln" x1="270" y1="110" x2="378" y2="110" marker-end="url(#m4)"/><text class="a" x="324" y="102" text-anchor="middle">yes</text>
+      <rect class="b" x="380" y="90" width="330" height="40" rx="6"/><text class="t" x="395" y="110">PINNED</text><text class="s" x="395" y="124">keep your model and thinking</text>
+      <line class="ln" x1="155" y1="130" x2="155" y2="158" marker-end="url(#m4)"/><text class="a" x="163" y="148">no</text>
+      <rect class="b" x="40" y="160" width="230" height="40" rx="6"/><text class="s" x="155" y="185" text-anchor="middle">Is it a slash command?</text>
+      <line class="ln" x1="270" y1="180" x2="378" y2="180" marker-end="url(#m4)"/><text class="a" x="324" y="172" text-anchor="middle">yes</text>
+      <rect class="b" x="380" y="160" width="330" height="40" rx="6"/><text class="t" x="395" y="180">COMMAND</text><text class="s" x="395" y="194">the command's fixed tier (table below)</text>
+      <line class="ln" x1="155" y1="200" x2="155" y2="228" marker-end="url(#m4)"/><text class="a" x="163" y="218">no</text>
+      <rect class="b" x="40" y="230" width="230" height="40" rx="6"/><text class="s" x="155" y="255" text-anchor="middle">Is TYPESAFE_API_KEY set?</text>
+      <line class="ln" x1="270" y1="250" x2="378" y2="250" marker-end="url(#m4)"/><text class="a" x="324" y="242" text-anchor="middle">no</text>
+      <rect class="b" x="380" y="230" width="330" height="40" rx="6"/><text class="t" x="395" y="250">FALLBACK</text><text class="s" x="395" y="264">standard tier</text>
+      <line class="ln" x1="155" y1="270" x2="155" y2="298" marker-end="url(#m4)"/><text class="a" x="163" y="288">yes</text>
+      <rect class="bj" x="40" y="300" width="230" height="40" rx="6"/><text class="s" x="155" y="325" text-anchor="middle">Jev answers within 1.5 s?</text>
+      <line class="ln" x1="270" y1="320" x2="378" y2="320" marker-end="url(#m4)"/><text class="a" x="324" y="312" text-anchor="middle">no / error</text>
+      <rect class="b" x="380" y="300" width="330" height="40" rx="6"/><text class="t" x="395" y="320">FALLBACK</text><text class="s" x="395" y="334">keep model, medium thinking</text>
+      <line class="ln" x1="155" y1="340" x2="155" y2="368" marker-end="url(#m4)"/><text class="a" x="163" y="358">yes</text>
+      <rect class="bj" x="40" y="370" width="230" height="40" rx="6"/><text class="s" x="155" y="395" text-anchor="middle">Top tier's probability p ≥ 0.7?</text>
+      <line class="ln" x1="270" y1="390" x2="378" y2="390" marker-end="url(#m4)"/><text class="a" x="324" y="382" text-anchor="middle">yes</text>
+      <rect class="bp" x="380" y="370" width="330" height="40" rx="6"/><text class="t" x="395" y="390">JEV</text><text class="s" x="395" y="404">switch to the graded tier's model</text>
+      <line class="ln" x1="155" y1="410" x2="155" y2="438" marker-end="url(#m4)"/><text class="a" x="163" y="428">no</text>
+      <rect class="b" x="40" y="440" width="230" height="40" rx="6"/><text class="t" x="55" y="460">HELD</text><text class="s" x="55" y="474">keep model, graded thinking</text>
+      <rect class="b" x="750" y="90" width="230" height="130" rx="6"/>
+      <text class="h" x="765" y="114">TIERS</text>
+      <text class="t" x="765" y="142">quick</text><text class="s" x="840" y="142">gpt-6-luna · low</text>
+      <text class="t" x="765" y="170">standard</text><text class="s" x="840" y="170">gpt-6-sol · medium</text>
+      <text class="t" x="765" y="198">deep</text><text class="s" x="840" y="198">gpt-6-sol · high</text>
+    </svg>
+    </div>
+</details>
+    <figcaption>Checks run top to bottom and stop at the first match. The 0.7 bar keeps the model from flipping on a coin-toss grade, which also preserves its prompt cache.</figcaption>
+  </figure>
+  <div class="deep">
+    <span class="label">Deeper</span>
+    <ul>
+      <li>Only the first 4,000 characters of a prompt go to Jev, and your Riot IDs are scrubbed out first.</li>
+      <li>The 1.5 s deadline races a plain <code>setTimeout</code>, never an unref'd timer. On Windows, Bun never fires a lone unref'd timer, so the race would hang (rule 8 in <code>AGENTS.md</code>).</li>
+      <li>The route shows as a row in the chat. The <code>context</code> event strips that row from every request, so the model never sees it.</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2><span class="n">04</span>Commands and tools</h2>
+  <div class="simple">
+    <span class="label">Plain version</span>
+    <p>A slash command is a ready-made question with a fixed tier. Tools are what the model can reach for while answering: search, game data, your match history.</p>
+  </div>
+  <div class="tbl">
+  <table>
+    <thead><tr><th>Command</th><th>Tier</th><th>What it does</th></tr></thead>
+    <tbody>
+      <tr><td><code>/review</code></td><td>deep</td><td>Audit your last ranked games and name the top 3 habits to fix</td></tr>
+      <tr><td><code>/otp</code></td><td>deep</td><td>Read a one-trick's recent games and lay out the build to copy</td></tr>
+      <tr><td><code>/matchup</code></td><td>standard</td><td>Lane plan for a matchup</td></tr>
+      <tr><td><code>/build</code></td><td>standard</td><td>Build, runes and skill order for this patch</td></tr>
+      <tr><td><code>/patch</code></td><td>standard</td><td>What changed this patch, and whether it changes how you play</td></tr>
+      <tr><td><code>/comp</code></td><td>standard</td><td>Read the current draft or game and get a strategy call</td></tr>
+      <tr><td><code>/draft</code></td><td>quick</td><td>Your call for the current draft, in four short rows</td></tr>
+      <tr><td><code>/pick</code></td><td>quick</td><td>The pick call for your hovered or locked champion</td></tr>
+      <tr><td><code>/config</code>, <code>/riot-key</code></td><td>none</td><td>Settings panel and Riot key setup, with no model call</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p>Tools: <code>web_search</code>, <code>voxren_game_facts</code>, <code>voxren_meta_research</code>, <code>voxren_strategy_frame</code>, <code>voxren_player_audit</code>, <code>voxren_otp_build</code>, <code>voxren_remember</code>, <code>voxren_video_research</code>.</p>
+  <div class="deep">
+    <span class="label">Deeper</span>
+    <ul>
+      <li>Commands read the League client only when they run. <code>src/lcu.ts</code> finds the client's lockfile, then makes HTTPS calls to <code>127.0.0.1</code> that are pinned to Riot's root certificate in <code>data/riotgames.pem</code>.</li>
+      <li>Auto calls, on by default and off with <code>VOXREN_COACH_AUTO_COMP=0</code>: <code>/pick</code> fires when your champion is locked or has stayed hovered for two polls, and <code>/draft</code> when you and four enemies have locked in. Together they fire at most 5 times per champ select, and only while the coach is idle.</li>
+      <li>Every prompt and tool description lives in <code>coach.yaml</code>. No prompt text is allowed in a <code>.ts</code> file.</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2><span class="n">05</span>One turn, start to answer</h2>
+  <div class="simple">
+    <span class="label">Plain version</span>
+    <p>The model asks tools for evidence and reads what comes back, then answers. Jev checks the sources on the way in and the claims on the way out.</p>
+  </div>
+  <figure>
+    <img class="gen" src="img/sequence2.png" alt="One turn across Player, Coach extension, Jev, Model and Gateway." width="1600" height="900" loading="lazy">
+<details class="more"><summary>Detailed diagram, theme-aware</summary>
+<div class="scroll">
+    <svg viewBox="0 0 1000 500" role="img" aria-label="Sequence of one turn across Player, Coach extension, Jev, Model and Gateway: prompt, Jev grades the tier, the model is chosen, the model calls tools, the gateway has Jev screen passages, evidence returns to the model, the strategy frame is grounded by Jev, and the answer card reaches the player.">
+      <defs>
+        <marker id="m2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="ah" d="M0,0 L10,5 L0,10 z"/></marker>
+        <marker id="m2j" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="ahj" d="M0,0 L10,5 L0,10 z"/></marker>
+      </defs>
+      <rect class="b" x="30" y="20" width="140" height="34" rx="6"/><text class="t" x="100" y="42" text-anchor="middle">Player</text>
+      <rect class="bp" x="220" y="20" width="160" height="34" rx="6"/><text class="t" x="300" y="42" text-anchor="middle">Coach extension</text>
+      <rect class="bj" x="430" y="20" width="140" height="34" rx="6"/><text class="hj" x="500" y="42" text-anchor="middle">Jev</text>
+      <rect class="b" x="620" y="20" width="140" height="34" rx="6"/><text class="t" x="690" y="42" text-anchor="middle">Model</text>
+      <rect class="b" x="810" y="20" width="160" height="34" rx="6"/><text class="t" x="890" y="42" text-anchor="middle">Gateway</text>
+      <line class="life" x1="100" y1="54" x2="100" y2="490"/>
+      <line class="life" x1="300" y1="54" x2="300" y2="490"/>
+      <line class="life" x1="500" y1="54" x2="500" y2="490"/>
+      <line class="life" x1="690" y1="54" x2="690" y2="490"/>
+      <line class="life" x1="890" y1="54" x2="890" y2="490"/>
+      <line class="ln" x1="100" y1="90" x2="298" y2="90" marker-end="url(#m2)"/><text class="a" x="200" y="82" text-anchor="middle">1 · prompt or /command</text>
+      <line class="lj" x1="300" y1="135" x2="498" y2="135" marker-end="url(#m2j)"/><text class="a" x="400" y="127" text-anchor="middle">2 · grade the tier (1.5 s max)</text>
+      <line class="lj" x1="500" y1="180" x2="302" y2="180" marker-end="url(#m2j)"/><text class="a" x="400" y="172" text-anchor="middle">3 · tier + probability p</text>
+      <line class="ln" x1="300" y1="225" x2="688" y2="225" marker-end="url(#m2)"/><text class="a" x="495" y="217" text-anchor="middle">4 · send prompt to the chosen model</text>
+      <line class="ln" x1="690" y1="270" x2="888" y2="270" marker-end="url(#m2)"/><text class="a" x="790" y="262" text-anchor="middle">5 · tool call</text>
+      <line class="lj" x1="890" y1="315" x2="502" y2="315" marker-end="url(#m2j)"/><text class="a" x="790" y="307" text-anchor="middle">6 · screen passages</text>
+      <line class="ld" x1="890" y1="360" x2="692" y2="360" marker-end="url(#m2)"/><text class="a" x="790" y="352" text-anchor="middle">7 · evidence ids + quotes</text>
+      <line class="lj" x1="690" y1="405" x2="502" y2="405" marker-end="url(#m2j)"/><text class="a" x="595" y="397" text-anchor="middle">8 · ground the frame</text>
+      <line class="ld" x1="690" y1="450" x2="102" y2="450" marker-end="url(#m2)"/><text class="a" x="400" y="442" text-anchor="middle">9 · answer card</text>
+    </svg>
+    </div>
+</details>
+    <figcaption>Amber dashed arrows are Jev calls. All of them are skipped when <code>TYPESAFE_API_KEY</code> is unset. Steps 5 to 7 can repeat several times in one turn.</figcaption>
+  </figure>
+  <div class="deep">
+    <span class="label">Deeper</span>
+    <ul>
+      <li>The passage screen (<code>src/passage-judge.ts</code>) scores web results, video transcripts and OP.GG summaries before the model sees them.</li>
+      <li>Grounding (<code>src/grounding-judge.ts</code>) sits behind <code>voxren_strategy_frame</code>. It checks each claim against the cited passage text. It flags unsupported claims and never deletes them.</li>
+      <li><code>src/policy.ts</code> caps sizes: 12 KB per gateway payload, 8 KB of display text, 64 KB per chart. Bad input fails with a typed <code>SafeToolError</code>, and terminal escape codes are stripped.</li>
+      <li>Side jobs that need a model, like summarizing a video, run in a <em>worker</em>: a second, bare Pi run for one prompt, with no coach tools and no session.</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2><span class="n">06</span>Matchup notes build themselves</h2>
+  <div class="simple">
+    <span class="label">Plain version</span>
+    <p>The first time you look up a matchup, the coach starts writing a study note on it in the background. The next time, the note is ready.</p>
+  </div>
+  <div class="deep">
+    <span class="label">Deeper</span>
+    <ul>
+      <li>Notes are saved one file per matchup: <code>&lt;coach home&gt;/matchups/&lt;champion&gt;-&lt;opponent&gt;.json</code>.</li>
+      <li>The build collects videos and guides through the Python research service, then a worker distills and merges them. A row is kept only when the Jev grounding judge finds it in its source.</li>
+      <li><code>voxren_meta_research</code> returns a finished note next to the OP.GG rows, under its own <code>guide-N</code> evidence id.</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2><span class="n">07</span>The screen</h2>
+  <div class="simple">
+    <span class="label">Plain version</span>
+    <p>Answers arrive as cards. Each block has a coloured bar and a short upper-case label. A call that's still running shows a spinner and a clock.</p>
+  </div>
+  <div class="deep">
+    <span class="label">Deeper</span>
+    <ul>
+      <li><code>src/ui.ts</code> handles presentation only. <code>src/terminal-images.ts</code> is the one file allowed to draw pictures. It rasterizes SVG charts with resvg and draws them with the Kitty or iTerm2 image protocol. Sixel is opt-in.</li>
+      <li>A terminal that can't draw images gets block-character text strips. Warp on Windows is forced to text because it reserves blank rows for images it never draws.</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2><span class="n">08</span>After each turn</h2>
+  <div class="simple">
+    <span class="label">Plain version</span>
+    <p>Each turn is logged. When the coach audits your games, it remembers your habits and brings them up next time.</p>
+  </div>
+  <div class="deep">
+    <span class="label">Deeper</span>
+    <ul>
+      <li>Each turn appends one NDJSON line to <code>&lt;coach home&gt;/exchanges.ndjson</code>: the prompt, every tool call with timing, the answer, tokens and cost. The lab scripts read this file.</li>
+      <li>After a successful <code>voxren_player_audit</code>, results are folded into a learnings file for your account, for example deaths before minute 6 or being ahead at 15 and then dying. A summary of up to 400 characters goes into the next prompt. You can turn this off in <code>/config</code>.</li>
+      <li><code>session_shutdown</code> stops the pollers and closes the gateway, including the research service it started.</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2><span class="n">··</span>Which file does what</h2>
+  <figure>
+    <img class="gen" src="img/components.png" alt="Source files in six groups and how they connect." width="1600" height="900" loading="lazy">
+<details class="more"><summary>Detailed diagram, theme-aware</summary>
+<div class="scroll">
+    <svg viewBox="0 0 1000 450" role="img" aria-label="Component map in six groups. Launch spawns Brain. Brain draws through Screen, registers Tools and reads Game link. Tools are screened by Truth checks and call Game link for Riot data.">
+      <defs>
+        <marker id="m3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="ah" d="M0,0 L10,5 L0,10 z"/></marker>
+      </defs>
+      <rect class="b" x="20" y="30" width="280" height="170" rx="8"/>
+      <text class="h" x="36" y="54">LAUNCH</text>
+      <text class="t" x="36" y="82">bin/coach.mjs</text><text class="s" x="36" y="98">reads keys, spawns Pi</text>
+      <text class="t" x="36" y="124">bin/setup.mjs</text><text class="s" x="36" y="140">one-time install, links coach</text>
+      <rect class="bp" x="360" y="30" width="280" height="170" rx="8"/>
+      <text class="h" x="376" y="54">BRAIN</text>
+      <text class="t" x="376" y="78">coach.yaml</text><text class="s" x="376" y="92">every prompt and default</text>
+      <text class="t" x="376" y="112">src/contracts.ts</text><text class="s" x="376" y="126">reads and checks coach.yaml</text>
+      <text class="t" x="376" y="146">src/index.ts</text><text class="s" x="376" y="160">events, commands, tools</text>
+      <text class="t" x="376" y="180">src/model-router.ts</text><text class="s" x="376" y="194">picks the model tier</text>
+      <rect class="b" x="700" y="30" width="280" height="170" rx="8"/>
+      <text class="h" x="716" y="54">SCREEN</text>
+      <text class="t" x="716" y="82">src/ui.ts</text><text class="s" x="716" y="98">header, footer, cards</text>
+      <text class="t" x="716" y="124">src/charts.ts</text><text class="s" x="716" y="140">audit charts as SVG</text>
+      <text class="t" x="716" y="166">src/terminal-images.ts</text><text class="s" x="716" y="182">Kitty, iTerm2, Sixel</text>
+      <rect class="b" x="20" y="260" width="280" height="170" rx="8"/>
+      <text class="h" x="36" y="284">GAME LINK</text>
+      <text class="t" x="36" y="312">src/lcu.ts</text><text class="s" x="36" y="328">League client, pinned TLS</text>
+      <text class="t" x="36" y="354">src/riot-key.ts</text><text class="s" x="36" y="370">Riot key custodian</text>
+      <text class="t" x="36" y="396">src/riot-key-helper.mjs</text><text class="s" x="36" y="412">Keychain / DPAPI child</text>
+      <rect class="b" x="360" y="260" width="280" height="170" rx="8"/>
+      <text class="h" x="376" y="284">TOOLS</text>
+      <text class="t" x="376" y="308">src/tools.ts</text><text class="s" x="376" y="322">8 tool definitions</text>
+      <text class="t" x="376" y="342">src/policy.ts</text><text class="s" x="376" y="356">size caps, safe errors</text>
+      <text class="t" x="376" y="376">src/live-gateway.ts</text><text class="s" x="376" y="390">every network call</text>
+      <text class="t" x="376" y="410">src/pi-worker.ts</text><text class="s" x="376" y="424">side jobs in a bare Pi run</text>
+      <rect class="bj" x="700" y="260" width="280" height="170" rx="8"/>
+      <text class="hj" x="716" y="284" style="font-size:11px;letter-spacing:.08em;font-family:var(--sans)">TRUTH CHECKS (JEV)</text>
+      <text class="t" x="716" y="312">src/systemone.ts</text><text class="s" x="716" y="328">Jev transport, decides nothing</text>
+      <text class="t" x="716" y="354">src/passage-judge.ts</text><text class="s" x="716" y="370">screens sources</text>
+      <text class="t" x="716" y="396">src/grounding-judge.ts</text><text class="s" x="716" y="412">checks claims</text>
+      <line class="ln" x1="300" y1="115" x2="358" y2="115" marker-end="url(#m3)"/><text class="a" x="329" y="107" text-anchor="middle">spawns</text>
+      <line class="ln" x1="640" y1="115" x2="698" y2="115" marker-end="url(#m3)"/><text class="a" x="669" y="107" text-anchor="middle">draws</text>
+      <line class="ln" x1="500" y1="200" x2="500" y2="258" marker-end="url(#m3)"/><text class="a" x="508" y="233">registers</text>
+      <line class="ln" x1="640" y1="345" x2="698" y2="345" marker-end="url(#m3)"/><text class="a" x="669" y="337" text-anchor="middle">screens</text>
+      <line class="ln" x1="360" y1="345" x2="302" y2="345" marker-end="url(#m3)"/><text class="a" x="331" y="337" text-anchor="middle">Riot</text>
+      <path class="ln" d="M400,200 L400,230 L160,230 L160,258" marker-end="url(#m3)"/><text class="a" x="280" y="223" text-anchor="middle">reads client: command + auto</text>
+    </svg>
+    </div>
+</details>
+    <figcaption>Six groups and the one-word relation between them. <code>coach.yaml</code> sits in the Brain group because it holds every prompt. Tests live next to the file they test.</figcaption>
+  </figure>
+</section>
+
+<section>
+  <h2><span class="n">··</span>Words to know</h2>
+  <dl>
+    <dt>Pi</dt><dd>The agent framework the coach runs inside. It handles the chat, sessions and model calls.</dd>
+    <dt>Jev</dt><dd>TypeSafe System One, a judge model. It grades prompts, screens sources and grounds claims. It's on only when <code>TYPESAFE_API_KEY</code> is set.</dd>
+    <dt>Grounding</dt><dd>Checking that a claim actually appears in the source it cites.</dd>
+    <dt>Route</dt><dd>The model and thinking level chosen for one turn. You see it on screen, and the model never does.</dd>
+    <dt>Worker</dt><dd>A second, bare Pi run for one side job. It has no coach tools and no session.</dd>
+    <dt>LCU</dt><dd>League Client Update, the local HTTPS API the League client exposes on your machine.</dd>
+    <dt>MCP</dt><dd>Model Context Protocol. OP.GG runs a public MCP server that the gateway calls for meta and matchup stats.</dd>
+    <dt>Data Dragon</dt><dd>Riot's static data for champions, items and versions. Game facts come from here, never from constants in code.</dd>
+  </dl>
+</section>
+
+</div>
+
+</html>

@@ -1,0 +1,11 @@
+{
+	"source": "Summoner's Rift areas in Riot map units (origin bottom-left, the blue base at the origin, both axes 0 to 14870). Measured by eye against data/map-backgrounds/map-dd.png and checked on the overlay `just scenes --zones-png zones.png` draws. A base is a circle around its map corner; top and bot lanes hug the map edges; mid lane and the river are bands along the two diagonals; a pit is a circle.",
+	"baseRadius": 5300,
+	"laneEdge": 2300,
+	"midHalfWidth": 950,
+	"riverHalfWidth": 1200,
+	"pits": [
+		{ "name": "Baron pit", "x": 5000, "y": 10400, "r": 1000 },
+		{ "name": "dragon pit", "x": 9850, "y": 4400, "r": 1000 }
+	]
+}
